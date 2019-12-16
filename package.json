@@ -19,7 +19,13 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
-    "prettier": "^1.19.1"
+    "bootstrap": "^4.4.1",
+    "gatsby-plugin-less": "^3.0.17",
+    "javascript-terminal": "^1.0.3",
+    "less": "^3.10.3",
+    "prettier": "^1.19.1",
+    "react-terminal-component": "^1.4.1",
+    "reactstrap": "^8.2.0"
   },
   "keywords": [
     "gatsby"
