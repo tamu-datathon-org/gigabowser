@@ -1,5 +1,6 @@
 import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
+import { useStaticQuery, graphql, Link } from "gatsby";
+import { Row, Col } from "reactstrap";
 import Img from 'gatsby-image';
 
 import "./terminal.less";
@@ -41,7 +42,7 @@ class Terminal extends React.Component {
     this.state = {
       terminalInputStr: "",
       terminalOutputStr: "",
-      showTitle: false,
+      showHiddenContent: false,
     }
 
     this.typeStringToTerminal = this.typeStringToTerminal.bind(this);
@@ -53,7 +54,7 @@ class Terminal extends React.Component {
 
     await this.typeStringToTerminal("Loading something awesome...", true, 20);
 
-    setTimeout(() => this.setState({showTitle: true}), 500);
+    setTimeout(() => this.setState({showHiddenContent: true}), 500);
   }
 
   async typeStringToTerminal(inputString, isOutput, timeout=120) {
@@ -73,7 +74,7 @@ class Terminal extends React.Component {
   }
 
   render() {
-    const tdLogoClasses = (this.state.showTitle) ? "tdLogo show" : "tdLogo hide"
+    const hiddenContentVisibility = (this.state.showHiddenContent) ? "showContent" : "hideContent";
     return (
       <div className="terminalDiv">
         <div className="terminalHeader">
@@ -89,8 +90,25 @@ class Terminal extends React.Component {
           <br/>
           {TerminalOutput(this.state.terminalOutputStr, false)}
           <br/>
-          <TDLogo className={tdLogoClasses}/>
         </div>
+        <TDLogo className={`tdLogo ${hiddenContentVisibility}`}/>
+        <Row className="contentLinkRow justify-content-around">
+          <Col xs="12" sm="6" md="3" lg="3" className={`contentLink ${hiddenContentVisibility}`}>
+            <Link to="/about-us" id="aboutUsLink">
+              about_us
+            </Link>
+          </Col>
+          <Col xs="12" sm="6" md="3" lg="3" className={`contentLink ${hiddenContentVisibility}`}>
+            <Link id="getInvolvedLink">
+              get_involved
+            </Link>
+          </Col>
+          <Col xs="12" sm="6" md="3" lg="3" className={`contentLink ${hiddenContentVisibility}`}>
+            <a href="https://2019.tamudatathon.com" id="recap2019Link"> {/* <a> tag because link isn't internal */}
+              2019_recap
+            </a>
+          </Col>
+        </Row>
       </div>
     );
   }

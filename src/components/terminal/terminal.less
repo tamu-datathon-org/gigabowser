@@ -21,14 +21,6 @@ body {
   }
 }
 
-.tdLogo.hide {
-  opacity: 0;
-}
-
-.tdLogo.show {
-  opacity: 1;
-}
-
 .terminalDiv {
   background-color: @terminal_background;
   width: 100%;
@@ -53,7 +45,7 @@ body {
 }
 
 .terminal-input-prefix {
-  color: #68fe97;
+  color: @theme_grid_green;
   margin: auto 10px auto 10px;
 }
 
@@ -90,4 +82,49 @@ body {
   display: inline-block;
   position: relative;
   left: 30vw;
+}
+
+.contentLinkRow {
+  margin-top: 30px;
+
+  @media @phone {
+    font-size: 15px;
+  }
+}
+
+.contentLink {
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+
+  -webkit-transition: opacity 2s ease-in;
+  -moz-transition: opacity 2s ease-in;
+  -o-transition: opacity 2s ease-in;
+  -ms-transition: opacity 2s ease-in;
+  transition: opacity 2s ease-in;
+   
+  a {
+    border: white dashed 2px;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  a:hover{
+    text-decoration: none;
+  }
+
+  #aboutUsLink {
+    border-color: #ebade5;
+    color: #ebade5;
+  }
+
+  #getInvolvedLink {
+    border-color: @theme_grid_green;
+    color: @theme_grid_green;
+  }
+
+  #recap2019Link {
+    border-color: @logo_light_blue;
+    color: @logo_light_blue;
+  }
 }
