@@ -19,9 +19,7 @@ subprocess.run(["rm", "-r",websiteToGet], cwd=downloadlocation)
 
 subprocess.run(["rm", "robots.txt"], cwd=downloadlocation)
 
-# clone reposittory of github to push
+# clone repository of github to push
 subprocess.run(["git", "add", "--all"], cwd=downloadlocation)
-
 subprocess.run(["git", "commit", "-m", "updated website"], cwd=downloadlocation)
-
 subprocess.run(["git", "push"], cwd=downloadlocation)
