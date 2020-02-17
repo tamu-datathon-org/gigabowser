@@ -1,0 +1,22 @@
+{
+  "name": "gigabowser",
+  "version": "1.0.0",
+  "description": "TAMU Datathon Website Deployment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tamu-datathon-org/gigabowser.git"
+  },
+  "author": "TAMU Datathon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tamu-datathon-org/gigabowser/issues"
+  },
+  "homepage": "https://github.com/tamu-datathon-org/gigabowser#readme",
+  "dependencies": {
+    "@geooot/soul-patch": "^1.1.0"
+  }
+}
