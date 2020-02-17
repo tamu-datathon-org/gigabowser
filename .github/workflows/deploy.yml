@@ -1,4 +1,4 @@
-name: Node.js CI
+name: Build and Deploy Website
 
 on:
   push:
@@ -23,6 +23,6 @@ jobs:
     - name: Deploy to Github Pages
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages # Deploy to the gh-pages branch
         FOLDER: output # The folder the action should push.
