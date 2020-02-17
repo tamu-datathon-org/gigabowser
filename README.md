@@ -1,5 +1,5 @@
 # gigabowser
-Website deployment for TAMUdatathon
+Website deployment for TAMUdatathon ![Build and Deploy Website](https://github.com/tamu-datathon-org/gigabowser/workflows/Build%20and%20Deploy%20Website/badge.svg?branch=master&event=push)
 
 Deployment Cycle:
 1. Nabbit fetches the website from webflow and outputs assets into the webflow folder
