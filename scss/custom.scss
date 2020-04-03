@@ -33,6 +33,10 @@ $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-800 !default;
 
+// Index Page Colors
+$about-background: #f4ecf2 !default;
+$about-title: #8a3c7a !default;
+
 // Optional Overrides
 $enable-caret:                                true !default;
 $enable-rounded:                              true !default;
@@ -65,13 +69,34 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section {
-    padding-top: 50px;
+    padding-top: 70px;
 
     .section-title {
-        font-size: 2.5em;
+        font-size: 2.7em;
+        font-weight: bold;
+    }
+}
+
+.about-section {
+    background-color: $about-background;
+
+    .about-title {
+        color: $about-title;
+    }
+
+    .about-content {
+        margin-top: 50px;
+    }
+
+    .about-description {
+        margin-top: 50px;
+    }
+
+    .about-img {
+        max-width: 300px;
     }
 }
 
 .dummy-section {
-    min-height: 300px;
+    min-height: 600px;
 }
