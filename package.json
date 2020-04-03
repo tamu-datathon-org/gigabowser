@@ -1,10 +1,18 @@
 {
   "name": "gigabowser",
   "version": "1.0.0",
-  "description": "TAMU Datathon Website Deployment",
+  "description": "Website for TAMUDatathon",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run dev",
+    "dev": "run-p dev:server dev:sass",
+    "dev:server": "node lib/server.js",
+    "dev:sass": "node-sass -w scss/custom.scss static/css/style.css",
+    "build": "run-s build:static build:sass",
+    "build:static": "node lib/render_to_static.js",
+    "build:sass": "node-sass scss/custom.scss public/css/style.css",
+    "clean": "rm -rf public"
   },
   "repository": {
     "type": "git",
@@ -17,6 +25,17 @@
   },
   "homepage": "https://github.com/tamu-datathon-org/gigabowser#readme",
   "dependencies": {
-    "@geooot/soul-patch": "^1.1.0"
+    "bootstrap": "^4.4.1",
+    "ejs": "^3.0.2",
+    "ejs-lint": "^1.0.1",
+    "express": "^4.17.1",
+    "front-matter": "^3.1.0",
+    "ncp": "^2.0.0",
+    "node-fetch": "^2.6.0",
+    "node-sass": "^4.13.1",
+    "showdown": "^1.9.1"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
   }
 }
