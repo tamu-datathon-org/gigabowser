@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+        <!-- future logo? -->
+        <!-- <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt=""> -->
+        TAMU Datathon
+    </a>
+
+    <!-- responsive toggle button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- keep me don't delete me :) -->
+        <ul class="navbar-nav mr-auto">
+            <!-- don't ask why but I need this to keep the nav aligned right -->
+            <!-- https://www.codeply.com/go/aP0qhfNtGx/bootstrap-4-navbar-right-align -->
+        </ul>
+
+        <!-- tell me this is not the most elegant thing ever seen -->
+        <ul class="navbar-nav">
+            <% ['Home', 'About', 'Team', 'Sponsor'].forEach((name) => { %>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><%= name %></a>
+                </li>
+            <% }) %>
+        </ul>
+        
+    </div>
+</nav>

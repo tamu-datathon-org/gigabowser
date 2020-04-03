@@ -1,19 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<%- include ("../partials/head") %>
+<%- include ("./partials/head") %>
 
 <body>
 
-  <div id="splash">
-    <div id="navbar">
-      About Industries Sponsors FAQ Team
-    </div>
-    <div id="splash-content">
-      TAMU Datathon Logo<br>
-      Ocboter 17-18, 2020
-    </div>
-  </div>
+    <%- include ("./partials/navbar") %>
 
   <div class="section dummy-section about-section">
     <div id="about" class="container">
@@ -58,7 +50,6 @@
         FAQ's
       </h1>
     </div>
-  </div>
 
   <div class="section dummy-section">
     <div id="faq-end-transition"></div>
@@ -69,9 +60,7 @@
     </div>
   </div>
 
-  <div id="footer">
-    Footer
-  </div>
+    <%- include ("./partials/footer") %>
 
 </body>
 
