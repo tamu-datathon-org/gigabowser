@@ -17,12 +17,11 @@
             <!-- don't ask why but I need this to keep the nav aligned right -->
             <!-- https://www.codeply.com/go/aP0qhfNtGx/bootstrap-4-navbar-right-align -->
         </ul>
-
-        <!-- tell me this is not the most elegant thing ever seen -->
         <ul class="navbar-nav">
-            <% ['Home', 'About', 'Team', 'Sponsor'].forEach((name) => { %>
+            <!-- tell me this is not the most elegant thing ever made -->
+            <% req.navbarItems.forEach(({ name, route }) => { %>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#"><%= name %></a>
+                    <a class="nav-link" href="<%= route %>"><%= name %></a>
                 </li>
             <% }) %>
         </ul>
