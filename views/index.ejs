@@ -7,41 +7,68 @@
 
     <%- include ("./partials/navbar") %>
 
-    <div id="splash">
-        <div id="navbar">
-            About Industries Sponsors FAQ Team
-        </div>
-        <div id="splash-content">
-            TAMU Datathon Logo<br>
-            Ocboter 17-18, 2020
-        </div>
-    </div>
 
-    <div id="about">
-        About Us
+  <div id="splash">
+    <div id="splash-content">
+      TAMU Datathon Logo<br>
+      Ocboter 17-18, 2020
     </div>
+  </div>
 
-    <div id="industries">
-        <div id="industries-transition-1">
+  <div class="section about-section">
+    <div id="about" class="container">
+      <div class="about-content row justify-content-between">
+        <div class="col-lg-6 col-md-6 col-sm-12 d-flex flex-column justify-content-center">
+          <h1 class="section-title about-title pb-3">
+            About Us
+          </h2>
+          <p class="about-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dapibus id est nec molestie. Phasellus sit amet finibus enim. Sed aliquet mauris a velit ultricies, et ultricies velit malesuada. Morbi quis sodales velit. Curabitur tristique mauris sapien, sed consequat diam sollicitudin ac. Aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          </p>
         </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center align-items-center py-5">
+          <img src="/static/img/logos/td_logo_block.png" class="about-img"/>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-transition"></div>
+
+  <div class="section dummy-section">
+    <div id="industries-start-transition"></div>
+    <div id="industries" class="container">
+      <h1 class="section-title">
         Industries
+      </h1>
     </div>
+  </div>
 
-    <div id="sponsors">
+  <div class="section dummy-section">
+    <div id="industries-end-transition"></div>
+    <div id="sponsors" class="container">
+      <h1 class="section-title">
         Sponsors
+      </h1>
     </div>
+  </div>
 
-    <div id="faq">
-        <div id="faq-transition-1">
-        </div>
+  <div class="section dummy-section">
+    <div id="faq-start-transition"></div>
+    <div id="faq" class="container">
+      <h1 class="section-title">
         FAQ's
-        <div id="faq-transition-2">
-        </div>
+      </h1>
     </div>
 
-    <div id="team">
-        Team
+  <div class="section dummy-section">
+    <div id="faq-end-transition"></div>
+    <div id="team" class="container">
+      <h1 class="section-title">
+        Our Team
+      </h1>
     </div>
+  </div>
 
     <%- include ("./partials/footer") %>
 

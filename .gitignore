@@ -114,6 +114,9 @@ dist
 .yarn/build-state.yml
 .pnp.*
 
+# MacOS
+*.DS_Store
+
 # public
 /public
 /static/css/style.css
