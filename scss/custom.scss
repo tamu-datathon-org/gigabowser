@@ -1,7 +1,7 @@
 // Override default variables before the import
 
 // Colors
-$white:    #fff !default;
+$white:    #fff    !default;
 $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
@@ -11,7 +11,7 @@ $gray-600: #6c757d !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
-$black:    #000 !default;
+$black:    #000    !default;
 
 $blue:    #4286F3 !default;
 $indigo:  #4740AF !default;
@@ -24,32 +24,32 @@ $green:   #28a745 !default;
 $teal:    #86EACE !default;
 $cyan:    #17a2b8 !default;
 
-$primary:       $indigo !default;
+$primary:       $indigo   !default;
 $secondary:     $gray-600 !default;
-$success:       $green !default;
-$info:          $blue !default;
-$warning:       $yellow !default;
-$danger:        $red !default;
+$success:       $green    !default;
+$info:          $blue     !default;
+$warning:       $yellow   !default;
+$danger:        $red      !default;
 $light:         $gray-100 !default;
 $dark:          $gray-800 !default;
 
 // Index Page Colors
 $about-background: #f4ecf2 !default;
-$about-title: #8a3c7a !default;
+$about-title: #8a3c7a      !default;
 
 // Optional Overrides
-$enable-caret:                                true !default;
-$enable-rounded:                              true !default;
+$enable-caret:                                true  !default;
+$enable-rounded:                              true  !default;
 $enable-shadows:                              false !default;
 $enable-gradients:                            false !default;
-$enable-transitions:                          true !default;
-$enable-prefers-reduced-motion-media-query:   true !default;
-$enable-grid-classes:                         true !default;
-$enable-pointer-cursor-for-buttons:           true !default;
-$enable-rfs:                                  true !default;
-$enable-validation-icons:                     true !default;
-$enable-deprecation-messages:                 true !default;
-$enable-important-utilities:                  true !default;
+$enable-transitions:                          true  !default;
+$enable-prefers-reduced-motion-media-query:   true  !default;
+$enable-grid-classes:                         true  !default;
+$enable-pointer-cursor-for-buttons:           true  !default;
+$enable-rfs:                                  true  !default;
+$enable-validation-icons:                     true  !default;
+$enable-deprecation-messages:                 true  !default;
+$enable-important-utilities:                  true  !default;
 
 
 // Import Bootstrap and its default variables
@@ -64,8 +64,13 @@ body {
 }
 
 // Headers (use Roboto Mono, everything else use Work Sans)
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto Mono', monospace !important;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Roboto Mono", monospace !important;
 }
 
 // Transitions:
@@ -108,4 +113,50 @@ h1, h2, h3, h4, h5, h6 {
 
 .dummy-section {
     min-height: 600px;
+}
+
+// home page buttons with gradients
+// https://codepen.io/JavaScriptJunkie/pen/pPRooV
+
+.splash-button {
+    width: 150px;
+    font-family: "Roboto Mono";
+    font-size: 20px;
+    // todo: font weight seems too thin
+    font-weight: 300;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 45px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    // moz-transition: all 0.4s ease-in-out;
+    // -o-transition: all 0.4s ease-in-out;
+    // -webkit-transition: all 0.4s ease-in-out;
+    // transition: all 0.4s ease-in-out;
+}
+
+// .splash-button:hover {
+//     background-position: 100% 0;
+//     moz-transition: all 0.4s ease-in-out;
+//     -o-transition: all 0.4s ease-in-out;
+//     -webkit-transition: all 0.4s ease-in-out;
+//     transition: all 0.4s ease-in-out;
+// }
+
+// .splash-button:focus {
+//     outline: none;
+// }
+
+$a: #40e495;
+$b: #4fc2f8;
+$c: #4fc2f8;
+$d: #4286fc;
+
+.splash-button {
+    background-image: linear-gradient(to right, $a, $b, $c, $d);
+    // box-shadow: 0 0 15px 0 rgba(49, 196, 190, 0.75);
 }
