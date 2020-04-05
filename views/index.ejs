@@ -5,77 +5,42 @@
 
 <body>
 
-  <%- include ("./partials/navbar") %>
-  
-  <div class="splash">
-    <div id="splash-content" class="container">
-      <div class="row">
-        <div class="col-11 col-sm-9 col-md-8 col-lg-6" style="color:white;font-size:calc(25px + (35 - 25) * ((100vw - 300px) / (1600 - 300)));">
-          <img id="text-logo" src="/static/img/logos/text-logo.png" class="text">
-          Ocboter 17-18, 2020
-          <div>
-            <button type="button" class="btn btn-primary">Apply</button>
-            <button type="button" class="btn btn-primary">Sponsor</button>
-          </div>
-        </div>
-      </div>
+  <%- include ("./partials/splash") %>
+
+  <%- include ("./partials/about-partial") %>
+
+  <div class="about-transition"></div>
+
+  <div class="section dummy-section">
+    <div id="industries-start-transition"></div>
+    <div id="industries" class="container">
+      <h1 class="section-title">
+        Industries
+      </h1>
     </div>
   </div>
 
-  <div class="section about-section">
-    <div id="about" class="container">
-      <div class="about-content row justify-content-between">
-        <div class="col-lg-6 col-md-6 col-sm-12 d-flex flex-column justify-content-center">
-          <h1 class="section-title about-title pb-3">
-            About Us
-            </h2>
-            <p class="about-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dapibus id est nec molestie. Phasellus sit amet finibus enim. Sed aliquet mauris a velit ultricies, et ultricies velit malesuada. Morbi quis sodales velit. Curabitur
-              tristique mauris sapien, sed consequat diam sollicitudin ac. Aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center align-items-center py-5">
-          <img src="/static/img/logos/td_logo_block.png" class="about-img" />
-        </div>
-      </div>
+  <div class="section dummy-section">
+    <div id="industries-end-transition"></div>
+    <div id="sponsors" class="container">
+      <h1 class="section-title">
+        Sponsors
+      </h1>
     </div>
   </div>
 
-    <%- include ("./partials/about-partial") %>
-
-
-    <div class="about-transition"></div>
-
-    <div class="section dummy-section">
-        <div id="industries-start-transition"></div>
-        <div id="industries" class="container">
-            <h1 class="section-title">
-                Industries
-            </h1>
-        </div>
+  <div class="section dummy-section">
+    <div id="faq-start-transition"></div>
+    <div id="faq" class="container">
+      <h1 class="section-title">
+        FAQ's
+      </h1>
     </div>
+  </div>
 
-    <div class="section dummy-section">
-        <div id="industries-end-transition"></div>
-        <div id="sponsors" class="container">
-            <h1 class="section-title">
-                Sponsors
-            </h1>
-        </div>
-    </div>
+  <%- include ("./partials/team") %>
 
-    <div class="section dummy-section">
-        <div id="faq-start-transition"></div>
-        <div id="faq" class="container">
-            <h1 class="section-title">
-                FAQ's
-            </h1>
-        </div>
-    </div>
-
-    <%- include ("./partials/team") %>
-
-    <%- include ("./partials/footer") %>
+  <%- include ("./partials/footer") %>
 
 </body>
 

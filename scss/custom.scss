@@ -137,15 +137,16 @@ h6 {
 // https://codepen.io/JavaScriptJunkie/pen/pPRooV
 
 .splash-button {
-    width: 150px;
+    width: 100px;
     font-family: "Roboto Mono";
-    font-size: 20px;
+    font-size: 15px;
     // todo: font weight seems too thin
-    font-weight: 300;
+    font-weight: 400;
     color: #fff;
     cursor: pointer;
-    margin: 20px;
-    height: 45px;
+    margin-top: 20px;
+    margin-right: 20px;
+    height: 35px;
     text-align: center;
     border: none;
     background-size: 300% 100%;
