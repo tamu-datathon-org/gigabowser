@@ -73,6 +73,24 @@ h6 {
     font-family: "Roboto Mono", monospace !important;
 }
 
+.splash {
+  background-image: url("/static/img/backgrounds/splash-background.svg");
+  background-position: 70% 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 650px;
+  height: 100vh;
+  z-index: 1;
+}
+
+#splash-content {
+  padding-top: 15vh;
+}
+
+#text-logo {
+    width: 100%;
+}
+
 // Transitions:
 //      About to Industry Transition
 .about-transition {
