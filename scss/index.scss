@@ -1,0 +1,110 @@
+// Index Page Colors
+$about-background: #f4ecf2 !default;
+$about-title: #8a3c7a      !default;
+
+.splash {
+  background-image: url("/static/img/backgrounds/splash-background.svg");
+  background-position: 70% 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 650px;
+  height: 100vh;
+  z-index: 1;
+}
+
+#splash-content {
+  padding-top: 15vh;
+}
+
+#text-logo {
+    width: 100%;
+}
+
+// Transitions:
+//      About to Industry Transition
+.about-transition {
+    background: linear-gradient(to left bottom, #f4ecf2 49.5%, white 50%);
+    height: calc(10vw * 0.5);
+}
+
+.section {
+    padding: 3em 0em;
+
+    .section-title {
+        font-size: 2.5em;
+        font-weight: bold;
+    }
+}
+
+.about-section {
+    background-color: $about-background;
+
+    .about-title {
+        color: $about-title;
+    }
+
+    .about-content {
+        flex-wrap: wrap-reverse;
+    }
+
+    .about-description {
+        font-size: 1.15em;
+        line-height: 1.5;
+    }
+
+    .about-img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+.dummy-section {
+    min-height: 600px;
+}
+
+// home page buttons with gradients
+// https://codepen.io/JavaScriptJunkie/pen/pPRooV
+
+.splash-button {
+    width: 100px;
+    font-family: "Roboto Mono";
+    font-size: 15px;
+    // todo: font weight seems too thin
+    font-weight: 400;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-right: 20px;
+    height: 35px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    // moz-transition: all 0.4s ease-in-out;
+    // -o-transition: all 0.4s ease-in-out;
+    // -webkit-transition: all 0.4s ease-in-out;
+    // transition: all 0.4s ease-in-out;
+}
+
+// .splash-button:hover {
+//     background-position: 100% 0;
+//     moz-transition: all 0.4s ease-in-out;
+//     -o-transition: all 0.4s ease-in-out;
+//     -webkit-transition: all 0.4s ease-in-out;
+//     transition: all 0.4s ease-in-out;
+// }
+
+// .splash-button:focus {
+//     outline: none;
+// }
+
+$a: #40e495;
+$b: #4fc2f8;
+$c: #4fc2f8;
+$d: #4286fc;
+
+.splash-button {
+    background-image: linear-gradient(to right, $a, $b, $c, $d);
+    // box-shadow: 0 0 15px 0 rgba(49, 196, 190, 0.75);
+}
