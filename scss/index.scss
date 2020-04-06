@@ -4,20 +4,35 @@ $about-title: #8a3c7a      !default;
 
 .splash {
   background-image: url("/static/img/backgrounds/splash-background.svg");
-  background-position: 70% 80%;
+  background-position: 85% 100%;
+  background-color: #1b135e;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 650px;
   height: 100vh;
   z-index: 1;
+
+  display: flex;
+  justify-content: center;
 }
 
+
+
 #splash-content {
-  padding-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+@include media-breakpoint-up(sm) {
+    #splash-content {
+        justify-content: center;
+    }
 }
 
 #text-logo {
     width: 100%;
+    max-width: 450px;
 }
 
 // Transitions:
@@ -26,8 +41,13 @@ $about-title: #8a3c7a      !default;
     background: linear-gradient(to left bottom, #f4ecf2 49.5%, white 50%);
     height: calc(10vw * 0.5);
 }
+.splash-transition {
+    background: linear-gradient(to left bottom, transparent 49.5%, #f4ecf2 50%);
+    height: calc(10vw * 0.5);
+    margin-top: calc(-10vw * 0.5);
+}
 
-.section {
+.section x{
     padding: 3em 0em;
 
     .section-title {
