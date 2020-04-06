@@ -8,7 +8,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto mr-auto pt-5">
             <!-- tell me this is not the most elegant thing ever made -->
-            <% req.navbarItems.forEach(({ name, route }) => { %>
+            <% req.navbarSamePageItems.forEach(({ name, route }) => { %>
                 <li class="nav-item active">
                     <a class="nav-link" href="<%= route %>"><%= name %></a>
                 </li>
