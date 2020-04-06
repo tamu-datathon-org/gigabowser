@@ -1,8 +1,8 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-    <a class="navbar-brand" href="#">
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+    <!-- <a class="navbar-brand" href="#">
         <img src="<%= req.image_logo %>" width="45" height="45" class="d-inline-block align-top" alt="TAMU Datathon" />
         <!-- TAMU Datathon -->
-    </a>
+    </a> -->
 
     <!-- responsive toggle button -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -11,12 +11,7 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <!-- keep me don't delete me :) -->
-        <ul class="navbar-nav mr-auto">
-            <!-- don't ask why but I need this to keep the nav aligned right -->
-            <!-- https://www.codeply.com/go/aP0qhfNtGx/bootstrap-4-navbar-right-align -->
-        </ul>
-        <ul class="navbar-nav">
+        <ul class="navbar-nav ml-auto mr-auto pt-5">
             <!-- tell me this is not the most elegant thing ever made -->
             <% req.navbarItems.forEach(({ name, route }) => { %>
                 <li class="nav-item active">
