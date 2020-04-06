@@ -76,3 +76,37 @@ h6 {
 // Import all partials & page css files
 @import 'index.scss';
 @import 'navbar.scss';
+
+
+.slider {
+     width: 105%;
+     height: 100%;
+     margin: 100px auto;
+ }
+
+ .slick-slide {
+   margin: 0px 20px;
+ }
+
+ .slick-slide img {
+   width: 100%;
+ }
+
+ .slick-prev:before,
+ .slick-next:before {
+   color: black;
+ }
+
+
+ .slick-slide {
+   transition: all ease-in-out .3s;
+   opacity: .2;
+ }
+
+ .slick-active {
+   opacity: .5;
+ }
+
+ .slick-current {
+   opacity: 1;
+ }
