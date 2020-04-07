@@ -103,19 +103,17 @@ $splash-light-blue: #3f5aaa;
   }
 
   .apply-btn {
-    background-color: transparent;
+    background-color: rgba(#1b135e, 0.5);
     border: solid 2px $theme-dark-green;
   }
 
-  .apply-btn:hover {
-    $apply-hover-color: adjust-color($theme-dark-green, $lightness: 15%);
-    
-    background-color: rgba($apply-hover-color, 0.5);
-    border: solid 2px $apply-hover-color;
+  .apply-btn:hover {    
+    background-color: rgba($theme-dark-green, 0.5);
+    border: solid 2px $theme-dark-green;
   }
 
   .sponsor-btn {
-    background-color: transparent;
+    background-color: rgba(#1b135e, 0.5);
     border: solid 2px $splash-light-purple;
   }
 
