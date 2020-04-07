@@ -7,6 +7,5 @@ app.use('/static', express.static('static'))
 
 // PAGES
 app.get('/', renderPage("Home", "index"));
-app.get('/about', renderPage("About", "about"));
 
 exports.app = app;

@@ -90,26 +90,35 @@ $splash-light-blue: #3f5aaa;
 
   .splash-btn {
     font-size: 1.25em;
-    font-weight: 400;
+    font-weight: 500;
     background-color: #666;
     color: #fff;
     cursor: pointer;
-    padding: 0.5em 1em 0.5em 1em;
-    margin-right: 1.5em;
+    padding: 0.25em 1em;
+    margin-right: 0.5em;
     text-align: center;
     border: none;
     border-radius: 10px;
+    transition: background-color 0.25s ease, border 0.25s ease;
   }
 
   .apply-btn {
-    background-color: $splash-light-purple;
-    border: solid 4px $splash-light-purple;
-    @include bordered-btn-on-hover('splash-apply-btn', $splash-light-purple, $splash-light-purple);
+    background-color: rgba(#1b135e, 0.5);
+    border: solid 2px $theme-dark-green;
+  }
+
+  .apply-btn:hover {    
+    background-color: rgba($theme-dark-green, 0.5);
+    border: solid 2px $theme-dark-green;
   }
 
   .sponsor-btn {
-    background-color: $theme-dark-green;
-    border: solid 4px $theme-dark-green;
-    @include bordered-btn-on-hover('splash-sponsor-btn', $theme-dark-green, $theme-dark-green);
+    background-color: rgba(#1b135e, 0.5);
+    border: solid 2px $splash-light-purple;
+  }
+
+  .sponsor-btn:hover {
+    background-color: rgba($splash-light-purple, 0.5);
+    border: solid 2px $splash-light-purple;
   }
 }
