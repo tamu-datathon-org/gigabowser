@@ -108,8 +108,8 @@ $splash-light-blue: #3f5aaa;
   }
 
   .apply-btn:hover {
-    background-color: $theme-dark-green-lighter;
-    border: solid 1px $theme-dark-green-lighter;
+    background-color: adjust-color($theme-dark-green, $lightness: 15%);
+    border: solid 1px adjust-color($theme-dark-green, $lightness: 15%);
   }
 
   .sponsor-btn {
