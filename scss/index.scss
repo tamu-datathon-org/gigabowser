@@ -1,6 +1,11 @@
+@import 'animations.scss';
+
 // Index Page Colors
 $about-background: #f4ecf2 !default;
 $about-title: #8a3c7a !default;
+
+$splash-light-purple: #7c408a;
+$splash-light-blue: #3f5aaa;
 
 .splash {
   background-image: url('/static/img/backgrounds/splash-background.svg');
@@ -80,49 +85,31 @@ $about-title: #8a3c7a !default;
   min-height: 600px;
 }
 
-// home page buttons with gradients
-// https://codepen.io/JavaScriptJunkie/pen/pPRooV
+.splash-btn-line {
+  margin-top: 3vh;
 
-.splash-button {
-  width: 100px;
-  font-family: 'Roboto Mono';
-  font-size: 15px;
-  // todo: font weight seems too thin
-  font-weight: 400;
-  color: #fff;
-  cursor: pointer;
-  margin-top: 20px;
-  margin-right: 20px;
-  height: 35px;
-  text-align: center;
-  border: none;
-  background-size: 300% 100%;
+  .splash-btn {
+    font-size: 1.25em;
+    font-weight: 400;
+    background-color: #666;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.5em 1em 0.5em 1em;
+    margin-right: 1.5em;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+  }
 
-  border-radius: 50px;
-  // moz-transition: all 0.4s ease-in-out;
-  // -o-transition: all 0.4s ease-in-out;
-  // -webkit-transition: all 0.4s ease-in-out;
-  // transition: all 0.4s ease-in-out;
-}
+  .apply-btn {
+    background-color: $splash-light-purple;
+    border: solid 4px $splash-light-purple;
+    @include bordered-btn-on-hover('splash-apply-btn', $splash-light-purple, $splash-light-purple);
+  }
 
-// .splash-button:hover {
-//     background-position: 100% 0;
-//     moz-transition: all 0.4s ease-in-out;
-//     -o-transition: all 0.4s ease-in-out;
-//     -webkit-transition: all 0.4s ease-in-out;
-//     transition: all 0.4s ease-in-out;
-// }
-
-// .splash-button:focus {
-//     outline: none;
-// }
-
-$a: #40e495;
-$b: #4fc2f8;
-$c: #4fc2f8;
-$d: #4286fc;
-
-.splash-button {
-  background-image: linear-gradient(to right, $a, $b, $c, $d);
-  // box-shadow: 0 0 15px 0 rgba(49, 196, 190, 0.75);
+  .sponsor-btn {
+    background-color: $theme-dark-green;
+    border: solid 4px $theme-dark-green;
+    @include bordered-btn-on-hover('splash-sponsor-btn', $theme-dark-green, $theme-dark-green);
+  }
 }

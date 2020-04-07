@@ -47,6 +47,9 @@ $enable-validation-icons:                     true  !default;
 $enable-deprecation-messages:                 true  !default;
 $enable-important-utilities:                  true  !default;
 
+// TAMU Datathon Theme Colors
+$theme-dark-green: #22b9a5;
+
 
 // Import Bootstrap and its default variables
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
