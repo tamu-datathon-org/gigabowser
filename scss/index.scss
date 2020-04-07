@@ -103,22 +103,24 @@ $splash-light-blue: #3f5aaa;
   }
 
   .apply-btn {
-    background-color: $theme-dark-green;
-    border: solid 1px $theme-dark-green;
+    background-color: transparent;
+    border: solid 2px $theme-dark-green;
   }
 
   .apply-btn:hover {
-    background-color: adjust-color($theme-dark-green, $lightness: 15%);
-    border: solid 1px adjust-color($theme-dark-green, $lightness: 15%);
+    $apply-hover-color: adjust-color($theme-dark-green, $lightness: 15%);
+    
+    background-color: rgba($apply-hover-color, 0.5);
+    border: solid 2px $apply-hover-color;
   }
 
   .sponsor-btn {
     background-color: transparent;
-    border: solid 1px $splash-light-purple;
+    border: solid 2px $splash-light-purple;
   }
 
   .sponsor-btn:hover {
     background-color: rgba($splash-light-purple, 0.5);
-    border: solid 1px $splash-light-purple;
+    border: solid 2px $splash-light-purple;
   }
 }
