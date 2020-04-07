@@ -1,0 +1,15 @@
+
+@mixin bordered-btn-on-hover($selector, $text-color, $border-color, $background-color: #fff) {
+  $animation-name: hover-animation-#{$selector};
+  @keyframes #{$animation-name} {
+    to {
+      background-color: $background-color;
+      color: $text-color;
+      border-color: $border-color;
+    }
+  }
+
+  &:hover {
+    animation: 0.3s linear $animation-name forwards;
+  }
+}
