@@ -6,7 +6,8 @@ $splash-light-purple: #7c408a;
 $splash-light-blue: #3f5aaa;
 
 .team-card {
-  border: solid 1.5px #666 !important;
+  border: solid 2.5px !important;
+  border-color: $splash-light-purple $theme-dark-green $theme-dark-green $splash-light-purple !important;
   max-width: 75vw;
   margin: 2vh auto;
 
@@ -16,8 +17,10 @@ $splash-light-blue: #3f5aaa;
     width: 70%;
     height: auto;
     border-radius: 50%;
+    /*
     border: solid 5px;
     border-color: $theme-dark-green $splash-light-purple $splash-light-purple $theme-dark-green;
+    */
   }
 
   .team-card-title {
