@@ -1,14 +1,23 @@
+$theme-dark-green: #22b9a5;
+$theme-light-green: #86EACE;
+$theme-light-blue: #4FC2F8;
+
+$splash-light-purple: #7c408a;
+$splash-light-blue: #3f5aaa;
+
 .team-card {
-  border: dotted 1px #666 !important;
+  border: solid 1.5px #666 !important;
   max-width: 75vw;
   margin: 2vh auto;
 
   .team-card-img {
     margin: auto;
-    margin-top: 1vh;
+    margin-top: 2vh;
     width: 70%;
     height: auto;
     border-radius: 50%;
+    border: solid 5px;
+    border-color: $theme-dark-green $splash-light-purple $splash-light-purple $theme-dark-green;
   }
 
   .team-card-title {

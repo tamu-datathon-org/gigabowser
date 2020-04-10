@@ -49,6 +49,11 @@ $enable-important-utilities:                  true  !default;
 
 // TAMU Datathon Theme Colors
 $theme-dark-green: #22b9a5;
+$theme-light-green: #86EACE;
+$theme-light-blue: #4FC2F8;
+
+$splash-light-purple: #7c408a;
+$splash-light-blue: #3f5aaa;
 
 // Import Bootstrap and its default variables
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
