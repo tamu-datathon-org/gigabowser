@@ -1,9 +1,8 @@
 <style>
 .floatingimage {
   width:150px;
-  position: absolute;
   transition: transform 20s linear;
-  transform: translateX(-150px);
+  transform: translateY(100px);
   will-change: transform;
 }
 </style>
@@ -20,15 +19,40 @@
 </div>
 
 <script>
+
   for (var i = 1; i <= 5; ++i) {
     $(".deck").append('<img src="./static/img/icons/'+i+'.png" class="floatingimage" id="icon'+i+'"">');
   }
 
-  for (var i = 1; i <=5; ++i) {
-    var element = document.querySelector(String("#icon"+i));
-    setTimeout(function() {
-      element.style.transform = "translateX(105vw)";
-    }, 10);
-  }
+  // for (var i = 1; i <=5; ++i) {
+  //   console.log(i);
+  //   var element = document.querySelector(String("#icon"+i));
+  //   setTimeout(function() {
+  //     element.style.transform = "translateX(105vw)";
+  //   }, i*100);
+  // }
+
+  var spacing = 0;
+
+  var element1 = document.querySelector(String("#icon1"));
+  setTimeout(function() {
+    element1.style.transform = "translate(105vw,50px)";
+  }, 1*spacing);
+  var element2 = document.querySelector(String("#icon2"));
+  setTimeout(function() {
+    element2.style.transform = "translate(105vw,-50px)";
+  }, 2*spacing);
+  var element3 = document.querySelector(String("#icon3"));
+  setTimeout(function() {
+    element3.style.transform = "translate(105vw,50px)";
+  }, 3*spacing);
+  var element4 = document.querySelector(String("#icon4"));
+  setTimeout(function() {
+    element4.style.transform = "translate(105vw,-50px)";
+  }, 4*spacing);
+  var element5 = document.querySelector(String("#icon5"));
+  setTimeout(function() {
+    element5.style.transform = "translate(105vw,50px)";
+  }, 5*spacing);
 
 </script>
