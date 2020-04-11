@@ -13,4 +13,8 @@ $theme-light-green: #86EACE;
   a {
     color: $theme-light-green !important;
   }
+
+  .footer-social-link:hover {
+    text-decoration: none;
+  }
 }
