@@ -20,9 +20,28 @@
 
 <script>
 
+  var secs = 20;
+  var spacing = 10;
+
   for (var i = 1; i <= 5; ++i) {
     $(".deck").append('<img src="./static/img/icons/'+i+'.png" class="floatingimage" id="icon'+i+'"">');
   }
+
+  (function(){
+      var element1 = document.querySelector(String("#icon1"));
+      setTimeout(function() {
+        element1.style.transform = "translate(105vw,50px)";
+      }, 0*spacing);
+      setTimeout(function() {
+        element1.style.transform = "translate(-105,50px)";
+      }, 1000*spacing);
+      setTimeout(arguments.callee, secs*1000);
+  })();
+
+  (function(){
+
+      setTimeout(arguments.callee, secs*1000);
+  })();
 
   // for (var i = 1; i <=5; ++i) {
   //   console.log(i);
@@ -32,12 +51,7 @@
   //   }, i*100);
   // }
 
-  var spacing = 0;
 
-  var element1 = document.querySelector(String("#icon1"));
-  setTimeout(function() {
-    element1.style.transform = "translate(105vw,50px)";
-  }, 1*spacing);
   var element2 = document.querySelector(String("#icon2"));
   setTimeout(function() {
     element2.style.transform = "translate(105vw,-50px)";
