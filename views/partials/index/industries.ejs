@@ -1,0 +1,34 @@
+<style>
+.floatingimage {
+  width:150px;
+  position: absolute;
+  transition: transform 20s linear;
+  transform: translateX(-150px);
+  will-change: transform;
+}
+</style>
+
+<div class="section dummy-section">
+  <div id="industries-start-transition"></div>
+  <div id="industries" class="container">
+    <h1 class="section-title">
+      Industries
+    </h1>
+    <div id="demo" class="deck" style="position:absolute; left:0; right:0; height:80vh">
+    </div>
+  </div>
+</div>
+
+<script>
+  for (var i = 1; i <= 5; ++i) {
+    $(".deck").append('<img src="./static/img/icons/'+i+'.png" class="floatingimage" id="icon'+i+'"">');
+  }
+
+  for (var i = 1; i <=5; ++i) {
+    var element = document.querySelector(String("#icon"+i));
+    setTimeout(function() {
+      element.style.transform = "translateX(105vw)";
+    }, 10);
+  }
+
+</script>
