@@ -4,6 +4,9 @@
 $about-background: #f4ecf2 !default;
 $about-title: #8a3c7a !default;
 
+$faq-background: #04bea8 !default;
+$faq-title: #fff !default;
+
 $splash-light-purple: #7c408a;
 $splash-light-blue: #3f5aaa;
 
@@ -45,10 +48,21 @@ $default-transition-height: 7vh;
     background: linear-gradient(to left bottom, #f4ecf2 49.5%, white 50%);
     height: $default-transition-height;
 }
+
 .splash-transition {
     background: linear-gradient(to left bottom, transparent 49.5%, #f4ecf2 50%);
     height: $default-transition-height;
     margin-top: -$default-transition-height;
+}
+
+.sponsors-transition {
+  background: linear-gradient(to left bottom, #fff 49.5%, $faq-background 50%);
+  height: $default-transition-height;
+}
+
+.faq-transition {
+  background: linear-gradient(to left bottom, $faq-background 49.5%, white 50%);
+  height: $default-transition-height;
 }
 
 .section {
@@ -132,6 +146,16 @@ $default-transition-height: 7vh;
 //                      FAQs section
 // =====================================================
 
-.question-block {
+.faq-section {
+  background-color: $faq-background;
+  color: $faq-title;
+
+  .faq-title {
+    color: $faq-title;
+  }
+
+  .question-block {
     margin: 20px 0;
+  }
 }
+
