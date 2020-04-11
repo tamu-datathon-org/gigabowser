@@ -4,11 +4,15 @@
 $about-background: #f4ecf2 !default;
 $about-title: #8a3c7a !default;
 
-$faq-background: #04bea8 !default;
+$faq-background: #04cfb8 !default;
 $faq-title: #fff !default;
 
 $splash-light-purple: #7c408a;
 $splash-light-blue: #3f5aaa;
+
+// =====================================================
+//                   Splash Section
+// =====================================================
 
 .splash {
     background-image: url("/static/img/backgrounds/splash-background.svg");
@@ -41,8 +45,10 @@ $splash-light-blue: #3f5aaa;
     max-width: 450px;
 }
 
-// Transitions:
-//      About to Industry Transition
+// =====================================================
+//                    Transitions
+//           About to Industry Transition
+// =====================================================
 $default-transition-height: 7vh;
 .about-transition {
     background: linear-gradient(to left bottom, #f4ecf2 49.5%, white 50%);
@@ -56,13 +62,13 @@ $default-transition-height: 7vh;
 }
 
 .sponsors-transition {
-  background: linear-gradient(to left bottom, #fff 49.5%, $faq-background 50%);
-  height: $default-transition-height;
+    background: linear-gradient(to left bottom, #fff 49.5%, $faq-background 50%);
+    height: $default-transition-height;
 }
 
 .faq-transition {
-  background: linear-gradient(to left bottom, $faq-background 49.5%, white 50%);
-  height: $default-transition-height;
+    background: linear-gradient(to left bottom, $faq-background 49.5%, white 50%);
+    height: $default-transition-height;
 }
 
 .section {
@@ -147,15 +153,22 @@ $default-transition-height: 7vh;
 // =====================================================
 
 .faq-section {
-  background-color: $faq-background;
-  color: $faq-title;
-
-  .faq-title {
+    background-color: $faq-background;
     color: $faq-title;
-  }
 
-  .question-block {
-    margin: 20px 0;
-  }
+    .faq-title {
+        color: $faq-title;
+    }
+
+    .question-block {
+        margin: 20px 0;
+    }
+
+    // anchor colors to dark gray in FAQ section
+    a {
+        color: $gray-700;
+        &:hover {
+            color: $gray-900;
+        }
+    }
 }
-
