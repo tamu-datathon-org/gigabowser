@@ -51,18 +51,18 @@ $enable-important-utilities:                  true  !default;
 $theme-dark-green: #22b9a5;
 
 // Import Bootstrap and its default variables
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 // Post import bootstrap style overrides
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Work Sans', sans-serif !important;
+    font-family: "Work Sans", sans-serif !important;
 }
 
 // Headers (use Roboto Mono, everything else use Work Sans)
@@ -76,39 +76,37 @@ h6 {
 }
 
 // Import all partials & page css files
-@import 'index.scss';
-@import 'navbar.scss';
-
+@import "index.scss";
+@import "navbar.scss";
 
 .slider {
-     width: 105%;
-     height: 100%;
-     margin: 100px auto;
- }
+    width: 105%;
+    height: 100%;
+    margin: 100px auto;
+}
 
- .slick-slide {
-   margin: 0px 20px;
- }
+.slick-slide {
+    margin: 0px 20px;
+}
 
- .slick-slide img {
-   width: 100%;
- }
+.slick-slide img {
+    width: 100%;
+}
 
- .slick-prev:before,
- .slick-next:before {
-   color: black;
- }
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
 
+.slick-slide {
+    transition: all ease-in-out 0.3s;
+    opacity: 0.2;
+}
 
- .slick-slide {
-   transition: all ease-in-out .3s;
-   opacity: .2;
- }
+.slick-active {
+    opacity: 0.5;
+}
 
- .slick-active {
-   opacity: .5;
- }
-
- .slick-current {
-   opacity: 1;
- }
+.slick-current {
+    opacity: 1;
+}
