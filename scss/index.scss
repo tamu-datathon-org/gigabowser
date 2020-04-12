@@ -1,11 +1,9 @@
-@import 'animations.scss';
-
 // Index Page Colors
 $about-background: #f4ecf2 !default;
 $about-title: #8a3c7a !default;
 
-$splash-light-purple: #7c408a;
-$splash-light-blue: #3f5aaa;
+$faq-background: #04bea8 !default;
+$faq-title: #fff !default;
 
 .splash {
   background-image: url('/static/img/backgrounds/splash-background.svg');
@@ -41,14 +39,26 @@ $splash-light-blue: #3f5aaa;
 // Transitions:
 //      About to Industry Transition
 $default-transition-height: 7vh;
-.about-transition {
-  background: linear-gradient(to left bottom, #f4ecf2 49.5%, white 50%);
-  height: $default-transition-height;
-}
+
 .splash-transition {
   background: linear-gradient(to left bottom, transparent 49.5%, #f4ecf2 50%);
   height: $default-transition-height;
   margin-top: -$default-transition-height;
+}
+
+.about-transition {
+  background: linear-gradient(to left bottom, #f4ecf2 49.5%, white 50%);
+  height: $default-transition-height;
+}
+
+.sponsors-transition {
+  background: linear-gradient(to left bottom, #fff 49.5%, $faq-background 50%);
+  height: $default-transition-height;
+}
+
+.faq-transition {
+  background: linear-gradient(to left bottom, $faq-background 49.5%, white 50%);
+  height: $default-transition-height;
 }
 
 .section {
@@ -121,5 +131,16 @@ $default-transition-height: 7vh;
   .sponsor-btn:hover {
     background-color: rgba($splash-light-purple, 0.5);
     border: solid 2px $splash-light-purple;
+  }
+}
+
+/* ---------- FAQ -------------- */
+.faq-section {
+  background-color: $faq-background;
+  min-height: 600px; /* Dummy height, remove when content is added */
+
+  .faq-title {
+    color: $faq-title;
+    padding-top: 3vh;
   }
 }
