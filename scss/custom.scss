@@ -82,11 +82,12 @@ h6 {
 
 // Import all partials & page css files
 @import 'navbar.scss';
+@import 'footer.scss';
 @import 'animations.scss';
+@import 'team-card.scss';
 
 // Index page imports
 @import 'index.scss';
-@import 'team-card.scss';
 
 
 .slider {
