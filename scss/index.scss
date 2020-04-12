@@ -50,6 +50,13 @@ $splash-light-blue: #3f5aaa;
 //           About to Industry Transition
 // =====================================================
 $default-transition-height: 7vh;
+
+.splash-transition {
+  background: linear-gradient(to left bottom, transparent 49.5%, #f4ecf2 50%);
+  height: $default-transition-height;
+  margin-top: -$default-transition-height;
+}
+
 .about-transition {
     background: linear-gradient(to left bottom, #f4ecf2 49.5%, white 50%);
     height: $default-transition-height;
