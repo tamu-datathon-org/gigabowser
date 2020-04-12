@@ -2,130 +2,86 @@
 <html lang="en">
 
 <%- include ("./partials/head") %>
-<link rel="stylesheet" type="text/css" href="/static/css/slick/slick.css">
-<link rel="stylesheet" type="text/css" href="/static/css/slick/slick-theme.css">
 
 <body>
 
-  <%- include ("./partials/navbar") %>
+    <%- include ("./partials/navbar") %>
 
-  <%- include ("./partials/index/splash") %>
+    <%- include ("./partials/index/splash") %>
 
-  <div class="splash-transition"></div>
+    <div class="splash-transition"></div>
 
-  <%- include ("./partials/index/about") %>
+    <%- include ("./partials/index/about") %>
 
-  <div class="about-transition"></div>
+    <div class="about-transition"></div>
 
-  <div class="section dummy-section">
-    <div id="industries-start-transition"></div>
-    <div id="industries" class="container">
-      <h1 class="section-title">
-        Industries
-      </h1>
-      <div class="regular slider" style="position:absolute; left:0; right:0; overflow-x:hidden; width:100%;">
-        <div class="card" style="width: 18rem;">
-          <img src="/static/img/icons/1.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-          </div>
+    <div class="section dummy-section">
+        <div id="industries-start-transition"></div>
+        <div id="industries" class="container">
+            <h1 class="section-title">
+                Industries
+            </h1>
+            <div class="regular slider" style="position:absolute; left:0; right:0; overflow-x:hidden; width:100%;">
+                <div class="card" style="width: 18rem;">
+                    <img src="/static/img/icons/1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="/static/img/icons/2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="/static/img/icons/3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="/static/img/icons/4.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="/static/img/icons/5.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="/static/img/icons/6.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="card" style="width: 18rem;">
-          <img src="/static/img/icons/2.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img src="/static/img/icons/3.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img src="/static/img/icons/4.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img src="/static/img/icons/5.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img src="/static/img/icons/6.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
 
-  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-  <script src="/static/css/slick/slick.js" type="text/javascript" charset="utf-8"></script>
-  <script type="text/javascript">
-    $(document).on('ready', function() {
-      $(".regular").slick({
-        accessibility: false,
-        arrows: false,
-        centerMode: true,
-        focusOnSelect: true,
-        slidesToShow: 4,
-        swipeToSlide: true,
-        touchThreshold: 1000,
-        infinite: true,
-        responsive: [
-          {
-            breakpoint: 992,
-            settings: {
-              slidesToShow: 3
-            }
-          },
-          {
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 2
-            }
-          },
-          {
-            breakpoint: 576,
-            settings: {
-              slidesToShow: 1
-            }
-          }
-        ]
-      });
-    });
-  </script>
-
-  <div class="section dummy-section">
-    <div id="industries-end-transition"></div>
-    <div id="sponsors" class="container">
-      <h1 class="section-title">
-        Sponsors
-      </h1>
+    <div class="section dummy-section">
+        <div id="industries-end-transition"></div>
+        <div id="sponsors" class="container">
+            <h1 class="section-title">
+                Sponsors
+            </h1>
+        </div>
     </div>
-  </div>
 
-  <div class="sponsors-transition"></div>
+    <div class="sponsors-transition"></div>
 
-  <div class="section faq-section">
-    <div id="faq" class="container">
-      <h1 class="section-title faq-title">
-        FAQ's
-      </h1>
-    </div>
-  </div>
+    <%- include ("./partials/index/faq") %>
 
-  <div class="faq-transition"></div>
+    <div class="faq-transition"></div>
 
-  <%- include ("./partials/index/team") %>
+    <%- include ("./partials/index/team") %>
 
-  <%- include ("./partials/footer") %>
+    <%- include ("./partials/footer") %>
 
+    <%- include ("./partials/scripts") %>
 </body>
 
 </html>
