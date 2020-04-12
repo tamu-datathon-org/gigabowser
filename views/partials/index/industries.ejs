@@ -1,72 +1,50 @@
 <style>
-.floatingimage {
-  width:150px;
-  transition: transform 20s linear;
-  transform: translateY(100px);
-  will-change: transform;
-}
+  .mover {
+    transform: translateX(-250px);
+    max-height: 10vh;
+    width: 150px;
+    position: relative;
+    animation: moveSlideshow 30s linear infinite;
+  }
+  @keyframes moveSlideshow {100% {transform: translateX(100vw);}}
+
+  .move-down {
+    height: 150px;
+    animation: moveDown 30s linear infinite;
+  }
+  @keyframes moveDown { 50% {transform: translateY(50px);} 100% {transform: translateY(-50px);} }
+
+  .move-up {
+    height: 150px;
+    animation: moveUp 30s linear infinite;
+  }
+  @keyframes moveUp {50% {transform: translateY(-50px);} 100% {transform: translateY(50px);}}
 </style>
 
-<div class="section dummy-section">
+<div class="section" style="background-color:pink; height:90vh">
   <div id="industries-start-transition"></div>
   <div id="industries" class="container">
-    <h1 class="section-title">
-      Industries
-    </h1>
-    <div id="demo" class="deck" style="position:absolute; left:0; right:0; height:80vh">
+    <div class="row">
+      <h1 class="section-title about-title pb-3">Industries</h1>
+    </div>
+    <div class="row">
+      <div style="max-height:80vh">
+        <div class="mover" style="animation-delay: 0s;">
+          <img src="./static/img/icons/1.png" class="move-down" style="animation-delay: 0s;"></img>
+        </div>
+        <div class="mover" style="animation-delay: 12s;">
+          <img src="./static/img/icons/3.png" class="move-down" style="animation-delay: 12s;"></img>
+        </div>
+        <div class="mover" style="animation-delay: 6s;">
+          <img src="./static/img/icons/2.png" class="move-up" style="animation-delay: 6s;"></img>
+        </div>
+        <div class="mover" style="animation-delay: 24s;">
+          <img src="./static/img/icons/5.png" class="move-down" style="animation-delay: 24s;"></img>
+        </div>
+        <div class="mover" style="animation-delay: 18s;">
+          <img src="./static/img/icons/4.png" class="move-up" style="animation-delay: 18s;"></img>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-
-<script>
-
-  var secs = 20;
-  var spacing = 10;
-
-  for (var i = 1; i <= 5; ++i) {
-    $(".deck").append('<img src="./static/img/icons/'+i+'.png" class="floatingimage" id="icon'+i+'"">');
-  }
-
-  (function(){
-      var element1 = document.querySelector(String("#icon1"));
-      setTimeout(function() {
-        element1.style.transform = "translate(105vw,50px)";
-      }, 0*spacing);
-      setTimeout(function() {
-        element1.style.transform = "translate(-105,50px)";
-      }, 1000*spacing);
-      setTimeout(arguments.callee, secs*1000);
-  })();
-
-  (function(){
-
-      setTimeout(arguments.callee, secs*1000);
-  })();
-
-  // for (var i = 1; i <=5; ++i) {
-  //   console.log(i);
-  //   var element = document.querySelector(String("#icon"+i));
-  //   setTimeout(function() {
-  //     element.style.transform = "translateX(105vw)";
-  //   }, i*100);
-  // }
-
-
-  var element2 = document.querySelector(String("#icon2"));
-  setTimeout(function() {
-    element2.style.transform = "translate(105vw,-50px)";
-  }, 2*spacing);
-  var element3 = document.querySelector(String("#icon3"));
-  setTimeout(function() {
-    element3.style.transform = "translate(105vw,50px)";
-  }, 3*spacing);
-  var element4 = document.querySelector(String("#icon4"));
-  setTimeout(function() {
-    element4.style.transform = "translate(105vw,-50px)";
-  }, 4*spacing);
-  var element5 = document.querySelector(String("#icon5"));
-  setTimeout(function() {
-    element5.style.transform = "translate(105vw,50px)";
-  }, 5*spacing);
-
-</script>
