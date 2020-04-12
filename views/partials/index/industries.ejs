@@ -1,50 +1,202 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 <style>
-  .mover {
-    transform: translateX(-250px);
-    max-height: 10vh;
-    width: 150px;
+  .centerme {
+    -webkit-box-align: center;
+            align-items: center;
+    min-height: 515px;
+    display: -webkit-box;
+    display: flex;
+    height: 90vh;
+    -webkit-box-pack: center;
+            justify-content: center;
+  }
+  @-webkit-keyframes scroll {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(calc(-250px * 7));
+              transform: translateX(calc(-250px * 7));
+    }
+  }
+  @keyframes scroll {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(calc(-250px * 7));
+              transform: translateX(calc(-250px * 7));
+    }
+  }
+  .slider {
+    height: 70vh;
+    min-height: 515px;
+    margin: auto;
+    overflow: hidden;
     position: relative;
-    animation: moveSlideshow 30s linear infinite;
+    width: 100%;
   }
-  @keyframes moveSlideshow {100% {transform: translateX(100vw);}}
+  .slider::before, .slider::after {
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+  }
+  .slider::after {
+    right: 0;
+    top: 0;
+    -webkit-transform: rotateZ(180deg);
+            transform: rotateZ(180deg);
+  }
+  .slider::before {
+    left: 0;
+    top: 0;
+  }
+  .slider .slide-track {
+    -webkit-animation: scroll 30s linear infinite;
+            animation: scroll 30s linear infinite;
+    display: -webkit-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(250px * 14);
+  }
+  .slide {
+    height: 70vh;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
-  .move-down {
-    height: 150px;
-    animation: moveDown 30s linear infinite;
+  .holder {
+    width: 250px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
-  @keyframes moveDown { 50% {transform: translateY(50px);} 100% {transform: translateY(-50px);} }
 
-  .move-up {
-    height: 150px;
-    animation: moveUp 30s linear infinite;
+  .slider-image {
+     height: 150px;
+     width: 150px;
   }
-  @keyframes moveUp {50% {transform: translateY(-50px);} 100% {transform: translateY(50px);}}
+
+  .up {
+    animation: floatup 6s ease-in-out infinite;
+  }
+
+  .down {
+    animation: floatdown 6s ease-in-out infinite;
+  }
+
+
+  @keyframes floatup {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+
+  @keyframes floatdown {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
 </style>
 
-<div class="section" style="background-color:pink; height:90vh">
-  <div id="industries-start-transition"></div>
-  <div id="industries" class="container">
-    <div class="row">
-      <h1 class="section-title about-title pb-3">Industries</h1>
-    </div>
-    <div class="row">
-      <div style="max-height:80vh">
-        <div class="mover" style="animation-delay: 0s;">
-          <img src="./static/img/icons/1.png" class="move-down" style="animation-delay: 0s;"></img>
-        </div>
-        <div class="mover" style="animation-delay: 12s;">
-          <img src="./static/img/icons/3.png" class="move-down" style="animation-delay: 12s;"></img>
-        </div>
-        <div class="mover" style="animation-delay: 6s;">
-          <img src="./static/img/icons/2.png" class="move-up" style="animation-delay: 6s;"></img>
-        </div>
-        <div class="mover" style="animation-delay: 24s;">
-          <img src="./static/img/icons/5.png" class="move-down" style="animation-delay: 24s;"></img>
-        </div>
-        <div class="mover" style="animation-delay: 18s;">
-          <img src="./static/img/icons/4.png" class="move-up" style="animation-delay: 18s;"></img>
-        </div>
+<div class="centerme">
+<div class="slider">
+	<div class="slide-track">
+		<div class="slide">
+      <div class="holder">
+        <img class="slider-image down" src="./static/img/icons/1.png"/>
       </div>
-    </div>
-  </div>
+		</div>
+		<div class="slide">
+      <div class="holder">
+        <img class="slider-image down" src="./static/img/icons/2.png"/>
+        <img class="slider-image up" src="./static/img/icons/2.png"/>
+      </div>
+		</div>
+		<div class="slide">
+      <div class="holder">
+			  <img class="slider-image down" src="./static/img/icons/3.png"/>
+      </div>
+		</div>
+		<div class="slide">
+      <div class="holder">
+			  <img class="slider-image down" src="./static/img/icons/4.png"/>
+      </div>
+		</div>
+		<div class="slide">
+      <div class="holder">
+			  <img class="slider-image down" src="./static/img/icons/5.png"/>
+        <img class="slider-image up" src="./static/img/icons/5.png"/>
+      </div>
+		</div>
+		<div class="slide">
+      <div class="holder">
+			  <img class="slider-image down" src="./static/img/icons/1.png"/>
+      </div>
+		</div>
+		<div class="slide">
+      <div class="holder">
+			  <img class="slider-image down" src="./static/img/icons/2.png"/>
+        <img class="slider-image up" src="./static/img/icons/2.png"/>
+      </div>
+		</div>
+		<div class="slide">
+      <div class="holder">
+			  <img class="slider-image down" src="./static/img/icons/1.png"/>
+      </div>
+		</div>
+		<div class="slide">
+      <div class="holder">
+			  <img class="slider-image down" src="./static/img/icons/2.png"/>
+			  <img class="slider-image up" src="./static/img/icons/2.png"/>
+      </div>
+		</div>
+		<div class="slide">
+      <div class="holder">
+			  <img class="slider-image down" src="./static/img/icons/3.png"/>
+      </div>
+		</div>
+		<div class="slide">
+      <div class="holder">
+			  <img class="slider-image down" src="./static/img/icons/4.png"/>
+      </div>
+		</div>
+		<div class="slide">
+      <div class="holder">
+			  <img class="slider-image down" src="./static/img/icons/5.png"/>
+        <img class="slider-image up" src="./static/img/icons/5.png"/>
+      </div>
+		</div>
+		<div class="slide">
+      <div class="holder">
+			  <img class="slider-image down" src="./static/img/icons/1.png"/>
+      </div>
+		</div>
+		<div class="slide">
+      <div class="holder">
+			  <img class="slider-image down" src="./static/img/icons/2.png"/>
+			  <img class="slider-image up" src="./static/img/icons/2.png"/>
+      </div>
+		</div>
+	</div>
+</div>
 </div>
