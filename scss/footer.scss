@@ -1,4 +1,4 @@
-$splash-light-blue: #3f5aaa;
+$splash-light-blue: #1b135e;
 $theme-light-green: #86EACE;
 
 .footer-section {
@@ -6,15 +6,30 @@ $theme-light-green: #86EACE;
   color: #fff;
 
   .footer-logo {
-    width: 7.5vh;
-    height: auto;
+    width: 100%;
+    max-width: 75px;
   }
 
   a {
     color: $theme-light-green !important;
   }
 
+  .footer-social-link-container {
+    flex: 0;
+    display: flex;
+  }
+
   .footer-social-link:hover {
     text-decoration: none;
+  }
+
+  .footer-doc-links > a {
+    display: block;
+  }
+
+  @include media-breakpoint-up(sm) {
+    .footer-doc-links > a {
+      display: inline;
+    }
   }
 }
