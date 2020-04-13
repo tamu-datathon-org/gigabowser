@@ -155,6 +155,67 @@ $default-transition-height: 7vh;
     }
 }
 
+
+// =====================================================
+//                    Sponsor section
+// =====================================================
+
+.sponsor-section {
+    .sponsor-description {
+        font-size: 1.15em;
+    }
+
+
+    .sponsor-img {
+        padding: 1.5em 2em;
+    }
+
+    .sponsor-images .xl {
+        height: auto;
+        width: 300px;
+        max-height: 300px;
+        object-fit: contain;
+    }
+
+    .sponsor-images {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: nowrap;
+        overflow: auto;
+    }
+
+    .sponsor-images .lg {
+        height: auto;
+        width: 300px;
+        max-height: 200px;
+        object-fit: contain;
+    }
+
+
+    @include media-breakpoint-up(sm) {
+
+
+        .sponsor-images {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .sponsor-images .xl {
+            height: auto;
+            width: 95vw;
+            flex: 1;
+            object-fit: contain;
+        }
+
+
+    }
+
+}
+
+
 // =====================================================
 //                      FAQs section
 // =====================================================
