@@ -1,0 +1,35 @@
+$splash-light-blue: #1b135e;
+$theme-light-green: #86EACE;
+
+.footer-section {
+  background-color: $splash-light-blue;
+  color: #fff;
+
+  .footer-logo {
+    width: 100%;
+    max-width: 75px;
+  }
+
+  a {
+    color: $theme-light-green !important;
+  }
+
+  .footer-social-link-container {
+    flex: 0;
+    display: flex;
+  }
+
+  .footer-social-link:hover {
+    text-decoration: none;
+  }
+
+  .footer-doc-links > a {
+    display: block;
+  }
+
+  @include media-breakpoint-up(sm) {
+    .footer-doc-links > a {
+      display: inline;
+    }
+  }
+}
