@@ -10,3 +10,18 @@ $splash-light-purple: #7c408a;
 .navbar-nav {
   font-size: 1.25em !important;
 }
+
+
+@include media-breakpoint-down(sm) {
+  .navbar-nav {
+    padding: 1em !important;
+    background: rgba(#fff, 0.9);
+    backdrop-filter: blur(4px);
+    color: #000;
+    border-radius: 8px;
+    margin-top: 15px;
+  }
+  .navbar-nav .nav-link {
+    color: #000 !important;
+  }
+}
