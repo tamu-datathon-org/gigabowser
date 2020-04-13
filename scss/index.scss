@@ -165,7 +165,6 @@ $default-transition-height: 7vh;
         font-size: 1.15em;
     }
 
-
     .sponsor-img {
         padding: 1.5em 2em;
     }
@@ -182,6 +181,8 @@ $default-transition-height: 7vh;
         justify-content: flex-start;
         align-items: center;
         flex-wrap: nowrap;
+        margin-left: -15px;
+        margin-right: -15px;
         overflow: auto;
     }
 
@@ -194,8 +195,6 @@ $default-transition-height: 7vh;
 
 
     @include media-breakpoint-up(sm) {
-
-
         .sponsor-images {
             display: flex;
             justify-content: space-around;
@@ -205,12 +204,10 @@ $default-transition-height: 7vh;
 
         .sponsor-images .xl {
             height: auto;
-            width: 95vw;
+            width: 100%;
             flex: 1;
             object-fit: contain;
         }
-
-
     }
 
 }
