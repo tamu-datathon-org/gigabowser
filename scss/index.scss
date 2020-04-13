@@ -129,3 +129,139 @@ $default-transition-height: 7vh;
     border: solid 2px $splash-light-purple;
   }
 }
+
+// ------------------------------------------
+//            INDUSTRIES SECTIOM
+// ------------------------------------------
+
+.industries-section {
+  background: #7dcff5;
+
+  .centerme {
+    -webkit-box-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+  @-webkit-keyframes scroll {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(calc(-250px * 7));
+      transform: translateX(calc(-250px * 7));
+    }
+  }
+  @keyframes scroll {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(calc(-250px * 7));
+      transform: translateX(calc(-250px * 7));
+    }
+  }
+  .slider {
+    display: flex;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  .slider::before,
+  .slider::after {
+    content: '';
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+  }
+  .slider::after {
+    right: 0;
+    top: 0;
+    -webkit-transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
+  }
+  .slider::before {
+    left: 0;
+    top: 0;
+  }
+  .slider .slide-track {
+    -webkit-animation: scroll 30s linear infinite;
+    animation: scroll 30s linear infinite;
+    display: -webkit-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(250px * 14);
+  }
+  .slide {
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .holder {
+    width: 250px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .slider-image {
+    margin: 50px;
+    height: 140px;
+    width: 140px;
+    border: white 20px solid;
+    border-radius: 50%;
+    background-color: white;
+  }
+  
+  .up {
+    transform: translateX(75px);
+    animation: floatup 4s linear infinite;
+  }
+  @keyframes floatup {
+    0% {
+      transform: translate(0px, 0px);
+    }
+    20% {
+      transform: translate(-4px, -3px);
+    }
+    50% {
+      transform: translate(-6px, 0px);
+    }
+    75% {
+      transform: translate(-6px, 2px);
+    }
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }
+  
+  .down {
+    animation: floatdown 4s linear infinite;
+  }
+  @keyframes floatdown {
+    0% {
+      transform: translate(0px, 0px);
+    }
+    33% {
+      transform: translate(4px, 4px);
+    }
+    660% {
+      transform: translate(4px, -4px);
+    }
+    25% {
+      transform: translate(0px, 0px);
+    }
+  }
+}
+
+
