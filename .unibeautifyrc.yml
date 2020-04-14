@@ -1,0 +1,20 @@
+---
+EJS:
+  beautifiers:
+    - Pretty Diff
+    - JS-Beautify
+  indent_size: 2
+  indent_style: space
+SCSS:
+  beautifiers:
+    - Prettier
+    - Pretty Diff
+  indent_size: 2
+  indent_style: space
+JavaScript:
+  beautifiers:
+    - Prettier
+    - Pretty Diff
+    - JS-Beautify
+    - ESLint
+  indent_size: 2

@@ -1,16 +1,20 @@
 <div class="card team-card">
-  <img class="card-img-top team-card-img" src="<%- imgPath %>"/>
+  <img class="card-img-top team-card-img" src="<%- imgPath %>" />
   <div class="card-body">
-    <h5 class="card-title team-card-title text-center mb-2"><%- name %></h5>
+    <h5 class="card-title team-card-title text-center mb-2">
+      <%- name %>
+    </h5>
     <div class="text-center mb-2">
-      <small class="text-muted"><%- position %></small>
+      <small class="text-muted">
+        <%- position %>
+      </small>
     </div>
     <div class="text-center">
       <span class="link-span">
         <% Object.keys(links).forEach(linkClass => { %>
-          <a class="team-social-link" href="<%- links[linkClass] %>" target="_blank">
-            <i class="fab <%- linkClass %> fa-lg"></i>
-          </a>
+        <a class="team-social-link" href="<%- links[linkClass] %>" target="_blank">
+          <i class="fab <%- linkClass %> fa-lg"></i>
+        </a>
         <% }) %>
       </span>
     </div>
