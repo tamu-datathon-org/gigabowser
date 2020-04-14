@@ -1,15 +1,21 @@
 <div class="section sponsor-section">
-    <div id="industries-end-transition"></div>
-    <div id="sponsors" class="container">
-        <h1 class="section-title sponsor-title pb-3">
-            Sponsors
-        </h1>
-        <p class="sponsor-description pb-3">TAMU Datathon would not be possible without our sponsors. </br>Interested in sponsoring? Check out our <a href="#">Sponsorship Packet</a> and contact us at <a href="mailto:connect@tamudatathon.com">connect@tamudatathon.com</a>.</p>
-        <h3>Our Past Sponsors:</h3>
-        <div class="sponsor-images">
-            <% for (let pastSponsor of req.pastSponsors) {  %>
-                <a href="<%= pastSponsor.url %>" target="_blank"><img class="sponsor-img <%= pastSponsor.variant %>" src="<%= pastSponsor.img %>" alt="<%= pastSponsor.name %>"></img></a>
-            <% } %>
-        </div>
+  <div id="industries-end-transition"></div>
+  <div id="sponsors" class="container">
+    <h1 class="section-title sponsor-title pb-3">
+      Sponsors
+    </h1>
+    <p class="sponsor-description pb-3">TAMU Datathon would not be possible without our sponsors.
+      </br>Interested in sponsoring? Check out our
+      <a href="#">Sponsorship Packet</a>
+      and contact us at
+      <a href="mailto:connect@tamudatathon.com">connect@tamudatathon.com</a>.</p>
+    <h3>Our Past Sponsors:</h3>
+    <div class="sponsor-images">
+      <% for (let pastSponsor of req.pastSponsors) {  %>
+      <a href="<%= pastSponsor.url %>" target="_blank">
+        <img class="sponsor-img <%= pastSponsor.variant %>" src="<%= pastSponsor.img %>" alt="<%= pastSponsor.name %>"></img>
+      </a>
+      <% } %>
     </div>
+  </div>
 </div>
