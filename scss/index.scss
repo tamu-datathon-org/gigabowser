@@ -15,34 +15,34 @@ $splash-light-blue: #3f5aaa;
 // =====================================================
 
 .splash {
-    background-image: url("/static/img/backgrounds/splash-background.svg");
-    background-position: 85% 100%;
-    background-color: #1b135e;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 650px;
-    height: 100vh;
-    z-index: 1;
+  background-image: url("/static/img/backgrounds/splash-background.svg");
+  background-position: 85% 100%;
+  background-color: #1b135e;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 650px;
+  height: 100vh;
+  z-index: 1;
 
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 #splash-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 @include media-breakpoint-up(sm) {
-    #splash-content {
-        justify-content: center;
-    }
+  #splash-content {
+    justify-content: center;
+  }
 }
 
 #text-logo {
-    width: 100%;
-    max-width: 450px;
+  width: 100%;
+  max-width: 450px;
 }
 
 // =====================================================
@@ -67,90 +67,90 @@ $default-transition-height: 7vh;
 }
 
 .sponsors-transition {
-    background: linear-gradient(to left bottom, #fff 49.5%, $faq-background 50%);
-    height: $default-transition-height;
+  background: linear-gradient(to left bottom, #fff 49.5%, $faq-background 50%);
+  height: $default-transition-height;
 }
 
 .faq-transition {
-    background: linear-gradient(to left bottom, $faq-background 49.5%, white 50%);
-    height: $default-transition-height;
+  background: linear-gradient(to left bottom, $faq-background 49.5%, white 50%);
+  height: $default-transition-height;
 }
 
 .section {
-    padding: 3vh 0;
+  padding: 3vh 0;
 
-    .section-title {
-        font-size: 2.5em;
-        font-weight: bold;
-    }
+  .section-title {
+    font-size: 2.5em;
+    font-weight: bold;
+  }
 }
 
 .about-section {
-    background-color: $about-background;
+  background-color: $about-background;
 
-    .about-title {
-        color: $about-title;
-    }
+  .about-title {
+    color: $about-title;
+  }
 
-    .about-content {
-        flex-wrap: wrap-reverse;
-    }
+  .about-content {
+    flex-wrap: wrap-reverse;
+  }
 
-    .about-description {
-        font-size: 1.15em;
-        line-height: 1.5;
-    }
+  .about-description {
+    font-size: 1.15em;
+    line-height: 1.5;
+  }
 
-    .about-img {
-        width: 100%;
-        max-width: 300px;
-    }
+  .about-img {
+    width: 100%;
+    max-width: 300px;
+  }
 }
 
 .dummy-section {
-    min-height: 600px;
+  min-height: 600px;
 }
 
 .splash-btn-line {
-    margin-top: 3vh;
+  margin-top: 3vh;
 
-    .splash-btn {
-        font-size: 1.25em;
-        font-weight: 500;
-        background-color: #666;
-        color: #fff;
-        cursor: pointer;
-        padding: 0.25em 1em;
-        margin-right: 0.5em;
-        text-align: center;
-        border: none;
-        border-radius: 10px;
-        transition: background-color 0.25s ease, border 0.25s ease;
-    }
+  .splash-btn {
+    font-size: 1.25em;
+    font-weight: 500;
+    background-color: #666;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.25em 1em;
+    margin-right: 0.5em;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.25s ease, border 0.25s ease;
+  }
 
-    .splash-btn:focus {
-        outline: 0;
-    }
+  .splash-btn:focus {
+    outline: 0;
+  }
 
-    .apply-btn {
-        background-color: rgba(#1b135e, 0.5);
-        border: solid 2px $theme-dark-green;
-    }
+  .apply-btn {
+    background-color: rgba(#1b135e, 0.5);
+    border: solid 2px $theme-dark-green;
+  }
 
-    .apply-btn:hover {
-        background-color: rgba($theme-dark-green, 0.5);
-        border: solid 2px $theme-dark-green;
-    }
+  .apply-btn:hover {
+    background-color: rgba($theme-dark-green, 0.5);
+    border: solid 2px $theme-dark-green;
+  }
 
-    .sponsor-btn {
-        background-color: rgba(#1b135e, 0.5);
-        border: solid 2px $splash-light-purple;
-    }
+  .sponsor-btn {
+    background-color: rgba(#1b135e, 0.5);
+    border: solid 2px $splash-light-purple;
+  }
 
-    .sponsor-btn:hover {
-        background-color: rgba($splash-light-purple, 0.5);
-        border: solid 2px $splash-light-purple;
-    }
+  .sponsor-btn:hover {
+    background-color: rgba($splash-light-purple, 0.5);
+    border: solid 2px $splash-light-purple;
+  }
 }
 
 // ------------------------------------------
@@ -282,87 +282,84 @@ $default-transition-height: 7vh;
 // =====================================================
 
 .sponsor-section {
-    .sponsor-description {
-        font-size: 1.15em;
-    }
+  .sponsor-description {
+    font-size: 1.15em;
+  }
 
-    .sponsor-img {
-        padding: 1.5em 2em;
+  .sponsor-img {
+    padding: 1.5em 2em;
+  }
+
+  .sponsor-images .xl {
+    height: auto;
+    width: 300px;
+    max-height: 300px;
+    object-fit: contain;
+  }
+
+  .sponsor-images {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    overflow: auto;
+  }
+
+  .sponsor-images .lg {
+    height: auto;
+    width: 300px;
+    max-height: 200px;
+    object-fit: contain;
+  }
+
+  @include media-breakpoint-up(sm) {
+    .sponsor-images {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
     }
 
     .sponsor-images .xl {
-        height: auto;
-        width: 300px;
-        max-height: 300px;
-        object-fit: contain;
+      height: auto;
+      width: 100%;
+      flex: 1;
+      object-fit: contain;
     }
-
-    .sponsor-images {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        flex-wrap: nowrap;
-        margin-left: -15px;
-        margin-right: -15px;
-        overflow: auto;
-    }
-
-    .sponsor-images .lg {
-        height: auto;
-        width: 300px;
-        max-height: 200px;
-        object-fit: contain;
-    }
-
-
-    @include media-breakpoint-up(sm) {
-        .sponsor-images {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        .sponsor-images .xl {
-            height: auto;
-            width: 100%;
-            flex: 1;
-            object-fit: contain;
-        }
-    }
-
+  }
 }
-
 
 // =====================================================
 //                      FAQs section
 // =====================================================
 
 .faq-section {
-    background-color: $faq-background;
+  background-color: $faq-background;
+  color: $faq-title;
+
+  .faq-title {
     color: $faq-title;
+  }
 
-    .faq-title {
-        color: $faq-title;
-    }
+  .question-block {
+    margin: 20px 0;
+  }
 
-    .question-block {
-        margin: 20px 0;
+  // anchor colors to dark gray in FAQ section
+  a {
+    color: $gray-700;
+    &:hover {
+      color: $gray-900;
     }
+  }
 
-    // anchor colors to dark gray in FAQ section
-    a {
-        color: $gray-700;
-        &:hover {
-            color: $gray-900;
-        }
-    }
+  .question {
+    font-size: 1.25em;
+  }
 
-    .question {
-        font-size: 1.25em
-    }
-
-    .answer {
-        font-size: 1.15em
-    }
+  .answer {
+    font-size: 1.15em;
+  }
 }
