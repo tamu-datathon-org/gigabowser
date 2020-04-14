@@ -4,13 +4,12 @@ $splash-light-purple: #7c408a;
   position: absolute !important;
   width: 100%;
   z-index: 100;
-  top: 0px;
+  top: 0;
 }
 
 .navbar-nav {
   font-size: 1.25em !important;
 }
-
 
 @include media-breakpoint-down(sm) {
   .navbar-nav {

@@ -1,4 +1,3 @@
-
 @mixin bordered-btn-on-hover($selector, $text-color, $border-color, $background-color: #fff) {
   $animation-name: hover-animation-#{$selector};
   @keyframes #{$animation-name} {
