@@ -4,8 +4,12 @@
 $about-background: #f4ecf2 !default;
 $about-title: #8a3c7a !default;
 
-$faq-background: #04cfb8 !default;
-$faq-title: #fff !default;
+// new background color
+$faq-background: #90eee3 !default;
+// $faq-background: #04cfb8 !default;
+$faq-title: #363636 !default;
+$faq-anchor: #003fee;
+$faq-anchor-hover: #0231b3;
 
 $splash-light-purple: #7c408a;
 $splash-light-blue: #3f5aaa;
@@ -333,6 +337,7 @@ $default-transition-height: 7vh;
 
 // =====================================================
 //                      FAQs section
+//           frequently asked questions
 // =====================================================
 
 .faq-section {
@@ -340,6 +345,7 @@ $default-transition-height: 7vh;
   color: $faq-title;
 
   .faq-title {
+    font-weight: bold;
     color: $faq-title;
   }
 
@@ -349,14 +355,17 @@ $default-transition-height: 7vh;
 
   // anchor colors to dark gray in FAQ section
   a {
-    color: $gray-700;
+    // default to underline
+    text-decoration: underline;
+    color: $faq-anchor;
     &:hover {
-      color: $gray-900;
+      color: $faq-anchor-hover;
     }
   }
 
   .question {
-    font-size: 1.25em;
+    font-size: 1.4em;
+    font-weight: bolder;
   }
 
   .answer {
