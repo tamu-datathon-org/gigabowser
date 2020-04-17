@@ -12,7 +12,7 @@
     <div class="row">
       <!-- (LHS) left hand side -->
       <div class="col-md">
-        <% req.FAQ.LHS.forEach(({ q, a }) => { %>
+        <% req.FAQ.LHS.forEach(({ q, a }, index) => { %>
         <div class="question-block">
           <h4 class="question">
             <%= q %>
@@ -22,11 +22,15 @@
             <%- a %>
           </span>
         </div>
+        <!-- hr separator (except on last item) -->
+        <% if (index < req.FAQ.LHS.length - 1) { %>
+          <hr />
+        <% } %>
         <% }) %>
       </div>
       <!-- RHS (right hand side) -->
       <div class="col-md">
-        <% req.FAQ.RHS.forEach(({ q, a }) => { %>
+        <% req.FAQ.RHS.forEach(({ q, a }, index) => { %>
         <div class="question-block">
           <h4 class="question">
             <%= q %>
@@ -36,6 +40,10 @@
             <%- a %>
           </span>
         </div>
+        <!-- hr separator (except on last item) -->
+        <% if (index < req.FAQ.RHS.length - 1) { %>
+          <hr />
+        <% } %>
         <% }) %>
       </div>
     </div>

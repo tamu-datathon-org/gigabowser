@@ -371,4 +371,11 @@ $default-transition-height: 7vh;
   .answer {
     font-size: 1.15em;
   }
+  // HORIZONTAL RULE
+  // separator
+  hr {
+    border: 0;
+    height: 1px;
+    background: $gray-600;
+  }
 }
