@@ -13,21 +13,29 @@
       <!-- (LHS) left hand side -->
       <div class="col-md">
         <% req.FAQ.LHS.forEach(({ q, a }) => { %>
-          <div class="question-block">
-            <h4 class="question"><%= q %></h4>
-            <!-- DANGEROUS: evaluate the HTML value from the object -->
-            <span class="answer"><%- a %></span>
-          </div>
+        <div class="question-block">
+          <h4 class="question">
+            <%= q %>
+          </h4>
+          <!-- DANGEROUS: evaluate the HTML value from the object -->
+          <span class="answer">
+            <%- a %>
+          </span>
+        </div>
         <% }) %>
       </div>
       <!-- RHS (right hand side) -->
       <div class="col-md">
         <% req.FAQ.RHS.forEach(({ q, a }) => { %>
-          <div class="question-block">
-            <h4 class="question"><%= q %></h4>
-            <!-- DANGEROUS: evaluate the HTML value from the object -->
-            <span class="answer"><%- a %></span>
-          </div>
+        <div class="question-block">
+          <h4 class="question">
+            <%= q %>
+          </h4>
+          <!-- DANGEROUS: evaluate the HTML value from the object -->
+          <span class="answer">
+            <%- a %>
+          </span>
+        </div>
         <% }) %>
       </div>
     </div>
