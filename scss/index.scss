@@ -374,8 +374,10 @@ $default-transition-height: 7vh;
   // HORIZONTAL RULE
   // separator
   hr {
+    width: 30%;
+    min-width: 150px;
     border: 0;
-    height: 1px;
-    background: $gray-600;
+    height: 3px;
+    background: $faq-title;
   }
 }
