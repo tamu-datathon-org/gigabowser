@@ -4,6 +4,7 @@ $splash-light-purple: #7c408a;
   position: absolute !important;
   width: 100%;
   z-index: 100;
+  padding-top: 1.25em !important;
   top: 0;
 }
 
@@ -11,7 +12,19 @@ $splash-light-purple: #7c408a;
   font-size: 1.25em !important;
 }
 
-@include media-breakpoint-down(sm) {
+.nav-link {
+  padding: 0.5em 1em !important;
+  transition: color 0.25s ease;
+}
+
+.nav-link:hover {
+  color: #58ffb4 !important;
+}
+.nav-link:focus {
+  color: #58ffb4 !important;
+}
+
+@include media-breakpoint-down(md) {
   .navbar-nav {
     padding: 1em !important;
     background: rgba(#fff, 0.9);
@@ -21,6 +34,7 @@ $splash-light-purple: #7c408a;
     margin-top: 15px;
   }
   .navbar-nav .nav-link {
+    padding: 0.5em 0em !important;
     color: #000 !important;
   }
 }
