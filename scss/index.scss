@@ -4,10 +4,10 @@
 $about-background: #f4ecf2 !default;
 $about-title: #8a3c7a !default;
 
-// new background color
 $faq-background: #90eee3 !default;
-// $faq-background: #04cfb8 !default;
-$faq-title: #363636 !default;
+// dark green for FAQ title
+$faq-title: #365740 !default;
+
 $faq-anchor: #003fee;
 $faq-anchor-hover: #0231b3;
 
@@ -377,7 +377,7 @@ $default-transition-height: 7vh;
     width: 30%;
     min-width: 150px;
     border: 0;
-    height: 3px;
+    height: 2px;
     background: $faq-title;
   }
 }
