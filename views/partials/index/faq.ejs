@@ -10,43 +10,45 @@
       </div>
     </div>
     <div class="row">
+      <!-- (LHS) left hand side -->
       <div class="col-md">
+        <% req.FAQ.LHS.forEach(({ q, a }, index) => { %>
         <div class="question-block">
-          <h5 class="question">What is TAMU Datathon?</h5>
-          <span class="answer">Not a clue. I'm just building this website.</span>
+          <h4 class="question">
+            <%= q %>
+          </h4>
+          <!-- DANGEROUS: evaluate the HTML value from the object -->
+          <span class="answer">
+            <%- a %>
+          </span>
         </div>
-        <div class="question-block">
-          <h5 class="question">How much does it cost?</h5>
-          <span class="answer">It's free dum dum.</span>
-        </div>
-        <div class="question-block">
-          <h5 class="question">What can I bring?</h5>
-          <span class="answer">Your homework that we know you won't do until 2am last day of the hackathon.</span>
-        </div>
-        <div class="question-block">
-          <h5 class="question">Do I need a team?</h5>
-          <span class="answer">People have won alone but most winners are in teams of up to 4.</span>
-        </div>
+        <!-- hr separator (except on last item) -->
+        <% if (index < req.FAQ.LHS.length - 1) { %>
+        <hr align="left" />
+        <% } %>
+        <% }) %>
       </div>
+      <!-- hide a divider on screens > than md -->
+      <div class="col-md d-md-none">
+        <hr class="d-md-none" align="left" />
+      </div>
+      <!-- RHS (right hand side) -->
       <div class="col-md">
+        <% req.FAQ.RHS.forEach(({ q, a }, index) => { %>
         <div class="question-block">
-          <h5 class="question">Do you offer travel reimbursements?</h5>
-          <span class="answer">Depends. Do you accept Google Cloud credits?</span>
+          <h4 class="question">
+            <%= q %>
+          </h4>
+          <!-- DANGEROUS: evaluate the HTML value from the object -->
+          <span class="answer">
+            <%- a %>
+          </span>
         </div>
-        <div class="question-block">
-          <h5 class="question">Who can attend?</h5>
-          <span class="answer">Only those with a burning and unquenchable desire to solve real world data science problems.</span>
-        </div>
-        <div class="question-block">
-          <h5 class="question">My question isn't listed</h5>
-          <span class="answer">Email us
-            <a href="mailto:connect@tamudatathon.com">here</a>.</span>
-        </div>
-        <div class="question-block">
-          <h5 class="question">Where is TAMU Datathon?</h5>
-          <span class="answer">We're in
-            <a href="https://www.tamu.edu/">Gig 'em land</a>.</span>
-        </div>
+        <!-- hr separator (except on last item) -->
+        <% if (index < req.FAQ.RHS.length - 1) { %>
+        <hr align="left" />
+        <% } %>
+        <% }) %>
       </div>
     </div>
   </div>
