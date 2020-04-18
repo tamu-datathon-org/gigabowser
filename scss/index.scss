@@ -19,13 +19,14 @@ $splash-light-blue: #3f5aaa;
 // =====================================================
 
 .splash {
-  background-image: url("/static/img/backgrounds/splash-background.svg");
-  background-position: 85% 100%;
-  background-color: #1b135e;
+  background-image: linear-gradient(to top, #4a40ac 10%, transparent 30%), url("/static/img/backgrounds/splash-background.svg");
+  background-position: center -100px;
+  background-color: #4a40ac;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 650px;
   height: 100vh;
+  max-height: 1500px;
   z-index: 1;
 
   display: flex;
@@ -35,18 +36,68 @@ $splash-light-blue: #3f5aaa;
 #splash-content {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: flex-end;
+  text-align: center;
 }
 
-@include media-breakpoint-up(sm) {
+@include media-breakpoint-up(lg) {
   #splash-content {
     justify-content: center;
+    text-align: left;
+  }
+  .splash {
+    background-image: url("/static/img/backgrounds/splash-background.svg");
+    background-position: -15vw;
+    background-color: #1b135e;
+    background-size: 175%;
   }
 }
 
 #text-logo {
   width: 100%;
   max-width: 450px;
+}
+
+.splash-btn-line {
+  margin-top: 3vh;
+
+  .splash-btn {
+    font-size: 1.25em;
+    font-weight: 500;
+    background-color: #666;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.25em 1em;
+    margin-right: 0.5em;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.25s ease, border 0.25s ease;
+  }
+
+  .splash-btn:focus {
+    outline: 0;
+  }
+
+  .apply-btn {
+    background-color: rgba(#1b135e, 0.5);
+    border: solid 2px $theme-dark-green;
+  }
+
+  .apply-btn:hover {
+    background-color: rgba($theme-dark-green, 0.5);
+    border: solid 2px $theme-dark-green;
+  }
+
+  .sponsor-btn {
+    background-color: rgba(#1b135e, 0.5);
+    border: solid 2px $splash-light-purple;
+  }
+
+  .sponsor-btn:hover {
+    background-color: rgba($splash-light-purple, 0.5);
+    border: solid 2px $splash-light-purple;
+  }
 }
 
 // =====================================================
@@ -113,48 +164,6 @@ $default-transition-height: 7vh;
 
 .dummy-section {
   min-height: 600px;
-}
-
-.splash-btn-line {
-  margin-top: 3vh;
-
-  .splash-btn {
-    font-size: 1.25em;
-    font-weight: 500;
-    background-color: #666;
-    color: #fff;
-    cursor: pointer;
-    padding: 0.25em 1em;
-    margin-right: 0.5em;
-    text-align: center;
-    border: none;
-    border-radius: 10px;
-    transition: background-color 0.25s ease, border 0.25s ease;
-  }
-
-  .splash-btn:focus {
-    outline: 0;
-  }
-
-  .apply-btn {
-    background-color: rgba(#1b135e, 0.5);
-    border: solid 2px $theme-dark-green;
-  }
-
-  .apply-btn:hover {
-    background-color: rgba($theme-dark-green, 0.5);
-    border: solid 2px $theme-dark-green;
-  }
-
-  .sponsor-btn {
-    background-color: rgba(#1b135e, 0.5);
-    border: solid 2px $splash-light-purple;
-  }
-
-  .sponsor-btn:hover {
-    background-color: rgba($splash-light-purple, 0.5);
-    border: solid 2px $splash-light-purple;
-  }
 }
 
 // ------------------------------------------
