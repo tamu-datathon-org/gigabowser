@@ -3,6 +3,7 @@ $(".industry-modal-trigger").click(e => {
   if (!industryId)
     return;
 
+  e.preventDefault();
   $(`.industry-modal-nav > .active`).removeClass("active");
   $(`.tab-content > .active`).removeClass("active");
   $(`.tab-content > .show`).removeClass("show");
@@ -12,4 +13,14 @@ $(".industry-modal-trigger").click(e => {
   $(`#${industryId}-tab`).addClass("active");
 
   $("#industry-modal").modal("show");
+});
+
+$(".same-page-nav-link").click(e => {
+  const scrollToSection = $(e.target).attr("scroll-id");
+  if (scrollToSection) {
+    e.preventDefault();
+    document.querySelector(`#${scrollToSection}`).scrollIntoView({
+      behavior: "smooth"
+    });
+  }
 });
