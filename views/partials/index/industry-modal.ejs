@@ -12,7 +12,7 @@
           <div class="col-lg-3 col-md-12 modal-col">
             <div class="nav nav-pills industry-modal-nav" role="tablist" aria-orientation="vertical">
               <% req.industryModalVariables.forEach(({industryId, industryName}) => { %>
-                <a class="nav-link" id="<%- industryId %>-tab" data-toggle="pill" href="#<%- industryId %>" role="tab" aria-controls="<%- industryId %>" aria-selected="true"><%- industryName %></a>
+                <a class="nav-link industry-modal-nav-link" id="<%- industryId %>-tab" data-toggle="pill" href="#<%- industryId %>" role="tab" aria-controls="<%- industryId %>" aria-selected="true"><%- industryName %></a>
               <% }) %>
             </div>
           </div>
