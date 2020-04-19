@@ -8,9 +8,9 @@
         </button>
       </div>
       <div class="modal-body industry-modal-body">
-        <div class="row">
+        <div class="row align-items-center">
           <div class="col-3">
-            <div class="nav flex-column nav-pills" role="tablist" aria-orientation="vertical">
+            <div class="nav flex-column nav-pills industry-modal-nav" role="tablist" aria-orientation="vertical">
               <% req.industryModalVariables.forEach(({industryId, industryName}) => { %>
                 <a class="nav-link" id="<%- industryId %>-tab" data-toggle="pill" href="#<%- industryId %>" role="tab" aria-controls="<%- industryId %>" aria-selected="true"><%- industryName %></a>
               <% }) %>

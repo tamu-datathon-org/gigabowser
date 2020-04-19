@@ -1,5 +1,5 @@
 <div class="tab-pane fade industry-modal-content" id="<%- industryId %>" role="tabpanel" aria-labelledby="<%- industryId %>-tab">
-  <div class="row align-items-center justify-content-center mb-3">
+  <div class="row align-items-center justify-content-center my-3">
     <div class="col-4 text-center">
       <img class="industry-modal-content-img" src="<%- industryImgPath %>"/>
     </div>
@@ -11,12 +11,14 @@
       </div>
     </div>
   </div>
-  <div class="row">
-    <h6>Past Sponsors:</h6>
-    <div class="industry-modal-content-sponsors">
-      <% industryPastSponsors.forEach(sponsorImgPath => { %>
-        <img class="industry-modal-sponsor-img" src="<%- sponsorImgPath %>">
-      <% }) %>
+  <% if (industryPastSponsors.length > 0) { %>
+    <div class="row">
+      <h6>Past Sponsors:</h6>
+      <div class="industry-modal-content-sponsors">
+        <% industryPastSponsors.forEach(sponsorImgPath => { %>
+          <img class="industry-modal-sponsor-img" src="<%- sponsorImgPath %>">
+        <% }) %>
+      </div>
     </div>
-  </div>
+  <% } %>
 </div>

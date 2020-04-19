@@ -4,6 +4,12 @@ $splash-light-purple: #7c408a;
 #industry-modal {
 
   .industry-modal-body {
+    .industry-modal-nav {
+      max-height: 30vh;
+      overflow-y: auto;
+      flex-wrap: nowrap;
+    }
+
     .nav-pills .nav-link {
       color: #007bff;
       border-radius: 0 !important;
@@ -26,10 +32,9 @@ $splash-light-purple: #7c408a;
   }
 
   .industry-modal-content {
-
     .industry-modal-content-img {
       width: 100%;
-      max-width: 200px;
+      max-height: 150px;
     }
 
     .industry-modal-content-sponsors {
