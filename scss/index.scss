@@ -19,7 +19,7 @@ $splash-light-blue: #3f5aaa;
 // =====================================================
 
 .splash {
-  background-image: linear-gradient(to top, #4a40ac 10%, transparent 30%), url("/static/img/backgrounds/splash-background.svg");
+  background-image: linear-gradient(to top, #4a40ac 10%, #4a40ac01 30%), url("/static/img/backgrounds/splash-background.svg");
   background-position: center -100px;
   background-color: #4a40ac;
   background-repeat: no-repeat;
