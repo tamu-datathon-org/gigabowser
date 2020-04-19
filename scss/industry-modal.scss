@@ -15,12 +15,15 @@ $splash-light-purple: #7c408a;
 
 
     .modal-col {
-      max-height: 70vh;
       overflow:auto;
     }
 
     .modal-col:nth-child(2n+1) {
+      position: sticky;
       border-bottom: 1px solid #f3f3f3;
+      top: 0px;
+      z-index: 100;
+      background: white;
     }
 
     $modal-nav-link-active-color: $splash-light-purple;
@@ -77,7 +80,7 @@ $splash-light-purple: #7c408a;
 
   .industry-modal-content {
     .bg-gradient {
-      background: linear-gradient(to bottom, #7dcff5, transparent);
+      background: linear-gradient(to bottom, #7dcff5, rgba(255,255,255, 0));
     }
     .industry-modal-content-img {
       margin: 25px;
