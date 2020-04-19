@@ -1,8 +1,6 @@
-
 $splash-light-purple: #7c408a;
 
 #industry-modal {
-
   .industry-modal-body {
     padding: 0 15px;
 
@@ -14,13 +12,13 @@ $splash-light-purple: #7c408a;
     }
 
     .modal-col {
-      overflow:auto;
+      overflow: auto;
     }
 
-    .modal-col:nth-child(2n+1) {
+    .modal-col:nth-child(2n + 1) {
       position: sticky;
       border-bottom: 1px solid #f3f3f3;
-      top: 0px;
+      top: 0;
       z-index: 100;
       background: white;
     }
@@ -30,7 +28,7 @@ $splash-light-purple: #7c408a;
       background-color: transparent !important;
       color: $modal-nav-link-active-color;
       border-bottom: 2px solid $modal-nav-link-active-color;
-      border-radius: 0px;
+      border-radius: 0;
     }
 
     .industry-modal-nav {
@@ -54,10 +52,9 @@ $splash-light-purple: #7c408a;
         flex: 1;
       }
 
-      .modal-col:nth-child(2n+1) {
+      .modal-col:nth-child(2n + 1) {
         border-right: 1px solid #f3f3f3;
       }
-  
 
       .nav-pills .nav-link.active {
         background-color: transparent !important;
@@ -79,7 +76,7 @@ $splash-light-purple: #7c408a;
 
   .industry-modal-content {
     .bg-gradient {
-      background: linear-gradient(to bottom, #7dcff5, rgba(255,255,255, 0));
+      background: linear-gradient(to bottom, #7dcff5, rgba(255, 255, 255, 0));
     }
     .industry-modal-content-img {
       margin: 25px;
