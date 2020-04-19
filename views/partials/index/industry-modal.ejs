@@ -9,14 +9,14 @@
       </div>
       <div class="modal-body industry-modal-body">
         <div class="row align-items-center">
-          <div class="col-3">
-            <div class="nav flex-column nav-pills industry-modal-nav" role="tablist" aria-orientation="vertical">
+          <div class="col-lg-3 col-md-12">
+            <div class="nav nav-pills industry-modal-nav" role="tablist" aria-orientation="vertical">
               <% req.industryModalVariables.forEach(({industryId, industryName}) => { %>
                 <a class="nav-link" id="<%- industryId %>-tab" data-toggle="pill" href="#<%- industryId %>" role="tab" aria-controls="<%- industryId %>" aria-selected="true"><%- industryName %></a>
               <% }) %>
             </div>
           </div>
-          <div class="col-9">
+          <div class="col-lg-9 col-md-12">
             <div class="tab-content" id="industry-tab-content">
               <% req.industryModalVariables.forEach((industry) => { %>
                 <%- include ("./industry-modal-content", industry) %>

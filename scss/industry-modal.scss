@@ -5,29 +5,50 @@ $splash-light-purple: #7c408a;
 
   .industry-modal-body {
     .industry-modal-nav {
-      max-height: 30vh;
-      overflow-y: auto;
+      display: flex;
+      overflow: auto;
+      flex-direction: row;
       flex-wrap: nowrap;
     }
 
-    .nav-pills .nav-link {
-      color: #007bff;
-      border-radius: 0 !important;
-    }
-
+    $modal-nav-link-active-color: $splash-light-purple;
     .nav-pills .nav-link.active {
       background-color: transparent !important;
-      border: none !important;
-      border-left: solid 3px $splash-light-purple !important;
-      border-radius: 0 !important;
+      color: $modal-nav-link-active-color;
+      border: 2px solid $modal-nav-link-active-color;
     }
 
     .nav-pills .nav-link:focus {
-      color: #007bff !important;
+      color: $modal-nav-link-active-color !important;
     }
 
     .nav-pills .nav-link:hover {
-      color: #007bff !important;
+      color: $modal-nav-link-active-color !important;
+    }
+
+    /* Navbar should be vertical for bigger devices, with different highlighting */
+    @include media-breakpoint-up(lg) {
+      .industry-modal-nav {
+        max-height: 30vh;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .nav-pills .nav-link.active {
+        background-color: transparent !important;
+        border: none !important;
+        border-left: solid 3px $modal-nav-link-active-color !important;
+        border-radius: 0 !important;
+      }
+
+      .nav-pills .nav-link:focus {
+        color: $modal-nav-link-active-color !important;
+      }
+
+      .nav-pills .nav-link:hover {
+        color: $modal-nav-link-active-color !important;
+      }
     }
   }
 
