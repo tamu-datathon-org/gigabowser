@@ -9,4 +9,6 @@ $('.industry-modal-trigger').click((e) => {
   $(`#${industryId}`).addClass('active');
   $(`#${industryId}`).addClass('show');
   $(`#${industryId}-tab`).addClass('active');
+
+  $('#industry-modal').modal('show');
 });
