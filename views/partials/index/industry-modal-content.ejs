@@ -1,0 +1,24 @@
+<div class="tab-pane fade industry-modal-content" id="<%- industryId %>" role="tabpanel" aria-labelledby="<%- industryId %>-tab">
+  <div class="row align-items-center justify-content-center">
+    <div class="col-md-12 text-center py-3 bg-gradient">
+      <img class="industry-modal-content-img" src="<%- industryImgPath %>" />
+    </div>
+    <div class="col py-3">
+      <div class="industry-modal-content-text">
+        <p class="industry-description">
+          <%- industryDescription %>
+        </p>
+      </div>
+    </div>
+  </div>
+  <% if (industryPastSponsors.length > 0) { %>
+  <div class="row">
+    <h5 class="mx-3">Past Sponsors:</h5>
+    <div class="industry-modal-content-sponsors">
+      <% industryPastSponsors.forEach(sponsorImgPath => { %>
+      <img class="industry-modal-sponsor-img" src="<%- sponsorImgPath %>">
+      <% }) %>
+    </div>
+  </div>
+  <% } %>
+</div>
