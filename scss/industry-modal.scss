@@ -3,10 +3,6 @@ $splash-light-purple: #7c408a;
 
 #industry-modal {
 
-  .modal-dialog {
-    width: auto;
-  }
-
   .industry-modal-body {
     .nav-pills .nav-link {
       color: #007bff;
@@ -30,9 +26,23 @@ $splash-light-purple: #7c408a;
   }
 
   .industry-modal-content {
+
     .industry-modal-content-img {
-      width: 150px;
-      height: auto;
+      width: 100%;
+      max-width: 200px;
+    }
+
+    .industry-modal-content-sponsors {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: nowrap;
+      overflow: auto;
+    }
+
+    .industry-modal-sponsor-img {
+      min-width: 200px;
     }
   }
 }
