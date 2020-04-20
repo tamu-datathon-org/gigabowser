@@ -4,94 +4,18 @@
       Industries
     </h1>
   </div>
-  <div class="centerme">
-    <div class="slider">
-      <div class="slide-track">
-        <div class="slide">
-          <div class="holder">
-            <img class="slider-image down" src="./static/img/icons/1.png" />
-            <img class="slider-image up" src="./static/img/icons/2.png" />
-          </div>
-        </div>
-        <div class="slide">
-          <div class="holder">
-            <img class="slider-image up" src="./static/img/icons/3.png" />
-          </div>
-        </div>
-        <div class="slide">
-          <div class="holder">
-            <img class="slider-image down" src="./static/img/icons/4.png" />
-            <img class="slider-image up" src="./static/img/icons/5.png" />
-          </div>
-        </div>
-        <div class="slide">
-          <div class="holder">
-            <img class="slider-image down" src="./static/img/icons/1.png" />
-
-          </div>
-        </div>
-        <div class="slide">
-          <div class="holder">
-            <img class="slider-image down" src="./static/img/icons/2.png" />
-            <img class="slider-image up" src="./static/img/icons/3.png" />
-          </div>
-        </div>
-        <div class="slide">
-          <div class="holder">
-
-            <img class="slider-image down" src="./static/img/icons/4.png" />
-          </div>
-        </div>
-        <div class="slide">
-          <div class="holder">
-            <img class="slider-image down" src="./static/img/icons/5.png" />
-            <img class="slider-image up" src="./static/img/icons/1.png" />
-          </div>
-        </div>
-
-        <div class="slide">
-          <div class="holder">
-            <img class="slider-image down" src="./static/img/icons/1.png" />
-            <img class="slider-image up" src="./static/img/icons/2.png" />
-          </div>
-        </div>
-        <div class="slide">
-          <div class="holder">
-            <img class="slider-image up" src="./static/img/icons/3.png" />
-          </div>
-        </div>
-        <div class="slide">
-          <div class="holder">
-            <img class="slider-image down" src="./static/img/icons/4.png" />
-            <img class="slider-image up" src="./static/img/icons/5.png" />
-          </div>
-        </div>
-        <div class="slide">
-          <div class="holder">
-            <img class="slider-image down" src="./static/img/icons/1.png" />
-
-          </div>
-        </div>
-        <div class="slide">
-          <div class="holder">
-            <img class="slider-image down" src="./static/img/icons/2.png" />
-            <img class="slider-image up" src="./static/img/icons/3.png" />
-          </div>
-        </div>
-        <div class="slide">
-          <div class="holder">
-
-            <img class="slider-image up" src="./static/img/icons/4.png" />
-          </div>
-        </div>
-        <div class="slide">
-          <div class="holder">
-            <img class="slider-image down" src="./static/img/icons/5.png" />
-            <img class="slider-image up" src="./static/img/icons/1.png" />
-          </div>
-        </div>
-
+  <div class="slider">
+    <% for (let x = 0; x < 2; x++) { %>
+    <div class="slide-track">
+      <% for (let x = 0; x < req.industryModalVariables.length; x += 3) { %>
+      <div class="slide">
+        <div class="<%= x % 2 == 0 ? 'up' : 'down' %>"><img class="slider-image industry-modal-trigger" industry-id="<%= req.industryModalVariables[x % req.industryModalVariables.length].industryId %>" src="<%= req.industryModalVariables[x % req.industryModalVariables.length].industryImgPath %>" /></div>
+        <div class="<%= x % 2 == 0 ? 'down' : 'up' %>"><img class="slider-image industry-modal-trigger" industry-id="<%= req.industryModalVariables[(x+1) % req.industryModalVariables.length].industryId %>" src="<%= req.industryModalVariables[(x+1) % req.industryModalVariables.length].industryImgPath %>" /></div>
+        <div class="<%= x % 2 == 0 ? 'up' : 'down' %>"><img class="slider-image industry-modal-trigger" industry-id="<%= req.industryModalVariables[(x+2) % req.industryModalVariables.length].industryId %>" src="<%= req.industryModalVariables[(x+2) % req.industryModalVariables.length].industryImgPath %>" /></div>
       </div>
+      <% } %>
     </div>
+    <% } %>
   </div>
+
 </div>
