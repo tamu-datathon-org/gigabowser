@@ -28,6 +28,6 @@ $(".same-page-nav-link").click(e => {
 tippy(".industry-modal-trigger", {
   sticky: true,
   allowHTML: true,
-  theme: 'light',
-  content: ref => `<p class="industry-icon-tooltip m-0">${ref.getAttribute('industry-title')}</p>`
+  theme: "light",
+  content: ref => `<p class="industry-icon-tooltip m-0">${ref.getAttribute("industry-title")}</p>`
 });
