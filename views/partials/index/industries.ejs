@@ -9,13 +9,33 @@
     <div class="slide-track">
       <% for (let x = 0; x < req.industryModalVariables.length; x += 3) { %>
       <div class="slide">
-        <div class="<%= x % 2 == 0 ? 'up' : 'down' %>"><img class="slider-image industry-modal-trigger" industry-id="<%= req.industryModalVariables[x % req.industryModalVariables.length].industryId %>" src="<%= req.industryModalVariables[x % req.industryModalVariables.length].industryImgPath %>" /></div>
-        <div class="<%= x % 2 == 0 ? 'down' : 'up' %>"><img class="slider-image industry-modal-trigger" industry-id="<%= req.industryModalVariables[(x+1) % req.industryModalVariables.length].industryId %>" src="<%= req.industryModalVariables[(x+1) % req.industryModalVariables.length].industryImgPath %>" /></div>
-        <div class="<%= x % 2 == 0 ? 'up' : 'down' %>"><img class="slider-image industry-modal-trigger" industry-id="<%= req.industryModalVariables[(x+2) % req.industryModalVariables.length].industryId %>" src="<%= req.industryModalVariables[(x+2) % req.industryModalVariables.length].industryImgPath %>" /></div>
+        <div class="<%= x % 2 == 0 ? 'up' : 'down' %>">
+          <img
+            class="slider-image industry-modal-trigger"
+            industry-id="<%= req.industryModalVariables[x % req.industryModalVariables.length].industryId %>"
+            src="<%= req.industryModalVariables[x % req.industryModalVariables.length].industryImgPath %>"
+            industry-title="<%= req.industryModalVariables[x % req.industryModalVariables.length].industryName %>"
+          />
+        </div>
+        <div class="<%= x % 2 == 0 ? 'down' : 'up' %>">
+          <img
+            class="slider-image industry-modal-trigger"
+            industry-id="<%= req.industryModalVariables[(x+1) % req.industryModalVariables.length].industryId %>"
+            src="<%= req.industryModalVariables[(x+1) % req.industryModalVariables.length].industryImgPath %>"
+            industry-title="<%= req.industryModalVariables[(x+1) % req.industryModalVariables.length].industryName %>"
+          />
+        </div>
+        <div class="<%= x % 2 == 0 ? 'up' : 'down' %>">
+          <img
+            class="slider-image industry-modal-trigger"
+            industry-id="<%= req.industryModalVariables[(x+2) % req.industryModalVariables.length].industryId %>"
+            src="<%= req.industryModalVariables[(x+2) % req.industryModalVariables.length].industryImgPath %>"
+            industry-title="<%= req.industryModalVariables[(x+2) % req.industryModalVariables.length].industryName %>"
+          />
+        </div>
       </div>
       <% } %>
     </div>
     <% } %>
   </div>
-
 </div>

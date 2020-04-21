@@ -1,5 +1,9 @@
 $splash-light-purple: #7c408a;
 
+.industry-icon-tooltip {
+  @include offset-highlighter-effect(#15f4ee)
+}
+
 #industry-modal {
   .industry-modal-body {
     padding: 0 15px;

@@ -24,3 +24,12 @@ $(".same-page-nav-link").click(e => {
     });
   }
 });
+
+tippy('.industry-modal-trigger', {
+  sticky: true,
+  allowHTML: true,
+  theme: 'light',
+  content: ref => (`
+    <h4 class="industry-icon-tooltip">${ref.getAttribute('industry-title')}</h4>
+  `)
+});
