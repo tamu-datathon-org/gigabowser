@@ -29,5 +29,5 @@ tippy('.industry-modal-trigger', {
   sticky: true,
   allowHTML: true,
   theme: 'light',
-  content: ref => `<h4 class="industry-icon-tooltip">${ref.getAttribute('industry-title')}</h4>`
+  content: ref => `<h5 class="industry-icon-tooltip">${ref.getAttribute('industry-title')}</h5>`
 });

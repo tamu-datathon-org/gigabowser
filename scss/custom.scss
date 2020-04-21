@@ -92,7 +92,7 @@ h6 {
 
 /* Remove box shadow from tippy tooltips */
 .tippy-box[data-theme~=light] {
-  box-shadow: none !important;
+  box-shadow: 2px 2px 2px #666 !important;
 }
 
 .slider {
