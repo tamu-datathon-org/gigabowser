@@ -25,9 +25,9 @@ $(".same-page-nav-link").click(e => {
   }
 });
 
-tippy('.industry-modal-trigger', {
+tippy(".industry-modal-trigger", {
   sticky: true,
   allowHTML: true,
-  theme: 'light',
-  content: ref => `<h5 class="industry-icon-tooltip">${ref.getAttribute('industry-title')}</h5>`
+  theme: "light",
+  content: ref => `<h5 class="industry-icon-tooltip">${ref.getAttribute("industry-title")}</h5>`
 });
