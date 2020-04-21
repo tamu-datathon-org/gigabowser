@@ -25,7 +25,7 @@ $(".same-page-nav-link").click(e => {
   }
 });
 
-tippy('.industry-modal-trigger', {
+tippy(".industry-modal-trigger", {
   sticky: true,
   allowHTML: true,
   theme: 'light',
