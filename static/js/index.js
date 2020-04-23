@@ -1,3 +1,20 @@
+$(".industry-modal-trigger").click(e => {
+  const industryId = $(e.target).attr("industry-id");
+  if (!industryId)
+    return;
+
+  e.preventDefault();
+  $(`.industry-modal-nav > .active`).removeClass("active");
+  $(`.tab-content > .active`).removeClass("active");
+  $(`.tab-content > .show`).removeClass("show");
+
+  $(`#${industryId}`).addClass("active");
+  $(`#${industryId}`).addClass("show");
+  $(`#${industryId}-tab`).addClass("active");
+
+  $("#industry-modal").modal("show");
+});
+
 $(".same-page-nav-link").click(e => {
   const scrollToSection = $(e.target).attr("scroll-id");
   if (scrollToSection) {
@@ -6,4 +23,11 @@ $(".same-page-nav-link").click(e => {
       behavior: "smooth"
     });
   }
+});
+
+tippy(".industry-modal-trigger", {
+  sticky: true,
+  allowHTML: true,
+  theme: "light",
+  content: ref => `<p class="industry-icon-tooltip m-0">${ref.getAttribute("industry-title")}</p>`
 });
