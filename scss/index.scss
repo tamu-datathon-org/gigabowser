@@ -281,10 +281,10 @@ $default-transition-height: 7vh;
 }
 
 .industry-description {
-  a {
-    padding-right: 2em;
-  }
-}
+   h6 {
+     font-size: 1.1rem;
+   }
+ }
 
 .industry-icon-tooltip {
   font-size: 1.25em !important;
