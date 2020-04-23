@@ -5,9 +5,9 @@
     </h1>
   </div>
   <div class="slider">
-    <% for (let i = 0; i < 2; i++) { %>
+    <% for (let x = 0; x < 2; x++) { %>
     <div class="slide-track">
-      <% for (let x = i; x < req.industryModalVariables.length; x += 3) { %>
+      <% for (let x = 0; x < req.industryModalVariables.length; x += 3) { %>
       <div class="slide">
         <div class="<%= x % 2 == 0 ? 'up' : 'down' %>">
           <img class="slider-image industry-modal-trigger top-left" industry-id="<%= req.industryModalVariables[x % req.industryModalVariables.length].industryId %>" src="<%= req.industryModalVariables[x % req.industryModalVariables.length].industryImgPath %>" industry-title="<%= req.industryModalVariables[x % req.industryModalVariables.length].industryName %>" data-tippy-placement="top" />
