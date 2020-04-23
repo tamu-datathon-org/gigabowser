@@ -81,6 +81,7 @@ $splash-light-blue: #3f5aaa;
   }
 
   .apply-btn {
+    display: none;
     background-color: rgba(#1b135e, 0.5);
     border: solid 2px $theme-dark-green;
   }
@@ -91,6 +92,7 @@ $splash-light-blue: #3f5aaa;
   }
 
   .sponsor-btn {
+    display: none;
     background-color: rgba(#1b135e, 0.5);
     border: solid 2px $splash-light-purple;
   }
