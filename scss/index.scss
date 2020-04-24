@@ -10,7 +10,7 @@ $sponsors-title: darken(#199280,2%) !default;
 $sponsors-highlight: lighten($sponsors-title,50%) !default;
 
 $faq-background: #90eee3 !default;
-$faq-title: darken(#171455,0%) !default;
+$faq-title: darken(#245a2a,0%) !default;
 $faq-content: lighten(#1c2936,10%) !default;
 
 $faq-anchor: #003fee;
@@ -163,6 +163,12 @@ $default-transition-height: 7vh;
 
   .about-content {
     flex-wrap: wrap-reverse;
+  }
+
+  .about-header {
+    font-size: 1.15em;
+    line-height: 1.5;
+    font-weight: 600;
   }
 
   .about-description {
