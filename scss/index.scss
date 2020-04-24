@@ -328,11 +328,11 @@ $default-transition-height: 7vh;
   }
 
   .sponsor-img {
-    padding: 1.5em 2em;
+    padding: 2em;
   }
 
   .sponsor-images .xl {
-    height: auto;
+    height: 200px;
     width: 300px;
     max-height: 300px;
     object-fit: contain;
@@ -364,7 +364,7 @@ $default-transition-height: 7vh;
     }
 
     .sponsor-images .xl {
-      height: auto;
+      height: 200px;
       width: 100%;
       flex: 1;
       object-fit: contain;
