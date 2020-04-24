@@ -91,6 +91,7 @@ $highlight-ypos: 0.07em;
   }
 
   .apply-btn {
+    display: none;
     background-color: rgba(#1b135e, 0.5);
     border: solid 2px $theme-dark-green;
   }
@@ -101,6 +102,7 @@ $highlight-ypos: 0.07em;
   }
 
   .sponsor-btn {
+    display: none;
     background-color: rgba(#1b135e, 0.5);
     border: solid 2px $splash-light-purple;
   }
@@ -300,6 +302,12 @@ $default-transition-height: 7vh;
     100% {
       transform: translate3d(0px, -4px, 0);
     }
+  }
+}
+
+.industry-description {
+  h6 {
+    font-size: 1.1rem;
   }
 }
 
