@@ -4,7 +4,10 @@ $about-title: #8a3c7a !default;
 
 $faq-background: #90eee3 !default;
 // dark green for FAQ title
-$faq-title: #365740 !default;
+$faq-title: #1c855f !default;
+
+// gray-900 is not defined here (but in custom.css) - writing manually here
+$faq-content: #212529 !default;
 
 $faq-anchor: #003fee;
 $faq-anchor-hover: #0231b3;
@@ -78,6 +81,7 @@ $splash-light-blue: #3f5aaa;
   }
 
   .apply-btn {
+    display: none;
     background-color: rgba(#1b135e, 0.5);
     border: solid 2px $theme-dark-green;
   }
@@ -88,6 +92,7 @@ $splash-light-blue: #3f5aaa;
   }
 
   .sponsor-btn {
+    display: none;
     background-color: rgba(#1b135e, 0.5);
     border: solid 2px $splash-light-purple;
   }
@@ -277,6 +282,12 @@ $default-transition-height: 7vh;
   }
 }
 
+.industry-description {
+  h6 {
+    font-size: 1.1rem;
+  }
+}
+
 .industry-icon-tooltip {
   font-size: 1.25em !important;
 }
@@ -342,7 +353,7 @@ $default-transition-height: 7vh;
 
 .faq-section {
   background-color: $faq-background;
-  color: $faq-title;
+  color: $faq-content;
 
   .faq-title {
     font-weight: bold;
@@ -350,7 +361,7 @@ $default-transition-height: 7vh;
   }
 
   .question-block {
-    margin: 20px 0;
+    margin: 30px 0;
   }
 
   // anchor colors to dark gray in FAQ section
@@ -366,6 +377,7 @@ $default-transition-height: 7vh;
   .question {
     font-size: 1.4em;
     font-weight: bolder;
+    margin-bottom: 20px;
   }
 
   .answer {
@@ -378,6 +390,6 @@ $default-transition-height: 7vh;
     min-width: 150px;
     border: 0;
     height: 2px;
-    background: $faq-title;
+    background: $faq-content;
   }
 }
