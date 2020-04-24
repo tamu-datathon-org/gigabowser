@@ -1,23 +1,22 @@
 // Index Page Colors
-$about-title: darken(#9c2fb5,5%) !default;
-$about-highlight: lighten($about-title,48%) !default;
+$about-title: darken(#9c2fb5, 5%) !default;
+$about-highlight: lighten($about-title, 48%) !default;
 
+$industries-title: darken(#4744ac, 15%) !default;
+$industries-background: darken(#93d6ee, 10%) !default;
 
-$industries-title: darken(#4744ac,15%) !default;
-$industries-background: darken(#93d6ee,10%) !default;
-
-$sponsors-title: darken(#199280,2%) !default;
-$sponsors-highlight: lighten($sponsors-title,50%) !default;
+$sponsors-title: darken(#199280, 2%) !default;
+$sponsors-highlight: lighten($sponsors-title, 50%) !default;
 
 $faq-background: #90eee3 !default;
-$faq-title: darken(#245a2a,0%) !default;
-$faq-content: lighten(#1c2936,10%) !default;
+$faq-title: darken(#245a2a, 0%) !default;
+$faq-content: lighten(#1c2936, 10%) !default;
 
 $faq-anchor: #003fee;
 $faq-anchor-hover: #0231b3;
 
-$team-title: lighten(#120f70,10%) !default;
-$team-highlight: lighten($team-title,52%) !default;
+$team-title: lighten(#120f70, 10%) !default;
+$team-highlight: lighten($team-title, 52%) !default;
 
 $splash-light-purple: #7c408a;
 $splash-light-blue: #3f5aaa;
@@ -151,16 +150,15 @@ $default-transition-height: 7vh;
     padding-top: 1em;
     font-size: 2.5em;
     font-weight: bold;
-    display:inline-block;
+    display: inline-block;
     padding-bottom: $highlight-ypos;
   }
 }
 
 .about-section {
-
   .about-title {
     color: $about-title;
-    box-shadow: 0em $highlight-height 0em 0em $about-highlight inset;
+    box-shadow: 0 $highlight-height 0 0 $about-highlight inset;
   }
 
   .about-content {
@@ -320,11 +318,10 @@ $default-transition-height: 7vh;
 // =====================================================
 
 .sponsor-section {
-
   .sponsors-title {
-     color: $sponsors-title;
-     box-shadow: 0em $highlight-height 0em 0em $sponsors-highlight inset;
-   }
+    color: $sponsors-title;
+    box-shadow: 0 $highlight-height 0 0 $sponsors-highlight inset;
+  }
 
   .sponsor-description {
     font-size: 1.15em;
@@ -424,12 +421,12 @@ $default-transition-height: 7vh;
 }
 
 // =====================================================
- //                   Team section
- // =====================================================
+//                   Team section
+// =====================================================
 
 .team-section {
-   .team-title {
-     color: $team-title;
-     box-shadow: 0em $highlight-height 0em 0em $team-highlight inset;
-   }
+  .team-title {
+    color: $team-title;
+    box-shadow: 0 $highlight-height 0 0 $team-highlight inset;
+  }
 }
