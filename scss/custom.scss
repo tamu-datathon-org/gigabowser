@@ -98,7 +98,7 @@ h6 {
 
 // adjust modal z-index to always be above tooltip
 .modal {
-  z-index: 100000;
+  z-index: 100000 !important;
 }
 
 .slider {
