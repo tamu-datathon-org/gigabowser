@@ -96,6 +96,11 @@ h6 {
   padding: 0.25em 0.5em;
 }
 
+// adjust modal z-index to always be above tooltip
+.modal {
+  z-index: 100000;
+}
+
 .slider {
   width: 105%;
   height: 100%;
