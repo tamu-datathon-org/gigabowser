@@ -1,19 +1,28 @@
 // Index Page Colors
-$about-background: #f4ecf2 !default;
-$about-title: #8a3c7a !default;
+$about-title: darken(#9c2fb5, 5%) !default;
+$about-highlight: lighten($about-title, 48%) !default;
+
+$industries-title: darken(#4744ac, 15%) !default;
+$industries-background: darken(#93d6ee, 10%) !default;
+
+$sponsors-title: darken(#199280, 2%) !default;
+$sponsors-highlight: lighten($sponsors-title, 50%) !default;
 
 $faq-background: #90eee3 !default;
-// dark green for FAQ title
-$faq-title: #1c855f !default;
-
-// gray-900 is not defined here (but in custom.css) - writing manually here
-$faq-content: #212529 !default;
+$faq-title: darken(#245a2a, 0%) !default;
+$faq-content: lighten(#1c2936, 10%) !default;
 
 $faq-anchor: #003fee;
 $faq-anchor-hover: #0231b3;
 
+$team-title: lighten(#120f70, 10%) !default;
+$team-highlight: lighten($team-title, 52%) !default;
+
 $splash-light-purple: #7c408a;
 $splash-light-blue: #3f5aaa;
+
+$highlight-height: -0.5em;
+$highlight-ypos: 0.07em;
 
 // =====================================================
 //                   Splash Section
@@ -109,23 +118,23 @@ $splash-light-blue: #3f5aaa;
 // =====================================================
 $default-transition-height: 7vh;
 .splash-transition {
-  background: linear-gradient(to left bottom, transparent 49.5%, #f4ecf2 50%);
+  background: linear-gradient(to left bottom, transparent 49.5%, white 50%);
   height: $default-transition-height;
   margin-top: -$default-transition-height;
 }
 
 .about-transition {
-  background: linear-gradient(to left bottom, #f4ecf2 49.5%, #7dcff5 50%);
+  background: linear-gradient(to left bottom, white 49.5%, $industries-background 50%);
   height: $default-transition-height;
 }
 
 .industries-transition {
-  background: linear-gradient(to left bottom, #7dcff5 49.5%, white 50%);
+  background: linear-gradient(to left bottom, $industries-background 49.5%, white 50%);
   height: $default-transition-height;
 }
 
 .sponsors-transition {
-  background: linear-gradient(to left bottom, #fff 49.5%, $faq-background 50%);
+  background: linear-gradient(to left bottom, white 49.5%, $faq-background 50%);
   height: $default-transition-height;
 }
 
@@ -138,20 +147,28 @@ $default-transition-height: 7vh;
   padding: 3vh 0;
 
   .section-title {
+    padding-top: 1em;
     font-size: 2.5em;
     font-weight: bold;
+    display: inline-block;
+    padding-bottom: $highlight-ypos;
   }
 }
 
 .about-section {
-  background-color: $about-background;
-
   .about-title {
     color: $about-title;
+    box-shadow: 0 $highlight-height 0 0 $about-highlight inset;
   }
 
   .about-content {
     flex-wrap: wrap-reverse;
+  }
+
+  .about-header {
+    font-size: 1.15em;
+    line-height: 1.5;
+    font-weight: 600;
   }
 
   .about-description {
@@ -174,7 +191,11 @@ $default-transition-height: 7vh;
 // ------------------------------------------
 
 .industries-section {
-  background: #7dcff5;
+  background: $industries-background;
+
+  .industries-title {
+    color: $industries-title;
+  }
 
   @keyframes scroll {
     0% {
@@ -215,7 +236,7 @@ $default-transition-height: 7vh;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
   }
 
   .holder {
@@ -297,16 +318,21 @@ $default-transition-height: 7vh;
 // =====================================================
 
 .sponsor-section {
+  .sponsors-title {
+    color: $sponsors-title;
+    box-shadow: 0 $highlight-height 0 0 $sponsors-highlight inset;
+  }
+
   .sponsor-description {
     font-size: 1.15em;
   }
 
   .sponsor-img {
-    padding: 1.5em 2em;
+    padding: 2em;
   }
 
   .sponsor-images .xl {
-    height: auto;
+    height: 200px;
     width: 300px;
     max-height: 300px;
     object-fit: contain;
@@ -338,7 +364,7 @@ $default-transition-height: 7vh;
     }
 
     .sponsor-images .xl {
-      height: auto;
+      height: 200px;
       width: 100%;
       flex: 1;
       object-fit: contain;
@@ -391,5 +417,16 @@ $default-transition-height: 7vh;
     border: 0;
     height: 2px;
     background: $faq-content;
+  }
+}
+
+// =====================================================
+//                   Team section
+// =====================================================
+
+.team-section {
+  .team-title {
+    color: $team-title;
+    box-shadow: 0 $highlight-height 0 0 $team-highlight inset;
   }
 }
