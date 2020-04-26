@@ -11,7 +11,7 @@
 
 <p align="center">
     Website deployment for TAMUdatathon
-    [[QA Website]](https://gigabowser.now.sh) [[Production Website]](https://tamudatathon.com)
+    [<a href="https://gigabowser.now.sh">QA Website</a>] [<a href="https://tamudatathon.com">Production Website</a>]
 </p>
 
 
