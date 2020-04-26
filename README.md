@@ -1,5 +1,7 @@
 <p align="center">
+  <a href="https://tamudatathon.com/">
     <img src="/static/img/logos/main.png" width="80" />
+  </a>
 </p>
 
 <h1 align="center">
