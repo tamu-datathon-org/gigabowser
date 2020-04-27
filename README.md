@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://tamudatathon.com/">
+  <a href="https://tamudatathon.com/" target="_blank">
     <img src="/static/img/logos/main.png" width="80" />
   </a>
 </p>
@@ -10,10 +10,12 @@
 </h1>
 
 <p align="center">
-    Website deployment for TAMUdatathon
-    [<a href="https://gigabowser.now.sh">QA Website</a>] [<a href="https://tamudatathon.com">Production Website</a>]
+    Website deployment for TAMUDatathon
+    <br />
+    <a href="https://gigabowser.now.sh" target="_blank">QA Website</a>
+    |
+    <a href="https://tamudatathon.com" target="_blank">Production Website</a>
 </p>
-
 
 ## :wrench: Installation
 ```
