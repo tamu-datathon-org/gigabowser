@@ -11,7 +11,7 @@
     "dev:sass": "node-sass -w scss/custom.scss static/css/style.css",
     "build": "npm run build:static && npm run build:sass",
     "build:static": "node lib/render_to_static.js",
-    "build:sass": "node-sass scss/custom.scss public/static/css/style.css",
+    "build:sass": "node-sass scss/custom.scss public/static/css/style.css --output-style compressed",
     "clean": "rm -rf public"
   },
   "repository": {
