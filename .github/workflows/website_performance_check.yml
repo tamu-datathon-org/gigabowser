@@ -13,12 +13,12 @@ jobs:
     runs-on: ubuntu-latest
     #needs: wait-for-vercel-deployment
     steps:
-      - run: echo running lighthouse test on https://gigabowser-git-${{github.payload.pull_request.head.ref}}.tamudatathon.now.sh
+      - run: echo Running lighthouse test on https://gigabowser-git-${{github.event.pull_request.head.ref}}.tamudatathon.now.sh
       - name: Run Lighthouse
         uses: foo-software/lighthouse-check-action@master
         with:
           accessToken: ${{ secrets.GITHUB_TOKEN }}
           author: ${{ github.actor }}
-          urls: https://gigabowser-git-${{github.payload.pull_request.head.ref}}.tamudatathon.now.sh
+          urls: https://gigabowser-git-${{github.event.pull_request.head.ref}}.tamudatathon.now.sh
           sha: ${{ github.sha }}
 
