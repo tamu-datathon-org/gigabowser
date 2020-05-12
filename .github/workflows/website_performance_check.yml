@@ -1,0 +1,20 @@
+name: "Lighthouse: Website Performance Check"
+on: [pull_request]
+
+jobs:
+  get-deployment-url:
+    steps:
+      - name: Get Deployment URL
+        id: get_deployment_url
+        uses: dorshinar/get-deployment-url@v1.0.0
+        timeout-minutes: 5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Run Lighthouse
+        uses: foo-software/lighthouse-check-action@master
+        with:
+          accessToken: ${{ secrets.GITHUB_TOKEN }}
+          author: ${{ github.actor }}
+          urls: ${{ stepsget_deployment_url.outputs.deployment }}
+          sha: ${{ github.sha }}
+
