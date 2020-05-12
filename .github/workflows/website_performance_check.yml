@@ -15,6 +15,6 @@ jobs:
         with:
           accessToken: ${{ secrets.GITHUB_TOKEN }}
           author: ${{ github.actor }}
-          urls: ${{ stepsget_deployment_url.outputs.deployment }}
+          urls: ${{ steps.get_deployment_url.outputs.deployment }}
           sha: ${{ github.sha }}
 
