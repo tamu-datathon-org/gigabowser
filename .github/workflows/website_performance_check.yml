@@ -5,16 +5,19 @@ jobs:
   get-deployment-url:
     steps:
       - name: Get Deployment URL
-        id: get_deployment_url
         uses: dorshinar/get-deployment-url@v1.0.0
         timeout-minutes: 5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+  run-lighthouse:
+    runs-on: ubuntu-latest
+    needs: get-deployment-url
+    steps:
       - name: Run Lighthouse
         uses: foo-software/lighthouse-check-action@master
         with:
           accessToken: ${{ secrets.GITHUB_TOKEN }}
           author: ${{ github.actor }}
-          urls: ${{ steps.get_deployment_url.outputs.deployment }}
+          urls: ${{ steps.get-deployment-url.outputs.deployment }}
           sha: ${{ github.sha }}
 
