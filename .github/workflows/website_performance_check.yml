@@ -11,7 +11,7 @@ jobs:
   #      time: '15s'
   run-lighthouse:
     runs-on: ubuntu-latest
-    needs: wait-for-vercel-deployment
+    #needs: wait-for-vercel-deployment
     steps:
       - run: echo running lighthouse test on https://gigabowser-git-${{github.payload.pull_request.head.ref}}.tamudatathon.now.sh
       - name: Run Lighthouse
