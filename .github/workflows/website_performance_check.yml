@@ -2,23 +2,26 @@ name: "Lighthouse: Website Performance Check"
 on: [pull_request]
 
 jobs:
-  get-deployment-url:
+  wait-for-vercel-deployment:
     runs-on: ubuntu-latest
     steps:
-      - name: Get Deployment URL
-        uses: dorshinar/get-deployment-url@v1.0.0
+      - name: Wait for deployment
+        uses: fountainhead/action-wait-for-check@v1.0.0
+        id: wait-for-deployment
         timeout-minutes: 5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          checkName: Vercel
+          ref: github.event.pull_request.head.sha || github.sha
   run-lighthouse:
     runs-on: ubuntu-latest
-    needs: get-deployment-url
+    needs: wait-for-vercel-deployment
     steps:
       - name: Run Lighthouse
         uses: foo-software/lighthouse-check-action@master
         with:
           accessToken: ${{ secrets.GITHUB_TOKEN }}
           author: ${{ github.actor }}
-          urls: ${{ steps.get-deployment-url.outputs.deployment }}
+          urls: "https://gigabowser-git-${GITHUB_REF##*/}.tamudatathon.now.sh"
           sha: ${{ github.sha }}
 
