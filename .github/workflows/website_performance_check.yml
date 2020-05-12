@@ -10,7 +10,7 @@ jobs:
         timeout-minutes: 5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          checkName: Vercel
+          checkName: now
           ref: ${{ github.event.pull_request.head.sha }}
   run-lighthouse:
     runs-on: ubuntu-latest
