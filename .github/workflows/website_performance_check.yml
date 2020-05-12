@@ -3,6 +3,7 @@ on: [pull_request]
 
 jobs:
   get-deployment-url:
+    runs-on: ubuntu-latest
     steps:
       - name: Get Deployment URL
         uses: dorshinar/get-deployment-url@v1.0.0
