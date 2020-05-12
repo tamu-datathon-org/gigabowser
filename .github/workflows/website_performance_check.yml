@@ -2,23 +2,23 @@ name: "Lighthouse: Website Performance Check"
 on: [pull_request]
 
 jobs:
-  wait-for-vercel-deployment:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Sleep and hope that Vercel deploys
-      uses: jakejarvis/wait-action@master
-      with:
-        time: '15s'
+  #wait-for-vercel-deployment:
+  #  runs-on: ubuntu-latest
+  #  steps:
+  #  - name: Sleep and hope that Vercel deploys
+  #    uses: jakejarvis/wait-action@master
+  #    with:
+  #      time: '15s'
   run-lighthouse:
     runs-on: ubuntu-latest
     needs: wait-for-vercel-deployment
     steps:
-      - run: echo running lighthouse test on https://gigabowser-git-${GITHUB_REF##*/}.tamudatathon.now.sh
+      - run: echo running lighthouse test on https://gigabowser-git-${{github.payload.pull_request.head.ref}}.tamudatathon.now.sh
       - name: Run Lighthouse
         uses: foo-software/lighthouse-check-action@master
         with:
           accessToken: ${{ secrets.GITHUB_TOKEN }}
           author: ${{ github.actor }}
-          urls: https://gigabowser-git-${GITHUB_REF##*/}.tamudatathon.now.sh
+          urls: https://gigabowser-git-${{github.payload.pull_request.head.ref}}.tamudatathon.now.sh
           sha: ${{ github.sha }}
 
