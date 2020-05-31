@@ -31,3 +31,7 @@ tippy(".industry-modal-trigger", {
   theme: "light",
   content: ref => `<p class="industry-icon-tooltip m-0">${ref.getAttribute("industry-title")}</p>`
 });
+
+$(".apply-btn").click(e => {
+  $("#mailchimp-modal").modal("show");
+});
