@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include ("./partials/head") %>
+
+<body>
+
+    <%- include ("./partials/navbar") %>
+
+    <!-- include splash for now -->
+    <!-- <%- include ("./partials/index/splash") %> -->
+    <!-- custom splash (will be implemented as partial later) -->
+    <div class="splash">
+        <div id="splash-content" class="col-md-10 d-flex flex-column">
+            <div style="padding: 8em 0;">
+                <h2 class="text-white"><%= props.title %></h2>
+                <p class="text-white" style="font-size: 1.3em"><%= props.path %></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
