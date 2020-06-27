@@ -8,6 +8,11 @@ $splash-light-purple: #7c408a;
   top: 0;
 }
 
+// remove above css styling
+.md-layout-nav {
+  position: relative !important;
+}
+
 .navbar-nav {
   font-size: 1.25em !important;
 }
