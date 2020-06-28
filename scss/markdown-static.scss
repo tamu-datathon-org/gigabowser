@@ -1,0 +1,13 @@
+.md-layout-nav {
+  border-bottom: solid 1px $portal-nav-border;
+
+  // make link blue
+  .nav-link {
+    color: $portal-dark-blue !important;
+  }
+}
+// make logo smaller
+.md-nav-logo {
+  width: 40px;
+  height: 40px;
+}
