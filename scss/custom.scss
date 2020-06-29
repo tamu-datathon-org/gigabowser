@@ -54,6 +54,8 @@ $theme-light-blue: #4fc2f8;
 
 $splash-light-purple: #7c408a;
 $splash-light-blue: #3f5aaa;
+$portal-dark-blue: #4740af;
+$portal-nav-border: #cfcfcf;
 
 // Import Bootstrap and its default variables
 // @import "../node_modules/bootstrap/scss/bootstrap.scss";
@@ -133,6 +135,7 @@ h6 {
 @import "mixins.scss";
 @import "team-card.scss";
 @import "industry-modal.scss";
+@import "markdown-static.scss";
 
 // Index page imports
 @import "index.scss";
