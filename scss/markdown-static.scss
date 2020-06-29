@@ -1,9 +1,14 @@
 .md-layout-nav {
   border-bottom: solid 1px $portal-nav-border;
 
+  .navbar-nav {
+    padding-right: 40px !important;
+  }
+
   // make link blue
   .nav-link {
     color: $portal-dark-blue !important;
+    padding: 10px 15px !important;
   }
 }
 // make logo smaller
