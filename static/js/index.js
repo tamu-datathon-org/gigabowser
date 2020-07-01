@@ -32,6 +32,6 @@ tippy(".industry-modal-trigger", {
   content: ref => `<p class="industry-icon-tooltip m-0">${ref.getAttribute("industry-title")}</p>`
 });
 
-$(".apply-btn").click(e => {
+$(".trigger-mail-modal").click(e => {
   $("#mailchimp-modal").modal("show");
 });
