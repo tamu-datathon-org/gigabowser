@@ -1,4 +1,7 @@
 // Index Page Colors
+$light-pink: #f4ecf2;
+$dark-purple: #8a3c7a;
+
 $about-title: darken(#9c2fb5, 5%) !default;
 $about-highlight: lighten($about-title, 48%) !default;
 
@@ -122,9 +125,14 @@ $highlight-ypos: 0.07em;
 // =====================================================
 $default-transition-height: 7vh;
 .splash-transition {
-  background: linear-gradient(to left bottom, transparent 49.5%, white 50%);
+  background: linear-gradient(to left bottom, transparent 49.5%, $light-pink 50%);
   height: $default-transition-height;
   margin-top: -$default-transition-height;
+}
+
+.summer-bootcamp-transition {
+  background: linear-gradient(to left bottom, $light-pink 49.5%, white 50%);
+  height: $default-transition-height;
 }
 
 .about-transition {
@@ -156,6 +164,36 @@ $default-transition-height: 7vh;
     font-weight: bold;
     display: inline-block;
     padding-bottom: $highlight-ypos;
+  }
+}
+
+// =====================================================
+//                Summer Bootcamp Section
+// =====================================================
+
+.summer-bootcamp-section {
+  background-color: $light-pink;
+  .summer-bootcamp-title {
+    color: $dark-purple;
+  }
+  .summer-bootcamp-content {
+    flex-wrap: wrap-reverse;
+  }
+
+  .summer-bootcamp-header {
+    font-size: 1.15em;
+    line-height: 1.5;
+    font-weight: 600;
+  }
+
+  .summer-bootcamp-description {
+    font-size: 1.15em;
+    line-height: 1.5;
+  }
+
+  .summer-bootcamp-img {
+    width: 100%;
+    max-width: 300px;
   }
 }
 
