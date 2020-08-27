@@ -10,6 +10,11 @@ $(document).ready(function () {
   const deadlineSecs = Math.floor( Date.parse(DEADLINE_DATE) / 1000 );
 
   if (ETA > 0) {
+      // Memoize a list of countdown display strings at time T for the next CONSTANTS.COUNTDOWN_REFRESH seconds.
+      // After each string of the list is displayed, the value at its index is rewritten by a callback
+      // with the display string value for T + CONSTANTS.COUNTDOWN_REFRESH, which makes up for any refresh
+      // frequency-based display errors.
+      // The typing logic loops over the list forever but gets updated time values due to the callbacks.
       for (let i = 0; i < CONSTANTS.COUNTDOWN_REFRESH; i++) {
           const countdownStr = getCountdownStrFromSeconds(deadlineSecs - Math.floor(Date.now() / 1000) - i);
           if (countdownStr !== undefined) {
@@ -25,6 +30,7 @@ $(document).ready(function () {
           loop: true,
           smartBackspace: true,
           onStringTyped: (i, self) => {
+              // Create and store display text for time T + length of memoized list.
               self.strings[i] = getCountdownStrFromSeconds(deadlineSecs - Math.floor(Date.now() / 1000) - self.strings.length);
               // Reset speeds on loop
               if (i == (self.strings.length - 1)) {
