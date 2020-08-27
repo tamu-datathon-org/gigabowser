@@ -7,12 +7,6 @@ const deadlineCheck = () => {
         $('.countdown-text').css({
             "display": "none"
         })
-        $('.apply-btn').css({
-            "display": "none"
-        })
-        $('.navbar-register').css({
-            "display": "none"
-        })
         $('.applications-closed-message').css({
             "display": "block"
         })
