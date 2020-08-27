@@ -4,48 +4,48 @@
  Here you'll find janky code written by a sleepy college junior who wanted to make a good looking countdown.
 */
 
-$(document).ready(function () {
-  var countdownStrings = []
+$(document).ready(function() {
+  var countdownStrings = [];
   const DEADLINE_DATE = CONSTANTS.DEADLINE_DATE;
-  const deadlineSecs = Math.floor( Date.parse(DEADLINE_DATE) / 1000 );
+  const deadlineSecs = Math.floor(Date.parse(DEADLINE_DATE) / 1000);
 
   if (ETA > 0) {
-      // Memoize a list of countdown display strings at time T for the next CONSTANTS.COUNTDOWN_REFRESH seconds.
-      // After each string of the list is displayed, the value at its index is rewritten by a callback
-      // with the display string value for T + CONSTANTS.COUNTDOWN_REFRESH, which makes up for any refresh
-      // frequency-based display errors.
-      // The typing logic loops over the list forever but gets updated time values due to the callbacks.
-      for (let i = 0; i < CONSTANTS.COUNTDOWN_REFRESH; i++) {
-          const countdownStr = getCountdownStrFromSeconds(deadlineSecs - Math.floor(Date.now() / 1000) - i);
-          if (countdownStr !== undefined) {
-              countdownStrings.push(countdownStr);
-          }
+    // Memoize a list of countdown display strings at time T for the next CONSTANTS.COUNTDOWN_REFRESH seconds.
+    // After each string of the list is displayed, the value at its index is rewritten by a callback
+    // with the display string value for T + CONSTANTS.COUNTDOWN_REFRESH, which makes up for any refresh
+    // frequency-based display errors.
+    // The typing logic loops over the list forever but gets updated time values due to the callbacks.
+    for (let i = 0; i < CONSTANTS.COUNTDOWN_REFRESH; i++) {
+      const countdownStr = getCountdownStrFromSeconds(deadlineSecs - Math.floor(Date.now() / 1000) - i);
+      if (countdownStr !== undefined) {
+        countdownStrings.push(countdownStr);
       }
-  
-      new Typed('#countdown-typed', {
-          strings: countdownStrings,
-          typeSpeed: 0,
-          backSpeed: 45,
-          backDelay: 490,
-          loop: true,
-          smartBackspace: true,
-          onStringTyped: (i, self) => {
-              // Create and store display text for time T + length of memoized list.
-              self.strings[i] = getCountdownStrFromSeconds(deadlineSecs - Math.floor(Date.now() / 1000) - self.strings.length);
-              // Reset speeds on loop
-              if (i == (self.strings.length - 1)) {
-                  self.typeSpeed = 10;
-                  self.backSpeed = 10;
-              } else {
-                  self.typeSpeed = 45;
-                  self.backSpeed = 45;
-              }
-          }
-      });
+    }
+
+    new Typed("#countdown-typed", {
+      strings: countdownStrings,
+      typeSpeed: 0,
+      backSpeed: 45,
+      backDelay: 490,
+      loop: true,
+      smartBackspace: true,
+      onStringTyped: (i, self) => {
+        // Create and store display text for time T + length of memoized list.
+        self.strings[i] = getCountdownStrFromSeconds(deadlineSecs - Math.floor(Date.now() / 1000) - self.strings.length);
+        // Reset speeds on loop
+        if (i == self.strings.length - 1) {
+          self.typeSpeed = 10;
+          self.backSpeed = 10;
+        } else {
+          self.typeSpeed = 45;
+          self.backSpeed = 45;
+        }
+      }
+    });
   }
 });
 
-const getCountdownStrFromSeconds = (secs) => {
+const getCountdownStrFromSeconds = secs => {
   secs = Math.max(secs, 0);
   let info = {};
   info.days = Math.floor(secs / 86400);
@@ -56,8 +56,8 @@ const getCountdownStrFromSeconds = (secs) => {
   secs = secs % 60;
   info.secs = Math.floor(secs);
   return getFormattedCountdown(info);
-}
+};
 
-const getFormattedCountdown = (info) => {
+const getFormattedCountdown = info => {
   return `${info.days}d ${info.hours}h ${info.minutes}m ${info.secs}s `;
-}
+};
