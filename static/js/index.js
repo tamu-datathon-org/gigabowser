@@ -1,3 +1,8 @@
+const CONSTANTS = {
+  DEADLINE_DATE: '2020-09-17T00:00:00-05:00',
+  COUNTDOWN_REFRESH: 10,
+};
+
 $(".industry-modal-trigger").click(e => {
   const industryId = $(e.target).attr("industry-id");
   if (!industryId)

@@ -44,6 +44,11 @@ $highlight-ypos: 0.07em;
 
   display: flex;
   justify-content: center;
+
+  .applications-closed-message {
+    display: none;
+    color: #fdcb6e;
+  }
 }
 
 #splash-content {
