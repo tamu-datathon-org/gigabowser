@@ -11,28 +11,19 @@
       </div>
     </div>
   </div>
-  
+
   <!-- Past Sponsors of Industries -->
-  <!-- <% if (industryPastSponsors.length > 0) { %>
+  <!-- <% if (industryPastSponsors.length > 0) { %> <div class="row"> <h5 class="mx-3">Past Sponsors:</h5> <div class="industry-modal-content-sponsors"> <% industryPastSponsors.forEach(sponsor => { %> <a href="<%= sponsor.url %>" target="_blank"><img class="industry-modal-sponsor-img" src="<%- sponsor.img %>" alt="<%= sponsor.name %>"></a> <% }) %> </div> </div> <% } %> -->
+
+  <!-- Current Sponsors of Industries -->
+  <% if (industryCurrentSponsors.length > 0) { %>
   <div class="row">
-    <h5 class="mx-3">Past Sponsors:</h5>
+    <h5 class="mx-3">Current Sponsors:</h5>
     <div class="industry-modal-content-sponsors">
-      <% industryPastSponsors.forEach(sponsor => { %>
+      <% industryCurrentSponsors.forEach(sponsor => { %>
       <a href="<%= sponsor.url %>" target="_blank"><img class="industry-modal-sponsor-img" src="<%- sponsor.img %>" alt="<%= sponsor.name %>"></a>
       <% }) %>
     </div>
   </div>
-  <% } %> -->
-
-  <!-- Current Sponsors of Industries -->
-  <% if (industryCurrentSponsors.length > 0) { %>
-    <div class="row">
-      <h5 class="mx-3">Current Sponsors:</h5>
-      <div class="industry-modal-content-sponsors">
-        <% industryCurrentSponsors.forEach(sponsor => { %>
-        <a href="<%= sponsor.url %>" target="_blank"><img class="industry-modal-sponsor-img" src="<%- sponsor.img %>" alt="<%= sponsor.name %>"></a>
-        <% }) %>
-      </div>
-    </div>
-    <% } %>
+  <% } %>
 </div>
