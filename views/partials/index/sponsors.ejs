@@ -14,18 +14,11 @@
     <h3>Our Current Sponsors:</h3>
     <div class="sponsor-images">
       <% for (let currentSponsor of req.currentSponsors) {  %>
-        <a href="<%= currentSponsor.url %>" target="_blank">
-          <img class="sponsor-img <%= currentSponsor.variant %>" src="<%= currentSponsor.img %>" alt="<%= currentSponsor.name %>"></img>
-        </a>
-      <% } %>
-    </div>
-    <!-- <h3>Our Past Sponsors:</h3>
-    <div class="sponsor-images">
-      <% for (let pastSponsor of req.pastSponsors) {  %>
-      <a href="<%= pastSponsor.url %>" target="_blank">
-        <img class="sponsor-img <%= pastSponsor.variant %>" src="<%= pastSponsor.img %>" alt="<%= pastSponsor.name %>"></img>
+      <a href="<%= currentSponsor.url %>" target="_blank">
+        <img class="sponsor-img <%= currentSponsor.variant %>" src="<%= currentSponsor.img %>" alt="<%= currentSponsor.name %>"></img>
       </a>
       <% } %>
-    </div> -->
+    </div>
+    <!-- <h3>Our Past Sponsors:</h3> <div class="sponsor-images"> <% for (let pastSponsor of req.pastSponsors) { %> <a href="<%= pastSponsor.url %>" target="_blank"> <img class="sponsor-img <%= pastSponsor.variant %>" src="<%= pastSponsor.img %>" alt="<%= pastSponsor.name %>"></img> </a> <% } %> </div> -->
   </div>
 </div>
