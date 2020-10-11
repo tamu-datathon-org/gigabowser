@@ -32,8 +32,8 @@ You'll submit your machine learning model to a link we will provide. You're proj
 
 ### Helpful Workshops
 - How to Win TAMU Datathon: Sat, 13:00-14:00
-- Intro to Neural Nets
-- Reinforcment Learning
+- Intro to Neural Nets: Sat, 20:00-21:15
+- Reinforcment Learning: Sat, 21:30-22:45
 
 ### 💰Prizes💰
 - 1st: $500 Amazon gift card per team member
