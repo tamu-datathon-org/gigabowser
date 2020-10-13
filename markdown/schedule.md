@@ -9,7 +9,7 @@ path: /schedule
 Everything that will be happening during TAMU Datathon 2020
 
 Table Legend:
-**Key Events**  ·  <sponsor>Sponsor Events</sponsor>  ·  <course>Workshops</course>  ·  <other>Fun Events</other>
+**Key Events**  ·  <sponsor>Sponsor Events</sponsor>  ·  <course>Classes</course>  ·  <other>Fun Events</other>
 
 
 
@@ -31,16 +31,16 @@ Table Legend:
 | **Team Building**                | 10:30 - 12:00 |
 | <course>TAMIDS                   | 11:00 - 12:00 |
 | <sponsor>General Motors - Career Fair| 12:00 - 1:00  |
-| <course>Mathworks                | 12:00 - 1:00  |
+| <sponsor>Mathworks               | 12:00 - 1:00  |
 | <course>How to Win TD            | 1:00 - 2:00   |
-| <course>Walmart                  | 1:00 - 2:00   |
+| <sponsor>Walmart                 | 1:00 - 2:00   |
 | <course>Getting a Job in DS/ML   | 2:00 - 3:00   |
-| <course>TTI                      | 2:00 - 3:00   |
-| <course>HPE                      | 3:00 - 4:00   |
+| <sponsor>TTI                     | 2:00 - 3:00   |
+| <sponsor>HPE                     | 3:00 - 4:00   |
 | <sponsor>TTI - Career Fair       | 3:00 - 4:00   |
-| <other>MLH                       | 3:00 - 4:00   |
+| <sponsor>MLH                     | 3:00 - 4:00   |
 | <course>Stats for DS             | 4:00 - 5:00   |
-| <course>Tableau                  | 4:00 - 5:00   |
+| <sponsor>Tableau                 | 4:00 - 5:00   |
 | <course>Data Wrangling           | 5:00 - 6:15   |
 | <course>NLP                      | 5:00 - 6:15   |
 | <course>Data Visualization       | 6:30 - 7:45   |
