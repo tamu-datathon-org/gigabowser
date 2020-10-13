@@ -6,7 +6,7 @@ path: /schedule
 
 # 🗓
 # Schedule
-Everything that will be happening during TAMU Datathon 2020
+Everything that will be happening during TAMU Datathon 2020. Make sure to check the `CLASSES` category of channels on the discord or [the events page](/events) for more information.
 
 Table Legend:
 **Key Events**  ·  <sponsor>Sponsor Events</sponsor>  ·  <course>Classes</course>  ·  <other>Fun Events</other>
@@ -58,7 +58,7 @@ Table Legend:
 
 <!-- | Judging Meetup           | 11:30 - 12:00 | -->
 
-| Event Name                  | Time (CDT)    |
+| Event.                      | Time (CDT)    |
 |:-------------------------   |--------------:|
 | **Devpost Submissions Due** | 12:00         |
 | <course>ML Interpretability | 12:00  - 1:15 |
