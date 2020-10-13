@@ -75,7 +75,7 @@ $portal-nav-border: #cfcfcf;
 // @import "images";
 // @import "code";
 @import "../node_modules/bootstrap/scss/grid";
-// @import "tables";
+@import "../node_modules/bootstrap/scss/tables";
 @import "../node_modules/bootstrap/scss/forms";
 @import "../node_modules/bootstrap/scss/buttons";
 @import "../node_modules/bootstrap/scss/transitions";
@@ -127,6 +127,31 @@ h4,
 h5,
 h6 {
   font-family: "Roboto Mono", monospace !important;
+}
+
+.table {
+  width: 55%;
+  max-width: 700px;
+  min-width: 300px;
+}
+
+.table th:first-of-type {
+  width: 50%;
+}
+.table th:nth-of-type(2) {
+  width: 50%;
+}
+
+sponsor {
+  color: #19159d;
+}
+
+course {
+  color: #188978;
+}
+
+other {
+  color: #8b2aa1;
 }
 
 // Import all partials & page css files
