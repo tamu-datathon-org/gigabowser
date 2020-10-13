@@ -61,10 +61,10 @@ Table Legend:
 | Event Name                  | Time (CDT)    |
 |:-------------------------   |--------------:|
 | **Devpost Submissions Due** | 12:00         |
+| <course>ML Interpretability | 12:00  - 1:15 |
 | <other>Kahoot               | 12:00 - 1:00  |
 | Judging                     | 12:00 - 3:00  |
 | **Closing Ceremony**        | 3:00 - 4:00   |
-| <course>ML Interpretability | 6:30  - 7:45  |
 
 <br>
 
