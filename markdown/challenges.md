@@ -101,7 +101,7 @@ You'll submit your machine learning model to a link we will provide. You're proj
 
 TD wants to make a *For-You* page on tamudatathon.com that is personalized to every attendee. Can you use the TAMU Datathon applicant data to make this possible?
 
-> **Some Ideas (but you don't have to do these)**
+> **Some Ideas (but you don't have to do these)**---
 >
 > - Participant Achievement Dashboard (Visualization)
 > - Recommending Workshops (Supervised Learning)
@@ -123,7 +123,7 @@ This is an open-ended challenge but and you can do whatever you want! We will ju
 
 - 1st: $400 Amazon gift card per team member
 
---
+---
 <br/>
 <a name="td_mover"></a>
 <center>
@@ -171,7 +171,7 @@ A myriad of decisions go into picking the perfect place to call home — politic
 <center>
 # Company Challenges
 </center>
----
+----
 
 <br/>
 <a name="walmart"></a>
@@ -213,7 +213,7 @@ Results of the search engine relevance against the query when clustering has bee
 - 2nd Place Team - Bose Speakers
 - 3rd Place Team - Instax Instant Cameras
 
---
+---
 <br/>
 <a name="capitol_one"></a>
 <center>
@@ -227,7 +227,7 @@ Results of the search engine relevance against the query when clustering has bee
 
 - $250 Amazon Gift Cards for each member of the winning team
 
---
+---
 <br/>
 <a name="hpe"></a>
 <center>
@@ -254,7 +254,7 @@ Teams should use datasets gathered from public sources.
 
 - Raspberry Pi 4 Starter Kit 
 
---
+---
 <br/>
 <a name="mathworks"></a>
 <center>
