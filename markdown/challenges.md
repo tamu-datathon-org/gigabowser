@@ -159,7 +159,7 @@ A myriad of decisions go into picking the perfect place to call home — politic
 - Data Wrangling: Sat, 17:00-18:15
 - Data Visualization: Sat, 18:30-19:45
 - ML Intro-Part 1-Theory: Sat, 20:00-21:15
-- ML Intro-Part 2-Application: Sat, 21:30-22:45
+- ML Intro-Part 2-Applied: Sat, 21:30-22:45
 
 **💰Prizes💰**
 
@@ -174,7 +174,7 @@ A myriad of decisions go into picking the perfect place to call home — politic
 <br/>
 <a name="walmart"></a>
 <center>
-![](https://tamudatathon.com/static/img/sponsors/current/walmart_logo.png)
+![](https://1000logos.net/wp-content/uploads/2017/05/Color-Walmart-logo.jpg)
 ### Walmart
 </center>
 
