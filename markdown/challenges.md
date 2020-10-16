@@ -27,7 +27,7 @@ You can compete in company challenges and/or TAMU Datathon challenges.
 - [HPE](#hpe)
 - [MathWorks](#mathworks) 
 
---
+---
 
 <a name="td_open"></a>
 
@@ -61,7 +61,7 @@ Do whatever the heck you want! We're sure it's gonna be cool 👩‍💻
 - 2nd: $200 Amazon gift card per team member
 - 3rd: $100 Amazon gift card per team member
 
---
+---
 <br/>
 <a name="td_stock"></a>
 <center>
@@ -88,7 +88,7 @@ You'll submit your machine learning model to a link we will provide. You're proj
 
 - 1st: $500 Amazon gift card per team member
 
---
+---
 <br/>
 <a name="td_recommend"></a>
 <center>
