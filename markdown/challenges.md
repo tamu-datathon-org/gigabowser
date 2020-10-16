@@ -66,7 +66,7 @@ Do whatever the heck you want! We're sure it's gonna be cool 👩‍💻
 <a name="td_stock"></a>
 <center>
 ![](https://g.foolcdn.com/editorial/images/594101/two-growth-stocks-to-buy-now.jpg)
-### Stock Prediction (Advanced) 
+### Stock Prediction (Advanced)
 </center>
 
 **[Starter Notebook](https://colab.research.google.com/drive/1ccBdCnkvaHIeyUoufQzRziXN_me15L6p?usp=sharing)**
@@ -145,13 +145,11 @@ A myriad of decisions go into picking the perfect place to call home — politic
 
 **How We Judge**
 
-- *Purpose*: Communicated a clear understanding of the problem
-- *Framework*: Mapped the task to a data science problem
 - *Data Use*: Effectively used data, acquired additional data
-- *Models & Analytics*: Effective application of analytics
-- *Validation*: Assessed quality of solutions & models
-- *Impact*: Clear description of impact of solution to solving problem
-- *Oral Presentation*: Effectiveness, engagement, and team performance
+- *Analytics*: Effective application of analytics (bonus points for ML/clustering techniques)
+- *Visualization*: Solution is visually appealing and useful (Bonus points if you create an interactive tool/application/website)
+- *Impact*: Clear impact of solution to solving problem
+
 
 **Helpful Workshops**
 
