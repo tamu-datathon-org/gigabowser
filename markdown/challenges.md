@@ -39,7 +39,7 @@ You can compete in company challenges and/or TAMU Datathon challenges.
 
 Do whatever the heck you want! We're sure it's gonna be cool 👩‍💻 
 
-> **Note**: You can submit to a company challenge and this challenge, but your **can't** submit to any other TD challenge and this challenge.
+> **Note**: You can submit to a company challenge and this challenge, but you **can't** submit to any other TD challenge and this challenge.
 
 **How We Judge**
 
@@ -69,20 +69,20 @@ Do whatever the heck you want! We're sure it's gonna be cool 👩‍💻
 ### Stock Prediction (Advanced)
 </center>
 
-**[Starter Notebook](https://colab.research.google.com/drive/1ccBdCnkvaHIeyUoufQzRziXN_me15L6p?usp=sharing)**
+**[Starter Notebook](https://colab.research.google.com/drive/1V5mJ-_2j83WkiyfXphvYQC-SBnHkPvJG?usp=sharing)**
 
 Can you predict the future of stock? We recommend using reinforcement learning but do whatever works best!
 
 
 **How We Judge**
 
-You'll submit your machine learning model to a link we will provide. You're project will solely be judged on your model's performance (how much money your model makes) on unseen stock time series data.
+You'll submit your machine learning model to a link we will provide. Your project will solely be judged on your model's performance (how much money your model makes) on unseen stock time series data.
 
 **Helpful Workshops**
 
 - How to Win TAMU Datathon: Sat, 13:00-14:00
 - Intro to Neural Nets: Sat, 20:00-21:15
-- Reinforcment Learning: Sat, 21:30-22:45
+- Reinforcement Learning: Sat, 21:30-22:45
 
 **💰Prizes💰**
 
@@ -111,7 +111,7 @@ TD wants to make a *For-You* page on tamudatathon.com that is personalized to ev
 
 **How We Judge**
 
-This is an open-ended challenge but and you can do whatever you want! We will judge on the percieved value of your solution to future datathon particpants.
+This is an open-ended challenge but and you can do whatever you want! We will judge on the perceived value of your solution to future datathon participants.
 
 **Helpful Workshops**
 
@@ -138,10 +138,10 @@ This is an open-ended challenge but and you can do whatever you want! We will ju
 
 There are a lot of factors that go into making a big move, and for many people, the top priority is either their job or their family. But if you’re on your own and you have job flexibility to go basically wherever you want (i.e. you work remotely), then what? In that case, you have the luxury of finding a place that suits you—and not necessarily just your career.
 
-A myriad of decisions go into picking the perfect place to call home — political leanings, crime rates, walkability, affordability, religious affiliations, weather and more — can you make a tool that allows aggie graduates and others to find thier next move?
+A myriad of decisions go into picking the perfect place to call home — political leanings, crime rates, walkability, affordability, religious affiliations, weather, and more — can you make a tool that allows aggie graduates and others to find their next move?
 
 
-[High speed internet](https://www.highspeedinternet.com/best-cities-to-live-work-remotely) (of all people?!) made a tool to do this.... but you can do better! Think of more factors: like median income of a location, cuisine, primary ethnicity, pollution index, happiness index, number of coffee shops or microbreweries in the city, etc. There's no end! Furthermore, maybe you are an international student and want to make this tool for global placement! Go for it! Maybe you want to penalize distance from POI's (points of interest) like family. Do it! The world is your oyster!
+[High-speed internet](https://www.highspeedinternet.com/best-cities-to-live-work-remotely) (of all people?!) made a tool to do this.... but you can do better! Think of more factors: median income of a location, cuisine, primary ethnicity, pollution index, happiness index, number of coffee shops or microbreweries in the city, etc. There's no end! Furthermore, maybe you are an international student and want to make this tool for global placement! Go for it! Maybe you want to penalize distance from POI's (points of interest) like family. Do it! The world is your oyster!
 
 
 
@@ -181,19 +181,19 @@ A myriad of decisions go into picking the perfect place to call home — politic
 </center>
 
 
-We want you to build a product search engine. Walmart is a fortune 1 retail company that operates a chain of hypermarkets, discount departments stores and grocery stores, headquartered in Bentonville, Arkansas. Apart from these Walmart has a big online business with well over 65+ online banners under its name including Walmart.com. Naming a few such as Moosejaw, Bonobos, jet etc.
+We want you to build a product search engine. Walmart is a fortune 1 retail company that operates a chain of hypermarkets, discount department stores, and grocery stores, headquartered in Bentonville, Arkansas. Apart from these Walmart has a big online business with well over 65+ online banners under its name including Walmart.com. Naming a few such as Moosejaw, Bonobos, jet, etc.
  
-The main area of focus is to provide a customer a consistent user experience when he/she is searching for a product from our website. We achieve that by developing consistent product clusters based on learning rule analysis on Walmart.com but also by overlaying some natural language processing with the use of indexes to get meaningful results when a query is provided.
+The main area of focus is to provide a customer with a consistent user experience when he/she is searching for a product from our website. We achieve that by developing consistent product clusters based on learning rule analysis on Walmart.com but also by overlaying some natural language processing with the use of indexes to get meaningful results when a query is provided.
  
 Now let us talk about some of those tasks that need to be completed to successfully complete the hack.
  
 - Task 1
  
-	- Teams will be responsible for crawling the Walmart.com to assemble a collection of 20,000 products web pages and their Web graph. For this hack we are going to consider at least 9 categories with Food, Electronics, Personal care, Toys and Home as compulsory categories but the team has liberty to choose 4 other categories of their liking.
+	- Teams will be responsible for crawling the Walmart.com to assemble a collection of 20,000 products web pages and their Web graph. For this hack we are going to consider at least 9 categories with Food, Electronics, Personal care, Toys, and Home as compulsory categories but the team has the liberty to choose 4 other categories of their liking.
  
 - Task 2
  
-	 - Teams will be responsible for indexing the crawled web pages and for the link analysis of the Web graph that was retrieved by crawling. Participants shall choose any one of the relevant models of their liking such as the vector space model, probabilistic model, latent semantic or linguistic and knowledge base model. I highly recommend the last model.
+	 - Teams will be responsible for indexing the crawled web pages and for the link analysis of the Web graph that was retrieved by crawling. Participants shall choose any one of the relevant models of their liking such as the vector space model, probabilistic model, latent semantic or linguistic, and knowledge base model. I highly recommend the last model.
  
 - Task 3
  
@@ -270,7 +270,7 @@ Come to our workshop to find out how to use MATLAB for your project! If you can'
 - [Machine Learning](https://www.mathworks.com/learn/tutorials/machine-learning-onramp.html)
 - [Deep Learning](https://www.mathworks.com/learn/tutorials/deep-learning-onramp.html)
 
-For Texas A&M affiliated participants, MATLAB is available to them for free through the campus wide licenses:
+For Texas A&M affiliated participants, MATLAB is available to them for free through the campus-wide licenses:
 
 - [MATLAB 2020](https://software.tamu.edu/public/ViewProductGroup.aspx?groupId=281)
  
@@ -282,7 +282,7 @@ For participants not from Texas A&M, here are some links to temporary licenses f
 
 **💰Prizes💰**
 
-- $500 cash prize to be distributed amoungst the winning team
+- $500 cash prize to be distributed amongst the winning team
 
 
 

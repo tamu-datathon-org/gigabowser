@@ -151,6 +151,11 @@ $default-transition-height: 7vh;
   height: $default-transition-height;
 }
 
+.main-event-transition {
+  background: linear-gradient(to left bottom, $light-pink 49.5%, white 50%);
+  height: $default-transition-height;
+}
+
 .about-transition {
   background: linear-gradient(to left bottom, white 49.5%, $industries-background 50%);
   height: $default-transition-height;
@@ -210,6 +215,31 @@ $default-transition-height: 7vh;
   .summer-bootcamp-img {
     width: 100%;
     max-width: 300px;
+  }
+}
+
+.main-event-section {
+  background-color: $light-pink;
+  .main-event-title {
+    color: $dark-purple;
+  }
+  .main-event-content {
+    flex-wrap: wrap-reverse;
+  }
+
+  .main-event-header {
+    font-size: 1.15em;
+    line-height: 1.5;
+    font-weight: 600;
+  }
+
+  .main-event-description {
+    font-size: 1.15em;
+    line-height: 1.5;
+  }
+
+  .main-event-img {
+    width: 100%;
   }
 }
 
