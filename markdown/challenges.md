@@ -116,6 +116,8 @@ This is an open-ended challenge but and you can do whatever you want! We will ju
 **Helpful Workshops**
 
 - How to Win TAMU Datathon: Sat, 13:00-14:00
+- ML Introduction Part 1/2 Theory: Sat, 20:00-21:15
+- ML Introduction Part 2/2 Applied: Sat, 21:30-22:45
 - Natural Language Processing: Sat, 17:00-18:15
 - Recommendation Engines: Sat, 18:30-19:45
 
@@ -158,8 +160,8 @@ A myriad of decisions go into picking the perfect place to call home — politic
 - How to Win TAMU Datathon: Sat, 13:00-14:00
 - Data Wrangling: Sat, 17:00-18:15
 - Data Visualization: Sat, 18:30-19:45
-- ML Intro-Part 1-Theory: Sat, 20:00-21:15
-- ML Intro-Part 2-Applied: Sat, 21:30-22:45
+- ML Introduction Part 1/2 Theory: Sat, 20:00-21:15
+- ML Introduction Part 2/2 Applied: Sat, 21:30-22:45
 
 **💰Prizes💰**
 
