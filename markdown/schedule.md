@@ -28,7 +28,7 @@ Table Legend:
 | **Team Building**                | 10:30 - 12:00 |
 | <course>TAMIDS                   | 11:00 - 12:00 |
 | <sponsor>General Motors - Career Fair| 12:00 - 13:00  |
-| <sponsor>Mathworks               | 12:00 - 13:00  |
+| <sponsor>Mathworks               | 12:00 - 13:00   |
 | <course>How to Win TD            | 13:00 - 14:00   |
 | <sponsor>Walmart                 | 13:00 - 14:00   |
 | <sponsor>TTI                     | 14:00 - 15:00   |
@@ -45,7 +45,6 @@ Table Legend:
 | <course>ML Intro & Regression    | 20:00 - 21:15   |
 | <course>ML-Classification        | 21:30 - 22:45   |
 | <course>Reinforcement Learning   | 21:30 - 22:45   |
-| <other>Zumba                     | 23:00 - 00:00   |
 | <other>Midnight Musings          | 00:00 - 1:00 (Sunday)  |
 | <other>Kahoot                    | 00:00 - 1:00 (Sunday)  |
 
@@ -60,11 +59,11 @@ Table Legend:
 |:-------------------------   |--------------:|
 | <other>Midnight Musings     | 00:00 - 1:00  |
 | <other>Kahoot               | 00:00 - 1:00  |
-| **Devpost Submissions Due** | 12:00 (Noon)  |
+| **Devpost Submissions Due** | 11:00         |
 | <course>ML Interpretability | 12:00 - 13:15 |
 | Judging                     | 12:00 - 14:00 |
-| **Closing Ceremony**        | 15:00 - 16:00 |
 | <course>Getting a Job in DS | 14:00 - 15:00 |
+| **Closing Ceremony**        | 15:00 - 16:00 |
 
 <br>
 
