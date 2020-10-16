@@ -99,14 +99,14 @@ You'll submit your machine learning model to a link we will provide. You're proj
 
 **[Starter Notebook](https://colab.research.google.com/drive/1B6L_AHQ1fQzq6clGf5jgLWvM6gn_Xxad?usp=sharing)**
 
-TD wants to make a *For-You* page on tamudatathon.com that is personalized to every attendee. Can you use the TAMU Datathon data to make this possible?
+TD wants to make a *For-You* page on tamudatathon.com that is personalized to every attendee. Can you use the TAMU Datathon applicant data to make this possible?
 
 > **Some Ideas (but you don't have to do these)**
 >
 > - Participant Achievement Dashboard (Visualization)
-- Recommending Workshops (Supervised Learning)
-- Team Building (Clustering)
-- Workshops Search Engine (Natural Language Processing)
+> - Recommending Workshops (Supervised Learning)
+> - Team Building (Clustering)
+> - Workshops Search Engine (Natural Language Processing)
 
 
 **How We Judge**
@@ -262,11 +262,27 @@ Teams should use datasets gathered from public sources.
 ### Mathworks
 </center>
 
-Best use of MatLab.
+We are looking for the most creative and effective use of MATLAB to solve any challenge. 
+
+Come to our workshop to find out how to use MATLAB for your project! If you can't wait for the workshop, here are some trainings for you to get familiar with how to use MATLAB for data science:
+
+- [MATLAB](https://www.mathworks.com/learn/tutorials/matlab-onramp.html)
+- [Machine Learning](https://www.mathworks.com/learn/tutorials/machine-learning-onramp.html)
+- [Deep Learning](https://www.mathworks.com/learn/tutorials/deep-learning-onramp.html)
+
+For Texas A&M affiliated participants, MATLAB is available to them for free through the campus wide licenses:
+
+- [MATLAB 2020](https://software.tamu.edu/public/ViewProductGroup.aspx?groupId=281)
+ 
+
+For participants not from Texas A&M, here are some links to temporary licenses for the competition:
+
+- [To download MATLAB desktop](https://www.mathworks.com/licensecenter/classroom/DC_3267846/)
+- [To use MATLAB online (through web browser)](https://www.mathworks.com/licensecenter/classroom/MO_3267846/)
 
 **💰Prizes💰**
 
-- TBD
+- $500 cash prize to be distributed amoungst the winning team
 
 
 
