@@ -17,7 +17,7 @@ You can compete in company challenges and/or TAMU Datathon challenges.
 
 - [Make-Your-Own](#td_open)
 - [Stock Prediction (Advanced)](#td_stock)
-- [Workshop Recommendations (Intermediate)](#td_recommend)
+- [TD For-You Page (Intermediate)](#td_recommend)
 - [City Search Tool (Beginner)](#td_mover)
 
 **Company**
@@ -94,7 +94,7 @@ You'll submit your machine learning model to a link we will provide. You're proj
 <center>
 ![](https://www.aarki.com/hubfs/ML-recommendation-engine-1.jpg)
 
-### Workshop Recommendations (Intermediate) 
+### TD For-You Page (Intermediate) 
 </center>
 
 **[Starter Notebook](https://colab.research.google.com/drive/1B6L_AHQ1fQzq6clGf5jgLWvM6gn_Xxad?usp=sharing)**
@@ -158,8 +158,8 @@ A myriad of decisions go into picking the perfect place to call home — politic
 - How to Win TAMU Datathon: Sat, 13:00-14:00
 - Data Wrangling: Sat, 17:00-18:15
 - Data Visualization: Sat, 18:30-19:45
-- Machine Learning Theory: Sat, 20:00-21:15
-- Machine Learning Classification: Sat, 21:30-22:45
+- ML Intro-Part 1-Theory: Sat, 20:00-21:15
+- ML Intro-Part 2-Application: Sat, 21:30-22:45
 
 **💰Prizes💰**
 
