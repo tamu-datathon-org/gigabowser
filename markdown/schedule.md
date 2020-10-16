@@ -28,25 +28,25 @@ Table Legend:
 | **Team Building**                | 10:30 - 12:00 |
 | <course>TAMIDS                   | 11:00 - 12:00 |
 | <sponsor>General Motors - Career Fair| 12:00 - 13:00  |
-| <sponsor>Mathworks               | 12:00 - 1:00  |
-| <course>How to Win TD            | 12:00 - 14:00   |
-| <sponsor>Walmart                 | 12:00 - 14:00   |
-| <course>Getting a Job in DS/ML   | 14:00 - 14:00   |
-| <sponsor>TTI                     | 14:00 - 14:00   |
-| <sponsor>HPE                     | 14:00 - 16:00   |
-| <sponsor>TTI - Career Fair       | 14:00 - 16:00   |
-| <sponsor>MLH                     | 14:00 - 16:00   |
+| <sponsor>Mathworks               | 12:00 - 13:00  |
+| <course>How to Win TD            | 13:00 - 14:00   |
+| <sponsor>Walmart                 | 13:00 - 14:00   |
+| <sponsor>TTI                     | 14:00 - 15:00   |
+| <sponsor>HPE                     | 15:00 - 16:00   |
+| <sponsor>TTI - Career Fair       | 15:00 - 16:00   |
+| <sponsor>MLH                     | 15:00 - 16:00   |
 | <course>Stats for DS             | 16:00 - 17:00   |
 | <sponsor>Tableau                 | 16:00 - 17:00   |
 | <course>Data Wrangling           | 17:00 - 18:15   |
 | <course>NLP                      | 17:00 - 18:15   |
 | <course>Data Visualization       | 18:30 - 19:45   |
-| <course>Search Engines           | 18:30 - 19:45   |
+| <course>Recommendation Systems   | 18:30 - 19:45   |
 | <course>Intro to Neural Nets     | 20:00 - 21:15   |
 | <course>ML Intro & Regression    | 20:00 - 21:15   |
-| <course>ML-Classification        | 21:30 - 22:45  |
-| <course>RL                       | 21:30 - 22:45  |
-| <other>Zumba                     | 23:00 - 00:00 |
+| <course>ML-Classification        | 21:30 - 22:45   |
+| <course>Reinforcement Learning   | 21:30 - 22:45   |
+| <other>Zumba                     | 23:00 - 00:00   |
+| <other>Midnight Musings          | 00:00 - 1:00 (Sunday)  |
 | <other>Kahoot                    | 00:00 - 1:00 (Sunday)  |
 
 <br><br>
@@ -56,13 +56,15 @@ Table Legend:
 
 <!-- | Judging Meetup           | 11:30 - 12:00 | -->
 
-| Event.                      | Time (CDT)    |
+| Event                       | Time (CDT)    |
 |:-------------------------   |--------------:|
+| <other>Midnight Musings     | 00:00 - 1:00  |
 | <other>Kahoot               | 00:00 - 1:00  |
-| **Devpost Submissions Due** | 12:00         |
-| <course>ML Interpretability | 12:00  - 13:15 |
-| Judging                     | 12:00 - 14:00  |
-| **Closing Ceremony**        | 14:00 - 16:00   |
+| **Devpost Submissions Due** | 12:00 (Noon)  |
+| <course>ML Interpretability | 12:00 - 13:15 |
+| Judging                     | 12:00 - 14:00 |
+| **Closing Ceremony**        | 15:00 - 16:00 |
+| <course>Getting a Job in DS | 14:00 - 15:00 |
 
 <br>
 
