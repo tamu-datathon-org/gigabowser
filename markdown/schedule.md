@@ -48,7 +48,6 @@ Table Legend:
 | <course>RL                       | 21:30 - 22:45  |
 | <other>Zumba                     | 23:00 - 00:00 |
 | <other>Kahoot                    | 00:00 - 1:00 (Sunday)  |
-| <course>ML Interpretability      | 00:00  - 1:15 (Sunday) |
 
 <br><br>
 ### Sunday - October 18
@@ -59,9 +58,9 @@ Table Legend:
 
 | Event.                      | Time (CDT)    |
 |:-------------------------   |--------------:|
-| <other>Kahoot               | 12:00 - 1:00  |
-| <course>ML Interpretability | 12:00  - 1:15 |
+| <other>Kahoot               | 00:00 - 1:00  |
 | **Devpost Submissions Due** | 12:00         |
+| <course>ML Interpretability | 12:00  - 13:15 |
 | Judging                     | 12:00 - 14:00  |
 | **Closing Ceremony**        | 14:00 - 16:00   |
 
