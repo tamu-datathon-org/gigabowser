@@ -24,7 +24,7 @@ Table Legend:
 |:-------------------------------- |--------------:|
 | <a href="" target="_blank"><main>Opening Ceremony           | 9:30 - 10:30  |
 | <a href="" target="_blank"><sponsor>TAMIDS - Career Fair    | 10:30 - 11:00 |
-| <a href="" target="_blank"><course>Intro to Python          | 10:30 - 12:00 |
+| <a href="" target="_blank"><course>Getting started with Python          | 10:30 - 12:00 |
 | <a href="" target="_blank"><main>Team Building              | 10:30 - 12:00 |
 | <a href="" target="_blank"><course>TAMIDS                   | 11:00 - 12:00 |
 | <a href="" target="_blank"><sponsor>General Motors - Career Fair| 12:00 - 13:00  |
@@ -42,11 +42,10 @@ Table Legend:
 | <a href="" target="_blank"><course>Data Visualization       | 18:30 - 19:45   |
 | <a href="" target="_blank"><course>Recommendation Systems   | 18:30 - 19:45   |
 | <a href="" target="_blank"><course>Intro to Neural Nets     | 20:00 - 21:15   |
-| <a href="" target="_blank"><course>ML Intro & Regression    | 20:00 - 21:15   |
-| <a href="" target="_blank"><course>ML-Classification        | 21:30 - 22:45   |
+| <a href="" target="_blank"><course>Intro to ML Theory    | 20:00 - 21:15   |
+| <a href="" target="_blank"><course>ML Applications        | 21:30 - 22:45   |
 | <a href="" target="_blank"><course>Reinforcement Learning   | 21:30 - 22:45   |
 | <a href="" target="_blank"><other>Midnight Musings          | 00:00 - 1:00 (Sunday)  |
-| <a href="" target="_blank"><other>Kahoot                    | 00:00 - 1:00 (Sunday)  |
 
 <br><br>
 ### Sunday - October 18
@@ -58,11 +57,10 @@ Table Legend:
 | Event                       | Time (CDT)    |
 |:-------------------------   |--------------:|
 | <a href="" target="_blank"><other>Midnight Musings     | 00:00 - 1:00  |
-| <a href="" target="_blank"><other>Kahoot               | 00:00 - 1:00  |
 | <a href="" target="_blank"><main>Devpost Submissions Due| 11:00         |
 | <a href="" target="_blank"><course>ML Interpretability | 12:00 - 13:15 |
 | Judging                     | 12:00 - 14:00 |
-| <a href="" target="_blank"><course>Getting a Job in DS | 14:00 - 15:00 |
+| <a href="" target="_blank"><course>Storytelling with Data | 14:00 - 15:00 |
 | <a href="" target="_blank"><main>Closing Ceremony      | 15:00 - 16:00 |
 
 <br>
