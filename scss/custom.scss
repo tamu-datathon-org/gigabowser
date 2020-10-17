@@ -154,6 +154,11 @@ other {
   color: #8b2aa1;
 }
 
+main {
+  color: #343a40;
+  font-weight: bold;
+}
+
 // Import all partials & page css files
 @import "navbar.scss";
 @import "footer.scss";

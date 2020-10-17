@@ -10,6 +10,7 @@ app.use("/static", express.static("static"));
 
 // PAGES
 app.get("/", renderPage("Home", "index"));
+app.get("/twitch", renderPage("twitch", "twitch"));
 app.get("/events", renderPost("./markdown/events.md", "markdown_layout"));
 app.get("/schedule", renderPost("./markdown/schedule.md", "markdown_layout"));
 app.get("/challenges", renderPost("./markdown/challenges.md", "markdown_layout"));
