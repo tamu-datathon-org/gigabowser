@@ -120,6 +120,7 @@ This is an open-ended challenge but and you can do whatever you want! We will ju
 - ML Introduction Part 2/2 Applied: Sat, 21:30-22:45
 - Natural Language Processing: Sat, 17:00-18:15
 - Recommendation Engines: Sat, 18:30-19:45
+- Clustering (Unsupervised Learning): [Prerecorded](https://www.youtube.com/watch?v=x_WWwbBqFLQ)
 
 **💰Prizes💰**
 
@@ -162,6 +163,8 @@ A myriad of decisions go into picking the perfect place to call home — politic
 - Data Visualization: Sat, 18:30-19:45
 - ML Introduction Part 1/2 Theory: Sat, 20:00-21:15
 - ML Introduction Part 2/2 Applied: Sat, 21:30-22:45
+- Clustering (Unsupervised Learning): [Prerecorded](https://www.youtube.com/watch?v=x_WWwbBqFLQ)
+
 
 **💰Prizes💰**
 
