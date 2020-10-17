@@ -1,43 +1,33 @@
 <style>
-body {
-  padding: 0;
-  margin: 0;
-}
-html {
-  padding: 0;
-  margin: 0;
-}
-.cont {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-}
-.cont .player {
-  flex: 1;
-  height: 100%;
-}
-.cont .chat {
-  width: 350px;
-  height: 100%;
-}
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
+  html {
+    padding: 0;
+    margin: 0;
+  }
+
+  .cont {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+  }
+
+  .cont .player {
+    flex: 1;
+    height: 100%;
+  }
+
+  .cont .chat {
+    width: 350px;
+    height: 100%;
+  }
 </style>
 <div class="cont">
-  <iframe
-    src="https://player.twitch.tv/?channel=tamudatathon&parent=tamudatathon.com&autoplay=true"
-    frameborder="0"
-    scrolling="no"
-    class="player"
-    allowfullscreen="true"
-  >
-  </iframe>
-  <iframe
-    frameborder="0"
-    scrolling="no"
-    src="https://www.twitch.tv/embed/tamudatathon/chat?parent=tamudatathon.com"
-    height="100%"
-    class="char"
-    width="100%">
-  </iframe>
+  <iframe src="https://player.twitch.tv/?channel=tamudatathon&parent=tamudatathon.com&autoplay=true" frameborder="0" scrolling="no" class="player" allowfullscreen="true"></iframe>
+  <iframe frameborder="0" scrolling="no" src="https://www.twitch.tv/embed/tamudatathon/chat?parent=tamudatathon.com" height="100%" class="char" width="100%"></iframe>
 </div>
 
 <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
@@ -46,7 +36,7 @@ html {
     width: 854,
     height: 480,
     channel: "monstercat",
-    // only needed if your site is also embedded on embed.example.com and othersite.example.com 
+    // only needed if your site is also embedded on embed.example.com and othersite.example.com
     parent: ["embed.example.com", "othersite.example.com"]
   });
 </script>
