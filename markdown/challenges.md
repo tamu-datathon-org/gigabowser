@@ -70,6 +70,7 @@ Do whatever the heck you want! We're sure it's gonna be cool 👩‍💻
 </center>
 
 **[Starter Notebook](https://colab.research.google.com/drive/1ccBdCnkvaHIeyUoufQzRziXN_me15L6p?usp=sharing)**
+**[Starter Zip (Contains more info)](https://td2020-static.s3.amazonaws.com/stock-prediction.zip)**
 
 Can you predict the future of stock? We recommend using reinforcement learning but do whatever works best!
 
