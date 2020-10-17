@@ -146,7 +146,6 @@ A myriad of decisions go into picking the perfect place to call home — politic
 [High speed internet](https://www.highspeedinternet.com/best-cities-to-live-work-remotely) (of all people?!) made a tool to do this.... but you can do better! Think of more factors: like median income of a location, cuisine, primary ethnicity, pollution index, happiness index, number of coffee shops or microbreweries in the city, etc. There's no end! Furthermore, maybe you are an international student and want to make this tool for global placement! Go for it! Maybe you want to penalize distance from POI's (points of interest) like family. Do it! The world is your oyster!
 
 
-
 **How We Judge**
 
 - *Data Use*: Effectively used data, acquired additional data
@@ -206,8 +205,7 @@ Now let us talk about some of those tasks that need to be completed to successfu
 - Task 4
  
 	- Teams will be responsible in enabling queries to be entered and result to be present in a rudimentary graphical user interface embedded in the webpage that host your search engine
-	- When a query is entered, the search engine should present in separate search engine web page frames of the web page the following:
-Results of your relevance models against the query – all of those that you have implemented; 	
+	- When a query is entered, the search engine should present the results of your relevance models against the query – all of those that you have implemented;
 
 Results of the search engine relevance against the query when clustering has been incorporated – you should present the clusters that you have obtained as well.
 
@@ -286,8 +284,27 @@ For participants not from Texas A&M, here are some links to temporary licenses f
 
 **💰Prizes💰**
 
-- $500 cash prize to be distributed amoungst the winning team
+- $500 cash prize to be distributed amongst the winning team
 
+---
+<br/>
+<a name="mlh"></a>
+<center>
+![](https://static.mlh.io/brand-assets/logo/official/mlh-logo-color.png)
+### MLH
+</center>
+
+Best Domain Registered with Domain.com
+- PowerSquare Qi Wireless Phone Chargers & Domain.com Backpacks
+
+Best use of Google Cloud
+- Google Home Minis
+
+Best Hardware Hack Sponsored by Digi-Key
+- Grove Beginner Kits for Arduino
+
+Best use of DataStax Astra
+- YubiKey 5 Security Keys
 
 
 <style>
