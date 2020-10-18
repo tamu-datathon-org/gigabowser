@@ -66,7 +66,7 @@ Table Legend:
 | <a href="https://tamudatathon.com/events/activities/model_interpretability/" target="_blank"><course>ML Interpretability | 12:00 - 13:15 |
 | Judging                     | 12:00 - 14:00 |
 | <a href="https://tamudatathon.com/events/activities/story_telling/" target="_blank"><course>Storytelling with Data | 14:00 - 15:00 |
-| <a href="https://tamudatathon.com/events/activities/closing_ceremony//" target="_blank"><main>Closing Ceremony      | 15:00 - 16:00 |
+| <a href="https://tamudatathon.com/events/activities/closing_ceremony//" target="_blank"><main>Closing Ceremony      | 15:30 - 16:00 |
 
 <br>
 
