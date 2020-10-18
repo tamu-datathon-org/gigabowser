@@ -7,6 +7,9 @@ path: /challenges
 # 🏆
 
 
+<br>
+**Submissions now due at 12PM CDT! [tamudatathon2020.devpost.com](tamudatathon2020.devpost.com)**
+<br>
 
 # Challenges
 </center>

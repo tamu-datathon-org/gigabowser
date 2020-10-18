@@ -5,6 +5,11 @@ path: /schedule
 <center>
 
 # 🗓
+
+<br>
+**Submissions now due at 12PM CDT! [tamudatathon2020.devpost.com](tamudatathon2020.devpost.com)**
+<br>
+
 # Schedule
 Everything that will be happening during TAMU Datathon 2020. Make sure to check the `CLASSES` category of channels on the discord or [the events page](/events) for more information.
 
