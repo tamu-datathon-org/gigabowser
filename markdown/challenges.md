@@ -23,7 +23,7 @@ You can compete in company challenges and/or TAMU Datathon challenges.
 - [TD For-You Page (Intermediate)](#td_recommend)
 - [City Search Tool (Beginner)](#td_mover)
 
-**Company**
+**Company** 
 
 - [Walmart](#walmart)
 - [Capital One](#capitol_one)
@@ -60,9 +60,9 @@ Do whatever the heck you want! We're sure it's gonna be cool 👩‍💻
 
 **💰Prizes💰**
 
-- 1st: $400 Amazon gift card per team member
-- 2nd: $200 Amazon gift card per team member
-- 3rd: $100 Amazon gift card per team member
+- 1st: $400 Amazon gift card per team member [(Winners)](https://devpost.com/software/hemonet-an-ai-based-white-blood-cell-count-platform)
+- 2nd: $200 Amazon gift card per team member [(Winners)](https://devpost.com/software/imdb-2-0)
+- 3rd: $100 Amazon gift card per team member [(Winners)](https://devpost.com/software/fraud-detection-durign)
 
 ---
 <br/>
@@ -91,7 +91,7 @@ You'll submit your machine learning model to a link we will provide. You're proj
 
 **💰Prizes💰**
 
-- 1st: $500 Amazon gift card per team member
+- 1st: $500 Amazon gift card per team member [(Winners)](https://devpost.com/software/lone-wolf-and-cub-s-stock-prediction-kiz3w5)
 
 ---
 <br/>
@@ -129,7 +129,7 @@ This is an open-ended challenge but and you can do whatever you want! We will ju
 
 **💰Prizes💰**
 
-- 1st: $400 Amazon gift card per team member
+- 1st: $400 Amazon gift card per team member [(Winners)](https://devpost.com/software/td-challenges)
 
 ---
 <br/>
@@ -172,7 +172,7 @@ A myriad of decisions go into picking the perfect place to call home — politic
 
 **💰Prizes💰**
 
-- 1st: $300 Amazon gift card per team member
+- 1st: $300 Amazon gift card per team member [(Winners)](https://devpost.com/software/whereishould-live)
 
 <br/><br/><br/>
 <center>
@@ -215,9 +215,9 @@ Results of the search engine relevance against the query when clustering has bee
 
 **💰Prizes💰**
 
-- 1st Place Team - Dell Monitors
-- 2nd Place Team - Bose Speakers
-- 3rd Place Team - Instax Instant Cameras
+- 1st Place Team - Dell Monitors [(Winners)](https://devpost.com/software/searchmart-sbizlm)
+- 2nd Place Team - Bose Speakers [(Winners)](https://devpost.com/software/walmart-product-search-engine)
+- 3rd Place Team - Instax Instant Cameras [(Winners)](https://devpost.com/software/dsse)
 
 ---
 <br/>
@@ -231,7 +231,7 @@ Results of the search engine relevance against the query when clustering has bee
 
 **💰Prizes💰**
 
-- $250 Amazon Gift Cards for each member of the winning team
+- $250 Amazon Gift Cards for each member of the winning team [(Winners)](https://devpost.com/software/identifying-potential-fraud-with-ppp)
 
 ---
 <br/>
@@ -258,7 +258,7 @@ Teams should use datasets gathered from public sources.
 
 **💰Prizes💰**
 
-- Raspberry Pi 4 Starter Kit 
+- Raspberry Pi 4 Starter Kit [(Winners)](https://devpost.com/software/global-trends-in-suicide-and-mental-health-awareness) [(Winners)](https://devpost.com/software/untitled-project-as70d8zejwc3)
 
 ---
 <br/>
@@ -288,7 +288,7 @@ For participants not from Texas A&M, here are some links to temporary licenses f
 
 **💰Prizes💰**
 
-- $500 cash prize to be distributed amongst the winning team
+- $500 cash prize to be distributed amongst the winning team [(Winners)](https://devpost.com/software/movie-recommenders-using-poster-ma64pt)
 
 ---
 <br/>
