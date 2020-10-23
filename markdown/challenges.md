@@ -312,7 +312,7 @@ Best use of DataStax Astra
 
 
 <style>
-img  {border-radius: 8px;
+.md-content img  {border-radius: 8px;
       max-width: 50%;
       height: auto;
       width: 100%;
