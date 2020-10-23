@@ -27,6 +27,7 @@ $ npm run dev       # Run Development server
 $ npm run build     # Build Website for Deployment
 ```
 
+---
 
 <p align="center">
   <a href="https://vercel.com?utm_source=tamu-datathon&utm_campaign=oss">
