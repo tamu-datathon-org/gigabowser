@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://tamudatathon.com/" target="_blank">
-    <img src="/static/img/logos/main.png" width="80" />
+    <img src="/static/img/logos/main.png" width="80" alt="TAMU Datathon" />
   </a>
 </p>
 
@@ -27,3 +27,10 @@ $ npm install
 $ npm run dev       # Run Development server
 $ npm run build     # Build Website for Deployment
 ```
+
+
+<p align="center">
+  <a href="https://vercel.com?utm_source=tamu-datathon&utm_campaign=oss">
+    TAMU Datathon is powered by <img src="/static/img/sponsors/vercel_dark.svg" height="24px" alt="Vercel"></img>
+  </a>
+</p>
