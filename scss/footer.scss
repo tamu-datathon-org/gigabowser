@@ -27,9 +27,19 @@ $theme-light-green: #86eace;
     display: block;
   }
 
-  @include media-breakpoint-up(sm) {
+  .vercel-promo {
+    text-align: center;
+    a {
+      color: white !important;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
     .footer-doc-links > a {
       display: inline;
+    }
+    .vercel-promo {
+      text-align: right;
     }
   }
 }
