@@ -28,7 +28,6 @@ $theme-light-green: #86eace;
   }
 
   .vercel-promo {
-    text-align: center;
     a {
       color: white !important;
     }
@@ -37,9 +36,6 @@ $theme-light-green: #86eace;
   @include media-breakpoint-up(md) {
     .footer-doc-links > a {
       display: inline;
-    }
-    .vercel-promo {
-      text-align: right;
     }
   }
 }

@@ -31,6 +31,6 @@ $ npm run build     # Build Website for Deployment
 
 <p align="center">
   <a href="https://vercel.com?utm_source=tamu-datathon&utm_campaign=oss">
-    <img src="/static/img/sponsors/powered-by-vercel.svg" height="28px" alt="Powered by Vercel" />
+    <img src="https://tamudatathon.com/static/img/sponsors/powered-by-vercel.svg" height="36px" alt="Powered by Vercel" />
   </a>
 </p>
