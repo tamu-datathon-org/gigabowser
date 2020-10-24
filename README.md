@@ -16,6 +16,12 @@
     <a href="https://tamudatathon.com" target="_blank">Production Website</a>
 </p>
 
+<p align="center">
+  <a href="https://vercel.com?utm_source=tamu-datathon&utm_campaign=oss">
+    <img src="https://tamudatathon.com/static/img/sponsors/powered-by-vercel.svg" height="36px" alt="Powered by Vercel" />
+  </a>
+</p>
+
 ## :wrench: Installation
 ```
 $ npm install
@@ -26,11 +32,3 @@ $ npm install
 $ npm run dev       # Run Development server
 $ npm run build     # Build Website for Deployment
 ```
-
----
-
-<p align="center">
-  <a href="https://vercel.com?utm_source=tamu-datathon&utm_campaign=oss">
-    <img src="/static/img/sponsors/powered-by-vercel.svg" height="28px" alt="Powered by Vercel" />
-  </a>
-</p>
