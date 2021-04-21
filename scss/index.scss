@@ -2,21 +2,8 @@
 $light-pink: #f4ecf2;
 $dark-purple: #8a3c7a;
 
-$about-title: darken(#9c2fb5, 5%) !default;
-$about-highlight: lighten($about-title, 48%) !default;
-
 $industries-title: darken(#4744ac, 15%) !default;
 $industries-background: darken(#93d6ee, 10%) !default;
-
-$sponsors-title: darken(#199280, 2%) !default;
-$sponsors-highlight: lighten($sponsors-title, 50%) !default;
-
-$faq-background: #90eee3 !default;
-$faq-title: darken(#245a2a, 0%) !default;
-$faq-content: lighten(#1c2936, 10%) !default;
-
-$faq-anchor: #003fee;
-$faq-anchor-hover: #0231b3;
 
 $team-title: lighten(#120f70, 10%) !default;
 $team-highlight: lighten($team-title, 52%) !default;
@@ -140,15 +127,20 @@ $highlight-ypos: 0.07em;
 //           About to Industry Transition
 // =====================================================
 $default-transition-height: 7vh;
-.splash-transition {
-  background: linear-gradient(to left bottom, transparent 49.5%, $light-pink 50%);
-  height: $default-transition-height;
-  margin-top: -$default-transition-height;
+
+.purple-white-transition {
+  background: url("/static/img/transitions/purple_white_transition.svg");
+  height: 27.5vh;
 }
 
-.summer-bootcamp-transition {
-  background: linear-gradient(to left bottom, $light-pink 49.5%, white 50%);
-  height: $default-transition-height;
+.white-blue-transition {
+  background: url("/static/img/transitions/white_blue_transition.svg");
+  height: 14vh;
+}
+
+.blue-white-transition {
+  background: url("/static/img/transitions/blue_white_transition.svg");
+  height: 13.7vh;
 }
 
 .main-event-transition {
@@ -167,12 +159,10 @@ $default-transition-height: 7vh;
 }
 
 .sponsors-transition {
-  background: linear-gradient(to left bottom, white 49.5%, $faq-background 50%);
   height: $default-transition-height;
 }
 
 .faq-transition {
-  background: linear-gradient(to left bottom, $faq-background 49.5%, white 50%);
   height: $default-transition-height;
 }
 
@@ -245,8 +235,8 @@ $default-transition-height: 7vh;
 
 .about-section {
   .about-title {
-    color: $about-title;
-    box-shadow: 0 $highlight-height 0 0 $about-highlight inset;
+    color: #632ED2;
+    font-family: "Space Grotesk", monospace !important;
   }
 
   .about-content {
@@ -406,9 +396,9 @@ $default-transition-height: 7vh;
 // =====================================================
 
 .sponsor-section {
+  background-color: #6387FE;
   .sponsors-title {
-    color: $sponsors-title;
-    box-shadow: 0 $highlight-height 0 0 $sponsors-highlight inset;
+    font-family: "Space Grotesk", monospace !important;
   }
 
   .sponsor-description {
@@ -466,12 +456,11 @@ $default-transition-height: 7vh;
 // =====================================================
 
 .faq-section {
-  background-color: $faq-background;
-  color: $faq-content;
+  background-color: #6387FE;
 
   .faq-title {
+    font-family: "Space Grotesk", monospace !important;
     font-weight: bold;
-    color: $faq-title;
   }
 
   .question-block {
@@ -482,9 +471,7 @@ $default-transition-height: 7vh;
   a {
     // default to underline
     text-decoration: underline;
-    color: $faq-anchor;
     &:hover {
-      color: $faq-anchor-hover;
     }
   }
 
@@ -504,7 +491,6 @@ $default-transition-height: 7vh;
     min-width: 150px;
     border: 0;
     height: 2px;
-    background: $faq-content;
   }
 }
 
