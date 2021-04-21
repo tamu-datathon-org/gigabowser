@@ -1,6 +1,7 @@
 // Index Page Colors
+$light: #fff;
 $light-pink: #f4ecf2;
-$dark-purple: #8a3c7a;
+$dark-purple: #632ed2;
 
 $industries-title: darken(#4744ac, 15%) !default;
 $industries-background: darken(#93d6ee, 10%) !default;
@@ -19,9 +20,9 @@ $highlight-ypos: 0.07em;
 // =====================================================
 
 .splash {
-  background-image: linear-gradient(to top, #4a40ac 10%, #4a40ac01 30%), url("/static/img/backgrounds/splash-background.svg");
+  // background-image: linear-gradient(to top, $dark-purple 10%, #4a40ac01 30%), url("/static/img/backgrounds/splash-background.svg");
   background-position: center -100px;
-  background-color: #4a40ac;
+  background-color: $dark-purple;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 650px;
@@ -130,17 +131,17 @@ $default-transition-height: 7vh;
 
 .purple-white-transition {
   background: url("/static/img/transitions/purple_white_transition.svg");
-  height: 27.5vh;
+  height: 270px;
 }
 
 .white-blue-transition {
   background: url("/static/img/transitions/white_blue_transition.svg");
-  height: 14vh;
+  height: 135px;
 }
 
 .blue-white-transition {
   background: url("/static/img/transitions/blue_white_transition.svg");
-  height: 13.7vh;
+  height: 135px;
 }
 
 .main-event-transition {
@@ -209,7 +210,7 @@ $default-transition-height: 7vh;
 }
 
 .main-event-section {
-  background-color: $light-pink;
+  background-color: $light;
   .main-event-title {
     color: $dark-purple;
   }
