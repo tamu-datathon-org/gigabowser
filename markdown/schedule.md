@@ -1,6 +1,7 @@
 ---
 title: Schedule
 path: /schedule
+description: Schedule for TAMU Datathon 2020
 ---
 <center>
 
