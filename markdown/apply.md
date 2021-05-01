@@ -1,6 +1,7 @@
 ---
 title: Apply
 path: /apply
+description: Apply to join us in the next TAMU Datathon!
 ---
 <center>
 

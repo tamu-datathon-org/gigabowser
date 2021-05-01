@@ -1,6 +1,7 @@
 ---
 title: Challenges
 path: /challenges
+description: Competition challenges for the year 2020.
 ---
 <center>
 
