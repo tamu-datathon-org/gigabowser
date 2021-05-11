@@ -462,10 +462,25 @@ $default-transition-height: 7vh;
   .faq-title {
     font-family: "Space Grotesk", monospace !important;
     font-weight: bold;
+    color: white;
   }
 
   .question-block {
-    margin: 30px 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 350px;
+    color: white;
+    max-width: 350px;
+    min-width: 350px;
+  }
+  .question-block.LHS {
+    background-image: url("/static/img/graphics/tv-yellow.png");
+  }
+  .question-block.MHS {
+    background-image: url("/static/img/graphics/tv-blue.png");
+  }
+  .question-block.RHS {
+    background-image: url("/static/img/graphics/tv-green.png");
   }
 
   // anchor colors to dark gray in FAQ section
@@ -475,15 +490,34 @@ $default-transition-height: 7vh;
     &:hover {
     }
   }
+  
+  .question-block.tv-screen {
+    width: 80%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
 
   .question {
     font-size: 1.4em;
     font-weight: bolder;
-    margin-bottom: 20px;
+    height: 80%; 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 55px;
   }
 
   .answer {
-    font-size: 1.15em;
+    font-size: 1.0em;
+    height: 80%;
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 55px;
   }
   // HORIZONTAL RULE
   // separator
