@@ -1,0 +1,15 @@
+$theme-light-green: #86eace;
+
+.progress-container {
+  width: 100%;
+  background-color: transparent;
+  height: 5px;
+  display: block;
+  z-index: 200;
+}
+.progress-bar {
+  background-color: $theme-light-green;
+  width: 0%;
+  display: block;
+  height: inherit;
+}
