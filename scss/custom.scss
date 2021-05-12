@@ -120,14 +120,17 @@ body {
   font-family: "Work Sans", sans-serif !important;
 }
 
-// Headers (use Roboto Mono, everything else use Work Sans)
+// Headers (use Space Grotesk, everything else use Work Sans)
+h2 {
+  font-family: "Space Grotesk", monospace !important;
+  color: white;
+}
 h1,
-h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "Roboto Mono", monospace !important;
+  font-family: "Space Grotesk", monospace !important;
 }
 
 .table {
