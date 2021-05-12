@@ -6,8 +6,7 @@ $dark-purple: #632ed2;
 $industries-title: darken(#4744ac, 15%) !default;
 $industries-background: darken(#93d6ee, 10%) !default;
 
-$team-title: lighten(#120f70, 10%) !default;
-$team-highlight: lighten($team-title, 52%) !default;
+$team-title: rgb(99, 46, 210) !default;
 
 $splash-light-purple: #7c408a;
 $splash-light-blue: #3f5aaa;
@@ -21,6 +20,8 @@ $faq-anchor-hover: #0231b3;
 
 $highlight-height: -0.5em;
 $highlight-ypos: 0.07em;
+
+$team-highlight: lighten($team-title, 52%) !default;
 
 // =====================================================
 //                   Splash Section
@@ -178,6 +179,7 @@ $default-transition-height: 7vh;
   padding: 3vh 0;
 
   .section-title {
+    color: white;
     padding-top: 1em;
     font-size: 2.5em;
     font-weight: bold;
@@ -433,6 +435,7 @@ $default-transition-height: 7vh;
   background-color: white;
   .sponsors-title {
     font-family: "Space Grotesk", monospace !important;
+    color: rgb(99, 46, 210);
   }
 
   .sponsor-description {
