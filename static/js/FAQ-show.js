@@ -1,79 +1,38 @@
+var id = null;
 
-async function toggleTv (on, index) {
-    var screen = $("#tv-screen-"+index);
-    if (on) { // turn off the tv
-        var timeline = new TimelineMax({
-            paused: false
-        });
-          
-        timeline
-        .to(screen, .2, {
-            display: 'flex',
-            width: '80%',
-            height: '2px',
-            background: '#ffffff',
-            ease: Power2.easeOut
-        })
-        .to(screen, .2, {
-            display: 'flex',
-            width: '0px',
-            height: '0px',
-            background: '#ffffff'
-        });
-    }
-    else { // turn on the tv
-        var timeline = new TimelineMax({
-            paused: false
-        });
-          
-        timeline
-        .to(screen, .2, {
-            display: 'flex',
-            width: '0px',
-            height: '0px',
-            background: '#ffffff'
-        })
-        .to(screen, .2, {
-            display: 'flex',
-            width: '80%',
-            height: '2px',
-            background: '#ffffff',
-            ease: Power2.easeOut
-        })
-        .to(screen, .1, {
-            display: 'flex',
-            width: '0px',
-            height: '0px',
-            background: '#ffffff'
-        })
-        .to($("#answer-"+index), .1, {
-            display: 'flex'
-        })
+async function flash(index, on) {
+    $("#tv-blip-"+index).css("display", "flex");
+    var tv = $("#tv-screen-"+index)
+    var width = on ? 1 : 250;
+    clearInterval(id);
+    id = setInterval(move, 1);
+    function move () {
+        if (width > 250 || width <= 0) {
+            clearInterval(id);
+            $("#tv-blip-"+index).css("display", "none");
+            // change font if answer too long
+            if (index <= 5)
+                $("#answer-"+index).css("font-size", "0.6em");
+            on ? $("#answer-"+index).css("display", "flex") : $("#question-"+index).css("display", "flex");
+        }
+        tv.css("width", width.toString()+"px");
+        on ? width += 2 : width -= 2;
     }
 }
 
 const showAnswer = async (index) => {
-    var answer = $("#answer-"+index);
-    if (answer.is(":visible")) { // answer is shown
-        answer.css("display", "none");
-        //await toggleTv(true, index);
-        $("#question-"+index).css("display", "flex");
-    } else { // question is shown
-        $("#question-"+index).css("display", "none");
-        //await toggleTv(false, index);
-        if (index <= 5)
-            answer.css("font-size", "0.6em");
-        if (index == 9)
-            answer.css("display", "block");
-        else
-            answer.css("display", "flex");
-        for (var i = 0; i < 9; i++) {
-            if (i != index) {
-                $("#answer-"+i).css("display", "none");
-                $("#question-"+i).css("display", "flex");
-                //if ($("#answer-"+i).is(":visible"))
-                //    toggleTv(false, i);
-            }
+    // question is shown
+    $("#question-"+index).css("display", "none");
+    // show blip and answer
+    await flash(index, true);
+    // turn off all other tv's
+    for (var i = 0; i < 9; i++) {
+        if (i != index) {
+            //if ($("#answer-"+i).is(":visible"))
+            //    await flash(i, false);
+            $("#answer-"+i).css("display", "none");
+            $("#tv-blip-"+i).css("display", "none");
+            $("#question-"+i).css("display", "flex");
         }
     }
 }

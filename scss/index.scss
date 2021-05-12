@@ -472,12 +472,28 @@ $default-transition-height: 7vh;
     color: white;
     max-width: 350px;
     min-width: 350px;
+  
+    .tv-screen {
+      /*border: 0.6px solid white;*/
+      background: white;
+      width: 1px;
+      height: 5px;
+      display: flex;
+      border-radius: 100%;
+    }
+    .tv-blip {
+      width: 100%;
+      height: 80%;
+      align-items: center;
+      justify-content: center;
+      display: none;
+    }
   }
   .question-block.LHS {
     background-image: url("/static/img/graphics/tv-yellow.png");
   }
   .question-block.MHS {
-    background-image: url("/static/img/graphics/tv-blue.png");
+    background-image: url("/static/img/graphics/tv-orange.png");
   }
   .question-block.RHS {
     background-image: url("/static/img/graphics/tv-green.png");
@@ -489,14 +505,6 @@ $default-transition-height: 7vh;
     text-decoration: underline;
     &:hover {
     }
-  }
-  
-  .question-block.tv-screen {
-    width: 80%;
-    height: 100%;
-    display: none;
-    align-items: center;
-    justify-content: center;
   }
 
   .question {

@@ -12,60 +12,55 @@
       <!-- (LHS) left hand side -->
       <div class="col-md">
         <% req.FAQ.LHS.forEach(({ q, a, idx }, index) => { %>
-        <div class="question-block LHS text-center" onclick="showAnswer('<%= idx %>')" style="left: '<%- Math.floor(Math.random() * 50) %>'; width: '<%- Math.floor((Math.random() * 30) + 340) %>'">
-          <h4 id="question-<%= idx %>" class="question">
+        <div class="question-block LHS text-center" onclick="showAnswer('<%= idx %>')">
+          <h4 id="question-<%= idx %>" class="question" onmouseover="showAnswer('<%= idx %>')">
             <%= q %>
           </h4>
-          <div id="tv-screen-<%= idx %>" class="tv-screen"></div>
-          <!-- DANGEROUS: evaluate the HTML value from the object -->
+          <div id="tv-blip-<%= idx %>" class="tv-blip">
+            <div id="tv-screen-<%= idx %>" class="tv-screen"></div>
+          </div>
           <span id="answer-<%= idx %>" class="answer">
-            <%- a %>
+            <%- a %> 
           </span>
         </div>
-        <!-- hr separator (except on last item) -->
-        <!--<% if (index < req.FAQ.LHS.length - 1) { %>
-        <hr align="left" />
-        <% } %>-->
         <% }) %>
       </div>
       <!-- MHS ("middle" hand side) -->
       <div class="col-md">
         <% req.FAQ.MHS.forEach(({ q, a, idx }, index) => { %>
         <div class="question-block MHS text-center" onclick="showAnswer('<%= idx %>')">
-          <h4 id="question-<%= idx %>" class="question">
+          <h4 id="question-<%= idx %>" class="question" onmouseover="showAnswer('<%= idx %>')">
             <%= q %>
           </h4>
-          <!-- DANGEROUS: evaluate the HTML value from the object -->
+          <div id="tv-blip-<%= idx %>" class="tv-blip">
+            <div id="tv-screen-<%= idx %>" class="tv-screen"></div>
+          </div>
           <span id="answer-<%= idx %>" class="answer">
             <%- a %>
           </span>
         </div>
-        <!-- hr separator (except on last item) -->
-        <!--<% if (index < req.FAQ.RHS.length - 1) { %>
-        <hr align="left" />
-        <% } %>-->
         <% }) %>
       </div>
-      <!-- hide a divider on screens > than md -->
-      <!--<div class="col-md d-md-none">
-        <hr class="d-md-none" align="left" />
-      </div>-->
       <!-- RHS (right hand side) -->
       <div class="col-md">
         <% req.FAQ.RHS.forEach(({ q, a, idx }, index) => { %>
+        <% if (idx != 9) { %>
         <div class="question-block RHS text-center" onclick="showAnswer('<%= idx %>')">
-          <h4 id="question-<%= idx %>" class="question">
+          <h4 id="question-<%= idx %>" class="question" onmouseover="showAnswer('<%= idx %>')">
             <%= q %>
           </h4>
-          <!-- DANGEROUS: evaluate the HTML value from the object -->
+          <div id="tv-blip-<%= idx %>" class="tv-blip">
+            <div id="tv-screen-<%= idx %>" class="tv-screen"></div>
+          </div>
           <span id="answer-<%= idx %>" class="answer">
             <%- a %>
           </span>
         </div>
-        <!-- hr separator (except on last item) -->
-        <!--<% if (index < req.FAQ.RHS.length - 1) { %>
+        <% } else { %>
         <hr align="left" />
-        <% } %>-->
+        <%= q %>
+        <%- a %>
+        <% } %>
         <% }) %>
       </div>
     </div>
