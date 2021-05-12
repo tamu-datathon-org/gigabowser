@@ -12,9 +12,9 @@ $team-highlight: lighten($team-title, 52%) !default;
 $splash-light-purple: #7c408a;
 $splash-light-blue: #3f5aaa;
 
-$faq-background: #90eee3 !default;
-$faq-title: darken(#245a2a, 0%) !default;
-$faq-content: lighten(#1c2936, 10%) !default;
+$faq-background: #6387fe !default;
+$faq-title: darken(white, 0%) !default;
+$faq-content: lighten(white, 10%) !default;
 
 $faq-anchor: #003fee;
 $faq-anchor-hover: #0231b3;
@@ -479,10 +479,12 @@ $default-transition-height: 7vh;
 .faq-section {
   background-color: $faq-background;
   color: $faq-content;
+  font-family: "Space Grotesk", monospace !important;
 
   .faq-title {
     font-weight: bold;
     color: $faq-title;
+    font-family: "Space Grotesk", monospace !important;
   }
 
   .question-block {
@@ -507,6 +509,7 @@ $default-transition-height: 7vh;
 
   .answer {
     font-size: 1.15em;
+    color: #d3d3d3;
   }
   // HORIZONTAL RULE
   // separator
