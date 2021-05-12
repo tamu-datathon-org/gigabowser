@@ -6,8 +6,7 @@ $dark-purple: #632ed2;
 $industries-title: darken(#4744ac, 15%) !default;
 $industries-background: darken(#93d6ee, 10%) !default;
 
-$team-title: lighten(#120f70, 10%) !default;
-$team-highlight: lighten($team-title, 52%) !default;
+$team-title: rgb(99, 46, 210) !default;
 
 $splash-light-purple: #7c408a;
 $splash-light-blue: #3f5aaa;
@@ -420,6 +419,7 @@ $default-transition-height: 7vh;
   background-color: white;
   .sponsors-title {
     font-family: "Space Grotesk", monospace !important;
+    color: rgb(99, 46, 210);
   }
 
   .sponsor-description {
