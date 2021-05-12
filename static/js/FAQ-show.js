@@ -23,6 +23,7 @@ async function flash(index, on) {
 const showAnswer = async (index) => {
     // question is shown
     $("#question-"+index).css("display", "none");
+    $("#answer-"+index).css("display", "none");
     // show blip and answer
     await flash(index, true);
     // turn off all other tv's

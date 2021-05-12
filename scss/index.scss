@@ -266,7 +266,24 @@ $default-transition-height: 7vh;
 }
 
 // ------------------------------------------
-//            INDUSTRIES SECTIOM
+//            EVENTS SECTION
+// ------------------------------------------
+.events-section {
+  background: #6387FE;
+
+  .carousel-item img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .car-control {
+    background: red;
+  }
+}
+
+
+// ------------------------------------------
+//            INDUSTRIES SECTION
 // ------------------------------------------
 
 .industries-section {
