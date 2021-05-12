@@ -1,6 +1,6 @@
-
 <div class="section events-section">
-    <div id="event" class="container">
+  <div id="event" class="container">
+      <!-- events section title -->
       <div class="row">
         <div class="col-md">
           <h1 class="section-title event-title">
@@ -8,30 +8,20 @@
           </h1>
         </div>
       </div>
+      <!-- events card deck -->
       <div class="row">
-            <% req.EVENTS.forEach(({ name, description, img }, index) => { %>
-              <% if (index == 0) { %>
-                <div class="col-md">
-                  <div class="slide-item active">
-                    <div class="carousel-caption">
-                      <h3><%- name %></h3>
-                      <p><%- description %></p>
-                    </div>
-                    <img class="d-block" src="/static/img/graphics/<%- img %>" alt="'<% name %>'">
-                  </div>
-                </div>
-              <% } else { %>
-                <div class="col-md">
-                  <div class="slide-item">
-                    <div class="carousel-caption">
-                      <h3><%- name %></h3>
-                      <p><%- description %></p>
-                    </div>
-                    <img src="/static/img/graphics/<%- img %>" alt="'<% name %>'">
-                  </div>
-                </div>
-              <% } %>
-            <% }) %>
+        <div class="card-deck">
+          <% req.EVENTS.forEach(({ name, description, img }, index) => { %>
+            <div class="card text-center justify-content-center">
+              <img class="card-img-top" src="/static/img/graphics/<%- img %>" alt="<%- name %>">
+              <div class="card-img-overlay d-flex align-self-center mx-auto">
+                <p class="card-title align-self-center mx-auto"><%- name %></p>
+                <!--<p class="card-text"><%= description %></p>-->
+                <!--<a href="#" class="btn btn-primary">Add to calendar</a>-->
+              </div>
+            </div>
+          <% }) %>
+        </div>
       </div>
-    </div>
+  </div>
 </div>

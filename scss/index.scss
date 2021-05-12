@@ -277,10 +277,23 @@ $default-transition-height: 7vh;
 // ------------------------------------------
 .events-section {
   background: #6387FE;
+  color: white;
 
-  .slide-item img {
-    width: 200px;
-    height: 200px;
+  .card {
+    background: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5vw;
+    padding: 10px;
+    margin: 10px;
+  }
+  .card-img-overlay {
+    width: 90%;
+    top: 12%;
+    height: 57%;
+    object-fit: contain;
   }
 }
 
