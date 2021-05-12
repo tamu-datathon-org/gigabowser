@@ -9,9 +9,6 @@
         </div>
       </div>
       <div class="row">
-        <div id="eventCarousel" class="event-slides">
-          <!-- Wrapper for slides -->
-          <div class="event-slide-inner">
             <% req.EVENTS.forEach(({ name, description, img }, index) => { %>
               <% if (index == 0) { %>
                 <div class="col-md">
@@ -35,24 +32,6 @@
                 </div>
               <% } %>
             <% }) %>
-          </div>
-          <!-- Indicators -->
-          <ol class="indicators">
-            <li class="indicator active"></li>
-            <% for (var i = 1; i < req.EVENTS.length; i++) { %>
-              <li  class="indicator"></li>
-            <% } %>
-          </ol>
-          <!-- Left and right controls -->
-          <a class="left slide-control" role="button" data-slide="prev">
-            <span class=""></span>
-            <span class="">Previous</span>
-          </a>
-          <a class="right slide-control" role="button" data-slide="next">
-            <span class=""></span>
-            <span class="">Next</span>
-          </a>
-        </div>
       </div>
     </div>
 </div>
