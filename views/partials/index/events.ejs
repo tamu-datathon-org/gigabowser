@@ -8,58 +8,43 @@
           </h1>
         </div>
       </div>
-      <!-- events card deck -->
-      <div class="card-deck">
-        <% req.EVENTS.forEach(({ name, description, img }, index) => { %>
-          <div class="card text-center justify-content-center">
-            <img class="card-img-top" src="/static/img/graphics/<%- img %>" alt="<%- name %>">
-            <div class="card-img-overlay d-flex align-self-center mx-auto">
-              <p class="card-title align-self-center mx-auto"><%- name %></p>
-              <!--<p class="card-text"><%= description %></p>-->
-              <!--<a href="#" class="btn btn-primary">Add to calendar</a>-->
-            </div>
-          </div>
-        <% }) %>
-      </div>
-      <!--<div class="row">
-        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
+      <!-- carousel -->
+        <div id="carouselExampleDark" class="carousel carousel slide" data-ride="carousel">
+          <ul class="carousel-indicators">
+            <% for (var i = 0; i < req.EVENTS.length; i++) { %>
+              <% if (i == 0) {  %>
+                <li type="button" data-target="#carouselExampleDark" data-slide-to="0" class="active"></li>
+              <% } else { %>
+                <li type="button" data-target="#carouselExampleDark" data-slide-to="<%= i %>"></li>
+              <% } %>
+            <% } %>
+          </ul>
           <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="10000">
-              <img src="..." class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5 style="color:white">Longer Event Name</h5>
-                <p style="color:white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius...</p>
-              </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-              <img src="..." class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5 style="color:white">Event Name</h5>
-                <p style="color:white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius...</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="..." class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5 style="color:white">Event Name</h5>
-                <p style="color:white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius...</p>
-              </div>
-            </div>
+            <% req.EVENTS.forEach(({ name, description, img }, index) => { %>
+              <% if (index == 0) { %>
+                <div class="carousel-item active" data-interval="20000">
+                  <img class="justify-content-center mx-auto" src="/static/img/graphics/<%- img %>" alt="<%= name %>">
+                  <div class="carousel-caption d-md-block">
+                    <p><%- name %></p>
+                  </div>
+                </div>
+              <% } else { %>
+                <div class="carousel-item justify-content-center" data-interval="20000">
+                  <img class="justify-content-center mx-auto" src="/static/img/graphics/<%- img %>" alt="<%= name %>">
+                  <div class="carousel-caption d-md-block">
+                    <p><%- name %></p>
+                  </div>
+                </div>
+              <% } %>
+            <% }) %>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <!-- buttons -->
+          <a class="carousel-control-prev" type="button" data-target="#carouselExampleDark" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          </a>
+          <a class="carousel-control-next" type="button" data-target="#carouselExampleDark" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          </a>
         </div>        
-      </div>-->
   </div>
 </div>

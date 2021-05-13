@@ -281,21 +281,25 @@ $default-transition-height: 7vh;
   background: #6387FE;
   color: white;
 
-  .card {
-    background: transparent;
-    border: none;
-    display: flex;
+  .carousel-inner {
     justify-content: center;
     text-align: center;
-    font-size: 1.5vw;
-    padding: 10px;
-    margin: 10px;
-  }
-  .card-img-overlay {
-    width: 90%;
-    top: 12%;
-    height: 57%;
-    object-fit: contain;
+    .carousel-item {
+      justify-content: center;
+      text-align: center;
+      width: 300px;
+      img {
+        display: flex;
+        object-fit: contain;
+        max-width: 300px;
+        max-height: 300px;
+      }
+      .carousel-caption {
+        bottom: 45%;
+        object-fit: contain;
+        font-size: 1.5em;
+      }
+    }
   }
 }
 

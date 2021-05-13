@@ -7,7 +7,7 @@ $(document).ready(function() {
       return $(window).scrollTop();
     };
   
-    var progressBar = $(".progress-bar"),
+    var progressBar = $(".progress-Bar"),
       max = getMax(),
       value,
       width;
