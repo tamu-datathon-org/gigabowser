@@ -281,17 +281,62 @@ $default-transition-height: 7vh;
   background: #6387FE;
   color: white;
 
-  .container-fliud {
+  .carousel {
     display: block;
     text-align: center;
     justify-content: center;
-    .carousel-caption {
-      bottom: 50%;
+    .carousel-indicators {
+      margin-bottom: 0;
+    }
+    .carousel-inner {
+      .tv-blip {
+        height: 10px;
+        width: 250px;
+        display: none;
+        z-index: 100;
+        background: none;
+        .tv-screen {
+          background-color: white;
+          border-radius: 100%;
+          height: 10px;
+          width: 0px;
+        }
+      }
+      .carousel-item {
+        transition: -webkit-transform 1s ease;
+        transition: transform 1s ease;
+        transition: transform 1s ease, -webkit-transform 1s ease;
+
+        justify-content: center;
+        text-align: center;
+
+        img {
+          width: 300px;
+          height: 300px;
+        }
+
+        .carousel-caption {
+          bottom: 50%;
+          font-size: 1.5em;
+          pointer-events: none;
+        }
+      }
     }
   }
+  .event-info {
+    justify-content: center;
+    text-align: center;
+
+    .event-title {
+      font-size: 1.3em;
+      font-weight: bold;
+      margin-top: 50px;
+    }
+  }
+  /*
   @media (min-width: 768px) {
 
-    /* show 3 items */
+    // show 3 items
     .carousel-inner .active,
     .carousel-inner .active + .carousel-item,
     .carousel-inner .active + .carousel-item + .carousel-item,
@@ -326,7 +371,7 @@ $default-transition-height: 7vh;
         visibility: visible;
     }
     
-    /* left or forward direction */
+    // left or forward direction
     .active.carousel-item-left + .carousel-item-next.carousel-item-left,
     .carousel-item-next.carousel-item-left + .carousel-item,
     .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
@@ -337,7 +382,7 @@ $default-transition-height: 7vh;
         visibility: visible;
     }
     
-    /* farthest right hidden item must be abso position for animations */
+    // farthest right hidden item must be abso position for animations
     .carousel-inner .carousel-item-prev.carousel-item-right {
         position: absolute;
         top: 0;
@@ -347,7 +392,7 @@ $default-transition-height: 7vh;
         visibility: visible;
     }
     
-    /* right or prev direction */
+    // right or prev direction
     .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
     .carousel-item-prev.carousel-item-right + .carousel-item,
     .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
@@ -358,6 +403,7 @@ $default-transition-height: 7vh;
         visibility: visible;
     }
   }
+  */
 }
 
 

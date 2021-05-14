@@ -1,45 +1,51 @@
 <div class="section events-section">
   <div id="event" class="container">
-      <!-- events section title -->
-      <div class="row">
-        <div class="col-md">
-          <h1 class="section-title event-title">
-            Upcoming Events
-          </h1>
-        </div>
+    <!-- events section title -->
+    <div class="row">
+      <div class="col-md">
+        <h1 class="section-title event-title">
+          Upcoming Events
+        </h1>
       </div>
-  </div>
-  <div class="container-fluid">
-      <!-- carousel -->
-        <div id="eventCarousel" class="carousel slide" data-ride="carousel"  data-interval="9000">
-          <div class="carousel-inner row w-10 mx-auto" role="listbox">
-            <% req.EVENTS.forEach(({ name, description, img }, index) => { %>
-              <% if (index == 0) { %>
-                <div class="carousel-item col-md-3 active">
-                  <img class="img-fluid mx-auto d-block" src="/static/img/graphics/<%- img %>" alt="<%= name %>">
-                  <div class="carousel-caption d-md-block">
-                    <p><%- name %></p>
-                  </div>
-                </div>
-              <% } else { %>
-                <div class="carousel-item col-md-3">
-                  <img class="img-fluid mx-auto d-block" src="/static/img/graphics/<%- img %>" alt="<%= name %>">
-                  <div class="carousel-caption d-md-block">
-                    <p><%- name %></p>
-                  </div>
-                </div>
-              <% } %>
-            <% }) %>
+    </div>
+    <!-- carousel -->
+      <div id="eventCarousel" class="carousel slide" data-ride="carousel"  data-interval="9000">
+        <!-- indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#eventCarousel" data-slide-to="0" class="active" aria-current="true" aria-label="Slide 0"></a>
+          <% for (var i = 1; i < req.EVENTS.length; i++) { %>
+            <li data-target="#eventCarousel" data-slide-to="<%- i %>" aria-label="<%- i %>"></a>
+          <% } %>
+        </ul>
+        <div class="carousel-inner">
+          <% req.EVENTS.forEach(({ name, img }, index) => { %>
+            <div class="carousel-item <%= index == 0 ? 'active' : '' %>">
+              <img class="img-fluid mx-auto d-block" src="/static/img/graphics/<%- img %>" alt="<%= name %>" onmouseover="flash(true)">
+              <div class="carousel-caption d-md-block">
+                <p><%- name %></p>
+              </div>
+            </div>
+          <% }) %>
+          <div id="tv-blip" class="tv-blip">
+            <div id="tv-screen" class="tv-screen"></div>
           </div>
-          <!-- buttons -->
-          <a class="carousel-control-prev" href="#eventCarousel" role="button" data-slide="prev">
-            <i class="fa fa-chevron-left fa-lg text-muted"></i>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next text-faded" href="#eventCarousel" role="button" data-slide="next">
-              <i class="fa fa-chevron-right fa-lg text-muted"></i>
-              <span class="sr-only">Next</span>
-          </a>
-        </div>        
+        </div>
+        <!-- buttons -->
+        <a class="carousel-control-prev" href="#eventCarousel" role="button" data-slide="prev">
+          <i class="fa fa-chevron-left fa-lg text-muted"></i>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next text-faded" href="#eventCarousel" role="button" data-slide="next">
+          <i class="fa fa-chevron-right fa-lg text-muted"></i>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <% req.EVENTS.forEach(({ name, description, date }, index) => { %>
+        <div id="event-info-<%- index %>" class="event-info" style="display: <%= index == 0 ? 'block' : 'none' %>">
+          <h4 class="event-title"><%- name %></h4>
+          <p><%- description %></p>
+          <span><%- date %></span>
+        </div> 
+      <% }) %> 
   </div>
 </div>

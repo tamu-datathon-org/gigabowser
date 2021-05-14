@@ -1,21 +1,28 @@
-$('#eventCarousel').on('slide.bs.carousel', function (e) {  
-  var $e = $(e.relatedTarget); 
-  var idx = $e.index();
-  console.log("IDX :  " + idx);
+var id = null;
 
-  var itemsPerSlide = 3;
-  var totalItems = $('.carousel-item').length;
-          
-  if (idx >= totalItems-(itemsPerSlide-1)) {
-    var it = itemsPerSlide - (totalItems - idx);
-    for (var i=0; i<it; i++) {
-      // append slides to end
-      if (e.direction=="left") {
-        $('.carousel-item').eq(i).appendTo('.carousel-inner');
-      }
-      else {
-        $('.carousel-item').eq(i).appendTo('.carousel-inner');
-      }
+async function flash(on) {
+    $("#tv-blip").css("display", "flex");
+    var tv = $("#tv-screen")
+    var width = on ? 1 : 250;
+    clearInterval(id);
+    id = setInterval(move, 1);
+    function move () {
+        if (width > 250 || width <= 0) {
+            clearInterval(id);
+            $("#tv-blip").css("display", "none");
+            //on ?  : $("#question-"+index).css("display", "flex");
+        }
+        tv.css("width", width.toString()+"px");
+        on ? width += 2 : width -= 2;
     }
+}
+
+$('#eventCarousel').on('slid.bs.carousel', function (e) {
+  var idx = $(e.relatedTarget).index();
+  //console.log(idx);
+  //console.log(e.direction);
+  for (var i = 0; i < $('.carousel-item').length; i++) {
+    $("#event-info-"+i).css("display", "none");
   }
-});
+  $("#event-info-"+idx).css("display", "block");
+})
