@@ -1,3 +1,5 @@
+<script src="toggle.js"></script>
+
 <div class="section faq-section">
   <!-- start faq section (2 column) -->
   <div id="faq" class="container">
@@ -13,11 +15,14 @@
       <div class="col-md">
         <% req.FAQ.LHS.forEach(({ q, a }, index) => { %>
         <div class="question-block">
-          <h4 class="question">
+          <h4 id="question" class="question">
+            <span>
+              <img class="toggle" src="static/img/icons/red_arrow.svg">
+            </span>
             <%= q %>
           </h4>
           <!-- DANGEROUS: evaluate the HTML value from the object -->
-          <span class="answer">
+          <span id="answer" class="answer">
             <%- a %>
           </span>
         </div>
@@ -36,6 +41,9 @@
         <% req.FAQ.RHS.forEach(({ q, a }, index) => { %>
         <div class="question-block">
           <h4 class="question">
+            <span>
+              <img class="toggle" src="static/img/icons/red_arrow.svg">
+            </span>
             <%= q %>
           </h4>
           <!-- DANGEROUS: evaluate the HTML value from the object -->
