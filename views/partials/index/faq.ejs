@@ -15,13 +15,12 @@
       <div class="col-md">
         <% req.FAQ.LHS.forEach(({ q, a }, index) => { %>
         <div class="question-block">
-          <h4 id="question" class="question">
-            <span>
-              <img class="toggle" src="static/img/icons/red_arrow.svg">
-            </span>
-            <%= q %>
-          </h4>
-          <!-- DANGEROUS: evaluate the HTML value from the object -->
+          <div class="dropdown-faq d-flex">
+            <img src="static/img/icons/red_arrow.svg">
+            <h4 class="question">
+              <%= q %>
+            </h4>
+          </div>
           <span id="answer" class="answer">
             <%- a %>
           </span>
@@ -40,13 +39,14 @@
       <div class="col-md">
         <% req.FAQ.RHS.forEach(({ q, a }, index) => { %>
         <div class="question-block">
-          <h4 class="question">
-            <span>
-              <img class="toggle" src="static/img/icons/red_arrow.svg">
-            </span>
-            <%= q %>
-          </h4>
-          <!-- DANGEROUS: evaluate the HTML value from the object -->
+          <div class="dropdown-faq d-flex">
+            <% if (index != req.FAQ.RHS.length - 1) { %>
+            <img src="static/img/icons/red_arrow.svg">
+            <% } %>
+            <h4 class="question">
+              <%= q %>
+            </h4>
+          </div>
           <span class="answer">
             <%- a %>
           </span>

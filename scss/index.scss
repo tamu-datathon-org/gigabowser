@@ -289,12 +289,16 @@ $default-transition-height: 7vh;
       margin-bottom: 0;
     }
     .carousel-inner {
+      /*
       .tv-blip {
-        height: 10px;
-        width: 250px;
-        display: none;
-        z-index: 100;
+        height: 8px;
+        width: 230px;
+        visibility: hidden;
         background: none;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        //bottom: 50%;
         .tv-screen {
           background-color: white;
           border-radius: 100%;
@@ -302,6 +306,7 @@ $default-transition-height: 7vh;
           width: 0px;
         }
       }
+      */
       .carousel-item {
         transition: -webkit-transform 1s ease;
         transition: transform 1s ease;
@@ -313,6 +318,7 @@ $default-transition-height: 7vh;
         img {
           width: 300px;
           height: 300px;
+          margin-bottom: 23px;
         }
 
         .carousel-caption {
@@ -612,6 +618,14 @@ $default-transition-height: 7vh;
 
   .question-block {
     margin: 30px 0;
+
+    .dropdown-faq {
+      img {
+        height: 1.4em;
+        width: 1.4em;
+        margin-right: 5%;
+      }
+    }
   }
 
   // anchor colors to dark gray in FAQ section

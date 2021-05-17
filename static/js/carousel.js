@@ -1,15 +1,15 @@
 var id = null;
 
-async function flash(on) {
-    $("#tv-blip").css("display", "flex");
-    var tv = $("#tv-screen")
-    var width = on ? 1 : 250;
+async function flash(index, on) {
+    $("#tv-blip").css("visibility", "visible");
+    var tv = $("#tv-screen");
+    var width = on ? 1 : 230;
     clearInterval(id);
     id = setInterval(move, 1);
     function move () {
-        if (width > 250 || width <= 0) {
+        if (width > 230 || width <= 0) {
             clearInterval(id);
-            $("#tv-blip").css("display", "none");
+            $("#tv-blip").css("visibility", "hidden");
             //on ?  : $("#question-"+index).css("display", "flex");
         }
         tv.css("width", width.toString()+"px");
