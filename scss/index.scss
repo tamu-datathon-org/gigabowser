@@ -144,6 +144,12 @@ $default-transition-height: 7vh;
   height: 269px;
 }
 
+.purple-white-transition-rot90 {
+  background: url("/static/img/transitions/purple_white_transition.svg");
+  transform: rotate(180deg);
+  height: 269px;
+}
+
 .white-blue-transition {
   background: url("/static/img/transitions/white_blue_transition.svg");
   height: 134px;
