@@ -14,7 +14,7 @@
         <% req.FAQ.LHS.forEach(({ q, a }, index) => { %>
         <div class="question-block" >
           <div class="dropdown-faq d-flex" onclick="faq_dropdown('<%- index %>')">
-            <img id="question-img-<%- index %>" src="static/img/icons/red_arrow.svg">
+            <img id="question-img-<%- index %>" src="static/img/icons/PixelArrow-Green.svg">
             <h4 class="question">
               <%= q %>
             </h4>
@@ -38,7 +38,7 @@
         <% req.FAQ.RHS.forEach(({ q, a }, index) => { %>
         <div class="question-block">
           <div class="dropdown-faq d-flex" onclick="faq_dropdown('<%- req.FAQ.LHS.length + index %>')">
-            <img id="question-img-<%- req.FAQ.LHS.length + index %>" src="static/img/icons/red_arrow.svg">
+            <img id="question-img-<%- req.FAQ.LHS.length + index %>" src="static/img/icons/PixelArrow-Pink.svg">
             <h4 class="question">
               <%= q %>
             </h4>
