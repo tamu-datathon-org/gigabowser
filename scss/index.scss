@@ -246,9 +246,9 @@ $default-transition-height: 7vh;
 }
 
 .about-section {
+  font-family: "Space Grotesk", monospace !important;
   .about-title {
     color: #632ED2;
-    font-family: "Space Grotesk", monospace !important;
   }
 
   .about-content {
@@ -259,13 +259,11 @@ $default-transition-height: 7vh;
     font-size: 1.15em;
     line-height: 1.5;
     font-weight: 600;
-    font-family: "Space Grotesk", monospace !important;
   }
 
   .about-description {
     font-size: 1.15em;
     line-height: 1.5;
-    font-family: "Space Grotesk", monospace !important;
   }
 
   .about-img {
@@ -549,9 +547,9 @@ $default-transition-height: 7vh;
 // =====================================================
 
 .sponsor-section {
+  font-family: "Space Grotesk", monospace !important;
   background-color: white;
   .sponsors-title {
-    font-family: "Space Grotesk", monospace !important;
     color: rgb(99, 46, 210);
   }
 
@@ -617,7 +615,6 @@ $default-transition-height: 7vh;
   .faq-title {
     font-weight: bold;
     color: $faq-title;
-    font-family: "Space Grotesk", monospace !important;
   }
 
   .question-block {
