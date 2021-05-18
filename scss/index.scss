@@ -15,6 +15,8 @@ $faq-background: #6387fe !default;
 $faq-title: darken(white, 0%) !default;
 $faq-content: lighten(white, 10%) !default;
 
+$theme-light-green: #86eace;
+
 $faq-anchor: #003fee;
 $faq-anchor-hover: #0231b3;
 
@@ -620,11 +622,29 @@ $default-transition-height: 7vh;
     margin: 30px 0;
 
     .dropdown-faq {
+      border-radius: 20px;
+      padding: 10px;
+      margin: 0;
       img {
         height: 1.4em;
         width: 1.4em;
-        margin-right: 5%;
+        margin-right: 2%;
+        margin-left: 1.5%;
+        overflow: hidden;
+        transition-duration: 0.8s;
+        transition-property: transform;
+      } img:hover {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
       }
+      h4 {
+        padding: 0;
+        margin: 0;
+      }
+    }
+    .dropdown-faq:hover {
+      background-color: $theme-light-green;
+      text-shadow: 1.5px 1.5px $splash-light-blue;
     }
   }
 
@@ -642,11 +662,15 @@ $default-transition-height: 7vh;
     font-size: 1.4em;
     font-weight: bolder;
     margin-bottom: 20px;
+    pointer-events: none;
   }
 
   .answer {
+    margin-top: 3%;
     font-size: 1.15em;
     color: #e0dfdf;
+    margin-left: 9%;
+    display: none;
   }
   // HORIZONTAL RULE
   // separator

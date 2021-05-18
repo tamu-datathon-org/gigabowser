@@ -14,21 +14,21 @@
       <!-- (LHS) left hand side -->
       <div class="col-md">
         <% req.FAQ.LHS.forEach(({ q, a }, index) => { %>
-        <div class="question-block">
-          <div class="dropdown-faq d-flex">
-            <img src="static/img/icons/red_arrow.svg">
+        <div class="question-block" >
+          <div class="dropdown-faq d-flex" onclick="faq_dropdown('<%- index %>')">
+            <img id="question-img-<%- index %>" src="static/img/icons/red_arrow.svg">
             <h4 class="question">
               <%= q %>
             </h4>
           </div>
-          <span id="answer" class="answer">
+          <div id="answer-<%- index %>" class="answer">
             <%- a %>
-          </span>
+            <!-- hr separator (except on last item) -->
+            <% if (index < req.FAQ.LHS.length - 1) { %>
+              <hr align="left" />
+            <% } %>
+          </div>
         </div>
-        <!-- hr separator (except on last item) -->
-        <% if (index < req.FAQ.LHS.length - 1) { %>
-        <hr align="left" />
-        <% } %>
         <% }) %>
       </div>
       <!-- hide a divider on screens > than md -->
@@ -39,22 +39,20 @@
       <div class="col-md">
         <% req.FAQ.RHS.forEach(({ q, a }, index) => { %>
         <div class="question-block">
-          <div class="dropdown-faq d-flex">
-            <% if (index != req.FAQ.RHS.length - 1) { %>
-            <img src="static/img/icons/red_arrow.svg">
-            <% } %>
+          <div class="dropdown-faq d-flex" onclick="faq_dropdown('<%- req.FAQ.LHS.length + index %>')">
+            <img id="question-img-<%- req.FAQ.LHS.length + index %>" src="static/img/icons/red_arrow.svg">
             <h4 class="question">
               <%= q %>
             </h4>
           </div>
-          <span class="answer">
+          <div id="answer-<%- req.FAQ.LHS.length + index %>" class="answer">
             <%- a %>
-          </span>
+            <!-- hr separator (except on last item) -->
+            <% if (index < req.FAQ.RHS.length - 1) { %>
+              <hr align="left" />
+            <% } %>
+          </div>
         </div>
-        <!-- hr separator (except on last item) -->
-        <% if (index < req.FAQ.RHS.length - 1) { %>
-        <hr align="left" />
-        <% } %>
         <% }) %>
       </div>
     </div>
