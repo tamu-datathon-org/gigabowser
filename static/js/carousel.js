@@ -17,6 +17,10 @@ async function flash(index, on) {
     }
 }
 
+$('#eventCarousel').on('slide.bs.carousel', function(e) {
+  var idx = $(e.relatedTarget).index();
+})
+
 $('#eventCarousel').on('slid.bs.carousel', function (e) {
   var idx = $(e.relatedTarget).index();
   //console.log(idx);

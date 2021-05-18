@@ -23,9 +23,13 @@
           </div>-->
           <% req.EVENTS.forEach(({ name, img }, index) => { %>
             <div class="carousel-item <%= index == 0 ? 'active' : '' %>">
-              <img class="img-fluid mx-auto d-block" src="/static/img/graphics/<%- img %>" alt="<%= name %>" onmouseover="flash(true)">
-              <div class="carousel-caption d-md-block">
+              <img class="img-fluid mx-auto d-block justify-content-center" src="/static/img/graphics/<%- img %>" alt="<%= name %>" onmouseover="flash(true)">
+              <div class="carousel-caption d-block">
                 <p><%- name %></p>
+                <a href="<%- req.navbarSamePageItems[1].href %>">
+                  Go to Events Page
+                  <i class="fa fa-external-link"></i>
+                </a>
               </div>
             </div>
           <% }) %>

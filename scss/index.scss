@@ -327,7 +327,16 @@ $default-transition-height: 7vh;
         .carousel-caption {
           bottom: 50%;
           font-size: 1.5em;
-          pointer-events: none;
+
+          a {
+            color: $theme-light-green;
+            font-size: 0.7em;
+            display: none;
+          }
+        }
+        .carousel-caption:hover {
+          p {display: none; }
+          a { display: block; }
         }
       }
     }
