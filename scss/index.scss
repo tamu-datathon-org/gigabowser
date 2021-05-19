@@ -291,9 +291,33 @@ $default-transition-height: 7vh;
   color: white;
   justify-content: center;
   .event-item {
-    background-color: $theme-light-green;
     margin: 10px;
+    border-radius: 20px;
+    border: 3px solid rgba(0,0,0,.125);
+    img {
+      object-fit: contain;
+    }
+    .card-body {
+      background-color: $theme-light-green;
+      border-radius: inherit;
+      margin: 0 7px 4px 0;
+      .card-tite {
+        pointer-events: none;
+        font-weight: bold;
+      }:hover {
+        box-shadow: none;
+      }
+      p:hover {
+        box-shadow: none;
+      }
+    }:hover{
+      .card-title { 
+        text-shadow: 1px 1px #3f5aaa; 
+      }
+      box-shadow: 1.5px 1.5px #3f5aaa; 
+    }
   }
+
   .event-controls {
     display: flex;
     justify-content: center;
@@ -319,16 +343,6 @@ $default-transition-height: 7vh;
       margin-left: 10px;
     }:hover {
       opacity: 0.6;
-    }
-  }
-  .event-info {
-    justify-content: center;
-    text-align: center;
-
-    .event-title {
-      font-size: 1.3em;
-      font-weight: bold;
-      margin-top: 50px;
     }
   }
 }

@@ -11,11 +11,13 @@
     <!-- carousel -->
       <div class="event-carousel">
         <% req.EVENTS.forEach(({ name, img, description, date }, index) => { %>
-          <div class="event-item">
-            <div class="event-description">
-              <p><%- name %></p>
-              <a href="<%- req.navbarSamePageItems[1].href %>">
-                Go to Events Page
+          <div class="event-item card">
+            <img class="card-img-top" src="/static/img/icons/aerospace.svg" alt="<%- name %>">
+            <div class="card-body">
+              <h4 class="card-title"><%- name %></h4>
+              <p class="card-text"><%= description %></p>
+              <a href="<%- req.navbarSamePageItems[1].href %>" class="btn btn-primary">
+                events page
                 <i class="fa fa-external-link"></i>
               </a>
             </div>
