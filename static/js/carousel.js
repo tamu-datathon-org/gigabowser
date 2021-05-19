@@ -1,5 +1,5 @@
 var id = null;
-
+/*
 async function flash(index, on) {
     $("#tv-blip").css("visibility", "visible");
     var tv = $("#tv-screen");
@@ -30,3 +30,4 @@ $('#eventCarousel').on('slid.bs.carousel', function (e) {
   }
   $("#event-info-"+idx).css("display", "block");
 })
+*/
