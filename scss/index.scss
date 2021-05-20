@@ -299,25 +299,29 @@ $default-transition-height: 7vh;
     }
     .card-img-top:hover {
       box-shadow: none;
+      transform: none;
     }
     .card-body {
       background-color: $theme-light-green;
       border-radius: inherit;
-      margin: 0 7px 4px 0;
+      margin: 0 4px 4px 0;
       .card-tite {
         pointer-events: none;
         font-weight: bold;
       }:hover {
         box-shadow: none;
+        transform: none;
       }
       p:hover {
         box-shadow: none;
+        transform: none;
       }
     }:hover{
       .card-title { 
         text-shadow: 1px 1px #3f5aaa; 
       }
-      box-shadow: 1.5px 1.5px #3f5aaa; 
+      box-shadow: 1.5px 1.5px #3f5aaa;
+      transform: translate(-3px, -3px);
     }
   }
 
