@@ -356,11 +356,10 @@ $default-transition-height: 7vh;
     margin: 10px;
     .event-prev{
       display: block;
-      height: 30px;
-      width: 30px;
-      background: url("/static/img/icons/PixelArrow-Pink.svg") no-repeat;
+      height: 40px;
+      width: 40px;
+      background: url("/static/img/icons/PixelHandPointing-GreenLeft.svg") no-repeat;
       background-size: contain;
-      transform: rotate(180deg);
       margin-right: 10px;
     }:hover {
       opacity: 0.6;
@@ -368,9 +367,9 @@ $default-transition-height: 7vh;
 
     .event-next{
       display: block;
-      height: 30px;
-      width: 30px;
-      background: url("/static/img/icons/PixelArrow-Pink.svg") no-repeat;
+      height: 40px;
+      width: 40px;
+      background: url("/static/img/icons/PixelHandPointing-GreenRight.svg") no-repeat;
       background-size: contain;
       margin-left: 10px;
     }:hover {
