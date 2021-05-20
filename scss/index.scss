@@ -659,3 +659,41 @@ $default-transition-height: 7vh;
     box-shadow: 0 $highlight-height 0 0 $team-highlight inset;
   }
 }
+
+// =====================================================
+//                   Countdown Timer
+// =====================================================
+
+#timer {
+  text-align: center;
+}
+
+#clockdiv{
+  font-family: "Space Grotesk", monospace !important;
+  color: #fff;
+  display: inline-block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+#clockdiv > div{
+  padding: 10px;
+  border-radius: 3px;
+  background: #00BF96;
+  display: inline-block;
+}
+
+#clockdiv div > span{
+  padding: 15px;
+  border-radius: 3px;
+  background: #00816A;
+  display: inline-block;
+}
+
+.smalltext{
+  font-family: "Space Grotesk", monospace !important;
+  padding-top: 5px;
+  font-size: 16px;
+}
