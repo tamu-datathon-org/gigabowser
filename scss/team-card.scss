@@ -9,7 +9,8 @@
     width: 70%;
     height: auto;
     border-radius: 50%;
-    box-shadow: 0 0 20px rgba($splash-light-purple, 0.5);
+    //box-shadow: 0 0 20px rgba($splash-light-purple, 0.5);
+    box-shadow: 5px 5px $theme-light-green;
   }
 
   .team-card-title {
@@ -20,7 +21,7 @@
     text-decoration: none;
 
     i {
-      color: $splash-light-purple;
+      color: $dark-purple;
     }
   }
 }

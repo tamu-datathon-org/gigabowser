@@ -21,10 +21,7 @@
           </div>
           <div id="answer-<%- index %>" class="answer">
             <%- a %>
-            <!-- hr separator (except on last item) -->
-            <% if (index < req.FAQ.LHS.length - 1) { %>
-              <hr align="left" />
-            <% } %>
+            <hr align="left" />
           </div>
         </div>
         <% }) %>
@@ -45,10 +42,7 @@
           </div>
           <div id="answer-<%- req.FAQ.LHS.length + index %>" class="answer">
             <%- a %>
-            <!-- hr separator (except on last item) -->
-            <% if (index < req.FAQ.RHS.length - 1) { %>
-              <hr align="left" />
-            <% } %>
+            <hr align="left" />
           </div>
         </div>
         <% }) %>

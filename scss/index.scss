@@ -155,9 +155,35 @@ $default-transition-height: 7vh;
   height: 134px;
 }
 
+.blue-green-transition-rot90 {
+  background: url("/static/img/transitions/green_blue_transition.png");
+  height: 134px;
+  background-size: contain;
+  transform: rotate(180deg);
+}
+
 .blue-white-transition {
   background: url("/static/img/transitions/blue_white_transition.svg");
   height: 134px;
+}
+
+.pink-blue-transition-rot90 {
+  background: url("/static/img/transitions/pink_blue_transition.png");
+  height: 134px;
+  background-size: contain;
+  transform: rotate(180deg);
+}
+
+.green-white-transition {
+  background: url("/static/img/transitions/green_white_transition.png");
+  height: 134px;
+  background-size:contain;
+}
+
+.pink-white-transition {
+  background: url("/static/img/transitions/pink_white_transition.png");
+  height: 134px;
+  background-size:contain;
 }
 
 .main-event-transition {
@@ -253,9 +279,8 @@ $default-transition-height: 7vh;
 
 .about-section {
   font-family: "Space Grotesk", monospace !important;
-  .about-title {
-    color: #632ED2;
-  }
+  background: $dark-green;
+  color: white;
 
   .about-content {
     flex-wrap: wrap-reverse;
@@ -331,8 +356,8 @@ $default-transition-height: 7vh;
     margin: 10px;
     .event-prev{
       display: block;
-      height: 20px;
-      width: 20px;
+      height: 30px;
+      width: 30px;
       background: url("/static/img/icons/PixelArrow-Pink.svg") no-repeat;
       background-size: contain;
       transform: rotate(180deg);
@@ -343,8 +368,8 @@ $default-transition-height: 7vh;
 
     .event-next{
       display: block;
-      height: 20px;
-      width: 20px;
+      height: 30px;
+      width: 30px;
       background: url("/static/img/icons/PixelArrow-Pink.svg") no-repeat;
       background-size: contain;
       margin-left: 10px;
@@ -360,10 +385,10 @@ $default-transition-height: 7vh;
 // ------------------------------------------
 
 .industries-section {
-  background: $industries-background;
+  background: $dark-pink;
 
   .industries-title {
-    color: $industries-title;
+    color: white;
   }
 
   @keyframes scroll {
