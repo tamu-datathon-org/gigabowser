@@ -318,6 +318,7 @@ $default-transition-height: 7vh;
   .event-item {
     margin: 10px;
     border: 3px solid rgba(0,0,0,.125);
+    border-color: $dark-purple;
     img {
       object-fit: contain;
     }
@@ -326,10 +327,10 @@ $default-transition-height: 7vh;
       transform: none;
     }
     .card-body {
-      background-color: $theme-light-green;
-      border-radius: inherit;
+      background-color: white;
+      color: $dark-purple;
       margin: 0 4px 4px 0;
-      .card-tite {
+      .card-title {
         pointer-events: none;
         font-weight: bold;
       }:hover {
@@ -341,7 +342,7 @@ $default-transition-height: 7vh;
         transform: none;
       }
     }:hover{
-      .card-title { 
+      .card-title {
         text-shadow: 1px 1px #3f5aaa; 
       }
       box-shadow: 1.5px 1.5px #3f5aaa;
