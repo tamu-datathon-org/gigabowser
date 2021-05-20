@@ -326,6 +326,9 @@ $default-transition-height: 7vh;
       box-shadow: none;
       transform: none;
     }
+    .card-text {
+      color: gray;
+    }
     .card-body {
       background-color: white;
       color: $dark-purple;
