@@ -297,6 +297,9 @@ $default-transition-height: 7vh;
     img {
       object-fit: contain;
     }
+    .card-img-top:hover {
+      box-shadow: none;
+    }
     .card-body {
       background-color: $theme-light-green;
       border-radius: inherit;
