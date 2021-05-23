@@ -698,6 +698,7 @@ $default-transition-height: 7vh;
 }
 
 #clockdiv > div{
+  font-size: 50px;
   padding: 10px;
   border-radius: 3px;
   background: #00BF96;
@@ -714,5 +715,5 @@ $default-transition-height: 7vh;
 .smalltext{
   font-family: "Space Grotesk", monospace !important;
   padding-top: 5px;
-  font-size: 16px;
+  font-size: 50px;
 }
