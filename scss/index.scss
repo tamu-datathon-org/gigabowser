@@ -47,6 +47,14 @@ $team-highlight: lighten($team-title, 52%) !default;
     display: none;
     color: #fdcb6e;
   }
+
+  .discord {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px
+  }
 }
 
 .mlh-trust-badge {
@@ -140,18 +148,24 @@ $team-highlight: lighten($team-title, 52%) !default;
 $default-transition-height: 7vh;
 
 .purple-white-transition {
-  background: url("/static/img/transitions/purple_white_transition.svg");
+  background: url("/static/img/transitions/purple_white_transition.png");
   height: 269px;
 }
 
-.purple-white-transition-rot90 {
-  background: url("/static/img/transitions/purple_white_transition.svg");
+.white-purple-transition {
+  background: url("/static/img/transitions/purple_white_transition.png");
   transform: rotate(180deg);
   height: 269px;
 }
 
+.blue-white-transition {
+  background: url("/static/img/transitions/blue_white_transition.png");
+  height: 134px;
+}
+
 .white-blue-transition {
-  background: url("/static/img/transitions/white_blue_transition.svg");
+  background: url("/static/img/transitions/blue_white_transition.png");
+  transform: rotate(180deg);
   height: 134px;
 }
 
@@ -160,11 +174,6 @@ $default-transition-height: 7vh;
   height: 134px;
   background-size: contain;
   transform: rotate(180deg);
-}
-
-.blue-white-transition {
-  background: url("/static/img/transitions/blue_white_transition.svg");
-  height: 134px;
 }
 
 .pink-blue-transition-rot90 {
@@ -177,13 +186,20 @@ $default-transition-height: 7vh;
 .green-white-transition {
   background: url("/static/img/transitions/green_white_transition.png");
   height: 134px;
-  background-size:contain;
+  background-size: contain;
 }
 
 .pink-white-transition {
-  background: url("/static/img/transitions/pink_white_transition.png");
+  background: url("/static/img/transitions/white_pink_transition.png");
   height: 134px;
-  background-size:contain;
+  background-size: contain;
+  transform: rotate(180deg);
+}
+
+.white-pink-transition {
+  background: url("/static/img/transitions/white_pink_transition.png");
+  height: 134px;
+  background-size: contain;
 }
 
 .main-event-transition {
@@ -213,7 +229,7 @@ $default-transition-height: 7vh;
   padding: 3vh 0;
 
   .section-title {
-    color: white;
+    color: $dark-purple;
     padding-top: 1em;
     font-size: 2.5em;
     font-weight: bold;
@@ -279,8 +295,6 @@ $default-transition-height: 7vh;
 
 .about-section {
   font-family: "Space Grotesk", monospace !important;
-  background: $dark-green;
-  color: white;
 
   .about-content {
     flex-wrap: wrap-reverse;
@@ -312,7 +326,6 @@ $default-transition-height: 7vh;
 //            EVENTS SECTION
 // ------------------------------------------
 .events-section {
-  background: #6387FE;
   color: white;
   justify-content: center;
   .event-item {
