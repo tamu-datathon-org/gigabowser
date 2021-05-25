@@ -691,19 +691,21 @@ $default-transition-height: 7vh;
 #clockdiv{
   font-family: "Space Grotesk", monospace !important;
   color: #fff;
-  display: inline-block;
+  display: flex;
   font-weight: 100;
   text-align: center;
-  font-size: 30px;
+  justify-content: center;
+  font-size: 40px;
   padding-bottom: 50px;
 }
 
 #clockdiv > div{
-  font-size: 50px;
+  font-size: 70px;
   padding: 10px;
   border-radius: 3px;
   background: -webkit-linear-gradient(#4740af, #ff99cc);
   display: inline-block;
+  margin-right: 10px
 }
 
 #clockdiv div > span{
