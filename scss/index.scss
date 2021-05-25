@@ -1,3 +1,6 @@
+// Font
+$website-font: "Space Grotesk", monospace !important;
+
 // Index Page Colors
 $light: #fff;
 $light-pink: #f4ecf2;
@@ -295,7 +298,7 @@ $default-transition-height: 7vh;
 }
 
 .about-section {
-  font-family: "Space Grotesk", monospace !important;
+  font-family: $website-font;
 
   .about-content {
     flex-wrap: wrap-reverse;
@@ -529,7 +532,7 @@ $default-transition-height: 7vh;
 // =====================================================
 
 .sponsor-section {
-  font-family: "Space Grotesk", monospace !important;
+  font-family: $website-font;
   background-color: white;
   .sponsors-title {
     color: rgb(99, 46, 210);
@@ -592,7 +595,7 @@ $default-transition-height: 7vh;
 .faq-section {
   background-color: $faq-background;
   color: $faq-content;
-  font-family: "Space Grotesk", monospace !important;
+  font-family: $website-font;
 
   .faq-title {
     font-weight: bold;
@@ -690,7 +693,7 @@ $default-transition-height: 7vh;
 }
 
 #clockdiv{
-  font-family: "Space Grotesk", monospace !important;
+  font-family: $website-font;
   color: #fff;
   display: flex;
   font-weight: 100;
@@ -717,7 +720,7 @@ $default-transition-height: 7vh;
 }
 
 .smalltext{
-  font-family: "Space Grotesk", monospace !important;
+  font-family: $website-font;
   padding-top: 5px;
   font-size: 50px;
 }
