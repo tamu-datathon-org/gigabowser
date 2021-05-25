@@ -51,9 +51,10 @@ $team-highlight: lighten($team-title, 52%) !default;
   .discord {
     width: 90px;
     height: 90px;
-    position: absolute;
-    right: 100px;
-    bottom: 0px
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 1000;
   }
 }
 
@@ -701,14 +702,14 @@ $default-transition-height: 7vh;
   font-size: 50px;
   padding: 10px;
   border-radius: 3px;
-  background: #00BF96;
+  background: -webkit-linear-gradient(#4740af, #ff99cc);
   display: inline-block;
 }
 
 #clockdiv div > span{
   padding: 15px;
   border-radius: 3px;
-  background: #00816A;
+  /*background: -webkit-linear-gradient(#4740af, #ff99cc);*/
   display: inline-block;
 }
 
