@@ -358,13 +358,14 @@ $default-transition-height: 7vh;
         box-shadow: none;
         transform: none;
       }
-    }:hover{
+    }
+    /*:hover {
       .card-title {
         text-shadow: 1px 1px #3f5aaa; 
       }
       box-shadow: 1.5px 1.5px #3f5aaa;
       transform: translate(-3px, -3px);
-    }
+    }*/
   }
 
   .event-controls {
