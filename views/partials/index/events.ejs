@@ -9,25 +9,29 @@
       </div>
     </div>
     <!-- carousel -->
-      <div class="event-carousel">
-        <% req.EVENTS.forEach(({ name, description, date }, index) => { %>
-          <div class="event-item card">
-            <img class="card-img-top" src="/static/img/icons/carousel-image.svg" alt="<%- name %>">
-            <div class="card-body">
-              <h4 class="card-title"><%- name %></h4>
-              <b class="card-date"><%- date %></b>
-              <p class="card-text"><%= description %></p>
-              <a href="<%- req.navbarSamePageItems[1].href %>" class="btn btn-primary">
-                Go to Event
-                <i class="fa fa-external-link"></i>
-              </a>
-            </div>
-          </div>
-        <% }) %>
+    <div class="event-carousel">
+      <% req.EVENTS.forEach(({ name, description, date }, index) => { %>
+      <div class="event-item card">
+        <img class="card-img-top" src="/static/img/icons/carousel-image.svg" alt="<%- name %>">
+        <div class="card-body">
+          <h4 class="card-title">
+            <%- name %>
+          </h4>
+          <b class="card-date">
+            <%- date %>
+          </b>
+          <p class="card-text"><%= description %></p>
+          <a href="<%- req.navbarSamePageItems[1].href %>" class="btn btn-primary">
+            Go to Event
+            <i class="fa fa-external-link"></i>
+          </a>
+        </div>
       </div>
-      <div class="event-controls">
-        <div class="event-prev"></div>
-        <div class="event-next"></div>
-      </div>
+      <% }) %>
+    </div>
+    <div class="event-controls">
+      <div class="event-prev"></div>
+      <div class="event-next"></div>
+    </div>
   </div>
 </div>
