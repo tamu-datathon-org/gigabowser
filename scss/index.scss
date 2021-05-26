@@ -364,7 +364,11 @@ $default-transition-height: 7vh;
       margin: 0 4px 4px 0;
       .card-title {
         pointer-events: none;
-        font-weight: bold;
+        font-weight: bolder;
+      }
+      .card-date {
+        font-family: 'VT323', monospace;
+        font-size: 17px;
       }
       :hover {
         box-shadow: none;
