@@ -719,7 +719,7 @@ $default-transition-height: 7vh;
 }
 
 #clockdiv > div {
-  font-size: 70px;
+  font-size: 100px; // font size for numbers
   padding: 10px;
   border-radius: 3px;
   background: -webkit-linear-gradient(#4740af, #ff99cc);
@@ -730,12 +730,11 @@ $default-transition-height: 7vh;
 #clockdiv div > span {
   padding: 15px;
   border-radius: 3px;
-  /*background: -webkit-linear-gradient(#4740af, #ff99cc);*/
   display: inline-block;
 }
 
 .smalltext {
   font-family: $website-font;
   padding-top: 5px;
-  font-size: 50px;
+  font-size: 70px; // font size for number labels
 }
