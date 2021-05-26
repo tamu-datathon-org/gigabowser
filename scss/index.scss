@@ -346,7 +346,7 @@ $default-transition-height: 7vh;
   justify-content: center;
   .event-item {
     margin: 10px;
-    border: 3px solid rgba(0,0,0,.125);
+    border: 3px solid rgba(0, 0, 0, 0.125);
     border-color: $dark-purple;
     img {
       object-fit: contain;
@@ -365,7 +365,8 @@ $default-transition-height: 7vh;
       .card-title {
         pointer-events: none;
         font-weight: bold;
-      }:hover {
+      }
+      :hover {
         box-shadow: none;
         transform: none;
       }
@@ -387,30 +388,31 @@ $default-transition-height: 7vh;
     display: flex;
     justify-content: center;
     margin: 10px;
-    .event-prev{
+    .event-prev {
       display: block;
       height: 40px;
       width: 40px;
       background: url("/static/img/icons/PixelHandPointing-PinkLeft.svg") no-repeat;
       background-size: contain;
       margin-right: 10px;
-    }:hover {
+    }
+    :hover {
       opacity: 0.6;
     }
 
-    .event-next{
+    .event-next {
       display: block;
       height: 40px;
       width: 40px;
       background: url("/static/img/icons/PixelHandPointing-PinkRight.svg") no-repeat;
       background-size: contain;
       margin-left: 10px;
-    }:hover {
+    }
+    :hover {
       opacity: 0.6;
     }
   }
 }
-
 
 // ------------------------------------------
 //            INDUSTRIES SECTION
@@ -629,7 +631,8 @@ $default-transition-height: 7vh;
         overflow: hidden;
         transition-duration: 0.8s;
         transition-property: transform;
-      } img:hover {
+      }
+      img:hover {
         transform: rotate(360deg);
         -webkit-transform: rotate(360deg);
       }
@@ -704,7 +707,7 @@ $default-transition-height: 7vh;
   padding-bottom: 20px;
 }
 
-#clockdiv{
+#clockdiv {
   font-family: $website-font;
   color: #fff;
   display: flex;
@@ -715,23 +718,23 @@ $default-transition-height: 7vh;
   padding-bottom: 200px;
 }
 
-#clockdiv > div{
+#clockdiv > div {
   font-size: 70px;
   padding: 10px;
   border-radius: 3px;
   background: -webkit-linear-gradient(#4740af, #ff99cc);
   display: inline-block;
-  margin-right: 10px
+  margin-right: 10px;
 }
 
-#clockdiv div > span{
+#clockdiv div > span {
   padding: 15px;
   border-radius: 3px;
   /*background: -webkit-linear-gradient(#4740af, #ff99cc);*/
   display: inline-block;
 }
 
-.smalltext{
+.smalltext {
   font-family: $website-font;
   padding-top: 5px;
   font-size: 50px;
