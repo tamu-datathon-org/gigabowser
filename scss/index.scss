@@ -52,8 +52,8 @@ $team-highlight: lighten($team-title, 52%) !default;
   }
 
   .discord {
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
     position: fixed;
     right: 15px;
     bottom: 15px;
@@ -698,12 +698,12 @@ $default-transition-height: 7vh;
 // =====================================================
 
 #timer {
-  background: -webkit-linear-gradient(#4740af, #ff99cc);
+  background: #4740af;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
   font-size: 100px;
-  font-weight: bolder;
+  font-weight: 1000;
   padding-bottom: 20px;
 }
 
