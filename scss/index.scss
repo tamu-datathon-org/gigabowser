@@ -702,9 +702,7 @@ $default-transition-height: 7vh;
 // =====================================================
 
 #timer {
-  background: #4740af;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #4740af;
   text-align: center;
   font-size: 100px;
   font-weight: 1000;
