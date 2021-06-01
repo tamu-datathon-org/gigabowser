@@ -5,12 +5,19 @@
   margin: 2vh auto;
 
   .team-card-img {
+    //margin: 2vh auto auto;
+    //width: 70%;
+    //height: auto;
+    //border-radius: 50%;
+    //box-shadow: 5px 5px $theme-light-green;
+
     margin: 2vh auto auto;
-    width: 70%;
+    width: 80%;
     height: auto;
-    border-radius: 50%;
-    //box-shadow: 0 0 20px rgba($splash-light-purple, 0.5);
-    box-shadow: 5px 5px $theme-light-green;
+    background-color: #302244;
+    border: 5px solid transparent;
+    border-image: linear-gradient(to bottom right, #632ed2 0%, #6387fe 25%, #ea6ec9 50%, #fec837 75%, #fd1892 100%);
+    border-image-slice: 1;
   }
 
   .team-card-title {
