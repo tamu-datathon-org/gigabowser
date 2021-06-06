@@ -245,12 +245,43 @@ $default-transition-height: 7vh;
   padding: 3vh 0;
 
   .section-title {
-    color: $dark-purple;
     padding-top: 1em;
     font-size: 2.5em;
     font-weight: bold;
     display: inline-block;
     padding-bottom: $highlight-ypos;
+
+    @keyframes ani {
+      0% {
+        transform: translate3d(0,0,0);
+        text-shadow: 0em 0em 0 lightblue;
+        color: $dark-purple;
+      }
+      30% {
+        transform: translate3d(0,0,0);
+        text-shadow: 0em 0em 0 lightblue;
+        color: $dark-purple;
+      }
+      70% {
+        transform: translate3d(0.08em,-0.08em,0);
+        text-shadow: -0.08em 0.08em lightblue;
+        color: $dark-purple;
+      }
+      100% {
+        transform: translate3d(0.08em,-0.08em,0);
+        text-shadow: -0.08em 0.08em lightblue;
+        color: $dark-purple;
+      }
+    }
+
+    span {
+      position: relative;
+      display: inline-block;
+      animation: ani 1s infinite alternate cubic-bezier(0.860, 0.000, 0.070, 1.000);
+      @for $i from 1 through 3{
+        &:nth-last-child(#{$i}n){ animation-delay: -1s*$i/3/2;}
+      }
+    }
   }
 }
 
