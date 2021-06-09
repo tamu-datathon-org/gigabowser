@@ -67,10 +67,10 @@ $team-highlight: lighten($team-title, 52%) !default;
     z-index: 1000;
     position: fixed;
   }
-  
+
   .discord > img {
-    padding-left: 5px;
-    padding-top: 9px;
+    width: 100%;
+    padding: 0.5rem;
   }
 }
 
