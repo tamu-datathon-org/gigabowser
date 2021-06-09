@@ -1,7 +1,7 @@
 $(".event-carousel").slick({
-  centerMode: true,
+  centerMode: false,
   centerPadding: '60px',
-  slidesToShow: 3,
+  slidesToShow: 4,
   autoplay: true,
   autoplaySpeed: 3000,
   prevArrow: $(".event-prev"),
