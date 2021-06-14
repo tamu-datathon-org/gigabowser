@@ -802,7 +802,7 @@ $default-transition-height: 7vh;
 #timer {
   color: #4740af;
   text-align: center;
-  font-size: 100px;
+  font-size: calc(12px + 6vw);
   font-weight: 1000;
   padding-bottom: 20px;
 }
@@ -814,27 +814,32 @@ $default-transition-height: 7vh;
   font-weight: 100;
   text-align: center;
   justify-content: center;
-  font-size: 40px;
+  font-size: 3.5vw;
   padding-bottom: 200px;
+
 }
 
 #clockdiv > div {
-  font-size: 100px; // font size for numbers
+  font-size: 6.5vw; // font size for numbers
   padding: 10px;
   border-radius: 3px;
   background: -webkit-linear-gradient(#4740af, #ff99cc);
   display: inline-block;
   margin-right: 10px;
+
+  width: 50%;
+
 }
 
 #clockdiv div > span {
   padding: 15px;
   border-radius: 3px;
   display: inline-block;
+
 }
 
 .smalltext {
   font-family: $website-font;
   padding-top: 5px;
-  font-size: 70px; // font size for number labels
+  font-size: 3.5vw; // font size for number labels
 }
