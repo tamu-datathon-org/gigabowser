@@ -291,7 +291,7 @@ $default-transition-height: 7vh;
       position: relative;
       display: inline-block;
       animation: ani 1s infinite alternate cubic-bezier(0.860, 0.000, 0.070, 1.000); ;
-      @for $i from 1 through 3 {
+      @for $i from 1 through 20 {
         &:nth-last-child(#{$i}n){ animation-delay: -1s*$i/3/2;}
       }
     }
