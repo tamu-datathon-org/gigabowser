@@ -438,8 +438,9 @@ $default-transition-height: 7vh;
   justify-content: center;
   .event-item {
     margin: 10px;
-    border: 3px solid rgba(0, 0, 0, 0.125);
+    border: 6px solid rgba(0, 0, 0, 0.125);
     border-color: $dark-purple;
+    box-shadow: 5px 5px 0px $dark-purple;
     img {
       object-fit: contain;
     }
