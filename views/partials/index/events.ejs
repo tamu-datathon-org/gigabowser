@@ -1,5 +1,5 @@
 <div class="section events-section">
-  <div id="event" class="container" style="max-width: 80%">
+  <div id="event" class="container">
     <!-- events section title -->
     <div class="row">
       <div class="col-md">
@@ -10,7 +10,7 @@
       </div>
     </div>
     <!-- carousel -->
-    <div class="event-carousel"> <!-- style="border-style: solid; border-color: #632ed2;"> -->
+    <div class="event-carousel events-container"> <!-- style="border-style: solid; border-color: #632ed2;"> -->
       <% req.EVENTS.forEach(({ name, description, date }, index) => { %>
       <div class="event-item card">
         <img class="card-img-top" src="/static/img/graphics/carousel-image.png" alt="<%- name %>">
