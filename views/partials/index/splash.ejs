@@ -1,15 +1,97 @@
-<div class="splash">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/GLTFLoader.js"></script>
+<script type="module">
+  import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.121.1/examples/jsm/controls/OrbitControls.js';
+  let renderer, scene, camera, controls;
+  let mesh;
+
+  init();
+
+  function init() {
+
+    // create the camera
+    camera = new THREE.PerspectiveCamera( 50, window.innerWidth / window.innerHeight, 0.1, 120 );
+    camera.position.set(0.0, 20.0, 50.0);
+
+    // Load the background texture
+    // const texture = new THREE.TextureLoader().load( '/static/img/backgrounds/splash_background_fancy.png' ); // BAD quality
+    // scene.background = texture;
+
+    // create the scene
+    scene = new THREE.Scene();
+    scene.background = new THREE.Color( 0x632ed2 );
+
+    // create the mesh
+    const loader = new THREE.GLTFLoader();
+    loader.load( '/static/objects/TD_scene.glb', function ( gltf ) {
+      scene.add( gltf.scene );
+    }, undefined, function ( error ) {
+	    console.error( error );
+    } );
+    /*
+    const geometry = new THREE.BoxGeometry( 1, 1, 1 );
+    const material = new THREE.MeshBasicMaterial({ color: 0x86eace });
+    mesh = new THREE.Mesh( geometry, material );
+    mesh.position.x = 0.8;
+    scene.add( mesh ); */
+
+    // create the lights
+    const light = new THREE.PointLight( 0xff0000, 1, 1000 );
+    light.position.set( 10, 10, 10 );
+    scene.add( light );
+    const ambientLight = new THREE.AmbientLight(0xaaaaaa);
+    scene.add(ambientLight);
+
+    // create the renderer
+    renderer = new THREE.WebGLRenderer({ antialias: false,alpha:true });
+    renderer.setPixelRatio( window.devicePixelRatio );
+    renderer.setClearColor(0x000000, 0);
+    renderer.setSize( window.innerWidth, window.innerHeight );
+
+    // set the control
+    controls = new OrbitControls( camera, renderer.domElement );
+    // controls.autoRotate = true;
+    controls.minDistance = 60;
+		controls.maxDistance = 300;
+    controls.target.set( 0, 0, 0 );
+
+    // add it to splash
+    document.getElementById("splash").appendChild( renderer.domElement );
+
+    window.addEventListener( 'resize', onWindowResize );
+
+    // start animation
+    animate();
+  }
+
+  function animate() {
+    requestAnimationFrame( animate );
+    if ( mesh ) {
+      mesh.rotation.y -= 0.001;
+    }
+    controls.update();
+    renderer.render( scene, camera );
+  }
+  function onWindowResize() {
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+    camera.aspect = width / height;
+    camera.updateProjectionMatrix();
+    renderer.setSize( width, height );
+  }
+</script>
+<div id="splash" class="splash">
   <a href="https://discord.gg/V65juTU" target="_blank">
     <!-- need to update this invite link -->
     <span class="discord d-flex align-items-center">
       <img src="/static/img/graphics/discord.png">
     </span>
   </a>
-  <div id="splash-content" class="col-md-10 d-flex flex-column">
-    <div style="padding: 8em 0">
+  <!--<div id="splash-content" class="col-md-10 d-flex flex-column">-->
+  <div id="splash-content">
+    <div class="splash-title">
       <img id="text-logo" src="/static/img/logos/text-logo.png" class="text" alt="TAMU Datathon 2020" />
-      <!--<img src="static/img/logos/main.png" class="splash-logo">-->
-      <h2 style="padding-top: 10px">October XX - XX, 2021</h2>
+      <h2>October XX - XX, 2021</h2>
     </div>
     <a class="mlh-trust-badge" href="https://mlh.io/seasons/na-2021/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=white" target="_blank"><img src="/static/img/logos/mlh-2021-badge.svg" alt="Major League Hacking 2021 Hackathon Season" style="width: 100%" /></a>
   </div>

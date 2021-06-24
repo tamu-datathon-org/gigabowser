@@ -33,7 +33,6 @@ $team-highlight: lighten($team-title, 52%) !default;
 // =====================================================
 
 .splash {
-  // background-image: linear-gradient(to top, $dark-purple 10%, #4a40ac01 30%), url("/static/img/backgrounds/splash-background.svg");
   background-position: center -100px;
   background-color: $dark-purple;
   background-repeat: no-repeat;
@@ -86,10 +85,16 @@ $team-highlight: lighten($team-title, 52%) !default;
 }
 
 #splash-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  display: absolute;
   text-align: center;
+
+  .splash-title {
+    position: absolute;
+    display: block;
+    left: 10%;
+    right: 20%;
+    top: 35%;
+  }
 }
 
 @include media-breakpoint-up(lg) {
@@ -100,7 +105,7 @@ $team-highlight: lighten($team-title, 52%) !default;
   .splash {
     background-image: url("/static/img/backgrounds/splash-background.svg");
     background-position: -15vw;
-    background-color: #1b135e;
+    background-color: none; // #1b135e;
     background-size: 175%;
   }
 }
