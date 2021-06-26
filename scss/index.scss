@@ -41,8 +41,9 @@ $team-highlight: lighten($team-title, 52%) !default;
   height: 100vh;
   max-height: 1500px;
   z-index: 1;
+  overflow: none;
 
-  display: flex;
+  text-align: right;
   justify-content: center;
 
   .applications-closed-message {
@@ -92,21 +93,25 @@ $team-highlight: lighten($team-title, 52%) !default;
     position: absolute;
     display: block;
     left: 10%;
-    right: 20%;
-    top: 35%;
+    top: 25%;
   }
-}
-
-@include media-breakpoint-up(lg) {
-  #splash-content {
-    justify-content: center;
-    text-align: left;
-  }
-  .splash {
-    background-image: url("/static/img/backgrounds/splash-background.svg");
-    background-position: -15vw;
-    background-color: none; // #1b135e;
-    background-size: 175%;
+  @include media-breakpoint-down(lg) {
+    #splash-content {
+      justify-content: center;
+      text-align: left;
+    }
+    .splash {
+      background-image: url("/static/img/backgrounds/splash-background.svg");
+      background-position: -15vw;
+      background-color: none; // #1b135e;
+    }
+    .splash-title {
+      text-align: center;
+      width: 100%;
+      margin-left: 10px;
+      margin-right: 20px;
+      left: 0;
+    }
   }
 }
 
@@ -165,28 +170,33 @@ $team-highlight: lighten($team-title, 52%) !default;
 
 // =====================================================
 //                    Transitions
-//           About to Industry Transition
 // =====================================================
 $default-transition-height: 7vh;
+$large-transition-height: 296px;
+$small-transition-height: 134px;
 
-.purple-white-transition {
-  background: url("/static/img/transitions/purple_white_transition.png");
-  height: 269px;
+// splash transition
+.white-purple-transition {
+  background: url("/static/img/transitions/white_purple_transition.png");
+  height: $large-transition-height;
+  transform: translateY(-147.2px);
   background-size: auto 100%;
+  background-color: transparent;
   image-rendering: pixelated;
 }
 
-.white-purple-transition {
+// footer transition
+.purple-white-transition {
   background: url("/static/img/transitions/purple_white_transition.png");
+  height: $large-transition-height;
   transform: rotate(180deg);
-  height: 268px;
   background-size: auto 100%;
   image-rendering: pixelated;
 }
 
 .blue-white-transition {
   background: url("/static/img/transitions/blue_white_transition.png");
-  height: 134px;
+  height: $small-transition-height;
   background-size: auto 100%;
   image-rendering: pixelated;
 }
@@ -194,14 +204,14 @@ $default-transition-height: 7vh;
 .white-blue-transition {
   background: url("/static/img/transitions/blue_white_transition.png");
   transform: rotate(180deg);
-  height: 132px;
+  height: $small-transition-height;
   background-size: auto 100%;
   image-rendering: pixelated;
 }
 
 .blue-green-transition-rot90 {
   background: url("/static/img/transitions/green_blue_transition.png");
-  height: 134px;
+  height: $small-transition-height;
   transform: rotate(180deg);
   background-size: auto 100%;
   image-rendering: pixelated;
@@ -209,7 +219,7 @@ $default-transition-height: 7vh;
 
 .pink-blue-transition-rot90 {
   background: url("/static/img/transitions/pink_blue_transition.png");
-  height: 134px;
+  height: $small-transition-height;
   background-size: contain;
   transform: rotate(180deg);
 }
@@ -217,21 +227,21 @@ $default-transition-height: 7vh;
 .green-white-transition {
   background: url("/static/img/transitions/white_green_transition.png");
   transform: rotate(180deg);
-  height: 134px;
+  height: $small-transition-height;
   background-size: auto 100%;
   image-rendering: pixelated;
 }
 
 .white-green-transition {
   background: url("/static/img/transitions/white_green_transition.png");
-  height: 134px;
+  height: $small-transition-height;
   background-size: auto 100%;
   image-rendering: pixelated;
 }
 
 .pink-white-transition {
   background: url("/static/img/transitions/white_pink_transition.png");
-  height: 134px;
+  height: $small-transition-height;
   background-size: auto 100%;
   image-rendering: pixelated;
   transform: rotate(180deg);
@@ -239,19 +249,9 @@ $default-transition-height: 7vh;
 
 .white-pink-transition {
   background: url("/static/img/transitions/white_pink_transition.png");
-  height: 134px;
+  height: $small-transition-height;
   background-size: auto 100%;
   image-rendering: pixelated;
-}
-
-.main-event-transition {
-  background: linear-gradient(to left bottom, $light-pink 49.5%, white 50%);
-  height: $default-transition-height;
-}
-
-.about-transition {
-  background: linear-gradient(to left bottom, white 49.5%, $industries-background 50%);
-  height: $default-transition-height;
 }
 
 .industries-transition {
@@ -259,13 +259,9 @@ $default-transition-height: 7vh;
   height: $default-transition-height;
 }
 
-.sponsors-transition {
-  height: $default-transition-height;
-}
-
-.faq-transition {
-  height: $default-transition-height;
-}
+// ================================
+//       Section Definition
+// ================================
 
 .section {
   padding: 3vh 0;
@@ -435,13 +431,14 @@ $default-transition-height: 7vh;
   min-height: 600px;
 }
 
-// ------------------------------------------
+// =====================================
 //            EVENTS SECTION
-// ------------------------------------------
+// =====================================
+
 .events-section {
   color: white;
   .events-container {
-    transform: translateX(14%);
+    // transform: translateX(14%);
     right: 0 !important;
     margin-right: 0 !important;
     padding-right: 0 !important;
@@ -488,13 +485,6 @@ $default-transition-height: 7vh;
         transform: none;
       }
     }
-    /*:hover {
-      .card-title {
-        text-shadow: 1px 1px #3f5aaa; 
-      }
-      box-shadow: 1.5px 1.5px #3f5aaa;
-      transform: translate(-3px, -3px);
-    }*/
   }
 
   .event-controls {
@@ -527,9 +517,9 @@ $default-transition-height: 7vh;
   }
 }
 
-// ------------------------------------------
+// ==========================================
 //            INDUSTRIES SECTION
-// ------------------------------------------
+// ==========================================
 
 .industries-section {
   background: $dark-pink;
@@ -759,10 +749,7 @@ $default-transition-height: 7vh;
       text-shadow: 1.5px 1.5px $splash-light-blue;
     }
   }
-
-  // anchor colors to dark gray in FAQ section
   a {
-    // default to underline
     text-decoration: underline;
     color: $faq-anchor;
     &:hover {
@@ -785,7 +772,6 @@ $default-transition-height: 7vh;
     display: none;
   }
   // HORIZONTAL RULE
-  // separator
   hr {
     width: 30%;
     min-width: 150px;

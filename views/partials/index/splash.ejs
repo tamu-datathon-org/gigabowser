@@ -1,63 +1,65 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/GLTFLoader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/postprocessing@6.22.0/build/postprocessing.min.js" integrity="sha256-G+RysCaKA9d3geSn2C/lOEVarZ8K4E57KD25idQIDLU=" crossorigin="anonymous"></script>
 <script type="module">
-  import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.121.1/examples/jsm/controls/OrbitControls.js';
-  let renderer, scene, camera, controls;
-  let mesh;
 
-  init();
+  let renderer, scene, camera, composer, model;
+  if (webgl_support()) { // threejs splash
+    init();
+  } else { // normal splash
+    const img = document.createElement('img');
+    img.src = '/static/img/graphics/TD-scene-image.png';
+    img.style.maxWidth = '100%';
+    img.style.maxHeight = '100%';
+    document.getElementById('splash').appendChild( img ); 
+  }
 
   function init() {
 
     // create the camera
     camera = new THREE.PerspectiveCamera( 50, window.innerWidth / window.innerHeight, 0.1, 120 );
-    camera.position.set(0.0, 20.0, 50.0);
+    camera.lookAt(0,0,0);
+    camera.position.set(-12.0, 12.0, 35.0);
 
     // Load the background texture
     // const texture = new THREE.TextureLoader().load( '/static/img/backgrounds/splash_background_fancy.png' ); // BAD quality
     // scene.background = texture;
 
-    // create the scene
+    // ---- create the scene ----
     scene = new THREE.Scene();
     scene.background = new THREE.Color( 0x632ed2 );
 
-    // create the mesh
+    // scene mesh
     const loader = new THREE.GLTFLoader();
     loader.load( '/static/objects/TD_scene.glb', function ( gltf ) {
-      scene.add( gltf.scene );
+      model = gltf.scene;
+      scene.add( model );
     }, undefined, function ( error ) {
 	    console.error( error );
     } );
-    /*
-    const geometry = new THREE.BoxGeometry( 1, 1, 1 );
-    const material = new THREE.MeshBasicMaterial({ color: 0x86eace });
-    mesh = new THREE.Mesh( geometry, material );
-    mesh.position.x = 0.8;
-    scene.add( mesh ); */
 
-    // create the lights
-    const light = new THREE.PointLight( 0xff0000, 1, 1000 );
-    light.position.set( 10, 10, 10 );
-    scene.add( light );
-    const ambientLight = new THREE.AmbientLight(0xaaaaaa);
-    scene.add(ambientLight);
+    // scene lights
+    const ptlight1 = new THREE.PointLight();
+    ptlight1.position.set( 10, 10, 10 );
+    scene.add( ptlight1 );
+    ptlight1.position.set( 20, 10, 20);
+    scene.add( ptlight1 );
+    ptlight1.position.set( 10, 20, 30);
+    scene.add( ptlight1 );
+    //const ambientLight = new THREE.AmbientLight(0xaaaaaa);
+    //scene.add(ambientLight);
 
-    // create the renderer
-    renderer = new THREE.WebGLRenderer({ antialias: false,alpha:true });
+    // ---- create the renderer ----
+    renderer = new THREE.WebGLRenderer({ antialias: false, alpha:true });
     renderer.setPixelRatio( window.devicePixelRatio );
-    renderer.setClearColor(0x000000, 0);
     renderer.setSize( window.innerWidth, window.innerHeight );
 
-    // set the control
-    controls = new OrbitControls( camera, renderer.domElement );
-    // controls.autoRotate = true;
-    controls.minDistance = 60;
-		controls.maxDistance = 300;
-    controls.target.set( 0, 0, 0 );
+    // ---- create the composer ----
+    // composer = new THREE.EffectComposer( renderer );
+    // composer.addPass( new THREE.RenderPass( scene, camera ) );
 
     // add it to splash
-    document.getElementById("splash").appendChild( renderer.domElement );
-
+    document.getElementById('splash').appendChild( renderer.domElement );
     window.addEventListener( 'resize', onWindowResize );
 
     // start animation
@@ -66,12 +68,13 @@
 
   function animate() {
     requestAnimationFrame( animate );
-    if ( mesh ) {
-      mesh.rotation.y -= 0.001;
+    if ( model ) {
+      model.rotation.y -= 0.001;
     }
-    controls.update();
+    // controls.update();
     renderer.render( scene, camera );
   }
+
   function onWindowResize() {
     const width = window.innerWidth;
     const height = window.innerHeight;
@@ -79,7 +82,19 @@
     camera.updateProjectionMatrix();
     renderer.setSize( width, height );
   }
+
+  function webgl_support () { 
+   try {
+    var canvas = document.createElement('canvas'); 
+    return !!window.WebGLRenderingContext &&
+      (canvas.getContext('webgl') || canvas.getContext('experimental-webgl'));
+   } catch(e) {
+     return false;
+   }
+ };
+
 </script>
+
 <div id="splash" class="splash">
   <a href="https://discord.gg/V65juTU" target="_blank">
     <!-- need to update this invite link -->
