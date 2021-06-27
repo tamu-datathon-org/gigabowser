@@ -1,21 +1,23 @@
 <div class="card team-card">
-  <img class="card-img-top team-card-img pxl-border" src="<%- imgPath %>" />
-  <div class="card-body">
-    <h5 class="card-title team-card-title text-center mb-2">
-      <%- name %>
-    </h5>
-    <div class="text-center mb-2">
-      <small class="text-muted">
-        <%- position %>
-      </small>
-    </div>
-    <div class="text-center">
+  <div class="img-container" onclick="showTeamLinks('<%- name %>')">
+    <img class="card-img-top team-card-img" src="<%- imgPath %>"/>
+    <div id='<%- name %>' class="text-center member-overlay">
       <span class="link-span">
         <% Object.keys(links).forEach(linkClass => { %>
         <a class="team-social-link" href="<%- links[linkClass] %>" target="_blank">
           <i class="fab <%- linkClass %> fa-lg"></i>
         </a>
         <% }) %>
+      </span>
+    </div>
+  </div>
+  <div class="card-body pxl-border">
+    <h5 class="card-title team-card-title text-center mb-2">
+      <%- name %>
+    </h5>
+    <div class="text-center mb-2">
+      <span class="team-position">
+        <%- position %>
       </span>
     </div>
   </div>

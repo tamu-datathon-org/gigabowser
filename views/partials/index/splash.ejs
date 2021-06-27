@@ -1,8 +1,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/GLTFLoader.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/postprocessing@6.22.0/build/postprocessing.min.js" integrity="sha256-G+RysCaKA9d3geSn2C/lOEVarZ8K4E57KD25idQIDLU=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/three@0.118.1/examples/jsm/"></script>
 <script type="module">
-
+  import { EffectComposer } from 'https://unpkg.com/three@0.118.1/examples/jsm/postprocessing/EffectComposer.js'
+  import { RenderPass } from 'https://unpkg.com/three@0.118.1/examples/jsm/postprocessing/RenderPass.js'
   let renderer, scene, camera, composer, model;
   if (webgl_support()) { // threejs splash
     init();
@@ -55,8 +56,8 @@
     renderer.setSize( window.innerWidth, window.innerHeight );
 
     // ---- create the composer ----
-    // composer = new THREE.EffectComposer( renderer );
-    // composer.addPass( new THREE.RenderPass( scene, camera ) );
+    composer = new EffectComposer( renderer );
+    composer.addPass( new RenderPass( scene, camera ) );
 
     // add it to splash
     document.getElementById('splash').appendChild( renderer.domElement );
