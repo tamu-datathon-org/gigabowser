@@ -19,6 +19,7 @@ $theme-light-green: #86eace;
     margin: 2vh auto auto;
     margin-bottom: 4vh;
     text-align: center;
+    width: 80%;
     .team-card-img {
       width: 100%;
       height: auto;
@@ -41,7 +42,7 @@ $theme-light-green: #86eace;
     }
   }:hover .member-overlay {
     height: 20%;
-    padding: 14px;
+    padding: 10px;
   }
 
   .card-body {

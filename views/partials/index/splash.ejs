@@ -5,15 +5,21 @@
   import { EffectComposer } from 'https://unpkg.com/three@0.118.1/examples/jsm/postprocessing/EffectComposer.js'
   import { RenderPass } from 'https://unpkg.com/three@0.118.1/examples/jsm/postprocessing/RenderPass.js'
   let renderer, scene, camera, composer, model;
+  /*
   if (webgl_support()) { // threejs splash
     init();
   } else { // normal splash
     const img = document.createElement('img');
     img.src = '/static/img/graphics/TD-scene-image.png';
     img.style.maxWidth = '100%';
-    img.style.maxHeight = '100%';
-    document.getElementById('splash').appendChild( img ); 
+    img.style.maxHeight = '750px';
+    img.style.position = 'absolute';
+    img.style.display = 'block';
+    img.style.right = '0px';
+    img.style.minWidth = '390px';
+    document.getElementById('splash-content').appendChild( img ); 
   }
+  */
 
   function init() {
 
@@ -41,12 +47,27 @@
 
     // scene lights
     const ptlight1 = new THREE.PointLight();
-    ptlight1.position.set( 10, 10, 10 );
+    ptlight1.position.set( 10, 2, 5);
     scene.add( ptlight1 );
-    ptlight1.position.set( 20, 10, 20);
+    ptlight1.position.set( 4, 9, 9);
     scene.add( ptlight1 );
-    ptlight1.position.set( 10, 20, 30);
+    ptlight1.position.set( 10, 8, 5);
     scene.add( ptlight1 );
+    const ptlight2 = new THREE.PointLight(0xffeebd)
+    /*
+    ptlight2.position.set( 10, 7, 10);
+    scene.add( ptlight2 );
+    ptlight2.position.set( -10, 5, -10);
+    scene.add( ptlight2 );
+    ptlight2.position.set( -20, 7, 10);
+    scene.add( ptlight2 );
+    */
+    ptlight2.position.set( 5, 0, 7);
+    scene.add( ptlight2 );
+    ptlight2.position.set( -3, 7, 10);
+    scene.add( ptlight2 );
+    ptlight2.position.set( -8, 15, 9);
+    scene.add( ptlight2 );
     //const ambientLight = new THREE.AmbientLight(0xaaaaaa);
     //scene.add(ambientLight);
 
@@ -103,11 +124,11 @@
       <img src="/static/img/graphics/discord.png">
     </span>
   </a>
-  <!--<div id="splash-content" class="col-md-10 d-flex flex-column">-->
-  <div id="splash-content">
-    <div class="splash-title">
+  <div id="splash-content" class="col-md-10 d-flex flex-column">
+  <!--<div id="splash-content">-->
+    <div class="splash-title" style="padding: 8em 0">
       <img id="text-logo" src="/static/img/logos/text-logo.png" class="text" alt="TAMU Datathon 2020" />
-      <h2>October XX - XX, 2021</h2>
+      <h2 style="padding-top: 10px">October XX - XX, 2021</h2>
     </div>
     <a class="mlh-trust-badge" href="https://mlh.io/seasons/na-2021/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=white" target="_blank"><img src="/static/img/logos/mlh-2021-badge.svg" alt="Major League Hacking 2021 Hackathon Season" style="width: 100%" /></a>
   </div>

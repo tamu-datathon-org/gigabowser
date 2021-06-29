@@ -31,10 +31,9 @@ $team-highlight: lighten($team-title, 52%) !default;
 // =====================================================
 //                   Splash Section
 // =====================================================
-
 .splash {
-  background-position: center -100px;
-  background-color: $dark-purple;
+  background-position: center 100px;
+  background-color: #160F48;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 650px;
@@ -42,13 +41,15 @@ $team-highlight: lighten($team-title, 52%) !default;
   max-height: 1500px;
   z-index: 1;
   overflow: none;
-
   text-align: right;
-  justify-content: center;
-
+  // background-image: url('/static/img/graphics/TD-scene-image.png');
+  background-image: url('/static/img/graphics/TD-scene-image-platform.png');
   .applications-closed-message {
     display: none;
     color: #fdcb6e;
+  }
+  @include media-breakpoint-down(sm) {
+    background-position: center 200px;
   }
 
   .discord {
@@ -86,31 +87,29 @@ $team-highlight: lighten($team-title, 52%) !default;
 }
 
 #splash-content {
-  display: absolute;
-  text-align: center;
-
+  // display: absolute;
+  text-align: right;
   .splash-title {
     position: absolute;
+    text-align: left;
     display: block;
     left: 10%;
+    right: 10%;
     top: 25%;
+    margin: 1vh auto auto;
+    z-index: 1000;
   }
-  @include media-breakpoint-down(lg) {
+  @include media-breakpoint-down(sm) {
+    text-align: center;
     #splash-content {
       justify-content: center;
-      text-align: left;
-    }
-    .splash {
-      background-image: url("/static/img/backgrounds/splash-background.svg");
-      background-position: -15vw;
-      background-color: none; // #1b135e;
+      text-align: center;
+      height: 100%;
     }
     .splash-title {
       text-align: center;
-      width: 100%;
-      margin-left: 10px;
-      margin-right: 20px;
-      left: 0;
+      max-width: 100%;
+      margin: 1vh;
     }
   }
 }
@@ -179,7 +178,7 @@ $small-transition-height: 134px;
 .white-purple-transition {
   background: url("/static/img/transitions/white_purple_transition.png");
   height: $large-transition-height;
-  transform: translateY(-147.2px);
+  transform: translateY(-148px);
   background-size: auto 100%;
   background-color: transparent;
   image-rendering: pixelated;
@@ -257,6 +256,15 @@ $small-transition-height: 134px;
 .industries-transition {
   background: linear-gradient(to left bottom, $industries-background 49.5%, white 50%);
   height: $default-transition-height;
+}
+
+// ==============================
+//          Links
+// ==============================
+
+.links img {
+  max-height: 250px;
+  max-width: 250px;
 }
 
 // ================================
