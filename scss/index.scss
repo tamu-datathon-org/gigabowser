@@ -32,24 +32,22 @@ $team-highlight: lighten($team-title, 52%) !default;
 //                   Splash Section
 // =====================================================
 .splash {
-  background-position: center 100px;
-  background-color: #160F48;
+  background-image: url("/static/img/graphics/TD-scene-image.png");
+  background-position: 15vw -50px;
+  background-color: #1b135e;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 650px;
   height: 100vh;
   max-height: 1500px;
   z-index: 1;
-  overflow: none;
-  text-align: right;
-  // background-image: url('/static/img/graphics/TD-scene-image.png');
-  background-image: url('/static/img/graphics/TD-scene-image-platform.png');
+
+  display: flex;
+  justify-content: center;
+
   .applications-closed-message {
     display: none;
     color: #fdcb6e;
-  }
-  @include media-breakpoint-down(sm) {
-    background-position: center 200px;
   }
 
   .discord {
@@ -87,30 +85,52 @@ $team-highlight: lighten($team-title, 52%) !default;
 }
 
 #splash-content {
-  // display: absolute;
-  text-align: right;
-  .splash-title {
-    position: absolute;
-    text-align: left;
-    display: block;
-    left: 10%;
-    right: 10%;
-    top: 25%;
-    margin: 1vh auto auto;
-    z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  .apply-btn {
+    margin-top: 20px;
+    font-weight: 600;
+    color: #1b135e;
+    text-decoration: none;
+    background-color: $theme-light-green;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 6px;
+    padding-bottom: 6px;
   }
-  @include media-breakpoint-down(sm) {
+  .apply-btn:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #1b135e;
+    border: solid 2px $theme-light-green;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  #splash-content {
+    justify-content: center;
+    text-align: left;
+  }
+  .splash {
+    background-image: url("/static/img/graphics/TD-scene-image.png");
+    background-position: 15vw -50px;
+    background-color: #1b135e;
+    background-size: cover;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  #splash-content {
+    justify-content: flex-end;
     text-align: center;
-    #splash-content {
-      justify-content: center;
-      text-align: center;
-      height: 100%;
-    }
-    .splash-title {
-      text-align: center;
-      max-width: 100%;
-      margin: 1vh;
-    }
+  }
+  .splash {
+    background-image: url("/static/img/graphics/TD-scene-image.png");
+    background-position: 0px 50px;
+    background-color: #1b135e;
+    background-size: contain;
   }
 }
 
@@ -125,48 +145,6 @@ $team-highlight: lighten($team-title, 52%) !default;
   }
 }
 
-.splash-btn-line {
-  margin-top: 3vh;
-
-  .splash-btn {
-    font-size: 1.25em;
-    font-weight: 500;
-    background-color: #666;
-    color: #fff;
-    cursor: pointer;
-    padding: 0.25em 1em;
-    margin-right: 0.5em;
-    text-align: center;
-    border: none;
-    border-radius: 10px;
-    transition: background-color 0.25s ease, border 0.25s ease;
-  }
-
-  .splash-btn:focus {
-    outline: 0;
-  }
-
-  .apply-btn {
-    background-color: rgba(#1b135e, 0.5);
-    border: solid 2px $theme-dark-green;
-  }
-
-  .apply-btn:hover {
-    background-color: rgba($theme-dark-green, 0.5);
-    border: solid 2px $theme-dark-green;
-  }
-
-  .sponsor-btn {
-    background-color: rgba(#1b135e, 0.5);
-    border: solid 2px $splash-light-purple;
-  }
-
-  .sponsor-btn:hover {
-    background-color: rgba($splash-light-purple, 0.5);
-    border: solid 2px $splash-light-purple;
-  }
-}
-
 // =====================================================
 //                    Transitions
 // =====================================================
@@ -177,8 +155,8 @@ $small-transition-height: 134px;
 // splash transition
 .white-purple-transition {
   background: url("/static/img/transitions/white_purple_transition.png");
-  height: $large-transition-height;
-  transform: translateY(-148px);
+  height: 180px;
+  transform: translateY(-90px);
   background-size: auto 100%;
   background-color: transparent;
   image-rendering: pixelated;
@@ -203,7 +181,7 @@ $small-transition-height: 134px;
 .white-blue-transition {
   background: url("/static/img/transitions/blue_white_transition.png");
   transform: rotate(180deg);
-  height: $small-transition-height;
+  height: $small-transition-height + 2;
   background-size: auto 100%;
   image-rendering: pixelated;
 }
@@ -262,9 +240,22 @@ $small-transition-height: 134px;
 //          Links
 // ==============================
 
-.links img {
-  max-height: 250px;
-  max-width: 250px;
+.links {
+  img {
+    height: 200px;
+    max-width: 200px;
+  }
+
+  .projects {
+    color: white;
+    background-color: $dark-purple;
+  }.challenges {
+    color: white;
+    background-color: #00c3c3;
+  }.discord {
+    color: white;
+    background-color: $splash-light-blue;
+  }
 }
 
 // ================================
@@ -775,7 +766,7 @@ $small-transition-height: 134px;
   .answer {
     margin-top: 3%;
     font-size: 1.15em;
-    color: #e0dfdf;
+    color: white;
     margin-left: 9%;
     display: none;
   }

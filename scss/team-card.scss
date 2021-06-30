@@ -50,11 +50,14 @@ $theme-light-green: #86eace;
     background-color: $theme-light-green;
     margin: 0 !important;
     .team-position {
-      color: $page-color;
+      font-weight: 650;
+      color: whitesmoke;
+      text-shadow: 1px 1px $page-color;
     }
     .team-card-title {
       font-weight: 600;
       color: white;
+      text-shadow: 1px 1px #0066CC; // $border-color-1;
     }
   }
 

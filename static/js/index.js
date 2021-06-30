@@ -58,8 +58,8 @@ function faq_dropdown(index) {
       "-webkit-transform": "rotate(90deg)",
       "-moz-transform": "rotate(90deg)",
       transform: "rotate(90deg)",
-      /* For modern browsers(CSS3) */
     });
+    // $("#dropdown-faq-" + index).css("background-color", "#86eace");
   } else {
     $("#answer-" + index).css("display", "none");
     $("#question-img-" + index).css({
@@ -67,5 +67,6 @@ function faq_dropdown(index) {
       "-moz-transform": "rotate(0deg)",
       transform: "rotate(0deg)",
     });
+    // $("#dropdown-faq-" + index).css("background-color", "transparent");
   }
 }

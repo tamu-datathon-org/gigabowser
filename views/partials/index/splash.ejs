@@ -1,11 +1,11 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/GLTFLoader.js"></script>
 <script src="https://unpkg.com/three@0.118.1/examples/jsm/"></script>
 <script type="module">
   import { EffectComposer } from 'https://unpkg.com/three@0.118.1/examples/jsm/postprocessing/EffectComposer.js'
   import { RenderPass } from 'https://unpkg.com/three@0.118.1/examples/jsm/postprocessing/RenderPass.js'
   let renderer, scene, camera, composer, model;
-  /*
+
   if (webgl_support()) { // threejs splash
     init();
   } else { // normal splash
@@ -19,7 +19,6 @@
     img.style.minWidth = '390px';
     document.getElementById('splash-content').appendChild( img ); 
   }
-  */
 
   function init() {
 
@@ -54,14 +53,6 @@
     ptlight1.position.set( 10, 8, 5);
     scene.add( ptlight1 );
     const ptlight2 = new THREE.PointLight(0xffeebd)
-    /*
-    ptlight2.position.set( 10, 7, 10);
-    scene.add( ptlight2 );
-    ptlight2.position.set( -10, 5, -10);
-    scene.add( ptlight2 );
-    ptlight2.position.set( -20, 7, 10);
-    scene.add( ptlight2 );
-    */
     ptlight2.position.set( 5, 0, 7);
     scene.add( ptlight2 );
     ptlight2.position.set( -3, 7, 10);
@@ -114,10 +105,8 @@
      return false;
    }
  };
-
-</script>
-
-<div id="splash" class="splash">
+</script>-->
+<div class="splash">
   <a href="https://discord.gg/V65juTU" target="_blank">
     <!-- need to update this invite link -->
     <span class="discord d-flex align-items-center">
@@ -125,10 +114,10 @@
     </span>
   </a>
   <div id="splash-content" class="col-md-10 d-flex flex-column">
-  <!--<div id="splash-content">-->
-    <div class="splash-title" style="padding: 8em 0">
-      <img id="text-logo" src="/static/img/logos/text-logo.png" class="text" alt="TAMU Datathon 2020" />
-      <h2 style="padding-top: 10px">October 17 - 18, 2021</h2>
+    <div style="padding-bottom: 12em">
+      <img id="text-logo" src="/static/img/logos/text-logo.png" class="text" alt="TAMU Datathon 2021" />
+      <h2 class="text-white">October 17 - 18, 2021</h2>
+      <a href="#" role="button" class="apply-btn">Apply</a>
     </div>
     <a class="mlh-trust-badge" href="https://mlh.io/seasons/na-2021/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=white" target="_blank"><img src="/static/img/logos/mlh-2021-badge.svg" alt="Major League Hacking 2021 Hackathon Season" style="width: 100%" /></a>
   </div>
