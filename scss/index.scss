@@ -32,16 +32,13 @@ $team-highlight: lighten($team-title, 52%) !default;
 //                   Splash Section
 // =====================================================
 .splash {
-  background-image: url("/static/img/graphics/TD-scene-image.png");
-  background-position: 15vw -50px;
-  background-color: #1b135e;
+  background-image: url("/static/img/backgrounds/dither_background.png");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 650px;
   height: 100vh;
   max-height: 1500px;
   z-index: 1;
-
   display: flex;
   justify-content: center;
 
@@ -59,14 +56,10 @@ $team-highlight: lighten($team-title, 52%) !default;
     border: 5px solid rgba(255, 255, 255, 0.5);
     box-shadow: 0px 4px 8px rgba(53, 26, 117, 0.25);
     backdrop-filter: blur(30px);
-    /* Note: backdrop-filter has minimal browser support */
-    
     border-radius: 100px;
-
     z-index: 1000;
     position: fixed;
   }
-
   .discord > img {
     width: 100%;
     padding: 0.5rem;
@@ -86,9 +79,13 @@ $team-highlight: lighten($team-title, 52%) !default;
 
 #splash-content {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   text-align: left;
+  .splash-info {
+    z-index: 1000;
+    max-width: 500px;
+    padding-bottom: 12em;
+  }
   .apply-btn {
     margin-top: 20px;
     font-weight: 600;
@@ -106,18 +103,26 @@ $team-highlight: lighten($team-title, 52%) !default;
     background-color: #1b135e;
     border: solid 2px $theme-light-green;
   }
+  .TD-scene {
+    bottom: 0;
+    right: -20%;
+    max-width: 1200px;
+    position: absolute;
+  }
 }
 
-@include media-breakpoint-down(lg) {
+@include media-breakpoint-up(lg) {
   #splash-content {
     justify-content: center;
     text-align: left;
-  }
-  .splash {
-    background-image: url("/static/img/graphics/TD-scene-image.png");
-    background-position: 15vw -50px;
-    background-color: #1b135e;
-    background-size: cover;
+    .splash-info {
+      padding-bottom: 12em;
+    }
+    .TD-scene {
+      position: absolute;
+      max-width: 1200px;
+      right: -20%;
+    }
   }
 }
 
@@ -125,12 +130,16 @@ $team-highlight: lighten($team-title, 52%) !default;
   #splash-content {
     justify-content: flex-end;
     text-align: center;
-  }
-  .splash {
-    background-image: url("/static/img/graphics/TD-scene-image.png");
-    background-position: 0px 50px;
-    background-color: #1b135e;
-    background-size: contain;
+    .splash-info {
+      padding-bottom: 10em;
+    }
+    .TD-scene {
+      position: inherit;
+      width: 450px;
+      left: 50%;
+      transform: translate(-50%,0);
+      bottom: 18%;
+    }
   }
 }
 
