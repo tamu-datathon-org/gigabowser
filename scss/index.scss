@@ -89,9 +89,12 @@ $team-highlight: lighten($team-title, 52%) !default;
   .apply-btn {
     margin-top: 20px;
     font-weight: 600;
-    color: #1b135e;
+    font-size: 25px;
+    color: white;
+    // color: #1b135e;
     text-decoration: none;
-    background-color: $theme-light-green;
+    background: #00C3C3;
+    border: 6px solid $theme-light-green;
     padding-left: 12px;
     padding-right: 12px;
     padding-top: 6px;
@@ -101,7 +104,7 @@ $team-highlight: lighten($team-title, 52%) !default;
     color: white;
     text-decoration: none;
     background-color: #1b135e;
-    border: solid 2px $theme-light-green;
+    border: solid 6px $theme-light-green;
   }
   .TD-scene {
     bottom: 0;
