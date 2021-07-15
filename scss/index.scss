@@ -32,7 +32,6 @@ $team-highlight: lighten($team-title, 52%) !default;
 //                   Splash Section
 // =====================================================
 .splash {
-  background-image: url("/static/img/backgrounds/splash-background.png");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 650px;
@@ -41,6 +40,8 @@ $team-highlight: lighten($team-title, 52%) !default;
   z-index: 1;
   display: flex;
   justify-content: center;
+  overflow: hidden;
+  background: linear-gradient(#1b135e, $dark-purple);
 
   .applications-closed-message {
     display: none;
@@ -104,10 +105,13 @@ $team-highlight: lighten($team-title, 52%) !default;
     border: solid 2px $theme-light-green;
   }
   .TD-scene {
-    bottom: 0;
+    bottom: -10%;
     right: -20%;
     max-width: 1200px;
     position: absolute;
+  }
+  .splash-info-row {
+    margin-bottom: 20px;
   }
 }
 
