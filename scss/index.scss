@@ -83,26 +83,23 @@ $team-highlight: lighten($team-title, 52%) !default;
   justify-content: center;
   text-align: left;
   .splash-info {
-    z-index: 1000;
+    z-index: 1;
     max-width: 500px;
     padding-bottom: 12em;
   }
   .apply-btn {
-    margin-top: 20px;
-    font-weight: 600;
-    color: #1b135e;
-    text-decoration: none;
-    background-color: $theme-light-green;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-  }
-  .apply-btn:hover {
     color: white;
     text-decoration: none;
-    background-color: #1b135e;
-    border: solid 2px $theme-light-green;
+    min-height: 50px;
+    min-width: 116px;
+    font-size: 23px;
+    border-radius: 0;
+    border: 5px solid #80FFD5;
+    background: linear-gradient(to top left, #00C3C3 0%, #00e2e2 70%);
+  }
+  .apply-btn:hover {
+    text-decoration: none;
+    background: #1b135e;
   }
   .TD-scene {
     bottom: -10%;
@@ -262,12 +259,21 @@ $small-transition-height: 134px;
   .projects {
     color: white;
     background-color: $dark-purple;
+    border-radius: 0;
+    border: 5px solid #76cdff;
+    background: linear-gradient(to top left, #6387FE 0%, #87a2fc 70%);
   }.challenges {
     color: white;
     background-color: #00c3c3;
+    border-radius: 0;
+    border: 5px solid #80FFD5;
+    background: linear-gradient(to top left, #00C3C3 0%, #00e2e2 70%);
   }.discord {
     color: white;
     background-color: $splash-light-blue;
+    border-radius: 0;
+    border: 5px solid #a67cff;
+    background: linear-gradient(to top left, #632ED2 0%, #8f5bff 70%);
   }
 }
 
