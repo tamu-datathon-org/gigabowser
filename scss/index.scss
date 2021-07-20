@@ -99,7 +99,7 @@ $team-highlight: lighten($team-title, 52%) !default;
   }
   .apply-btn:hover {
     text-decoration: none;
-    background: #1b135e;
+    background: transparent;
   }
   .TD-scene {
     bottom: -10%;
@@ -260,7 +260,7 @@ $small-transition-height: 134px;
     color: white;
     background-color: $dark-purple;
     border-radius: 0;
-    border: 5px solid #76cdff;
+    border: 5px solid #76b1ff;
     background: linear-gradient(to top left, #6387FE 0%, #87a2fc 70%);
   }.challenges {
     color: white;
@@ -272,8 +272,10 @@ $small-transition-height: 134px;
     color: white;
     background-color: $splash-light-blue;
     border-radius: 0;
-    border: 5px solid #a67cff;
+    border: 5px solid #9767ff;
     background: linear-gradient(to top left, #632ED2 0%, #8f5bff 70%);
+  }:hover {
+    background: transparent;
   }
 }
 
