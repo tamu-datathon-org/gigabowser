@@ -80,14 +80,28 @@ body { overflow-x: hidden; }
   z-index: 10000;
 }
 
+.splash-background {
+  width: 100%;
+  height: 100%;
+  background-image: url('/static/img/graphics/TD-scene-image.png');
+  background-repeat: no-repeat;
+  background-position: 10em 40px;
+  background-size: cover;
+}
+.splash-container {
+  margin-top: 8.0em;
+  margin-bottom: 0em;
+}
 #splash-content {
-  display: flex;
-  justify-content: center;
   text-align: left;
+  justify-content: left;
   .splash-info {
     z-index: 1;
     max-width: 500px;
-    padding-bottom: 12em;
+    padding: 10px;
+  }
+  .date {
+    font-size: 50px;
   }
   .apply-btn {
     color: white;
@@ -103,46 +117,22 @@ body { overflow-x: hidden; }
     text-decoration: none;
     background: transparent;
   }
-  .TD-scene {
-    bottom: -10%;
-    right: -20%;
-    max-width: 1200px;
-    position: absolute;
-  }
-  .splash-info-row {
-    margin-bottom: 20px;
+  .td-logo-text {
+    color: white;
   }
 }
 
-@include media-breakpoint-up(lg) {
-  #splash-content {
-    justify-content: center;
-    text-align: left;
-    .splash-info {
-      padding-bottom: 12em;
-    }
-    .TD-scene {
-      position: absolute;
-      max-width: 1200px;
-      right: -20%;
-    }
+@include media-breakpoint-down(lg) {
+  .splash-background {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 23em;
+    background-size: contain;
   }
-}
-
-@include media-breakpoint-down(sm) {
   #splash-content {
-    justify-content: flex-end;
     text-align: center;
-    .splash-info {
-      padding-bottom: 10em;
-    }
-    .TD-scene {
-      position: inherit;
-      width: 450px;
-      left: 50%;
-      transform: translate(-50%,0);
-      bottom: 18%;
-    }
+    justify-content: center;
   }
 }
 
@@ -860,47 +850,26 @@ $small-transition-height: 134px;
 //                   Countdown Timer
 // =====================================================
 
-#timer {
-  color: #4740af;
-  text-align: center;
-  font-size: calc(12px + 6vw);
-  font-weight: 1000;
-  padding-top: 125px;
-  padding-bottom: 20px;
-}
-
 #clockdiv {
   font-family: $website-font;
-  color: #fff;
   display: flex;
   font-weight: 100;
   text-align: center;
   justify-content: center;
-  font-size: 3.5vw;
-  padding-bottom: 200px;
 }
 
 #clockdiv > div {
-  font-size: 6.5vw; // font size for numbers
-  padding: 10px;
-  border-radius: 3px;
-  background: -webkit-linear-gradient(#4740af, #ff99cc);
+  font-size: 20px; // font size for numbers
   display: inline-block;
-  margin-right: 10px;
-
-  width: 50%;
-
+  color: #d2b6ff;
+  margin: 5px;
+  padding: 5px;
+  // background: linear-gradient(to top, #b98dff15 0%, #b98dff91 100%);
 }
 
 #clockdiv div > span {
-  padding: 15px;
-  border-radius: 3px;
+  font-size: 50px;
   display: inline-block;
-
-}
-
-.smalltext {
-  font-family: $website-font;
-  padding-top: 5px;
-  font-size: 3.5vw; // font size for number labels
+  color: white;
+  text-shadow: #1b135e 3px 3px;
 }
