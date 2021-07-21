@@ -5,6 +5,7 @@ $page-color: #00c3c3;
 $gray-500: #adb5bd !default;
 $dark-purple: #632ed2;
 $theme-light-green: #86eace;
+$lighter-theme-light-green: #86eace5d;
 
 .team-card {
   font-family: "Space Grotesk", monospace !important;
@@ -32,6 +33,7 @@ $theme-light-green: #86eace;
       margin-right: 10px;
       i {
         color: white;
+        transform: scale(1.2);
       }
     }
     .member-overlay {
@@ -44,7 +46,7 @@ $theme-light-green: #86eace;
     }
   }:hover .member-overlay {
     height: 20%;
-    background: linear-gradient(transparent 0%, rgba(255, 255, 255, 0.322) 100%);
+    background: linear-gradient(transparent 0%, $lighter-theme-light-green 100%);
   }
 
   .card-body {
@@ -57,7 +59,6 @@ $theme-light-green: #86eace;
     .team-card-title {
       font-weight: 600;
       color: white;
-      text-shadow: 1px 1px #0066CC; // $border-color-1;
     }
   }
   /* PIXEL BORDER */
