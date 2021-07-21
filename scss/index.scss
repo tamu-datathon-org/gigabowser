@@ -1,5 +1,5 @@
 // Font
-$website-font: "Space Grotesk", monospace !important;
+$website-font: "Space Grotesk", sans-serif, monospace !important;
 
 // Index Page Colors
 $light: #fff;
@@ -161,7 +161,7 @@ $small-transition-height: 134px;
   transform: translateY(-90px);
   background-size: auto 100%;
   background-color: transparent;
-  image-rendering: crisp-edges;
+  image-rendering: pixelated;
 }
 
 // footer transition
@@ -170,14 +170,14 @@ $small-transition-height: 134px;
   height: $large-transition-height;
   transform: rotate(180deg);
   background-size: auto 100%;
-  image-rendering: crisp-edges;
+  image-rendering: pixelated;
 }
 
 .blue-white-transition {
   background: url("/static/img/transitions/blue_white_transition.png");
   height: $small-transition-height;
   background-size: auto 100%;
-  image-rendering: crisp-edges;
+  image-rendering: pixelated;
 }
 
 .white-blue-transition {
@@ -185,7 +185,7 @@ $small-transition-height: 134px;
   transform: rotate(180deg);
   height: $small-transition-height + 2;
   background-size: auto 100%;
-  image-rendering: crisp-edges;
+  image-rendering: pixelated;
 }
 
 .blue-green-transition-rot90 {
@@ -193,7 +193,7 @@ $small-transition-height: 134px;
   height: $small-transition-height;
   transform: rotate(180deg);
   background-size: auto 100%;
-  image-rendering: crisp-edges;
+  image-rendering: pixelated;
 }
 
 .pink-blue-transition-rot90 {
@@ -208,21 +208,21 @@ $small-transition-height: 134px;
   transform: rotate(180deg);
   height: $small-transition-height;
   background-size: auto 100%;
-  image-rendering: crisp-edges;
+  image-rendering: pixelated;
 }
 
 .white-green-transition {
   background: url("/static/img/transitions/white_green_transition.png");
   height: $small-transition-height;
   background-size: auto 100%;
-  image-rendering: crisp-edges;
+  image-rendering: pixelated;
 }
 
 .pink-white-transition {
   background: url("/static/img/transitions/white_pink_transition.png");
   height: $small-transition-height;
   background-size: auto 100%;
-  image-rendering: crisp-edges;
+  image-rendering: pixelated;
   transform: rotate(180deg);
 }
 
@@ -230,7 +230,7 @@ $small-transition-height: 134px;
   background: url("/static/img/transitions/white_pink_transition.png");
   height: $small-transition-height;
   background-size: auto 100%;
-  image-rendering: crisp-edges;
+  image-rendering: pixelated;
 }
 
 .industries-transition {
@@ -247,20 +247,24 @@ $small-transition-height: 134px;
     height: 200px;
     max-width: 200px;
   }
-
+  .title {
+    font-weight: 700;
+  }
   .projects {
     color: white;
     background-color: $dark-purple;
     border-radius: 0;
     border: 5px solid #76b1ff;
     background: linear-gradient(to top left, #6387FE 0%, #87a2fc 70%);
-  }.challenges {
+  }
+  .challenges {
     color: white;
     background-color: #00c3c3;
     border-radius: 0;
     border: 5px solid #80FFD5;
     background: linear-gradient(to top left, #00C3C3 0%, #00e2e2 70%);
-  }.discord {
+  }
+  .discord {
     color: white;
     background-color: $splash-light-blue;
     border-radius: 0;
@@ -281,7 +285,7 @@ $small-transition-height: 134px;
   .section-title-1 {
     padding-top: 1em;
     font-size: 2.5em;
-    font-weight: bold;
+    font-weight: 500;
     display: inline-block;
     padding-bottom: $highlight-ypos;
     
@@ -321,7 +325,7 @@ $small-transition-height: 134px;
   .section-title-2 {
     padding-top: 1em;
     font-size: 2.5em;
-    font-weight: bold;
+    font-weight: 500;
     display: inline-block;
     padding-bottom: $highlight-ypos;
     
@@ -359,7 +363,7 @@ $small-transition-height: 134px;
   .section-title-3 {
     padding-top: 1em;
     font-size: 2.5em;
-    font-weight: bold;
+    font-weight: 500;
     display: inline-block;
     padding-bottom: $highlight-ypos;
     
@@ -703,6 +707,7 @@ $small-transition-height: 134px;
   background-color: white;
   .sponsors-title {
     color: rgb(99, 46, 210);
+    font-weight: 700;
   }
 
   .sponsor-description {
@@ -765,7 +770,7 @@ $small-transition-height: 134px;
   font-family: $website-font;
 
   .faq-title {
-    font-weight: bold;
+    font-weight: 700;
     color: $faq-title;
   }
 
@@ -809,7 +814,7 @@ $small-transition-height: 134px;
 
   .question {
     font-size: 1.4em;
-    font-weight: bolder;
+    font-weight: 500;
     margin-bottom: 20px;
     // pointer-events: none;
   }
@@ -843,6 +848,7 @@ $small-transition-height: 134px;
   background-color: #00c3c3;
   .team-title {
     color: $team-title;
+    font-weight: 700;
   }
 }
 
