@@ -28,6 +28,8 @@ $highlight-ypos: 0.07em;
 
 $team-highlight: lighten($team-title, 52%) !default;
 
+body { overflow-x: hidden; }
+
 // =====================================================
 //                   Splash Section
 // =====================================================
