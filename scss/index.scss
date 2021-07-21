@@ -87,7 +87,7 @@ body { overflow-x: hidden; }
   .splash-info {
     z-index: 1;
     max-width: 500px;
-    padding-bottom: 12em;
+    padding-bottom: 1em;
     .date {
       font-weight: 700;
     }
@@ -174,7 +174,7 @@ $small-transition-height: 134px;
   transform: translateY(-90px);
   background-size: auto 100%;
   background-color: transparent;
-  image-rendering: crisp-edges;
+  image-rendering: pixelated;
 }
 
 // footer transition
@@ -183,14 +183,14 @@ $small-transition-height: 134px;
   height: $large-transition-height;
   transform: rotate(180deg);
   background-size: auto 100%;
-  image-rendering: crisp-edges;
+  image-rendering: pixelated;
 }
 
 .blue-white-transition {
   background: url("/static/img/transitions/blue_white_transition.png");
   height: $small-transition-height;
   background-size: auto 100%;
-  image-rendering: crisp-edges;
+  image-rendering: pixelated;
 }
 
 .white-blue-transition {
@@ -198,7 +198,7 @@ $small-transition-height: 134px;
   transform: rotate(180deg);
   height: $small-transition-height + 2;
   background-size: auto 100%;
-  image-rendering: crisp-edges;
+  image-rendering: pixelated;
 }
 
 .blue-green-transition-rot90 {
@@ -206,7 +206,7 @@ $small-transition-height: 134px;
   height: $small-transition-height;
   transform: rotate(180deg);
   background-size: auto 100%;
-  image-rendering: crisp-edges;
+  image-rendering: pixelated;
 }
 
 .pink-blue-transition-rot90 {
@@ -221,21 +221,21 @@ $small-transition-height: 134px;
   transform: rotate(180deg);
   height: $small-transition-height;
   background-size: auto 100%;
-  image-rendering: crisp-edges;
+  image-rendering: pixelated;
 }
 
 .white-green-transition {
   background: url("/static/img/transitions/white_green_transition.png");
   height: $small-transition-height;
   background-size: auto 100%;
-  image-rendering: crisp-edges;
+  image-rendering: pixelated;
 }
 
 .pink-white-transition {
   background: url("/static/img/transitions/white_pink_transition.png");
   height: $small-transition-height;
   background-size: auto 100%;
-  image-rendering: crisp-edges;
+  image-rendering: pixelated;
   transform: rotate(180deg);
 }
 
@@ -243,7 +243,7 @@ $small-transition-height: 134px;
   background: url("/static/img/transitions/white_pink_transition.png");
   height: $small-transition-height;
   background-size: auto 100%;
-  image-rendering: crisp-edges;
+  image-rendering: pixelated;
 }
 
 .industries-transition {
@@ -869,14 +869,6 @@ $small-transition-height: 134px;
 //                   Countdown Timer
 // =====================================================
 
-#timer {
-  color: #4740af;
-  text-align: center;
-  font-size: calc(12px + 6vw);
-  font-weight: 1000;
-  padding-top: 125px;
-  padding-bottom: 20px;
-}
 
 #clockdiv {
   font-family: $website-font;
@@ -884,32 +876,27 @@ $small-transition-height: 134px;
   display: flex;
   font-weight: 100;
   text-align: center;
-  justify-content: center;
-  font-size: 3.5vw;
-  padding-bottom: 200px;
+  justify-content: left;
+  font-size: 10px;
 }
 
 #clockdiv > div {
-  font-size: 6.5vw; // font size for numbers
-  padding: 10px;
+  font-size: 2rem; // font size for numbers
   border-radius: 3px;
-  background: -webkit-linear-gradient(#4740af, #ff99cc);
+  background: transparent;
   display: inline-block;
   margin-right: 10px;
-
-  width: 50%;
-
 }
 
 #clockdiv div > span {
-  padding: 15px;
   border-radius: 3px;
   display: inline-block;
-
+  font-family: 'VT323', monospace;
+  font-size: 2.5rem;
 }
 
 .smalltext {
   font-family: $website-font;
   padding-top: 5px;
-  font-size: 3.5vw; // font size for number labels
+  font-size: 1rem; // font size for number labels
 }
