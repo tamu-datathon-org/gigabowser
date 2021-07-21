@@ -85,8 +85,8 @@ body { overflow-x: hidden; }
   height: 100%;
   background-image: url('/static/img/graphics/TD-scene-image.png');
   background-repeat: no-repeat;
-  background-position: 10em 40px;
-  background-size: cover;
+  background-position: 24em 40px;
+  background-size: contain;
 }
 .splash-container {
   margin-top: 8.0em;
@@ -268,7 +268,7 @@ $small-transition-height: 134px;
     color: white;
     background-color: $splash-light-blue;
     border-radius: 0;
-    border: 5px solid #9767ff;
+    border: 5px solid #a983fd;
     background: linear-gradient(to top left, #632ED2 0%, #8f5bff 70%);
   }:hover {
     background: transparent;
@@ -859,18 +859,18 @@ $small-transition-height: 134px;
 #clockdiv {
   font-family: $website-font;
   display: flex;
-  font-weight: 100;
   text-align: center;
   justify-content: center;
 }
 
 #clockdiv > div {
   font-size: 20px; // font size for numbers
+  font-weight: 600;
   display: inline-block;
   color: #d2b6ff;
   margin: 5px;
   padding: 5px;
-  // background: linear-gradient(to top, #b98dff15 0%, #b98dff91 100%);
+  text-shadow: #1b135e 2px 2px;
 }
 
 #clockdiv div > span {

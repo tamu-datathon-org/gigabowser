@@ -33,7 +33,6 @@ $lighter-theme-light-green: #86eace5d;
       margin-right: 10px;
       i {
         color: white;
-        transform: scale(1.2);
       }
     }
     .member-overlay {
@@ -62,67 +61,4 @@ $lighter-theme-light-green: #86eace5d;
       font-size: 20px;
     }
   }
-  /* PIXEL BORDER */
-  /*
-  .pxl-border {
-    // background: $border-color-3;
-    box-shadow:
-      // Inner Background Color -- Same as inner
-        0   -6px 0  -2px $theme-light-green,
-        0    6px 0  -2px $theme-light-green,
-        0  -12px 0  -4px $theme-light-green,
-        0   12px 0  -4px $theme-light-green,
-        0  -18px 0  -8px $theme-light-green,
-        0   18px 0  -8px $theme-light-green,
-        0  -24px 0 -12px $theme-light-green,
-        0   24px 0 -12px $theme-light-green,
-      
-      // Inner Border
-      -2px  0   0   0   $page-color,
-        2px  0   0   0   $page-color,
-        0   -4px 0   0   $page-color,
-        0    4px 0   0   $page-color,
-        0  -10px 0  -2px $page-color,
-        0   10px 0  -2px $page-color,
-        0  -14px 0  -4px $page-color,
-        0   14px 0  -4px $page-color,
-        0  -20px 0  -8px $page-color,
-        0   20px 0  -8px $page-color,
-        0  -26px 0 -12px $page-color,
-        0   26px 0 -12px $page-color,
-      
-      // Middle Border -- Accent
-      -4px  0   0   0   $border-color-2,
-        4px  0   0   0   $border-color-2,
-        0   -2px 0   2px $border-color-2,
-        0    2px 0   2px $border-color-2,
-        0   -8px 0   0px $border-color-2,
-        0    8px 0   0px $border-color-2,
-        0  -12px 0  -2px $border-color-2,
-        0   12px 0  -2px $border-color-2,
-        0  -16px 0  -4px $border-color-2,
-        0   16px 0  -4px $border-color-2,
-        0  -22px 0  -8px $border-color-2,
-        0   22px 0  -8px $border-color-2,
-        0  -28px 0 -12px $border-color-2,
-        0   28px 0 -12px $border-color-2,
-      
-      // Outer Border
-      -6px  0   0   0   $border-color-3,
-        6px  0   0   0   $border-color-3,
-        0    0   0   4px $border-color-3,
-        0   -6px 0   2px $border-color-3,
-        0    6px 0   2px $border-color-3,
-        0  -10px 0   0   $border-color-3,
-        0   10px 0   0   $border-color-3,
-        0  -14px 0  -2px $border-color-3,
-        0   14px 0  -2px $border-color-3,
-        0  -18px 0  -4px $border-color-3,
-        0   18px 0  -4px $border-color-3,
-        0  -24px 0  -8px $border-color-3,
-        0   24px 0  -8px $border-color-3,
-        0  -30px 0 -12px $border-color-3,
-        0   30px 0 -12px $border-color-3;
-    }
-    */
 }
