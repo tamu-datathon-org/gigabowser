@@ -459,6 +459,11 @@ $small-transition-height: 134px;
 .about-section {
   font-family: $website-font;
 
+  .about-title {
+    color: rgb(99, 46, 210);
+    font-weight: 700;
+  }
+
   .about-content {
     flex-wrap: wrap-reverse;
   }
@@ -472,12 +477,6 @@ $small-transition-height: 134px;
   .about-description {
     font-size: 1.15em;
     line-height: 1.5;
-  }
-
-  .about-img {
-    width: 100%;
-    max-width: 400px;
-    height: 350px;
   }
 }
 
