@@ -171,7 +171,7 @@ $small-transition-height: 134px;
   transform: translateY(-90px);
   background-size: auto 100%;
   background-color: transparent;
-  image-rendering: pixelated;
+  image-rendering: crisp-edges;
 }
 
 // footer transition
@@ -180,14 +180,14 @@ $small-transition-height: 134px;
   height: $large-transition-height;
   transform: rotate(180deg);
   background-size: auto 100%;
-  image-rendering: pixelated;
+  image-rendering: crisp-edges;
 }
 
 .blue-white-transition {
   background: url("/static/img/transitions/blue_white_transition.png");
   height: $small-transition-height;
   background-size: auto 100%;
-  image-rendering: pixelated;
+  image-rendering: crisp-edges;
 }
 
 .white-blue-transition {
@@ -195,7 +195,7 @@ $small-transition-height: 134px;
   transform: rotate(180deg);
   height: $small-transition-height + 2;
   background-size: auto 100%;
-  image-rendering: pixelated;
+  image-rendering: crisp-edges;
 }
 
 .blue-green-transition-rot90 {
@@ -203,7 +203,7 @@ $small-transition-height: 134px;
   height: $small-transition-height;
   transform: rotate(180deg);
   background-size: auto 100%;
-  image-rendering: pixelated;
+  image-rendering: crisp-edges;
 }
 
 .pink-blue-transition-rot90 {
@@ -218,21 +218,21 @@ $small-transition-height: 134px;
   transform: rotate(180deg);
   height: $small-transition-height;
   background-size: auto 100%;
-  image-rendering: pixelated;
+  image-rendering: crisp-edges;
 }
 
 .white-green-transition {
   background: url("/static/img/transitions/white_green_transition.png");
   height: $small-transition-height;
   background-size: auto 100%;
-  image-rendering: pixelated;
+  image-rendering: crisp-edges;
 }
 
 .pink-white-transition {
   background: url("/static/img/transitions/white_pink_transition.png");
   height: $small-transition-height;
   background-size: auto 100%;
-  image-rendering: pixelated;
+  image-rendering: crisp-edges;
   transform: rotate(180deg);
 }
 
@@ -240,7 +240,7 @@ $small-transition-height: 134px;
   background: url("/static/img/transitions/white_pink_transition.png");
   height: $small-transition-height;
   background-size: auto 100%;
-  image-rendering: pixelated;
+  image-rendering: crisp-edges;
 }
 
 .industries-transition {
