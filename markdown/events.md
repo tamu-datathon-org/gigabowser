@@ -1,6 +1,7 @@
 ---
 title: Events Page
 path: /events
+description: Join us in our events and workshops during TAMU Datathon 2020!
 ---
 <center>
 
