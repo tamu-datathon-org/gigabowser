@@ -869,12 +869,32 @@ $small-transition-height: 134px;
   color: #d2b6ff;
   margin: 5px;
   padding: 5px;
-  text-shadow: #1b135e 2px 2px;
+  // text-shadow: #1b135e 2px 2px;
 }
 
 #clockdiv div > span {
   font-size: 50px;
   display: inline-block;
   color: white;
-  text-shadow: #1b135e 3px 3px;
+  // text-shadow: #1b135e 3px 3px;
+}
+
+@include media-breakpoint-down(lg) {
+  #clockdiv > div {
+    font-size: 12px;
+    // border-radius: 10px;
+    // background-color: #00C3C3;
+    color: white;
+    margin: 6px;
+    padding: 0px;
+  }
+  #clockdiv div > span {
+    font-size: 32px;
+    padding: 2px 6px 2px 6px;
+  }
+  .time-label {
+    border: 3px solid #a983fd;
+    background: linear-gradient(to top left, #632ED2 0%, #8f5bff 70%);
+    padding: 2px 6px 2px 6px;
+  }
 }
