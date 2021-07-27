@@ -35,7 +35,6 @@ body { overflow-x: hidden; }
 // =====================================================
 .splash {
   background-repeat: no-repeat;
-  background-size: cover;
   min-height: 650px;
   height: 100vh;
   max-height: 1500px;
@@ -45,7 +44,8 @@ body { overflow-x: hidden; }
   overflow: hidden;
   background-position: center -100px;
   background-color: #1b135e;
-  background: linear-gradient(to bottom, #1b135e 0%, $dark-purple 70%);
+  background-size: cover;
+  background: linear-gradient(to bottom, #1b135e 0%, $dark-purple 70%), url("/static/img/graphics/TD-scene-image.png");
 
   .applications-closed-message {
     display: none;
@@ -86,15 +86,15 @@ body { overflow-x: hidden; }
   margin-bottom: 0em;
 }
 #splash-content {
-  text-align: left;
-  justify-content: left;
+  text-align: center;
+  justify-content: center;
   .splash-info {
     z-index: 1;
     max-width: 500px;
     padding: 10px;
   }
   .date {
-    font-size: 48px;
+    font-size: 30px;
   }
   .apply-btn {
     color: white;
@@ -106,7 +106,7 @@ body { overflow-x: hidden; }
     line-height: 30.62px;
     font-weight: bold;
     border: 5px solid #80FFD5;
-    background: linear-gradient(to top left, #00c3c37c 0%, #00e2e2 70%);
+    background: linear-gradient(to top left, #00c3c37c 0%, #00e2e2d2 70%);
     font-family: "Space Grotesk", sans-serif, monospace !important;
   }
   .apply-btn:hover {
@@ -116,21 +116,27 @@ body { overflow-x: hidden; }
   .td-logo-text {
     font-weight: 700;
     color: white;
-    font-size: 72px;
+    font-size: 48px;
     line-height: 91.87px;
   }
 }
-
-@include media-breakpoint-down(lg) {
+@include media-breakpoint-up(lg) {
   #splash-content {
-    text-align: center;
     justify-content: center;
+    text-align: left;
     .date {
-      font-size: 30px;
-    }
-    .td-logo-text {
       font-size: 48px;
     }
+    .td-logo-text {
+      font-size: 72px;
+    }
+  }
+  .splash {
+    background-image: url("/static/img/graphics/TD-scene-image.png");
+    background-position: 24vw 60px;
+    background-color: $dark-purple;
+    background-size: 80%;
+    background-repeat: no-repeat;
   }
 }
 
