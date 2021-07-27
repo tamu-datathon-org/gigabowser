@@ -28,6 +28,8 @@ $highlight-ypos: 0.07em;
 
 $team-highlight: lighten($team-title, 52%) !default;
 
+
+html { font-size: unquote("clamp(16px, 1.15vw, 24px)"); }
 body { overflow-x: hidden; }
 
 .td-container {
@@ -217,7 +219,7 @@ $small-transition-height: 8.375rem;
 
 .white-blue-transition {
   background: url("/static/img/transitions/blue_white_transition.png");
-  transform: rotate(180deg);
+  transform: rotate(180deg) translateY(-2px);
   height: $small-transition-height + 2;
   background-size: auto 100%;
   image-rendering: crisp-edges;
@@ -226,7 +228,7 @@ $small-transition-height: 8.375rem;
 .blue-green-transition-rot90 {
   background: url("/static/img/transitions/green_blue_transition.png");
   height: $small-transition-height;
-  transform: rotate(180deg);
+  transform: rotate(180deg) translateY(-2px);
   background-size: auto 100%;
   image-rendering: crisp-edges;
 }
@@ -235,7 +237,7 @@ $small-transition-height: 8.375rem;
   background: url("/static/img/transitions/pink_blue_transition.png");
   height: $small-transition-height;
   background-size: contain;
-  transform: rotate(180deg);
+  transform: rotate(180deg) translateY(-2px);
 }
 
 .green-white-transition {
@@ -251,6 +253,7 @@ $small-transition-height: 8.375rem;
   height: $small-transition-height;
   background-size: auto 100%;
   image-rendering: crisp-edges;
+  transform: translateY(2px);
 }
 
 .pink-white-transition {
@@ -266,6 +269,7 @@ $small-transition-height: 8.375rem;
   height: $small-transition-height;
   background-size: auto 100%;
   image-rendering: crisp-edges;
+  transform: translateY(-2px);
 }
 
 .industries-transition {
