@@ -3,8 +3,10 @@ $theme-light-green: #86eace;
 $dark-purple: #632ed2;
 
 .footer-section {
-  background-color: $dark-purple;
+  background-color: #351A75;
   color: #fff;
+  padding-top: 30px;
+  padding-bottom: 20px;
 
   .footer-logo {
     width: 100%;
@@ -13,6 +15,9 @@ $dark-purple: #632ed2;
 
   a {
     color: $theme-light-green !important;
+    i {
+      transform: scale(0.7);
+    }
   }
 
   .footer-social-link-container {
@@ -37,6 +42,18 @@ $dark-purple: #632ed2;
   @include media-breakpoint-up(md) {
     .footer-doc-links > a {
       display: inline;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    .footer-content {
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      .row {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+      }
     }
   }
 }

@@ -43,7 +43,9 @@ body { overflow-x: hidden; }
   display: flex;
   justify-content: center;
   overflow: hidden;
-  background: linear-gradient(#1b135e, $dark-purple);
+  background-position: center -100px;
+  background-color: #1b135e;
+  background: linear-gradient(to bottom, #1b135e 0%, $dark-purple 70%), url('/static/img/graphics/TD-scene-image.png');
 
   .applications-closed-message {
     display: none;
@@ -79,15 +81,6 @@ body { overflow-x: hidden; }
   width: 10%;
   z-index: 10000;
 }
-
-.splash-background {
-  width: 100%;
-  height: 100%;
-  background-image: url('/static/img/graphics/TD-scene-image.png');
-  background-repeat: no-repeat;
-  background-position: 24em 40px;
-  background-size: contain;
-}
 .splash-container {
   margin-top: 8.0em;
   margin-bottom: 0em;
@@ -101,38 +94,43 @@ body { overflow-x: hidden; }
     padding: 10px;
   }
   .date {
-    font-size: 50px;
+    font-size: 48px;
   }
   .apply-btn {
     color: white;
     text-decoration: none;
     min-height: 50px;
     min-width: 116px;
-    font-size: 23px;
+    font-size: 24px;
     border-radius: 0;
+    line-height: 30.62px;
+    font-weight: bold;
     border: 5px solid #80FFD5;
-    background: linear-gradient(to top left, #00C3C3 0%, #00e2e2 70%);
+    background: linear-gradient(to top left, #00c3c37c 0%, #00e2e2 70%);
+    font-family: "Space Grotesk", sans-serif, monospace !important;
   }
   .apply-btn:hover {
     text-decoration: none;
     background: transparent;
   }
   .td-logo-text {
+    font-weight: 700;
     color: white;
+    font-size: 72px;
+    line-height: 91.87px;
   }
 }
 
 @include media-breakpoint-down(lg) {
-  .splash-background {
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: 0 23em;
-    background-size: contain;
-  }
   #splash-content {
     text-align: center;
     justify-content: center;
+    .date {
+      font-size: 30px;
+    }
+    .td-logo-text {
+      font-size: 48px;
+    }
   }
 }
 
@@ -244,11 +242,15 @@ $small-transition-height: 134px;
 
 .links {
   img {
-    height: 200px;
-    max-width: 200px;
+    height: 140px;
+    max-width: 140px;
   }
   .title {
     font-weight: 700;
+    color: #632ED2;
+  }
+  .link-text {
+    color: #888;
   }
   .projects {
     color: white;
@@ -880,21 +882,7 @@ $small-transition-height: 134px;
 }
 
 @include media-breakpoint-down(lg) {
-  #clockdiv > div {
-    font-size: 12px;
-    // border-radius: 10px;
-    // background-color: #00C3C3;
-    color: white;
-    margin: 6px;
-    padding: 0px;
-  }
-  #clockdiv div > span {
-    font-size: 32px;
-    padding: 2px 6px 2px 6px;
-  }
-  .time-label {
-    border: 3px solid #a983fd;
-    background: linear-gradient(to top left, #632ED2 0%, #8f5bff 70%);
-    padding: 2px 6px 2px 6px;
+  #clockdiv {
+    visibility: hidden;
   }
 }
