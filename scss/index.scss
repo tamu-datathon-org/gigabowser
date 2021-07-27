@@ -120,11 +120,11 @@ body { overflow-x: hidden; }
   
   .splash-info {
     z-index: 1;
-    max-width: 500px;
-    padding: 10px;
+    max-width: 32rem;
+    padding: 0.625rem;
   }
   .date {
-    font-size: 30px;
+    font-size: 1.75rem;
   }
   .apply-btn {
     color: white;
@@ -186,14 +186,14 @@ body { overflow-x: hidden; }
 //                    Transitions
 // =====================================================
 $default-transition-height: 7vh;
-$large-transition-height: 296px;
-$small-transition-height: 134px;
+$large-transition-height: 18rem;
+$small-transition-height: 8.375rem;
 
 // splash transition
 .white-purple-transition {
   background: url("/static/img/transitions/white_purple_transition.png");
-  height: 180px;
-  transform: translateY(-90px);
+  height: 11.25rem;
+  transform: translateY(-5.625rem);
   background-size: auto 100%;
   background-color: transparent;
   image-rendering: pixelated;
@@ -295,21 +295,21 @@ $small-transition-height: 134px;
     color: white;
     background-color: $dark-purple;
     border-radius: 0;
-    border: 5px solid #76b1ff;
+    border: 0.32rem solid #76b1ff;
     background: linear-gradient(to top left, #6387FE 0%, #87a2fc 70%);
   }
   .challenges {
     color: white;
     background-color: #00c3c3;
     border-radius: 0;
-    border: 5px solid #80FFD5;
+    border: 0.32rem solid #80FFD5;
     background: linear-gradient(to top left, #00C3C3 0%, #00e2e2 70%);
   }
   .discord {
     color: white;
     background-color: $splash-light-blue;
     border-radius: 0;
-    border: 5px solid #a983fd;
+    border: 0.32rem solid #a983fd;
     background: linear-gradient(to top left, #632ED2 0%, #8f5bff 70%);
   }:hover {
     background: transparent;
@@ -544,11 +544,11 @@ $small-transition-height: 134px;
     }
   }
   .event-item {
-    margin: 10px;
-    border: 6px solid rgba(0, 0, 0, 0.125);
+    margin: 0.625rem;
+    border: 0.375rem solid rgba(0, 0, 0, 0.125);
     border-color: $dark-purple;
     // box-shadow: 5px 5px 0px $dark-purple;
-    box-shadow: 2px 2px 5px $splash-light-blue;
+    box-shadow: 0.125rem 0.125rem 0.125rem $splash-light-blue;
     img {
       object-fit: contain;
     }
@@ -561,14 +561,14 @@ $small-transition-height: 134px;
     }
     .card-body {
       color: $dark-purple;
-      margin: 0 4px 4px 0;
+      margin: 0 0.25rem 0.25rem 0;
       .card-title {
         pointer-events: none;
         font-weight: bolder;
       }
       .card-date {
         font-family: 'VT323', monospace;
-        font-size: 17px;
+        font-size: 1rem;
       }
       :hover {
         box-shadow: none;
@@ -584,14 +584,14 @@ $small-transition-height: 134px;
   .event-controls {
     display: flex;
     justify-content: center;
-    margin: 10px;
+    margin: 0.625rem;
     .event-prev {
       display: block;
-      height: 80px;
-      width: 80px;
+      height: 5rem;
+      width: 5rem;
       background: url("/static/img/icons/PixelHandPointing-PinkLeft.svg") no-repeat;
       background-size: contain;
-      margin-right: 10px;
+      margin-right: 0.625rem;
     }
     :hover {
       opacity: 0.6;
@@ -599,11 +599,11 @@ $small-transition-height: 134px;
 
     .event-next {
       display: block;
-      height: 80px;
-      width: 80px;
+      height: 5rem;
+      width: 5rem;
       background: url("/static/img/icons/PixelHandPointing-PinkRight.svg") no-repeat;
       background-size: contain;
-      margin-left: 10px;
+      margin-left: 0.625rem;
     }
     :hover {
       opacity: 0.6;
@@ -759,9 +759,9 @@ $small-transition-height: 134px;
   }
 
   .sponsor-images .xl {
-    height: 200px;
-    width: 300px;
-    max-height: 300px;
+    height: 12.5rem;
+    width: 18.75rem;
+    max-height: 18.75rem;
     object-fit: contain;
   }
 
@@ -777,8 +777,8 @@ $small-transition-height: 134px;
 
   .sponsor-images .lg {
     height: auto;
-    width: 300px;
-    max-height: 200px;
+    width: 18.75rem;
+    max-height: 12.5rem;
     object-fit: contain;
   }
 
@@ -791,7 +791,7 @@ $small-transition-height: 134px;
     }
 
     .sponsor-images .xl {
-      height: 200px;
+      height: 12.5rem;
       width: 100%;
       flex: 1;
       object-fit: contain;
@@ -815,16 +815,16 @@ $small-transition-height: 134px;
   }
 
   .question-block {
-    margin: 30px 0;
+    margin: 2rem 0;
 
     .dropdown-faq {
       // border-radius: 20px;
-      padding: 10px;
+      padding: 0.625rem;
       margin: 0;
       img {
-        height: 1.4em;
-        width: 1.4em;
-        margin-right: 2%;
+        height: 1.4rem;
+        width: 1.4rem;
+        margin-right: 0.5rem;
         margin-left: 1.5%;
         overflow: hidden;
         transition-duration: 0.8s;
@@ -855,19 +855,19 @@ $small-transition-height: 134px;
   .question {
     font-size: 1.4em;
     font-weight: 500;
-    margin-bottom: 20px;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
     // pointer-events: none;
   }
   .question:hover {
-    box-shadow: 0em 2px white;
+    box-shadow: 0em 0.125rem white;
     transition: box-shadow 0.5s ease;
   }
 
   .answer {
-    margin-top: 3%;
+    margin-top: 1rem;
     font-size: 1.15em;
     color: white;
-    margin-left: 9%;
     display: none;
   }
   // HORIZONTAL RULE
@@ -875,7 +875,7 @@ $small-transition-height: 134px;
     width: 30%;
     min-width: 150px;
     border: 0;
-    height: 2px;
+    height: 0.125rem;
     background: $faq-content;
   }
 }
