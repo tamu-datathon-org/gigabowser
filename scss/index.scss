@@ -45,7 +45,7 @@ body { overflow-x: hidden; }
   overflow: hidden;
   background-position: center -100px;
   background-color: #1b135e;
-  background: linear-gradient(to bottom, #1b135e 0%, $dark-purple 70%), url('/static/img/graphics/TD-scene-image.png');
+  background: linear-gradient(to bottom, #1b135e 0%, $dark-purple 70%);
 
   .applications-closed-message {
     display: none;
