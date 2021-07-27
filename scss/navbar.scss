@@ -14,12 +14,12 @@ $splash-light-purple: #7c408a;
   }
 
   .nav-link {
-    padding: 10px 15px !important;
+    padding: 1rem 1rem !important;
     transition: color 0.25s ease;
   }
   .nav-link:hover {
     color: #58ffb4 !important;
-    box-shadow: 0em 2px white;
+    box-shadow: 0em 0.125rem white;
     transition: box-shadow 0.5s ease-out;
   }
   .nav-link:focus {

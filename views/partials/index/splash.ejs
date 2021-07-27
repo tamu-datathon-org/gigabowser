@@ -1,22 +1,26 @@
 <div class="splash">
+  <div class="splash-img"></div>
   <a href="https://discord.com/app" target="_blank">
     <!-- need to update this invite link -->
     <span class="discord d-flex align-items-center">
       <img src="/static/img/graphics/discord.png">
     </span>
   </a>
-  <div id="splash-content" class="col-md-10 d-flex flex-column">
-    <div style="padding: 8em 0">
+  <div id="splash-content" class="col-lg-10 col-md-12 d-flex flex-column">
+    <div class="splash-content-container">
       <h1 class="td-logo-text">TAMU Datathon</h1>
-      <div class="splash-info-row">
+      <div>
         <p>
           <span class="text-white date pixel-font">fall 2021</span>
         </p>
       </div>
-      <div class="splash-info-row">
+      <div class="mega-margin-bottom">
         <a href="#" role="button" class="btn apply-btn">Apply</a>
       </div>
-      <%- include('./countdown.ejs') %>
+      <div class="d-none d-lg-block">
+
+        <%- include('./countdown.ejs') %>
+      </div>
     </div>
     <a class="mlh-trust-badge" href="https://mlh.io/seasons/2022/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2022-season&utm_content=white" target="_blank"><img src="/static/img/logos/mlh-2022-badge.svg" alt="Major League Hacking 2021 Hackathon Season" style="width: 100%" /></a>
   </div>

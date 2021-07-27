@@ -1,11 +1,11 @@
 <div class="section team-section">
-  <div id="team" class="container">
+  <div id="team" class="container td-container">
     <h1 class="section-title-3 team-title">
       <span>T</span><span>E</span><span>A</span><span>M</span>
     </h1>
     <div class="row justify-content-center py-5">
       <% req.memberInfo.forEach((member) => { %>
-      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-8">
+      <div class="col-lg-2 col-md-3 col-sm-6 col-xs-8">
         <%- include("team-card", member) %>
       </div>
       <% }) %>
