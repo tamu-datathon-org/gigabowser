@@ -31,7 +31,7 @@ $team-highlight: lighten($team-title, 52%) !default;
 body { overflow-x: hidden; }
 
 .td-container {
-  max-width: 70rem !important;
+  max-width: unquote("max(70rem, 83.3333333%)") !important;
 }
 
 // =====================================================
