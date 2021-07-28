@@ -1,0 +1,17 @@
+{
+  "redirects": [
+      { "source": "/auth(.*)", "destination": "https://tamudatathon.com/auth$1" },	
+      { "source": "/apply(.*)", "destination": "https://tamudatathon.com/apply$1" },
+      { "source": "/forms(.*)", "destination": "https://tamudatathon.com/forms$1" },
+      { "source": "/events(.*)", "destination": "https://tamudatathon.com/events$1" },
+      { "source": "/koth(.*)", "destination": "https://tamudatathon.com/koth$1" },
+      { "source": "/projects(.*)", "destination": "https://tamu-datathon-org.github.io/expo$1" },
+      { "source": "/nexus(.*)", "destination": "https://tamudatathon.com/nexus$1" },
+      { "source": "/discord(.*)", "destination": "https://tamudatathon.com/discord$1" },
+      { "source": "/mailing(.*)", "destination": "https://tamudatathon.com/mailing$1" },
+      { "source": "/stats", "destination": "https://datastudio.google.com/u/0/reporting/5fe03a3a-1146-4ecd-89da-389b518a950d/page/alGgB" },
+      { "source": "/join", "destination": "https://docs.google.com/forms/d/e/1FAIpQLSdLf4MrOR_r0hDLGS8wY5fH5XMwqRc5JV399cFxVOfZNDrvUg/viewform" },
+      { "source": "/informational", "destination": "https://tamudatathon.com/events/activities/informational" },
+      { "source": "/discord", "destination": "https://tamudatathon.com/discord" }
+  ]
+}
