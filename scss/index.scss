@@ -171,6 +171,9 @@ body { overflow-x: hidden; }
     background-size: 80%;
     background-repeat: no-repeat;
   }
+  .apply-button-container {
+    margin-bottom: 3em;
+  }
 }
 
 #text-logo {
@@ -922,4 +925,15 @@ $small-transition-height: 8.375rem;
   display: inline-block;
   color: white;
   // text-shadow: #1b135e 3px 3px;
+}
+
+.countdown-title {
+  font-size: 1.0rem; // font size for numbers
+  font-weight: 600;
+  display: inline-block;
+  color: #d2b6ff;
+  margin-left: 0.32rem;
+  margin-right: 0.32rem;
+  padding-left: 0.32rem;
+  padding-right: 0.32rem;
 }
