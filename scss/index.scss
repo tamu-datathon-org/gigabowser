@@ -52,7 +52,7 @@ body { overflow-x: hidden; }
   background-size: 80%;
   background-repeat: no-repeat;
   background-image: url(/static/img/graphics/TD-scene-image.png);
-  background-position: center 8rem;
+  background-position: center 1rem;
   background-size: 50rem;
   background-repeat: no-repeat;
 }
@@ -109,7 +109,7 @@ body { overflow-x: hidden; }
   padding-top: 8rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  background: linear-gradient(to top, #632ed2 50%, transparent);
+  background: linear-gradient(to top, #632ed2 20%, transparent);
   margin-left: -1rem;
   margin-right: -1rem;
 }
@@ -147,7 +147,7 @@ body { overflow-x: hidden; }
     font-weight: 700;
     color: white;
     font-size: 3rem;
-    line-height: 5.6rem;
+    line-height: 1.2;
   }
 }
 @include media-breakpoint-up(lg) {
