@@ -62,8 +62,8 @@ Do whatever the heck you want! We're sure it's gonna be cool 👩‍💻
 **💰Prizes💰**
 
 - 1st: $400 Amazon gift card per team member [(Winners)](https://devpost.com/software/hemonet-an-ai-based-white-blood-cell-count-platform)
-- 2nd: $200 Amazon gift card per team member [(Winners)](https://devpost.com/software/imdb-2-0)
-- 3rd: $100 Amazon gift card per team member [(Winners)](https://devpost.com/software/fraud-detection-durign)
+- 2nd: $200 Amazon gift card per team member
+- 3rd: $100 Amazon gift card per team members
 
 ---
 <br/>

@@ -56,6 +56,9 @@ $splash-light-purple: #7c408a;
 $splash-light-blue: #3f5aaa;
 $portal-dark-blue: #4740af;
 $portal-nav-border: #cfcfcf;
+$dark-purple: #632ed2;
+$dark-green: #00c3c3;
+$dark-pink: #ea6ec9;
 
 // Import Bootstrap and its default variables
 // @import "../node_modules/bootstrap/scss/bootstrap.scss";
@@ -110,6 +113,7 @@ $portal-nav-border: #cfcfcf;
 // Post import bootstrap style overrides
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;700&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -119,14 +123,17 @@ body {
   font-family: "Work Sans", sans-serif !important;
 }
 
-// Headers (use Roboto Mono, everything else use Work Sans)
+// Headers (use Space Grotesk, everything else use Work Sans)
+h2 {
+  font-family: "Space Grotesk", sans-serif, monospace !important;
+  color: white;
+}
 h1,
-h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "Roboto Mono", monospace !important;
+  font-family: "Space Grotesk", sans-serif, monospace !important;
 }
 
 .table {
@@ -159,6 +166,13 @@ main {
   font-weight: bold;
 }
 
+.pixel-font {
+  font-family: VT323;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+}
+
 // Import all partials & page css files
 @import "navbar.scss";
 @import "footer.scss";
@@ -166,14 +180,15 @@ main {
 @import "team-card.scss";
 @import "industry-modal.scss";
 @import "markdown-static.scss";
+@import "scroll.scss";
 
 // Index page imports
 @import "index.scss";
 
 /* Remove box shadow from tippy tooltips */
 .tippy-box[data-theme~="light"] {
-  box-shadow: 0 8px 16px rgba(#000, 0.05) !important;
-  padding: 0.25em 0.5em;
+  box-shadow: 0 0.5rem 1rem rgba(#000, 0.05) !important;
+  padding: 0.25rem 0.5rem;
 }
 
 // adjust modal z-index to always be above tooltip

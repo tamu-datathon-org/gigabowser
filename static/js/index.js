@@ -40,3 +40,33 @@ tippy(".industry-modal-trigger", {
 $(".trigger-mail-modal").click(e => {
   $("#mailchimp-modal").modal("show");
 });
+
+// ==== team page =====
+function showTeamLinks(name) {
+  console.log(name);
+  $("#"+name).css({
+    height: "20%",
+    padding: "15px",
+  });
+}
+
+// ==== faq page =====
+function faq_dropdown(index) {
+  if ($("#answer-" + index).css("display") == "none") {
+    $("#answer-" + index).css("display", "block");
+    $("#question-img-" + index).css({
+      "-webkit-transform": "rotate(90deg)",
+      "-moz-transform": "rotate(90deg)",
+      transform: "rotate(90deg)",
+    });
+    // $("#dropdown-faq-" + index).css("background-color", "#86eace");
+  } else {
+    $("#answer-" + index).css("display", "none");
+    $("#question-img-" + index).css({
+      "-webkit-transform": "rotate(0deg)",
+      "-moz-transform": "rotate(0deg)",
+      transform: "rotate(0deg)",
+    });
+    // $("#dropdown-faq-" + index).css("background-color", "transparent");
+  }
+}

@@ -1,26 +1,65 @@
+$border-color-1: #80d5ff;
+$border-color-2: #ffc3e7;
+$border-color-3: #fff985;
+$page-color: #00c3c3;
+$gray-500: #adb5bd !default;
+$dark-purple: #632ed2;
+$theme-light-green: #86eace;
+$lighter-theme-light-green: #86eace5d;
+
 .team-card {
+  font-family: "Space Grotesk", sans-serif, monospace !important;
   border: none !important;
+  background-color: $page-color !important;
   max-width: 75vw;
   margin: 2vh auto;
+  text-align: center;
 
-  .team-card-img {
+  .img-container {
+    position: relative;
     margin: 2vh auto auto;
-    width: 70%;
-    height: auto;
-    border-radius: 50%;
-    box-shadow: 0 0 20px rgba($splash-light-purple, 0.5);
+    margin-bottom: 4vh;
+    text-align: center;
+    width: 80%;
+    box-shadow: 6px 6px 0px $theme-light-green;
+    .team-card-img {
+      width: 100%;
+      height: auto;
+      color: white;
+      border-radius: 0 !important;
+    }
+    .team-social-link {
+      text-decoration: none;
+      margin-left: 10px;
+      margin-right: 10px;
+      i {
+        color: white;
+      }
+    }
+    .member-overlay {
+      position: absolute;
+      bottom: 0;
+      overflow: hidden;
+      width: 100%;
+      height: 0;
+      transition: .5s ease;
+    }
+  }:hover .member-overlay {
+    height: 20%;
+    background: linear-gradient(transparent 0%, $lighter-theme-light-green 100%);
   }
 
-  .team-card-title {
-    font-family: "Work Sans", sans-serif !important;
-    font-weight: 500;
-  }
-
-  .team-social-link {
-    text-decoration: none;
-
-    i {
-      color: $splash-light-purple;
+  .card-body {
+    padding: 0 !important;
+    margin: 0 !important;
+    .team-position {
+      color: $theme-light-green;
+      font-size: 1.25rem;
+    }
+    .team-card-title {
+      font-weight: 600;
+      color: white;
+      font-size: 1rem;
     }
   }
 }

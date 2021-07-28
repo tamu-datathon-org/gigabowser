@@ -18,7 +18,7 @@
 
 <p align="center">
   <a href="https://vercel.com?utm_source=tamu-datathon&utm_campaign=oss">
-    <img src="https://tamudatathon.com/static/img/sponsors/powered-by-vercel.svg" height="36px" alt="Powered by Vercel" />
+    <img src="https://tamudatathon.com/static/img/sponsors/powered-by-vercel.svg" height="2.15rem" alt="Powered by Vercel" />
   </a>
 </p>
 

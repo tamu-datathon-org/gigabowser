@@ -1,0 +1,37 @@
+<div class="section events-section">
+  <div id="event" class="container td-container">
+    <!-- events section title -->
+    <div class="row">
+      <div class="col-md">
+        <h1 class="section-title-1 event-title">
+          <span>F</span><span>E</span><span>A</span><span>T</span><span>U</span><span>R</span><span>E</span><span>D</span>   <span>E</span><span>V</span><span>E</span><span>N</span><span>T</span><span>S</span>
+        </h1>
+      </div>
+    </div>
+    <!-- carousel -->
+    <div class="event-carousel events-container"> <!-- style="border-style: solid; border-color: #632ed2;"> -->
+      <% req.EVENTS.forEach(({ name, description, date }, index) => { %>
+      <div class="event-item card">
+        <img class="card-img-top" src="/static/img/graphics/carousel-image.png" alt="<%- name %>">
+        <div class="card-body">
+          <h4 class="card-title">
+            <%- name %>
+          </h4>
+          <b class="card-date">
+            <%- date %>
+          </b>
+          <p class="card-text"><%= description %></p>
+          <a href="<%- req.navbarSamePageItems[1].href %>" class="btn btn-primary">
+            Go to Event
+            <i class="fa fa-external-link"></i>
+          </a>
+        </div>
+      </div>
+      <% }) %>
+    </div>
+    <div class="event-controls">
+      <div class="event-prev"></div>
+      <div class="event-next"></div>
+    </div>
+  </div>
+</div>
