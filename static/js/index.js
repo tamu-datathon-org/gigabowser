@@ -44,9 +44,9 @@ $(".trigger-mail-modal").click(e => {
 // ==== team page =====
 function showTeamLinks(name) {
   console.log(name);
-  $("#"+name).css({
+  $("#" + name).css({
     height: "20%",
-    padding: "15px",
+    padding: "15px"
   });
 }
 
@@ -57,7 +57,7 @@ function faq_dropdown(index) {
     $("#question-img-" + index).css({
       "-webkit-transform": "rotate(90deg)",
       "-moz-transform": "rotate(90deg)",
-      transform: "rotate(90deg)",
+      transform: "rotate(90deg)"
     });
     // $("#dropdown-faq-" + index).css("background-color", "#86eace");
   } else {
@@ -65,7 +65,7 @@ function faq_dropdown(index) {
     $("#question-img-" + index).css({
       "-webkit-transform": "rotate(0deg)",
       "-moz-transform": "rotate(0deg)",
-      transform: "rotate(0deg)",
+      transform: "rotate(0deg)"
     });
     // $("#dropdown-faq-" + index).css("background-color", "transparent");
   }
