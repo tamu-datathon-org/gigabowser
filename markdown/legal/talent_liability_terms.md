@@ -1,8 +1,6 @@
 ---
 title: TAMU Datathon Talent/Liability Terms
 path: /legal/talent_liability_terms
-description: |
-By registering for TAMU Datathon 2021, I do hereby authorize TAMU Datathon, TAMU Datathon Sponsors, MLH to...
 ---
 
 # TAMU Datathon Talent/Liability Terms
