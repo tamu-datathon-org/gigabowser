@@ -1,4 +1,4 @@
-# TAMU Datathon Talent and Liability Release Terms
+# TAMU Datathon Talent Release and Liability Release Terms
 
 By registering for TAMU Datathon 2021, I do hereby authorize TAMU Datathon, TAMU Datathon Sponsors, MLH, and those acting pursuant to its authority to:
 
