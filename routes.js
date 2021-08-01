@@ -13,6 +13,7 @@ app.get("/", renderPage("Home", "index"));
 app.get("/twitch", renderPage("twitch", "twitch"));
 app.get("/events", renderPost("./markdown/events.md", "markdown_layout"));
 app.get("/schedule", renderPost("./markdown/schedule.md", "markdown_layout"));
+app.get("/legal/talent_liability_terms", renderPost("./markdown/legal/talent_liability_terms.md", "markdown_layout"));
 app.get("/challenges", renderPost("./markdown/challenges.md", "markdown_layout"));
 app.get("/apply", renderPost("./markdown/apply.md", "markdown_layout"));
 
