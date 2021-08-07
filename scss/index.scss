@@ -149,6 +149,15 @@ body { overflow-x: hidden; }
     font-size: 3rem;
     line-height: 1.2;
   }
+  .apply-btn-caption {
+    font-weight: 500;
+    color: #d2b6ff;
+    font-family: "Space Grotesk", sans-serif, monospace !important;
+  }
+  .content-margin {
+    margin-bottom: 8rem;
+    margin-top: 1rem;
+  }
 }
 @include media-breakpoint-up(lg) {
   .splash-content-container {
@@ -159,10 +168,14 @@ body { overflow-x: hidden; }
     justify-content: center;
     text-align: left;
     .date {
-      font-size: 2rem;
+      font-size: 2.4rem;
     }
     .td-logo-text {
       font-size: 4rem;
+    }
+    .content-margin {
+      margin-bottom: 2rem;
+      margin-top: 1rem;
     }
   }
   .splash-img {
@@ -171,8 +184,8 @@ body { overflow-x: hidden; }
     background-size: 80%;
     background-repeat: no-repeat;
   }
-  .apply-button-container {
-    margin-bottom: 5rem;
+  .link-text {
+    height: 40px;
   }
 }
 
@@ -525,6 +538,25 @@ $small-transition-height: 8.375rem;
   .about-description {
     font-size: 1.15em;
     line-height: 1.5;
+  }
+
+  .about-image {
+    position: absolute;
+    max-width: 750px;
+    transform: translate(140px, 65px);
+  }
+
+  @include media-breakpoint-down(lg) {
+    .about-image {
+      visibility: hidden;
+    }
+    .about-image-container {
+      height: 200px;
+      background-image: url('/static/img/graphics/kyleField.png');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
   }
 }
 
