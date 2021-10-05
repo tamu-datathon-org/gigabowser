@@ -146,6 +146,21 @@ body {
     text-decoration: none;
     background: transparent;
   }
+  .mentor-btn {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border-radius: 0;
+    line-height: 2rem;
+    font-weight: bold;
+    border: 0.32rem solid #a983fd;
+    background: linear-gradient(to top left, #632ed2 0%, #8f5bff 70%);
+    font-family: "Space Grotesk", sans-serif, monospace !important;
+  }
+  .mentor-btn:hover {
+    text-decoration: none;
+    background: transparent;
+  }
   .td-logo-text {
     font-weight: 700;
     color: white;
