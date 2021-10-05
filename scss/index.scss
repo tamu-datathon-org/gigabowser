@@ -149,6 +149,9 @@ body {
   .mentor-btn {
     color: white;
     text-decoration: none;
+    @media screen and (max-width: 450px) {
+      font-size: 1.2rem;
+    }
     font-size: 1.5rem;
     border-radius: 0;
     line-height: 2rem;
