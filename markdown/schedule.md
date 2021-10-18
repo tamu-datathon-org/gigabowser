@@ -5,6 +5,7 @@ description: Schedule for TAMU Datathon 2020
 ---
 <center>
 <h1 class="mb-5 mt-n5"><b>Event Schedule</b></h1>
+<p>Times are in the Central Timezone</p>
 </center>
 
 <style>
