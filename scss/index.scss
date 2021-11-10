@@ -164,6 +164,25 @@ body {
     text-decoration: none;
     background: transparent;
   }
+  .organizer-btn {
+    color: white;
+    text-decoration: none;
+    @media screen and (max-width: 450px) {
+      font-size: 1.2rem;
+    }
+    font-size: 1.5rem;
+    border-radius: 0;
+    line-height: 2rem;
+    font-weight: bold;
+    border: 0.32rem solid #fdb483;
+    background: linear-gradient(to top left, #d2862e 0%, #ffb25b 70%);
+    font-family: "Space Grotesk", sans-serif, monospace !important;
+    margin-top: 10px;
+  }
+  .organizer-btn:hover {
+    text-decoration: none;
+    background: transparent;
+  }
   .td-logo-text {
     font-weight: 700;
     color: white;
