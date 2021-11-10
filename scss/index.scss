@@ -169,6 +169,7 @@ body {
     text-decoration: none;
     @media screen and (max-width: 450px) {
       font-size: 1.2rem;
+      margin-top: 0px;
     }
     font-size: 1.5rem;
     border-radius: 0;
@@ -177,7 +178,7 @@ body {
     border: 0.32rem solid #fdb483;
     background: linear-gradient(to top left, #d2862e 0%, #ffb25b 70%);
     font-family: "Space Grotesk", sans-serif, monospace !important;
-    margin-top: 10px;
+    margin-top: 7px;
   }
   .organizer-btn:hover {
     text-decoration: none;
