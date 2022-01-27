@@ -109,10 +109,7 @@ body {
   margin-bottom: 0;
 }
 .splash-content-container {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 8rem 1rem;
   background: linear-gradient(to top, #632ed2 20%, rgba(255, 255, 255, 0));
   margin-left: -1rem;
   margin-right: -1rem;
@@ -170,7 +167,7 @@ body {
     text-decoration: none;
     @media screen and (max-width: 450px) {
       font-size: 1.2rem;
-      margin-top: 0px;
+      margin-top: 0;
     }
     font-size: 1.5rem;
     border-radius: 0;
