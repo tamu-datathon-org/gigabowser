@@ -4,6 +4,7 @@
 
 let prevScrollY = 0;
 let scrollY = 0;
+const transitionHeight = 200;
 
 const splash = new Splash("splash", 0, window.innerHeight, true);
 const information = new Information("information", splash.startPx);
@@ -13,7 +14,7 @@ const team = new Team("team", sponsors.startPx + sponsors.height);
 const events = new EventsSection("events", team.startPx + team.height);
 const about = new About("about", events.startPx + events.height);
 
-const bodyHeight = about.startPx + about.height * 2 - 200;
+const bodyHeight = about.startPx + about.height * 2 - transitionHeight;
 document.body.style.height = bodyHeight + "px";
 
 function handleScroll() {
