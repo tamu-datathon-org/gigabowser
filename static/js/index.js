@@ -1,72 +1,31 @@
-const CONSTANTS = {
-  DEADLINE_DATE: "2020-10-12T23:59:00-05:00",
-  COUNTDOWN_REFRESH: 60
-};
+/**
+ * DO NOT MAKE CHANGES TO THIS FILE
+ */
 
-$(".industry-modal-trigger").click(e => {
-  const industryId = $(e.target).attr("industry-id");
-  if (!industryId)
-    return;
+let prevScrollY = 0;
+let scrollY = 0;
 
-  e.preventDefault();
-  $(`.industry-modal-nav > .active`).removeClass("active");
-  $(`.tab-content > .active`).removeClass("active");
-  $(`.tab-content > .show`).removeClass("show");
+const splash = new Splash("splash", 0, window.innerHeight, true);
+const information = new Information("information", splash.startPx);
+const faq = new Faq("faq", information.height);
+const sponsors = new Sponsors("sponsors", faq.startPx + faq.height);
+const team = new Team("team", sponsors.startPx + sponsors.height);
+const events = new EventsSection("events", team.startPx + team.height);
+const about = new About("about", events.startPx + events.height);
 
-  $(`#${industryId}`).addClass("active");
-  $(`#${industryId}`).addClass("show");
-  $(`#${industryId}-tab`).addClass("active");
+const bodyHeight = about.startPx + about.height * 2 - 200;
+document.body.style.height = bodyHeight + "px";
 
-  $("#industry-modal").modal("show");
-});
-
-$(".same-page-nav-link").click(e => {
-  const scrollToSection = $(e.target).attr("scroll-id");
-  if (scrollToSection) {
-    e.preventDefault();
-    document.querySelector(`#${scrollToSection}`).scrollIntoView({
-      behavior: "smooth"
-    });
-  }
-});
-
-tippy(".industry-modal-trigger", {
-  sticky: true,
-  allowHTML: true,
-  theme: "light",
-  content: ref => `<p class="industry-icon-tooltip m-0">${ref.getAttribute("industry-title")}</p>`
-});
-
-$(".trigger-mail-modal").click(e => {
-  $("#mailchimp-modal").modal("show");
-});
-
-// ==== team page =====
-function showTeamLinks(name) {
-  console.log(name);
-  $("#" + name).css({
-    height: "20%",
-    padding: "15px"
-  });
+function handleScroll() {
+  scrollY = window.scrollY;
+  splash.run(scrollY);
+  information.run(scrollY);
+  faq.run(scrollY);
+  sponsors.run(scrollY);
+  team.run(scrollY);
+  events.run(scrollY);
+  about.run(scrollY);
+  prevScrollY = scrollY;
 }
 
-// ==== faq page =====
-function faq_dropdown(index) {
-  if ($("#answer-" + index).css("display") == "none") {
-    $("#answer-" + index).css("display", "block");
-    $("#question-img-" + index).css({
-      "-webkit-transform": "rotate(90deg)",
-      "-moz-transform": "rotate(90deg)",
-      transform: "rotate(90deg)"
-    });
-    // $("#dropdown-faq-" + index).css("background-color", "#86eace");
-  } else {
-    $("#answer-" + index).css("display", "none");
-    $("#question-img-" + index).css({
-      "-webkit-transform": "rotate(0deg)",
-      "-moz-transform": "rotate(0deg)",
-      transform: "rotate(0deg)"
-    });
-    // $("#dropdown-faq-" + index).css("background-color", "transparent");
-  }
-}
+window.addEventListener('scroll', handleScroll);

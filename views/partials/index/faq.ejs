@@ -1,54 +1,8 @@
-<div class="section faq-section">
-  <!-- start faq section (2 column) -->
-  <div id="faq" class="container  td-container">
-    <div class="row">
-      <div class="col-md">
-        <h1 class="section-title-2 faq-title">
-          <span>F</span><span>A</span><span>Q</span><span>S</span>
-        </h1>
-      </div>
-    </div>
-    <div class="row">
-      <!-- (LHS) left hand side -->
-      <div class="col-md">
-        <% req.FAQ.LHS.forEach(({ q, a }, index) => { %>
-        <div class="question-block">
-          <div id="dropdown-faq-<%- index %>" class="dropdown-faq d-flex" onclick="faq_dropdown('<%- index %>')">
-            <img id="question-img-<%- index %>" class="flex-shrink-0" src="static/img/icons/PixelArrow-Green.svg">
-            <div>
-              <h4 class="question">
-                <%= q %>
-              </h4>
-              <div id="answer-<%- index %>" class="answer">
-                <%- a %>
-              </div>
-            </div>
-          </div>
-        </div>
-        <% }) %>
-      </div>
-      <!-- hide a divider on screens > than md -->
-      <div class="col-md d-md-none">
-        <hr class="d-md-none" align="left" />
-      </div>
-      <!-- RHS (right hand side) -->
-      <div class="col-md">
-        <% req.FAQ.RHS.forEach(({ q, a }, index) => { %>
-        <div class="question-block">
-          <div id="dropdown-faq-<%- req.FAQ.LHS.length + index %>" class="dropdown-faq d-flex" onclick="faq_dropdown('<%- req.FAQ.LHS.length + index %>')">
-            <img id="question-img-<%- req.FAQ.LHS.length + index %>" class="flex-shrink-0" src="static/img/icons/PixelArrow-Green.svg">
-            <div>
-              <h4 class="question">
-                <%= q %>
-              </h4>
-              <div id="answer-<%- req.FAQ.LHS.length + index %>" class="answer">
-                <%- a %>
-              </div>
-            </div>
-          </div>
-        </div>
-        <% }) %>
-      </div>
-    </div>
+<div id="faq" class="section">
+  <div class="transition">
+    <h1>transition here</h1>
+  </div>
+  <div class="content">
+    Faq content goes here
   </div>
 </div>
