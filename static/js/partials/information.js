@@ -1,6 +1,6 @@
 class Information extends Section {
   constructor(id, startPx, height, isFirst = false) {
-    // height = 1200; // override default height
+    // height = 1200;  override default height
     super(id, startPx, height, isFirst);
   }
   runScrollDependentBehavior(y) {
