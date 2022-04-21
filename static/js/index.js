@@ -2,12 +2,15 @@
  * DO NOT MAKE CHANGES TO THIS FILE
  */
 
+const transitionHeight = 100;
+const defaultHalt = 500;
+
 let prevScrollY = 0;
 let scrollY = 0;
 
-const splash = new Splash("splash", 0, window.innerHeight, true);
-const information = new Information("information", splash.startPx);
-const faq = new Faq("faq", information.height);
+const splash = new Splash("splash", 0, window.innerHeight, defaultHalt, true);
+const information = new Information("information", splash.halt);
+const faq = new Faq("faq", information.startPx + information.height);
 const sponsors = new Sponsors("sponsors", faq.startPx + faq.height);
 const team = new Team("team", sponsors.startPx + sponsors.height);
 const events = new EventsSection("events", team.startPx + team.height);
