@@ -19,7 +19,15 @@ const about = new About("about", events.startPx + events.height);
 const bodyHeight = about.startPx + about.height * 2 - 200;
 document.body.style.height = bodyHeight + "px";
 
-function handleScroll() {
+const scrollToSplash = () => { window.scrollTo(0, 0) }
+const scrollToInformation = () => { window.scrollTo(0, information.startPx + information.height) }
+const scrollToFaq = () => { window.scrollTo(0, faq.startPx + faq.height) }
+const scrollToSponsors = () => { window.scrollTo(0, sponsors.startPx + sponsors.height) }
+const scrollToTeam = () => { window.scrollTo(0, team.startPx + team.height) }
+const scrollToEvents = () => { window.scrollTo(0, events.startPx + events.height) }
+const scrollToAbout = () => { window.scrollTo(0, about.startPx + about.height) }
+
+const handleScroll = () => {
   scrollY = window.scrollY;
   splash.run(scrollY);
   information.run(scrollY);
@@ -32,3 +40,4 @@ function handleScroll() {
 }
 
 window.addEventListener('scroll', handleScroll);
+scrollTo("information")
