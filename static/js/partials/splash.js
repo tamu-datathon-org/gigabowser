@@ -5,8 +5,8 @@ class Splash extends Section {
   }
   runScrollDependentBehavior(y) {
     // put scroll dependent behavior here
-    const percent = y / (bodyHeight - about.height / 2);
-    const left = percent * document.body.clientWidth;
+    const percent = y / (bodyHeight + 600);
+    const left = (percent * document.body.clientWidth) + 45;
     const car = document.getElementById("car");
     car.style.left = left + "px";
   }
