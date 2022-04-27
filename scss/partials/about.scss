@@ -1,3 +1,18 @@
 #about.section {
-  background-color: lightcoral; // change based on section theme
+  background-color: #FFA621;
 }
+
+.background-block{
+  background-color: var(--color-primary);
+  height: var(--height);
+  width: var(--width);
+  opacity: 80%;
+  border-radius: 20px;
+  filter: drop-shadow(0 0 30px rgb(81, 81, 81));
+  transform: rotateZ(var(--degrees));
+  position: absolute;
+  left: var(--left);
+  top: var(--top);
+}
+
+
