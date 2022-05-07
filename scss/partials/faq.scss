@@ -1,3 +1,104 @@
 #faq.section {
   background-color: lightblue; // change based on section theme
 }
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.section_heading {
+  padding: 1.3em 3em 0.5em;
+  font-size: 2.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #005b5b;
+}
+
+/* .tile {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.6em;
+  height: 1.6em;
+  margin-left: 0.3em;
+  margin-top: 0.35em;
+  color: #044;
+  background: #eddabb;
+  border-radius: 0.2em;
+  cursor: pointer;
+  box-shadow: 0.09em 0.09em 0.01em #ad9a7b !important;
+  transition: 0.75s;
+} */
+
+.tile__letter {
+  font-size: 1.3em;
+}
+.tile__points {
+  position: absolute;
+  right: 0.1rem;
+  bottom: 0.01rem;
+  font-size: 6px;
+}
+
+.during {
+  height: 100%;
+  background-image: url("https://i.ibb.co/7K0vJfH/IMG-FE4739-FA2-C7-C-1.jpg");
+  background-repeat: repeat;
+  background-size: 16px 16px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  padding: 0em 5em;
+}
+
+.flex-item-left {
+  padding: 1.05em 2.5em;
+  flex: 50%;
+}
+
+.flex-item-right {
+  padding: 1.05em 2.5em;
+  flex: 50%;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+.answer {
+  text-align: left;
+  padding: 1em 2em 1em 0.5em;
+  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #005b5b;
+  /* background-image: url("https://i.ibb.co/pLzdwR8/17b3da2f6791894480b7094112fdbba5.jpg");
+  background-repeat: repeat;
+  background-size: 40px 40px; */
+
+  /* background-color: #eddabb;
+  border: 2px solid #fcd78b;
+  border-radius: 5px; */
+}
+
+@media (max-width: 960px) {
+  .flex-container {
+    flex-direction: column;
+    padding: 1em 0.5em;
+  }
+  .answer {
+    padding: 1em 1em 1em 0.5em;
+  }
+  .section_heading {
+    padding: 1.3em 1em 0.5em;
+  }
+}
