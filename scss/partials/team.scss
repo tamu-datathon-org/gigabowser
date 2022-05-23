@@ -8,6 +8,117 @@
   transform: rotateY(180deg);
 }
 
+$bg-color: #eee;
+$card-transform: perspective(20em) rotateY(1deg) rotateZ(-5deg) skewY(-2deg) skewX(-1deg) scaleX(var(--resize));
+$body-w: 800px;
+   
+.images-leaning {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: $body-w;
+  min-height: 330px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(352deg, transparent 45.2%,
+                                            #bbb        45.5%,
+                                            #bbb        45.6%,
+                                            #ccc        45.8%,
+                                            $bg-color   60.0%),
+                    linear-gradient(30deg, #ccc, #eee 90%);
+  background-size: 100% 32.4em;
+  background-position: 50% 100%;
+
+  div {
+    width: 250px;
+    position: absolute;
+    left: 50%;
+    bottom: 7.8em;
+    z-index: 0;
+    display: flex;
+    justify-content: flex-end;
+    // shadows
+    &:before {
+      content: '';
+      width: 60%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 7%;
+      z-index: 1;
+      background-repeat: no-repeat;
+      background-image: linear-gradient(120deg, transparent 42%,
+                                                rgba($color: black, $alpha: 0.15) 45%,
+                                                rgba($color: black, $alpha: 0.35) 65%),
+                        linear-gradient( 20deg, transparent 38%,
+                                                rgba($color: black, $alpha: 0.25) 45%,
+                                                rgba($color: black, $alpha: 0.23) 55%,
+                                                rgba($color: black, $alpha: 0.13) 75%),
+                        radial-gradient(ellipse at 50% 100%, rgba($color: black, $alpha: 0.15) 3%, transparent 40%);
+      transform: rotate(-8deg);
+    }
+    // shading on image
+    &:after {
+      content: '';
+      width: 60%;
+      height: 100%;
+      position: absolute;
+      z-index: 3;
+      background-image: linear-gradient(45deg, rgba($color: black, $alpha: 0.3), transparent 70%),
+                        linear-gradient(45deg, rgba($color: white, $alpha: 0) 60%, rgba($color: white, $alpha: 0.3) 80%);
+      transform: $card-transform;
+    }
+
+    img {
+      width: 60%;
+      height: 100%;
+      display: block;
+      position: relative;
+      z-index: 2;
+      border-left: .2em solid;
+      border-image: linear-gradient(105deg, transparent .5%, #aaa .7%) 1;
+      box-shadow: .1em .2em 0 -.1em #666;
+      filter: saturate(90%);
+      transform: $card-transform;
+    }
+
+    &:nth-of-type(4) {
+      --resize: .99;
+      margin-left: -40.4em;
+      &:before {
+        background-size: 100% 85%, 100% 15%, 100% 10%;
+        background-position: .1em 0, 0 100%, -3em 83%;
+      }
+    }
+    &:nth-of-type(3) {
+      --resize: .96;
+      margin-left: -15.3em;
+      transform: scaleY(.98) translate(-8em,-2.1em);
+      &:before {
+        background-size: 100% 84%, 100% 16%, 100% 10%;
+        background-position: .4em 0, 0 100%, -3em 81%;
+      }
+    }
+    &:nth-of-type(2) {
+      --resize: .925;
+      margin-left: 10em;
+      transform: scaleY(.965) translate(-17em,-4.2em);
+      &:before {
+        background-size: 100% 83%, 100% 17%, 100% 10%;
+        background-position: .6em 0, .1em 100%, -3em 81%;
+      }
+    }
+    &:nth-of-type(1) {
+      --resize: .895;
+      margin-left: 35.2em;
+      transform: scaleY(.94) translate(-26.6em,-6.2em);
+      &:before {
+        background-size: 100% 82%, 100% 18%, 100% 10%;
+        background-position: .8em 0, .1em 100%, -3em 80%;
+      }
+    }
+  }
+}
+
 #team.section {
   background-color: lightcyan; // change based on section theme
 
@@ -27,7 +138,12 @@
   $clue-font: 'Clue Font', serif;
 
   .team-content {
-    display: flex;
+    display: none;
+  }
+
+  /*
+  .team-content {
+    display: none;
     justify-content: space-around;
     align-items: center;
     text-align: center;
@@ -259,4 +375,5 @@
       pointer-events: none;
     }
   }
+  */
 }
