@@ -105,7 +105,7 @@
             align-items: center;
             background-color: $clue-card-name-color;
             transform: rotateZ(350deg);
-            transition: all 1.5s ease-in-out;
+            transition: all 0.8s ease-in-out; // transition timing
             flex-direction: column;
             .name {
               font-size: larger;
@@ -124,7 +124,7 @@
             width: 100%;
             left: 0;
             bottom: -$clue-card-height;
-            transition: all 2.0s ease-in-out;
+            transition: all 1.0s ease-in-out;
             object-fit: cover;
             border-radius: $clue-card-border-radius;
           }
@@ -138,12 +138,17 @@
           position: absolute;
           bottom: -$clue-card-height;
           right: 0;
-          transition: all 2.5s ease-in-out;
+          transition: all 1.2s ease-in-out;
           display: flex;
           flex-direction: column;
           justify-content: space-around;
           z-index: 300;
           border-top-left-radius: $clue-card-border-radius;
+          overflow: hidden;
+
+          * {
+            pointer-events: none;
+          }
 
           i {
             color: white;
@@ -156,6 +161,7 @@
               display: flex;
               justify-content: center;
               align-items: center;
+              pointer-events: auto;
             }
             &:hover {
               background-color: rgb(49, 49, 49);

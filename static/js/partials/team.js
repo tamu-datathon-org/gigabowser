@@ -14,7 +14,9 @@ class Team extends Section {
     super.run(y);
   }
   cardFlip(e, card) {
-    card.querySelector('.clue-card-inner').classList.toggle('flipped');
+    if (e.target.tagName !== "A") {
+      card.querySelector('.clue-card-inner').classList.toggle('flipped');
+    }
   }
 }
 // put interaction based code under here (button clicks, hover event, etc)
