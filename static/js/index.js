@@ -41,3 +41,8 @@ const handleScroll = () => {
 
 window.addEventListener('scroll', handleScroll);
 scrollTo("information")
+
+// need to add a handler for window resizing to update
+// the section heights
+// maybe on resize handler for Seciton class that asks
+// each subclass for their new custom height
