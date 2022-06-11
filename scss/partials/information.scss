@@ -1,3 +1,371 @@
 #information.section {
-  background-color: beige; // change based on section theme
+    padding: 0;
+    width: vw;
+    height: 20000px;
+    background-color: #130c25; // change based on section theme
+ 
+.squareholder {
+    position: fixed; //was relative/absolute
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    top: 50%;
+    opacity: 0;
+    // left: 0;
+    // overflow: hidden;
 }
+
+.square:nth-child(odd) {
+    background: #FFF;
+    min-height: 35vmin;
+    min-width: 35vmin;
+    max-height: 35vmin;
+    max-width: 35vmin;
+    height: 35vmin;
+    width: 35vmin;
+    float:left;
+}
+
+.square:nth-child(even) {
+    background: #000;
+    min-height: 35vmin;
+    min-width: 35vmin;
+    max-height: 35vmin;
+    max-width: 35vmin;
+    height: 35vmin;
+    width: 35vmin;
+    float: left;
+}
+
+.king {
+    position: fixed;
+    left: 100%;
+    top: 15%;
+    background: rgba(255, 255, 255, 0);
+    min-height: 30vmin;
+    min-width: 30vmin;
+    max-height: 30vmin;
+    max-width: 30vmin;
+    height: 30vmin;
+    width: 30vmin;
+    background-image: url('/../static/img/icons/kingpng.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    opacity: 0;
+    // border-style: dotted;
+
+}
+
+.kingText {
+    position: fixed;
+    left: 100%;
+    top: 5%;
+    width: 30vmin;
+    text-align: center;
+    font-family: "Space Grotesk";
+    color: purple;
+    font-weight: bold;
+    font-size: 3vmin;
+    border-style: dotted;
+}
+
+.scheduleIcon {
+    position: fixed;
+    left: 250%;
+    top: 15%;
+    background: rgba(255, 255, 255, 0);
+    min-height: 30vmin;
+    min-width: 30vmin;
+    max-height: 30vmin;
+    max-width: 30vmin;
+    height: 30vmin;
+    width: 30vmin;
+    background-image: url('/../static/img/icons/chessTimer.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.scheduleText {
+    position: fixed;
+    left: 250%;
+    top: 5%;
+    width: 30vmin;
+    text-align: center;
+    font-family: "Space Grotesk";
+    color: purple;
+    font-weight: bold;
+    font-size: 3vmin;
+    border-style: dotted;
+}
+
+.discordIcon {
+    position: fixed;
+    left: 400%;
+    top: 15%;
+    background: rgba(255, 255, 255, 0);
+    min-height: 30vmin;
+    min-width: 30vmin;
+    max-height: 30vmin;
+    max-width: 30vmin;
+    height: 30vmin;
+    width: 30vmin;
+    background-image: url('/../static/img/icons/discord.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.discordText {
+    position: fixed;
+    left: 400%;
+    top: 5%;
+    width: 30vmin;
+    text-align: center;
+    font-family: "Space Grotesk";
+    color: purple;
+    font-weight: bold;
+    font-size: 3vmin;
+
+    border-style: dotted;
+}
+
+.mapText {
+    position: fixed;
+    left: 550%;
+    top: 5%;
+    width: 40%;
+    text-align: center;
+    font-family: "Helvetica";
+    color: purple;
+    font-weight: bold;
+    font-size: 3vmin;
+    border-style: dotted;
+}
+
+.googleMap {
+    position: fixed;
+    left: 550%;
+    top: 15%;
+    width: 40%;
+    // margin: auto;
+    height: 30vmin;
+}
+
+
+.area{
+    width: 100%;
+    height: 100%;
+}
+
+.pawn {
+    position: fixed; //was absolute
+    width: 35vmin;
+    height: 35vmin;
+    top: 50%;
+    background: rgba(255, 255, 255, 0);
+    overflow: hidden;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+ 
+    background-image: url('/../static/img/icons/pawnpng.png');
+}
+ 
+.pieces{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+ 
+.pieces li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    background: rgba(255, 255, 255, 0);
+    animation: animate linear infinite; 
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+}
+ 
+.pieces li:nth-child(1){
+    left: 25%;
+    width: 95px;
+    height: 95px;
+    animation-delay: 0s;
+ 
+    $images: ('../../static/img/icons/kingpng.png', '../../static/img/icons/queenpng.png', '../../static/img/icons/knightpng.png');
+    $img: nth($images, random(length($images)));
+ 
+    background-image: url($img);
+    
+}
+ 
+ 
+.pieces li:nth-child(2){
+    left: 10%;
+    width: 95px;
+    height: 95px;
+    // background-image: url(../../static/img/icons/queenpng.png);
+ 
+    animation-delay: 2s;
+    animation-duration: 7s;
+    $images: ('../../static/img/icons/kingpng.png', '../../static/img/icons/queenpng.png', '../../static/img/icons/knightpng.png');
+
+    $img: nth($images, random(length($images)));
+
+    background-image: url($img);
+    animation-duration: 6s;
+}
+ 
+.pieces li:nth-child(3){
+    left: 70%;
+    width: 95px;
+    height: 95px;
+ 
+    $images: ('../../static/img/icons/kingpng.png', '../../static/img/icons/queenpng.png', '../../static/img/icons/knightpng.png');
+
+    $img: nth($images, random(length($images)));
+ 
+    background-image: url($img);
+ 
+    animation-delay: 4s;
+    animation-duration: 9s;
+
+}
+ 
+.pieces li:nth-child(4){
+    left: 40%;
+    width: 95px;
+    height: 95px;
+ 
+    $images: ('../../static/img/icons/kingpng.png', '../../static/img/icons/queenpng.png', '../../static/img/icons/knightpng.png');
+
+    $img: nth($images, random(length($images)));
+ 
+    background-image: url($img);
+ 
+    animation-delay: 0s;
+    animation-duration: 5s;
+}
+ 
+.pieces li:nth-child(5){
+    left: 65%;
+    width: 95px;
+    height: 95px;
+ 
+    $images: ('../../static/img/icons/kingpng.png', '../../static/img/icons/queenpng.png', '../../static/img/icons/knightpng.png');
+
+    $img: nth($images, random(length($images)));
+ 
+    background-image: url($img);
+ 
+    animation-delay: 0s;
+    animation-duration: 4s;
+
+}
+ 
+.pieces li:nth-child(6){
+    left: 75%;
+    width: 95px;
+    height: 95px;
+ 
+    $images: ('../../static/img/icons/kingpng.png', '../../static/img/icons/queenpng.png', '../../static/img/icons/knightpng.png');
+
+    $img: nth($images, random(length($images)));
+ 
+    background-image: url($img);
+ 
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+ 
+.pieces li:nth-child(7){
+    left: 35%;
+    width: 95px;
+    height: 95px;
+ 
+    $images: ('../../static/img/icons/kingpng.png', '../../static/img/icons/queenpng.png', '../../static/img/icons/knightpng.png');
+
+    $img: nth($images, random(length($images)));
+ 
+    background-image: url($img);
+ 
+    animation-duration: 3s;
+    animation-delay: 7s;
+}
+ 
+.pieces li:nth-child(8){
+    left: 50%;
+    width: 95px;
+    height: 95px;
+    $images: ('../../static/img/icons/kingpng.png', '../../static/img/icons/queenpng.png', '../../static/img/icons/knightpng.png');
+
+    $img: nth($images, random(length($images)));
+ 
+    background-image: url($img);
+ 
+ 
+ 
+    animation-delay: 15s;
+    animation-duration: 6s;
+}
+ 
+.pieces li:nth-child(9){
+    left: 20%;
+    width: 95px;
+    height: 95px;
+    $images: ('../../static/img/icons/kingpng.png', '../../static/img/icons/queenpng.png', '../../static/img/icons/knightpng.png');
+
+    $img: nth($images, random(length($images)));
+ 
+    background-image: url($img);
+ 
+ 
+    animation-delay: 2s;
+    animation-duration: 5s;
+}
+ 
+.pieces li:nth-child(10){
+    left: 85%;
+    width: 95px;
+    height: 95px;
+    $images: ('../../static/img/icons/kingpng.png', '../../static/img/icons/queenpng.png', '../../static/img/icons/knightpng.png');
+
+    $img: nth($images, random(length($images)));
+ 
+    background-image: url($img);
+ 
+    animation-delay: 0s;
+    animation-duration: 8s;
+}
+ 
+ 
+ 
+@keyframes animate {
+ 
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+ 
+    }
+ 
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+    }
+ 
+}
+ 
+}
+ 
