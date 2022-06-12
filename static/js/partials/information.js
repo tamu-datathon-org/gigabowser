@@ -29,7 +29,7 @@ class Information extends Section {
     myPawn.style.opacity = pawnOpacity;
 
     
-    // console.log("y:" + y);
+    console.log("y:" + y);
     // console.log("startPx: " + this.startPx);
     
     if((y-this.startPx) >= 1000)
@@ -76,6 +76,15 @@ class Information extends Section {
       mapText.style.setProperty('transform', 'translate(0px)');
 
     }
+
+    // if(y-this.startPx < 3200)
+    // {
+    //   myPawn.style.backgroundImage = "url(/../static/img/icons/pawnpng.png)";
+    // }
+    // if(y-this.startPx > 3200)
+    // {
+    //   myPawn.style.backgroundImage = "url(/../static/img/icons/queenpng.png)";
+    // }
 
     // put scroll dependent behavior here
   }
