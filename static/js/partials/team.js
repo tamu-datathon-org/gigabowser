@@ -3,8 +3,8 @@ class Team extends Section {
     const teamContent = document.getElementById(id);
     height = teamContent.getBoundingClientRect().height; // override default height
     super(id, startPx, height, halt, isFirst);
-    teamContent.querySelectorAll('.clue-card').forEach(card => {
-      card.onclick = (e) => this.cardFlip(e, card);
+    teamContent.querySelectorAll(".clue-card").forEach(card => {
+      card.onclick = e => this.cardFlip(e, card);
     });
   }
   runScrollDependentBehavior(y) {
@@ -15,7 +15,7 @@ class Team extends Section {
   }
   cardFlip(e, card) {
     if (e.target.tagName !== "A") {
-      card.querySelector('.clue-card-inner').classList.toggle('flipped');
+      card.querySelector(".clue-card-inner").classList.toggle("flipped");
     }
   }
 }
