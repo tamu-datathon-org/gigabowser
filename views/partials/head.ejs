@@ -1,22 +1,34 @@
 <head>
-  <title>
-    <%= req.pageName %>
-    - TAMU Datathon</title>
-  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-  <meta name="theme-color" content="#1b135e">
-  <meta name="description" content="<%= req.pageDescription || '' %>">
-  <meta property="og:title" content="<%= req.pageName %> - TAMU Datathon">
-  <meta property="og:site_name" content="TAMU Datathon">
-  <meta property="og:url" content="tamudatathon.com">
-  <meta property="og:description" content="<%= req.pageDescription || '' %>">
-  <meta property="og:type" content="profile">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="tamudatathon.com">
-  <meta name="twitter:title" content="<%= req.pageName %> - TAMU Datathon">
-  <meta name="twitter:description" content="">
+  <title><%= req.pageName %> - TAMU Datathon</title>
+  <meta
+    name="viewport"
+    content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"
+  />
+  <meta name="theme-color" content="#1b135e" />
+  <meta name="description" content="<%= req.pageDescription || '' %>" />
+  <meta property="og:title" content="<%= req.pageName %> - TAMU Datathon" />
+  <meta property="og:site_name" content="TAMU Datathon" />
+  <meta property="og:url" content="tamudatathon.com" />
+  <meta property="og:description" content="<%= req.pageDescription || '' %>" />
+  <meta property="og:type" content="profile" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="tamudatathon.com" />
+  <meta name="twitter:title" content="<%= req.pageName %> - TAMU Datathon" />
+  <meta name="twitter:description" content="" />
   <!-- pixelated font -->
-  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=VT323" />
-
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="//fonts.googleapis.com/css?family=VT323"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/splitting/dist/splitting.css"
+  />
   <!-- Specify preconnect hosts -->
   <link rel="preconnect" href="https://unpkg.com" />
   <link rel="preconnect" href="https://kit.fontawesome.com" />
@@ -26,16 +38,29 @@
 
   <link rel="stylesheet" href="/static/css/style.css" />
 
-  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6.2.3/themes/light.css" />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/tippy.js@6.2.3/themes/light.css"
+  />
 
   <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  />
 
   <!-- slick carousel stylesheet -->
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+  />
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-138612638-1"></script>
+  <script
+    async="async"
+    src="https://www.googletagmanager.com/gtag/js?id=UA-138612638-1"
+  ></script>
   <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -46,4 +71,6 @@
 
     gtag("config", "UA-138612638-1");
   </script>
+
+  <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
 </head>
