@@ -74,25 +74,7 @@
   
 
   /* Footer Page */
-  .footer__container{
-    height: 100vh;
-    //grid-template-rows: 1fr max-content;
-  }
-
-  .footer__content{
-    align-self: center;
-    row-gap: 3.5rem;
-  }
-
-  .footer__background{
-    height: 20vw;
-    width: 20vw;
-    border-radius: 100%;
-    background-color: #4CACBC;
-    z-index: 5;
-    position: absolute;
-    justify-self: center;
-  }
+ 
   
   /*About Page */
 
@@ -124,6 +106,13 @@
     align-items: center;
     z-index: 4;
     padding-top: 75vh;
+  
+  }
+
+  @keyframes jenga_shift {
+    to{
+      transform: translateY(-100px);
+    }
   }
   
   .about__content{
@@ -139,7 +128,7 @@
     position: absolute;
     //transform: translateY(-30vh);
     justify-self: center;
-    z-index: var(--z-normal);
+    //z-index: var(--z-normal);
     top: 2%;
   }
 
@@ -171,20 +160,69 @@
     margin: 0px;
   }
 
-  /* Background */
-  .about__background{
-    position: absolute;
-    //background-color: white;
-    justify-self: center; 
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    top: 280%;
-    left: 60%;
-    z-index: 0;
+  /* Footer */
+  .footer{
+    width: 100%;
+    height: 0%;
+    background-color: #4CACBC;
+    position: fixed;
+    left: 0;
+    top: 0;
+    animation: footer_transition 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+
   }
 
+  @keyframes footer_transition{
+    to{
+      width: 100%;
+      height: 100%;
+      opacity: 1;
+    }
+  }
+  /* Background */
+
+  .background__container{
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+    top: 70%;
+    left: 0;
+    align-content: center;
+    justify-items: center;
+    background-color: #EDCDBB;
+    box-shadow: inset -2px -2px 2px #BF9270,
+    inset 0px 5px 5px #bb9273;
+    transform: skewY(-11deg);
+    animation: background_anim 8s ease-in-out infinite;
+    animation-fill-mode: forwards;
+    
+  }
+
+  @keyframes background_anim {
+
+    0%{
+        transform: skewY(-11deg) translateY(0);
+    }
+  
+  
+    50%{
+        transform: skewY(-11deg) translateY(-40px);
+    }
+
+    100%{
+      transform: skewY(-11deg) translateY(0px);
+    }
+  
+  }
+
+
   .bg_block{
+    
     position: absolute;
     top: 0;
     left: 0;
@@ -366,18 +404,7 @@
 
 }
 
-  .about__background-oval{
-    position: absolute;
-    justify-self: center;
-    height: 2000px;
-    width: 1450px;
-    background-color: #EDCDBB;
-    border-radius: 80%;
-    transform: rotateZ(45deg) translateY(-10%);
-    box-shadow: inset 4px 4px 4px #e0bb9e,
-                inset 2px 2px 2px #BF9270;
-    z-index: var(--z-background);
-  }
+  
 
   /* Jenga */
   .jenga__content{
@@ -455,7 +482,7 @@
     background-color: #E3B7A0;
     transform-style: preserve-3d;
     border-radius: 15%;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.8s ease-in-out;
 
   }
 
@@ -533,17 +560,7 @@
       text-align: center;
     }
 
-    .about__background{
-      position: absolute;
-      //background-color: white;
-      justify-self: center; 
-      display:flex;
-      justify-content: center;
-      align-items: center;
-      top: 200%;
-      left: 60%;
-      z-index: 0;
-    }
+  
   
 
   }
@@ -572,17 +589,7 @@
       margin-top: -30%
     }
 
-    .about__background{
-      position: absolute;
-      //background-color: white;
-      justify-self: center; 
-      display:flex;
-      justify-content: center;
-      align-items: center;
-      top: 240%;
-      left: 60%;
-      z-index: 0;
-    }
+    
   
   }
  }
