@@ -1,100 +1,176 @@
 <div id="information" class="section">
+  
   <div class="transition">
     <!-- temp transition -->
     <img height="100" src="/static/img/transitions/triangle_lightpink.svg" alt="">
   </div>
 
-  <!-- <ul class = "pieces">
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-  </ul> -->
-
-  <div class="squareholder">
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
-    <div class = "square"></div>
+  <div id = "pawn" class = "pawn">
+    <div class = "pawnBase"></div>
   </div>
 
-  <div class = "pawn"></div>
-
-  <!-- <div id = "topSection" class = "topSection"> -->
-
-    <div class = "kingText">View our Challenges!</div>
-    <a class = "king" href = "https://tamudatathon.com/challenges"></a>
-
-    <div class = "scheduleText">View our Schedule!</div>
-    <a class = "scheduleIcon" href = "https://tamudatathon.com/schedule"></a>
-
-    <div class = "discordText">Join our Discord!</div>
-    <a class = "discordIcon" href = "https://tamudatathon.com/discord?bustCache=123"></a>
-
-    <div class = "googleMap">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3433.7695604225883!2d-96.3437383487162!3d30.612262398388488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8646839854d18149%3A0x90311327f8c2221d!2sMemorial%20Student%20Center!5e0!3m2!1sen!2sus!4v1651100656847!5m2!1sen!2sus" width="100%" height="100%" style="border:0; position: fixed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <div class = "td-container">
+    <div id = "three-cols" class = "three-cols">
+      <div class = "infoColumn">
+        <a href = "/challenges"><img alt="Challenges Logo" src="static/img/icons/kingpng.png" class = "infoImg" style = "height: 205px"></a>
+        <h4 class = "title">Challenges</h4>
+      </div>
+      <div class = "infoColumn">
+        <a href = "/schedule"><img alt="Events Logo" src="static/img/icons/events.svg" class = "infoImg"></a>
+        <h4 class = "title">Schedule</h4>
+      </div>
+      <div class = "infoColumn">
+        <a href = "/discord?bustCache=123"><img alt="Discord Logo" src="static/img/icons/discord.svg" class = "infoImg"></a>
+        <h4 class = "title">Discord</h4>
+      </div>
     </div>
-    <div class = "mapText">Address: 275 Joe Routt Blvd, College Station, TX 77843</div>
-<!-- </div> -->
+    <div class = "infoColumn" style = "margin-top: 50px;">
+      <h4 class = "title" style = "color: black;">Address: 275 Joe Routt Blvd, College Station, TX 77843</h4>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3433.769560419384!2d-96.34373298447485!3d30.612262398478858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8646839854d18149%3A0x90311327f8c2221d!2sMemorial%20Student%20Center!5e0!3m2!1sen!2sus!4v1655924026522!5m2!1sen!2sus" width="40%" height="400vw" style="border:0; display: block; margin: 0 auto;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="box">
+      <div class="side-front">
+        <table >
+          <thead>
+            <tr>
+              <th></th>
+              <th scope="col"><span class="rotate"></span></th>
+              <th scope="col"><span class="rotate"></span></th>
+              <th scope="col"><span class="rotate"></span></th>
+              <th scope="col"><span class="rotate"></span></th>
+              <th scope="col"><span class="rotate"></span></th>
+              <th scope="col"><span class="rotate"></span></th>
+              <th scope="col"><span class="rotate"></span></th>
+              <th scope="col"><span class="rotate"></span></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"></th>
+              <td class="light"></td>
+              <td class="dark"></td>
+              <td class="light"></td>
+              <td class="dark"></td>
+              <td class="light"></td>
+              <td class="dark"></td>
+              <td class="light"></td>
+              <td class="dark"></td>
+              <th scope="row"><span class="rotate"></span></th>
+            </tr>
+            <tr>
+              <th scope="row"></th>
+              <td class="dark"></td>
+              <td class="light"></td>
+              <td class="dark"></td>
+              <td class="light"></td>
+              <td class="dark"></td>
+              <td class="light"></td>
+              <td class="dark"></td>
+              <td class="light"></td>
+              <th scope="row"><span class="rotate"></span></th>
+            </tr>
+            <tr>
+              <th scope="row"></th>
+              <td class="light"></td>
+              <td class="dark"></td>
+              <td class="light"></td>
+              <td class="dark"></td>
+              <td class="light"></td>
+              <td class="dark"></td>
+              <td class="light"></td>
+              <td class="dark"></td>
+              <th scope="row"><span class="rotate"></span></th>
+            </tr>
+            <tr>
+              <th scope="row"></th>
+              <td class="dark"></td>
+              <td class="light"></td>
+              <td class="dark"></td>
+              <td class="light"></td>
+              <td class="dark"></td>
+              <td class="light"></td>
+              <td class="dark"></td>
+              <td class="light"></td>
+              <th scope="row"><span class="rotate"></span></th>
+            </tr>
+            <tr>
+              <th scope="row"></th>
+              <td class="light"></td>
+              <td class="dark"></td>
+              <td class="light"></td>
+              <td class="dark"></td>
+              <td class="light"></td>
+              <td class="dark"></td>
+              <td class="light"></td>
+              <td class="dark"></td>
+              <th scope="row"><span class="rotate"></span></th>
+            </tr>
+            <tr>
+              <th scope="row"></th>
+              <td class="dark"></td>
+              <td class="light"></td>
+              <td class="dark"></td>
+              <td class="light"></td>
+              <td class="dark"></td>
+              <td class="light"></td>
+              <td class="dark"></td>
+              <td class="light"></td>
+              <th scope="row"><span class="rotate"></span></th>
+            </tr>
+            <tr>
+              <th scope="row"></th>
+              <td class="light"></td>
+              <td class="dark"></td>
+              <td class="light"></td>
+              <td class="dark"></td>
+              <td class="light"></td>
+              <td class="dark"></td>
+              <td class="light"></td>
+              <td class="dark"></td>
+              <th scope="row"><span class="rotate"></span></th>
+            </tr>
+            <tr>
+              <th scope="row"></th>
+              <td class="dark"></td>
+              <td class="light"></td>
+              <td class="dark"></td>
+              <td class="light"></td>
+              <td class="dark"></td>
+              <td class="light"></td>
+              <td class="dark"></td>
+              <td class="light"></td>
+              <th scope="row"><span class="rotate"></span></th>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th></th>
+              <th scope="col"></th>
+              <th scope="col"></th>
+              <th scope="col"></th>
+              <th scope="col"></th>
+              <th scope="col"></th>
+              <th scope="col"></th>
+              <th scope="col"></th>
+              <th scope="col"></th>
+              <th></th>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+      <div class="side-top"></div>
+      <div class="side-bottom"></div>
+      <div class="side-left"></div>
+      <div class="side-right"></div>
+      <div class="side-back"></div>
+    </div>
+  </div>
+
+
 
 
 </div>
