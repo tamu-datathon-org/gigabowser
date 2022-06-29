@@ -1,17 +1,16 @@
 #splash {
+  display: flex;
   padding: 0%;
+  // background: url('/static/img/backgrounds/wood.jpg');
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  background-color: #211008;
 }
 
 #splash .content {
   padding: 0%;
   border: none;
-}
-
-#splash.section {
-  // background: url('/static/img/backgrounds/park_bg.png');
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  background-color: white;
+  width: 100%;
 }
 
 #car {
@@ -21,38 +20,65 @@
   left: 45px;
 }
 
-
 /* Phone Screen */
 
 @media (max-width: 719px) {
-  #game-of-life-wheel {
-    width: 100%;
-  }
-  #section-links-container {
-    display: flex;
-    margin: 60px 90px;
-    flex-wrap: wrap;
-    row-gap: 15px;
-  }
-  #section-links-container a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60px;
+  .links-container {
     width: 50%;
-    color: black;
-    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 25px;
   }
-  #section-links-container a:hover {
+  .links-container.left {
+    display: none;
+  }
+  .td-container {
+    width: 50%;
+  }
+
+  .link-wrapper {
+    width: 51vw;
+    height: 26vw;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+  }
+  .link-wrapper:hover {
+    background-color: yellow;
+  }
+  .link {
+    width: 50vw;
+    height: 25vw;
+    display: flex;
+    align-items: center;
+    background-color: #492613;
+    padding: 20px;
+    color: white;
+    filter: drop-shadow(0px -15px 10px rgba(0, 0, 0, 0.15));
+  }
+  .link.alt {
+    background-color: #64341a;
+  }
+  .links-container a:hover {
     text-decoration: none;
   }
-  #section-links-container a.one,
-  #section-links-container a.four {
-    background-color: #7fd3fd;
+
+  .left.links-container .link-wrapper {
+    justify-content: start;
+    clip-path: polygon(0 0, 0% 100%, 100% 50%);
   }
-  #section-links-container a.two,
-  #section-links-container a.three {
-    background-color: #7ffdd3;
+  .left.links-container .link {
+    justify-content: start;
+    clip-path: polygon(0 0, 0% 100%, 100% 50%);
+  }
+  .right.links-container .link-wrapper {
+    justify-content: end;
+    clip-path: polygon(100% 0, 0 50%, 100% 100%);
+  }
+  .right.links-container .link {
+    justify-content: end;
+    clip-path: polygon(100% 0, 0 50%, 100% 100%);
   }
 }
 
@@ -60,59 +86,7 @@
 /* Phone + Tablet Screen */
 
 @media (min-width: 720px) {
-  .wheel-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-  }
-  #game-of-life-wheel {
-    width: 75%;
-    -webkit-filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.5));
-    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.5));
-  }
-  #section-links-wrapper {
-    border: 3px solid black;
-    margin: 30px 60px;
-    border-radius: 50px;
-    overflow: hidden;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
-  }
-  #section-links-container {
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 15px;
-    border: 5px solid white;
-    border-radius: 50px;
-  }
-  #section-links-container a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90px;
-    width: 25%;
-    color: black;
-    border: 3px solid black;
-    font-weight: bold;
-  }
-  #section-links-container a:hover {
-    text-decoration: none;
-  }
-  #section-links-container a.one,
-  #section-links-container a.three {
-    background-color: #7fd3fd;
-    // color: white;
-  }
-  #section-links-container a.two,
-  #section-links-container a.four {
-    background-color: #7ffdd3;
-  }
-  #section-links-container a.one {
-    border-radius: 50px 0 0 50px;
-  }
-  #section-links-container a.four {
-    border-radius: 0 50px 50px 0;
-  }
+  
 }
 
 
