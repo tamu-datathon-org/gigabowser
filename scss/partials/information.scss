@@ -1,20 +1,32 @@
 #information.section {
-    padding: 0;
+    padding: 10px;
 	// height: 1500px;
     // width: vw;
-    background-color: #FFDFD3; // change based on section theme
- 
+    // background-color: #DE7E5D; // change based on section theme
+	background-image: linear-gradient(to bottom right, #ec997e, #fa6622);
+
+	h2 {
+		font-weight: bold;
+		background: #F4A9A8;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		text-shadow: -3px -3px #fff;
+	  }
+	
 	body {
-		font-family:Tahoma,Geneva,sans-serif;
+		font-family: 'Work Sans', sans-serif;
 		font-weight:400;
 		text-align:center
 	}
 
 	.td-container {
-		height: 1500px;
+		height: 1900px;
+		margin: auto;
+		// max-width: unquote("max(70rem, 83.3333333%)") !important;
 		width: 100%;
 		margin-top: 20px;
 		flex-direction: column;
+		// padding: 5px;
 	}
 
 	// container that holds all the info
@@ -22,7 +34,7 @@
 		height: 55%;
 		width: 100%;
 		display: flex;
-
+		justify-content: center;
 		flex-direction: column;
 	}
 	
@@ -31,21 +43,24 @@
 		text-align: center;
 		position: relative;
 		// height: 33%;
+		padding: 10px;
 	}
 
 	// images that exist in the columns
 	.infoImg {
 		position: relative;
-		width: 128px;
-		height: 205px;
+		width: 200px;
+		height: 200px;
 		image-rendering: crisp-edges;
 		// border-style:dotted;
 	}
 
 	.title {
 		font-size: 30px;
-		font-weight: 700;
-		color: #632ed2;
+		font-weight: bold;
+		color: #fff;
+		text-shadow: -3px -3px #ff00b35d;
+
 	}
 	
 	@media screen and (min-width: 1000px)
@@ -60,6 +75,7 @@
 			justify-content: space-evenly;
 			margin-top: 20px;
 			flex-direction: row;
+			margin-bottom: 30px;
 		}
 	}
 	span {
@@ -192,8 +208,8 @@
 	// }
 
 	.pawn {
-		--topAmount: calc(100% - 85px);
-		--leftAmount: calc(50vw - 3px);
+		--topAmount: calc(100% - 75px);
+		--leftAmount: calc(50vw - 13px);
 		top: var(--topAmount);
 		left: var(--leftAmount);
 
@@ -226,8 +242,8 @@
 			left: var(--leftAmount);
 		}
 		to{
-			top: calc(100% - 75px);
-			left: calc(50vw - 3px + 20px);
+			top: calc(100% - 65px);
+			left: calc(50vw + 7px);
 		}
 	}
  

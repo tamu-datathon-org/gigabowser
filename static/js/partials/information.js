@@ -7,13 +7,13 @@ class Information extends Section {
     let myPawn = document.getElementById('pawn');
     if(y-this.startPx > 1500) {
       myPawn.style.animation = "pawnMove 1s ease";
-      myPawn.style.top = "calc(100% - 75px)";
-      myPawn.style.left = "calc(50vw - 3px + 20px)";
+      myPawn.style.top = "calc(100% - 65px)";
+      myPawn.style.left = "calc(50vw + 7px)";
     }
     else {
       myPawn.style.animation = "";
-      myPawn.style.top = "calc(100% - 85px)";
-      myPawn.style.left = "calc(50vw - 3px)";
+      myPawn.style.top = "calc(100% - 75px)";
+      myPawn.style.left = "calc(50vw - 13px)";
     }
   }
   run(y) {
