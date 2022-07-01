@@ -1,5 +1,6 @@
 class Section {
   constructor(id, startPx, height = window.innerHeight, halt = defaultHalt, isFirst = false) {
+    height = Math.max(document.getElementById(id).offsetHeight, window.innerHeight);
     this.id = id;
     this.startPx = startPx;
     this.contentHeight = (isFirst) ? Math.max(height, window.innerHeight) : Math.max(height + transitionHeight, window.innerHeight);
