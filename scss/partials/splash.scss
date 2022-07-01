@@ -1,7 +1,9 @@
 $crossword-highlight-color: lightgreen;
+$crossword-highlight-text-color: #186218;
 $crossword-highlight-border-color: rgb(111, 185, 111);
 
 $crossword-highlight-color-alt: rgb(255, 150, 150);
+$crossword-highlight-text-color-alt: #8a0000;
 $crossword-highlight-border-color-alt: rgb(255, 125, 125);
 
 #splash {
@@ -9,6 +11,11 @@ $crossword-highlight-border-color-alt: rgb(255, 125, 125);
   padding: 0%;
   justify-content: space-between;
   background-color: white;
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
 }
 
 #splash .content {
@@ -32,6 +39,18 @@ $crossword-highlight-border-color-alt: rgb(255, 125, 125);
   height: 50%;
   display: flex;
 }
+.mini-row a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+.mini-row a .mini-square {
+  width: 100%;
+}
+.mini-row a:hover {
+  text-decoration: none;
+}
 .mini-square {
   width: 50%;
   height: 100%;
@@ -46,11 +65,13 @@ $crossword-highlight-border-color-alt: rgb(255, 125, 125);
   background-color: $crossword-highlight-color;
   border-top: 1px solid $crossword-highlight-border-color !important;
   border-bottom: 1px solid $crossword-highlight-border-color !important;
+  color: $crossword-highlight-text-color !important;
 }
 .hor {
   background-color: $crossword-highlight-color;
   border-left: 1px solid $crossword-highlight-border-color !important;
   border-right: 1px solid $crossword-highlight-border-color !important;
+  color: $crossword-highlight-text-color !important;
 }
 .top {
   border-top: 1px solid $crossword-highlight-border-color !important;
@@ -69,11 +90,13 @@ $crossword-highlight-border-color-alt: rgb(255, 125, 125);
   background-color: $crossword-highlight-color-alt;
   border-top: 1px solid $crossword-highlight-border-color-alt !important;
   border-bottom: 1px solid $crossword-highlight-border-color-alt !important;
+  color: $crossword-highlight-text-color-alt !important;
 }
 .mini-square.hor {
   background-color: $crossword-highlight-color-alt;
   border-left: 1px solid $crossword-highlight-border-color-alt !important;
   border-right: 1px solid $crossword-highlight-border-color-alt !important;
+  color: $crossword-highlight-text-color-alt !important;
 }
 .mini-square.top {
   border-top: 1px solid $crossword-highlight-border-color-alt !important;
@@ -88,6 +111,10 @@ $crossword-highlight-border-color-alt: rgb(255, 125, 125);
   border-right: 1px solid $crossword-highlight-border-color-alt !important;
 }
 
+.random:hover {
+  background-color: rgb(255, 255, 150);
+}
+
 /* Phone Screen */
 
 @media (max-width: 719px) {
@@ -98,10 +125,10 @@ $crossword-highlight-border-color-alt: rgb(255, 125, 125);
   .grid-row .square.big {
     width: calc(100vw/9);
     height: calc(100vw/9);
-    font-size: 20px;
+    font-size: calc(100vw/(9*2.5));
   }
   .mini-square {
-    font-size: 10px;
+    font-size: calc(100vw/(9*5));
   }
   .small-screen-only {
     display: block;
@@ -116,16 +143,40 @@ $crossword-highlight-border-color-alt: rgb(255, 125, 125);
 
 @media (min-width: 720px) {
   .square {
+    width: calc(100vw/9);
+    height: calc(100vw/9);
+  }
+  .grid-row .square.big {
+    width: calc(100vw/9);
+    height: calc(100vw/9);
+    font-size: calc(100vw/(9*2.5));
+  }
+  .mini-square {
+    font-size: calc(100vw/(9*5));
+  }
+  .small-screen-only {
+    display: block;
+  }
+  .large-screen-only {
+    display: none;
+  }
+}
+
+
+/* Laptop Screen */
+
+@media (min-width: 850px) {
+  .square {
     width: calc(100vw/16);
     height: calc(100vw/16);
   }
   .grid-row .square.big {
     width: calc(100vw/16);
     height: calc(100vw/16);
-    font-size: 40px;
+    font-size: calc(100vw/(16*2.5));
   }
   .mini-square {
-    font-size: 20px;
+    font-size: calc(100vw/(16*5));
   }
   .small-screen-only {
     display: none;
@@ -134,16 +185,6 @@ $crossword-highlight-border-color-alt: rgb(255, 125, 125);
     display: block;
   }
 }
-
-
-/* Horizontal Tablet Screen */
-
-@media (min-width: 720px) {}
-
-
-/* Laptop Screen */
-
-@media (min-width: 1080px) {}
 
 
 /* PC Screen */
