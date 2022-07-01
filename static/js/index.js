@@ -37,9 +37,9 @@ const handleScroll = () => {
   // events.run(scrollY);
   // about.run(scrollY);
   prevScrollY = scrollY;
-}
+};
 
-window.addEventListener('scroll', handleScroll);
+window.addEventListener("scroll", handleScroll);
 
 // need to add a handler for window resizing to update
 // the section heights
