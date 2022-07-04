@@ -1,24 +1,8 @@
-<div class="section sponsor-section">
-  <div id="sponsors" class="container td-container">
-    <h1 class="section-title-1 sponsors-title">
-      <span>S</span><span>P</span><span>O</span><span>N</span><span>S</span><span>O</span><span>R</span><span>S</span>
-    </h1>
-    <p class="sponsor-description pb-3">TAMU Datathon would not be possible without our sponsors.
-      </br>
-      Interested in sponsoring? Check out our
-      <a target="_blank" href="/static/resources/TD21_SponsorshipPackage.pdf?t=1628903436239">Sponsorship Packet</a>
-      and contact us at
-      <a href="mailto:sponsor@tamudatathon.com">sponsor@tamudatathon.com</a>.</p>
-    </p>
-
-    <h3>Our Current Sponsors:</h3>
-    <div class="sponsor-images">
-      <% for (let currentSponsor of req.currentSponsors) {  %>
-      <a href="<%= currentSponsor.url %>" target="_blank">
-        <img class="sponsor-img <%= currentSponsor.variant %>" src="<%= currentSponsor.img %>" alt="<%= currentSponsor.name %>"></img>
-      </a>
-      <% } %>
-    </div>
-    <!-- <h3>Our Past Sponsors:</h3> <div class="sponsor-images"> <% for (let pastSponsor of req.pastSponsors) { %> <a href="<%= pastSponsor.url %>" target="_blank"> <img class="sponsor-img <%= pastSponsor.variant %>" src="<%= pastSponsor.img %>" alt="<%= pastSponsor.name %>"></img> </a> <% } %> </div> -->
+<div id="sponsors" class="section">
+  <div class="transition">
+    <img height="100" src="/static/img/transitions/triangle_lightpink.svg" alt="">
+  </div>
+  <div class="content">
+    Sponsors content goes here
   </div>
 </div>

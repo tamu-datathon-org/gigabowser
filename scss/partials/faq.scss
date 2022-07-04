@@ -1,0 +1,158 @@
+#faq.section {
+  background-color: lightblue; // change based on section theme
+}
+.tile {
+  position: relative;
+  display: inline-block;
+  box-shadow: rgb(173, 154, 123) 0.09em 0.09em 0.01em;
+  padding: 0.1em 0.35em 0em;
+  margin: 0.1em;
+  border-radius: 0.2em;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+  background-color: rgb(237, 218, 187);
+  font-family: "PT Mono", monospace !important;
+  color: #464239;
+}
+.question {
+  cursor: pointer;
+}
+.scrabble {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+.scrabble {
+  padding: 0px;
+  font-family: "Cousine";
+  text-transform: uppercase;
+  font-size: 1.2em;
+  padding-right: 20px;
+  line-height: 1.2;
+}
+.word {
+  margin-right: 0.75em;
+}
+.value {
+  position: absolute;
+  font-size: 7px;
+  right: 0.2em;
+  bottom: 0em;
+}
+.faq-column {
+  box-sizing: border-box;
+}
+.faq-content-container {
+  display: flex;
+  flex-flow: row wrap;
+  box-sizing: border-box;
+  padding: 0em 0em;
+}
+.faq-box {
+  /* border-bottom: 0.1em solid #a49985; */
+  padding-bottom: 0.6em;
+  padding-top: 0.6em;
+}
+.tile {
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.tile:hover {
+  margin-left: 4px;
+}
+.answer {
+  padding-bottom: 1.3em;
+  font-size: 1em;
+  font-family: sans-serif;
+  font-weight: 300;
+  // background-color: rgb(233, 233, 241);
+  /* border-radius: 0.2em; */
+  padding: 0.5em;
+  display: none;
+  margin: 0.1em;
+  color: #464239;
+  margin-bottom: 0.5em;
+  border-left: 0.1em solid #a49985;
+}
+
+/* For extremely small screen devices (595px and below) */
+@media only screen and (max-width: 600px) {
+  .faq-column {
+    padding: 0em 0em;
+    width: 100%;
+  }
+}
+
+/* Small screen devices (600px and above) */
+@media only screen and (min-width: 600px) {
+  .faq-column {
+    padding: 0em 0em;
+    width: 100%;
+  }
+}
+
+/* Medium screen devices (768px and above) */
+@media only screen and (min-width: 768px) {
+  .faq-column {
+    padding: 0em 0em;
+    width: 100%;
+  }
+}
+
+/* Big screen devices (889px and above) */
+@media only screen and (min-width: 889px) {
+  .faq-column {
+    padding: 0em 2em;
+    width: 50%;
+  }
+}
+
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+  .faq-column {
+    padding: 0em 2em;
+    width: 50%;
+  }
+}
+
+.accordion-toggle,
+.accordion-content {
+  position: relative;
+}
+.accordion-content {
+  display: none;
+}
+.accordion-toggle p:before,
+.accordion-toggle p:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  width: 15px;
+  height: 2px;
+  margin-top: -1px;
+  background-color: #464239;
+  transform-origin: 50% 50%;
+  transition: all 0.3s ease-out;
+}
+.accordion-toggle p:before {
+  transform: rotate(-90deg);
+  opacity: 1;
+  z-index: 2;
+}
+.accordion-toggle.active-tab {
+  transition: all 0.3s ease;
+}
+.accordion-toggle p.active:before {
+  transform: rotate(0deg);
+}
+.accordion-toggle p.active:after {
+  transform: rotate(180deg);
+  opacity: 0;
+}
