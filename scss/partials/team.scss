@@ -9,7 +9,7 @@
 }
 
 #team.section {
-  background-color: lightcyan; // change based on section theme
+  background-color: var(--team-page-bkg);
 
   $clue-bg-color: white;
   $clue-card-border-color: black;

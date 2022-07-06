@@ -6,23 +6,6 @@
   .content{
     border-style: hidden;
   }
-  /* Variables */
-  --jenga-width: 24vw;
-  --jenga-height: 24vw;
-
-  /* Colors */
-  --hue-color: 240;
-
-  --first-color: hsl($hue-color, 53%, 49%);
-  --title-color: hsl($hue-color, 53%, 15%);
-  --text-color: hsl($hue-color, 12%, 35%);
-  --text-color-light: hsl($hue-color, 12%, 65%); 
-  --body-color: hsl($hue-color, 24%, 94%);
-
-  --white-color: #FFF;
-  --jenga-block-color1: #FFF;
-  --jenga-block-color2: #FFF;
-  --about-page-background: #FFEDDB;
 
   /*Font and typography*/
   --body-font: 'Poppins', sans-serif;
@@ -46,7 +29,7 @@
   --z-tooltip: 10;
   --z-background: 1;
  
-  background-color: var(--about-page-background); // change based on section theme
+  background-color: var(--about-page-bkg);
   
     *{
     box-sizing: border-box;

@@ -2,6 +2,7 @@
  * DO NOT MAKE CHANGES TO THIS FILE
  */
 
+@import "./variables.scss";
 @import "./partials/splash.scss";
 @import "./partials/information.scss";
 @import "./partials/faq.scss";
@@ -48,7 +49,9 @@ body {
 
 h2.section-header {
   font-weight: bold;
-  background: #F4A9A8;
+  background: #b56a69;
+  // TODO: compare different text backgrounds or use diff colors for each section
+  // background: #F4A9A8;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: -3px -3px #fff;
