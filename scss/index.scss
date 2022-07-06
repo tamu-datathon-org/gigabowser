@@ -45,3 +45,11 @@ body {
   border: 1px solid black;
   padding: 10px;
 }
+
+h2.section-header {
+  font-weight: bold;
+  background: #F4A9A8;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: -3px -3px #fff;
+}
