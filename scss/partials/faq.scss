@@ -1,5 +1,10 @@
 #faq.section {
   background-color: var(--faq-page-bkg);
+
+  h2.section-header {
+    background-color: var(--faq-page-font-shadow);
+    text-shadow: -3px -3px var(--faq-page-font-color);
+  }
 }
 .tile {
   position: relative;

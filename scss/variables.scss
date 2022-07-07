@@ -17,13 +17,32 @@
     --jenga-block-color1: #FFF;
     --jenga-block-color2: #FFF;
 
-    // backgrounds
+    // ===================================
+    // section background & font variables
+    // ===================================
     --splash-page-bkg: #FF99C8;
+    --splash-page-font-color: #f06292;
+    --splash-page-font-shadow: #c2185b;
+
     --info-page-bkg: #FCF6BD;
+    --info-page-font-color: #fbc02d;
+    --info-page-font-shadow: #f57f17;
+
     --faq-page-bkg: #A9DEF9;
+    --faq-page-font-color: #81c8ec;
+    --faq-page-font-shadow: #499dc8;
+
     --sponsors-page-bkg: lightpink;
+    --sponsors-page-font-color: #f791a0;
+    --sponsors-page-font-shadow: #e96b7e;
+
     --team-page-bkg: #E4C1F9;
+    --team-page-font-color: #cc8cf1;
+    --team-page-font-shadow: #b33fc8;
+
     --about-page-bkg: #FFEDDB;
+    --about-page-font-color: #e6bd94;
+    --about-page-font-shadow: #edb680;
 
     // TODO: events page to be removed?
     --events-page-bkg: lightgreen;

@@ -1,3 +1,8 @@
 #information.section {
   background-color: var(--info-page-bkg);
+
+  h2.section-header {
+    background-color: var(--info-page-font-shadow);
+    text-shadow: -3px -3px var(--info-page-font-color);
+  }
 }

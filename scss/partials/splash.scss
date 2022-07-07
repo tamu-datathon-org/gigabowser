@@ -1,3 +1,8 @@
 #splash.section {
   background-color: var(--splash-page-bkg); // change based on section theme
+
+  h2.section-header {
+    background-color: var(--splash-page-font-shadow);
+    text-shadow: -3px -3px var(--splash-page-font-color);
+  }
 }

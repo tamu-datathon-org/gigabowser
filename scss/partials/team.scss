@@ -11,6 +11,11 @@
 #team.section {
   background-color: var(--team-page-bkg);
 
+  h2.section-header {
+    background-color: var(--team-page-font-shadow);
+    text-shadow: -3px -3px var(--team-page-font-color);
+  }
+
   $clue-bg-color: white;
   $clue-card-border-color: black;
   $clue-card-bg-color: rgb(11, 11, 53);

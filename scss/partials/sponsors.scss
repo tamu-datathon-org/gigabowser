@@ -1,3 +1,8 @@
 #sponsors.section {
   background-color: var(--sponsors-page-bkg);
+
+  h2.section-header {
+    background-color: var(--sponsors-page-font-shadow);
+    text-shadow: -3px -3px var(--sponsors-page-font-color);
+  }
 }
