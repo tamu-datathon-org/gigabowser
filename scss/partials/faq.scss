@@ -10,7 +10,7 @@
   position: relative;
   display: inline-block;
   box-shadow: rgb(173, 154, 123) 0.09em 0.09em 0.01em;
-  padding: 0.1em 0.35em 0em;
+  padding: 0.1em 0.35em 0;
   margin: 0.1em;
   border-radius: 0.2em;
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
@@ -22,16 +22,22 @@
   cursor: pointer;
 }
 .scrabble {
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Safari */
-  -khtml-user-select: none; /* Konqueror HTML */
-  -moz-user-select: none; /* Old versions of Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none; /* Non-prefixed version, currently
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
 }
 .scrabble {
-  padding: 0px;
+  padding: 0;
   font-family: "Cousine";
   text-transform: uppercase;
   font-size: 1.2em;
@@ -45,7 +51,7 @@
   position: absolute;
   font-size: 7px;
   right: 0.2em;
-  bottom: 0em;
+  bottom: 0;
 }
 .faq-column {
   box-sizing: border-box;
@@ -54,7 +60,7 @@
   display: flex;
   flex-flow: row wrap;
   box-sizing: border-box;
-  padding: 0em 0em;
+  padding: 0;
 }
 .faq-box {
   /* border-bottom: 0.1em solid #a49985; */
@@ -88,7 +94,7 @@
 /* For extremely small screen devices (595px and below) */
 @media only screen and (max-width: 600px) {
   .faq-column {
-    padding: 0em 0em;
+    padding: 0;
     width: 100%;
   }
 }
@@ -96,7 +102,7 @@
 /* Small screen devices (600px and above) */
 @media only screen and (min-width: 600px) {
   .faq-column {
-    padding: 0em 0em;
+    padding: 0;
     width: 100%;
   }
 }
@@ -104,7 +110,7 @@
 /* Medium screen devices (768px and above) */
 @media only screen and (min-width: 768px) {
   .faq-column {
-    padding: 0em 0em;
+    padding: 0;
     width: 100%;
   }
 }
@@ -112,7 +118,7 @@
 /* Big screen devices (889px and above) */
 @media only screen and (min-width: 889px) {
   .faq-column {
-    padding: 0em 2em;
+    padding: 0 2em;
     width: 50%;
   }
 }
@@ -120,20 +126,20 @@
 /* Extra big screen devices (1200px and above) */
 @media only screen and (min-width: 1200px) {
   .faq-column {
-    padding: 0em 2em;
+    padding: 0 2em;
     width: 50%;
   }
 }
 
-.accordion-toggle,
-.accordion-content {
+.accordion-content,
+.accordion-toggle {
   position: relative;
 }
 .accordion-content {
   display: none;
 }
-.accordion-toggle p:before,
-.accordion-toggle p:after {
+.accordion-toggle p:after,
+.accordion-toggle p:before {
   content: "";
   display: block;
   position: absolute;

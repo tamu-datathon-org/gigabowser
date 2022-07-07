@@ -1,6 +1,5 @@
-
 @font-face {
-  font-family: 'Clue Font';
+  font-family: "Clue Font";
   src: url("/static/fonts/FuturaExtraBold.otf");
 }
 
@@ -29,7 +28,7 @@
   $clue-card-border-width: 5px;
   $clue-card-shadow-depth: 18px;
 
-  $clue-font: 'Clue Font', serif;
+  $clue-font: "Clue Font", serif;
 
   .team-content {
     display: flex;
@@ -56,7 +55,8 @@
         border-radius: $clue-card-border-radius;
       }
 
-      .clue-card-front, .clue-card-back {
+      .clue-card-back,
+      .clue-card-front {
         position: absolute;
         width: 100%;
         height: 100%;
@@ -67,13 +67,12 @@
       }
 
       .clue-card-front {
-
         .clue-card-header {
           width: 100%;
           height: 100%;
           position: absolute;
-          top: 0px;
-          left: 0px;
+          top: 0;
+          left: 0;
 
           .clue-card-image {
             height: 100%;
@@ -86,7 +85,7 @@
             position: relative;
             z-index: 190;
             opacity: 1;
-            transition: all 3.0s;
+            transition: all 3s;
             pointer-events: none;
           }
         }
@@ -176,7 +175,7 @@
 
         &:hover {
           .clue-card-image {
-            transition-timing-function: cubic-bezier(0,1,0,1);
+            transition-timing-function: cubic-bezier(0, 1, 0, 1);
             opacity: 0;
           }
           .clue-card-name {
@@ -214,7 +213,7 @@
           display: flex;
           justify-content: center;
           flex-direction: column;
-          margin: 15px 0px 0px 0px;
+          margin: 15px 0 0;
         }
 
         .weapon {
@@ -249,9 +248,9 @@
     }
 
     .clue-card-shadow {
-      -webkit-box-shadow: 0px 0px $clue-card-shadow-depth 0px rgba(0, 0, 0, 0.5);
-      -moz-box-shadow:    0px 0px $clue-card-shadow-depth 0px rgba(0, 0, 0, 0.5);
-      box-shadow:         0px 0px $clue-card-shadow-depth 0px rgba(0, 0, 0, 0.5);
+      -webkit-box-shadow: 0 0 $clue-card-shadow-depth 0 rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: 0 0 $clue-card-shadow-depth 0 rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0 $clue-card-shadow-depth 0 rgba(0, 0, 0, 0.5);
     }
 
     .clue-card-border {
