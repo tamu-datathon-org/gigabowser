@@ -6,8 +6,13 @@ class Footer extends Section {
       window.animation_val = 0;
       window.ct = 0;
       super(id, startPx, height, halt, isFirst);
-    
+      
     }
+
+    test(){
+      console.log('hi');
+    }
+
     runScrollDependentBehavior(y) {
       
       const textBox = document.getElementById("Footer__Text");

@@ -3,6 +3,10 @@
 
 
 #about.section { 
+width: 100vw;
+height: 800px;
+overflow: hidden;
+
   .content{
     border-style: hidden;
   }
@@ -105,7 +109,7 @@
     justify-content: center;
     align-items: center;
     z-index: 4;
-    padding-top: 75vh;
+    padding-top: 300px;
   
   }
 
@@ -129,7 +133,7 @@
     //transform: translateY(-30vh);
     justify-self: center;
     //z-index: var(--z-normal);
-    top: 2%;
+    padding-bottom: 900px;
   }
 
   .about__text-title{
@@ -143,7 +147,8 @@
   }
 
   .about__text-subtitle{
-    
+    color: #574141;
+    text-shadow: 1px 1px #2F1C1D;
     font-size: var(--medium-font-size);
     line-height: 1.5;
     line-break: normal;
@@ -153,6 +158,8 @@
     margin: 0px;
   }
   .about__text-text{
+    color: #967E7D;
+    text-shadow: -1px -1px #D3B8B7;
     font-size: var(--medium-font-size);
     line-height: 1.5;
     font-weight: 400;
@@ -184,13 +191,14 @@
   /* Background */
 
   .background__container{
+    overflow: hidden;
     justify-content: center;
     align-items: center;
     position: absolute;
     width: 100%;
     height: 60%;
     overflow: hidden;
-    top: 70%;
+    top: 60%;
     left: 0;
     align-content: center;
     justify-items: center;
@@ -472,8 +480,8 @@
   .jenga__block:before,
   .jenga__block:after{
     //box-shadow: inset 0 0 0 .15em #CEA270;
-    box-shadow: inset -2px -2px 2px #BF9270,
-                inset 2px 2px 2px #BF9270;
+    box-shadow: inset 0 0 0 .25em hsla(0,0%,0%,.1);
+
     float: left;
     content: '';
     position: relative;
@@ -481,8 +489,8 @@
     //transition: transform 100s ease-in-out;
     background-color: #E3B7A0;
     transform-style: preserve-3d;
-    border-radius: 15%;
-    transition: transform 0.8s ease-in-out;
+    border-radius: 0%;
+    transition: transform 0.8s ease-out;
 
   }
 
@@ -572,7 +580,7 @@
     --jenga-height: 142px;
     --jenga-width: 142px;
     --biggest-font-size: 3.5rem;
-    --medium-font-size: 1rem;
+    --medium-font-size: 1.15rem;
     --small-font-size: 0.95rem;
     --smaller-font-size: 0.75rem;
   
@@ -589,12 +597,24 @@
       margin-top: -30%
     }
 
+    .about__jenga{
+      position: flex;
+      display:flex;
+      //background-color: white;
+      justify-self: center; 
+      justify-content: center;
+      align-items: center;
+      z-index: 4;
+      padding-top: 65vh;
+    
+    }
+
     .jenga__block,
   .jenga__block:before,
   .jenga__block:after{
     //box-shadow: inset 0 0 0 .15em #CEA270;
-    box-shadow: inset -4px -4px 3px #BF9270,
-                inset 4px 4px 3px #BF9270;
+    box-shadow: inset 0 0 0 .25em hsla(0,0%,0%,.1);
+
     float: left;
     content: '';
     position: relative;
@@ -602,8 +622,8 @@
     //transition: transform 100s ease-in-out;
     background-color: #E3B7A0;
     transform-style: preserve-3d;
-    border-radius: 15%;
-    transition: transform 0.8s ease-in-out;
+    border-radius: 0%;
+    transition: transform 0.8s ease-out;
 
   }
   .jenga__block{
@@ -630,8 +650,5 @@
   
   }
  }
-
-
-
 
 

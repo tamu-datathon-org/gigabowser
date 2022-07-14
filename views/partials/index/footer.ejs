@@ -1,94 +1,130 @@
 <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
-
 <div id="footer" class="section">
-  <div class="transition">
-    <img height="100" src="/static/img/transitions/triangle_lightcoral.svg" alt="">
-  </div>
-
-
-
   <div class="content">
 
-    <div class="Background">
-      
-      <!--<svg id="test" xmlns="http://www.w3.org/2000/svg" width="40" height="40" style="fill: rgba(246, 244, 244, 1);transform: scaleX(-1);msFilter:progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);"><path d="M18.944 11.112C18.507 7.67 15.56 5 12 5 9.244 5 6.85 6.611 5.757 9.15 3.609 9.792 2 11.82 2 14c0 2.757 2.243 5 5 5h11c2.206 0 4-1.794 4-4a4.01 4.01 0 0 0-3.056-3.888z"></path></svg>
-        -->
-      <div class="Footer__Container">
-        <div class="Footer__Text" id="Footer__Text">For any questions, please email us at connect@tamudatathon.com
-          MLH Code of Conduct • 2020 Datathon</div>
+    <span class="TextBox">
+      For any questions, please email us at      
+      <a id="datathonlink" href="mailto:connect@tamudatathon.com">connect@tamudatathon.com</a>
+      <br>
+      <a id="MLH" href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code of Conduct</a>
+      <br>
+      •
+      <br>
+      <a id="datathonlink" href="https://2021.tamudatathon.com">2021 Datathon</a>
+    </span>
 
-        <div class="Cards__Container">
-          <a class="Card" id="card-instagram" href="https://www.instagram.com/tamudatathon/">
-            <div class="card__oval"></div>
-            <i class='bx bxl-instagram instagram'></i>
-            <div class="num">1</div>
-            <div class="num1">1</div>
-          </a>
-        
-          <a class="Card" id="card-facebook" href="https://www.facebook.com/tamudatathon/" >
-            <div class="card__oval"></div>
-            <i class='bx bxl-facebook facebook'></i>
-            <div class="num">2</div>
-            <div class="num1">2</div>
-          </a>
+    <img class="footer-logo" src="/static/img/logos/main.svg">
 
-          <a class="Card" id="card-twitter" href="https://twitter.com/tamudatathon">
-            <div class="card__oval"></div>
-            <i class='bx bxl-twitter twitter'></i>
-            <div class="num">3</div>
-            <div class="num1">3</div>
-          </a>
-
-          <a class="Card" id="card-github" href="https://github.com/tamu-datathon-org/">
-            <div class="card__oval"></div>
-            <i class='bx bxl-github github'></i>
-            <div class="num">4</div>
-            <div class="num1">4</div>
-          </a>
-
-          <a class="Card" id="card-linkedin" href="https://www.linkedin.com/company/tamudatathon">
-            <div class="card__oval"></div>
-            <i class='bx bxl-linkedin linkedin'></i>
-            <div class="num">5</div>
-            <div class="num1">5</div>
-          </a>
-
-          <a class="Card" id="card-medium" href="https://medium.com/@tamudatathon">
-            <div class="card__oval"></div>
-            <i class='bx bxl-medium medium'></i>
-            <div class="num">6</div>
-            <div class="num1">6</div>
-          </a>
-
+    <div class="cards">
+      <a class="card"href="https://www.instagram.com/tamudatathon/">
+        <div class="card-inner">
+          <div class="card-front" id="instagram" >
+            <div class="num" id="num1">1</div>
+            <div class="num" id="num2">1</div>
+            <div class="card-oval">
+              <i class='bx bxl-instagram instagram'></i>
+            </div>
+          </div>
+          <div class="card-back">
+            <div class="card-oval"id="backoval">
+              <div class="card-text">UNO</div>
+            </div>
+          </div>
         </div>
-      </div>
+      </a>
+
+      <a class="card"href="https://www.facebook.com/tamudatathon/">
+        <div class="card-inner">
+          <div class="card-front" id="facebook">
+            <div class="num" id="num1">2</div>
+            <div class="num" id="num2">2</div>
+            <div class="card-oval">
+              <i class='bx bxl-facebook facebook'></i>
+            </div>
+          </div>
+          <div class="card-back">
+            <div class="card-oval"id="backoval">
+              <div class="card-text">UNO</div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a class="card"href="https://twitter.com/tamudatathon">
+        <div class="card-inner">
+          <div class="card-front" id="twitter">
+            <div class="num" id="num1">3</div>
+            <div class="num" id="num2">3</div>
+            <div class="card-oval">
+              <i class='bx bxl-twitter twitter'></i>
+            </div>
+          </div>
+          <div class="card-back">
+            <div class="card-oval"id="backoval">
+              <div class="card-text">UNO</div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a class="card"href="https://www.linkedin.com/company/tamudatathon">
+        <div class="card-inner">
+          <div class="card-front" id="linkedin">
+            <div class="num" id="num1">4</div>
+            <div class="num" id="num2">4</div>
+            <div class="card-oval">
+              <i class='bx bxl-linkedin linkedin'></i>
+            </div>
+          </div>
+          <div class="card-back">
+            <div class="card-oval"id="backoval">
+              <div class="card-text">UNO</div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a class="card"href="https://github.com/tamu-datathon-org/">
+        <div class="card-inner">
+          <div class="card-front" id="github">
+            <div class="num" id="num1">5</div>
+            <div class="num" id="num2">5</div>
+            <div class="card-oval">
+              <i class='bx bxl-github github'></i>
+            </div>
+          </div>
+          <div class="card-back">
+            <div class="card-oval"id="backoval">
+              <div class="card-text">UNO</div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a class="card"href="https://medium.com/@tamudatathon">
+        <div class="card-inner">
+          <div class="card-front" id="medium">
+            <div class="num" id="num1">6</div>
+            <div class="num" id="num2">6</div>
+            <div class="card-oval">
+              <i class='bx bxl-medium medium'></i>
+            </div>
+          </div>
+          <div class="card-back">
+            <div class="card-oval"id="backoval">
+              <div class="card-text">UNO</div>
+            </div>
+          </div>
+        </div>
+      </a>
+
     </div>
 
-    <!--Footer content goes here-->
-    <div class="Globe__Container container">
-      <div class="Globe__Content">
-
-        <div class="Pivot__Container">
-          <div class="Middle__Orbit">
-            <i class='bx bxs-cloud Cloud'></i>
-            <i class='bx bxs-cloud Cloud'></i>
-            <i class='bx bxs-cloud Cloud'></i>
-            <i class='bx bxs-cloud Cloud'></i>
-          </div>
-          <div class="Up__Orbit">
-            <i class='bx bxs-cloud Cloud'></i>
-            <i class='bx bxs-cloud Cloud'></i>
-            <i class='bx bxs-cloud Cloud'></i>
-            <i class='bx bxs-cloud Cloud'></i>
-
-          </div>
-        </div>
-        <div class="Globe__Decoration"></div>
-        <div class="Globe__Text">UNO<div>
-          </div>
-        </div>
-
-      </div>
-
+    <div class="background">
+     <div class="block1"></div>
     </div>
+
+
+  </div>
+</div>

@@ -1,4 +1,4 @@
-class About extends Section {
+/*class About extends Section {
   constructor(id, startPx, height, halt = defaultHalt, isFirst = false) {
     // height = 1200; // override default height
     halt = 1000;
@@ -55,63 +55,6 @@ class About extends Section {
         }
      }
     
-    /*if(y>startPixel){
-    
-    //start logic
-    
-    if(y > previous_y){down = true;}else{down = false;}
-
-
-    //Jenga Logic
-    dist = Math.abs(y - previous_y);
-    
-    for(let x = 0; x < dist; x++){
-
-
-      tick += 1;
-      if(tick >= 80){
-        
-        tick = 0;
-      if(animation_value ==0){
-        if(down){
-          console.log('playing');
-            if(blocks[count].classList.contains("jenga__block")){
-            let shift = blocks[count].style.y - document.getElementById("jenga-layer0").style.y;
-           // console.log(shift);
-            blocks[count].style.opacity = "1";
-            blocks[count].style.transform = "translateZ(-"+shift+"px)";
-          }
-          if(count < blocks.length-1){++count;}else{
-            ++animation_value;
-          }
-         }
-      }else if(animation_value == 1){
-
-      }
-      
-
-
-      }
-    }
-      
-
-
-   }else if(y < startPixel-600){
-    this.resetAnimation();
-
-      for(let i = 0; i < blocks.length; i++){
-        blocks[i].style.transform = "translateZ(1000px)";
-        blocks[i].style.opacity = "0";
-        count = 0;
-      }
-   
-    
-   }
-
-   previous_y = y;
-
-  
-  }*/
 }
 
 
@@ -125,17 +68,55 @@ class About extends Section {
     super.run(y);
   }
 
-}
+}*/
 
+//about section logic
+const AboutSection = document.querySelector("#about")
+let triggerPixel = AboutSection.getBoundingClientRect().top + document.documentElement.scrollTop;
 
+const blocks = document.getElementsByClassName('jenga__block');
+const text = document.getElementById('about-text');
 
+let animation_value = 0;
+let count = 0;
+window.addEventListener("scroll", event => {
+  triggerPixel = AboutSection.getBoundingClientRect().top + document.documentElement.scrollTop;
+  console.log(triggerPixel);
+  //creates a global variable of the scrollValue
+  window.scrollVal = document.documentElement.scrollTop;
+  console.log(scrollVal)
 
+  //if the scrollVal passes or equals to the trigger Pixel then play animation.
+  if(scrollVal >= triggerPixel-100 && animation_value == 0){
+    animation_value += 1;
+    //trigger logic
+    var animationID;
+    //start animation
+    const animationmethod = ()=>{
+      //console.log(count);
+      if(count >= blocks.length-1){
+        clearInterval(animationID);
+      }
+      if(blocks[count].classList.contains("jenga__block")){
+        let shift = blocks[count].style.y - document.getElementById("jenga-layer0").style.y;
+       // console.log(shift);
+        blocks[count].style.opacity = "1";
+        blocks[count].style.transform = "translateZ(-"+shift+"px)";
+      }
+      text.style.opacity = count/20;
+      ++count;
+    };
+    animationID = setInterval(animationmethod,50);
+    animation_value += 1;
+  }else if(scrollVal < triggerPixel-600){
+      animation_value = 0;
+      text.style.opacity =0;
+      for(let i = 0; i < blocks.length; i++){
+        blocks[i].style.transform = "translateZ(1000px)";
+        blocks[i].style.opacity = "0";
+        count = 0; 
+      }
+   }
+  }
+);
 
-
-// put interaction based code under here (button clicks, hover event, etc)
-/*const textTitle = document.getElementById('jenga-layer1')
-
-const aboutText = () =>{
-  console.log(textTitle.offsetWidth)
-}
-setInterval(aboutText, 1000)*/
