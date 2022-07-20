@@ -1,13 +1,18 @@
-$crossword-highlight-color: lightgreen;
-$crossword-highlight-text-color: #186218;
-$crossword-highlight-border-color: rgb(111, 185, 111);
+$crossword-highlight-color-green: #7ffdd3;
+$crossword-highlight-text-color-green: #000;
+$crossword-highlight-border-color-green: #00da91;
 
-$crossword-highlight-color-alt: rgb(255, 150, 150);
-$crossword-highlight-text-color-alt: #8a0000;
-$crossword-highlight-border-color-alt: rgb(255, 125, 125);
+$crossword-highlight-color-blue: #7fd3fd;
+$crossword-highlight-text-color-blue: #000;
+$crossword-highlight-border-color-blue: #24b6ff;
+
+$crossword-highlight-color-red: rgb(255, 150, 150);
+$crossword-highlight-text-color-red: #000;
+$crossword-highlight-border-color-red: rgb(255, 125, 125);
 
 #splash {
   display: flex;
+  overflow: hidden;
   padding: 0%;
   justify-content: space-between;
   background-color: white;
@@ -41,7 +46,7 @@ $crossword-highlight-border-color-alt: rgb(255, 125, 125);
 }
 .mini-row a {
   display: flex;
-  width: 100%;
+  width: 50%;
   height: 100%;
   text-decoration: none;
 }
@@ -58,57 +63,76 @@ $crossword-highlight-border-color-alt: rgb(255, 125, 125);
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #333;
+  color: #ccc;
 }
 
 .ver {
-  background-color: $crossword-highlight-color;
-  border-top: 1px solid $crossword-highlight-border-color !important;
-  border-bottom: 1px solid $crossword-highlight-border-color !important;
-  color: $crossword-highlight-text-color !important;
+  background-color: $crossword-highlight-color-green;
+  border-top: 1px solid $crossword-highlight-border-color-green !important;
+  border-bottom: 1px solid $crossword-highlight-border-color-green !important;
+  color: $crossword-highlight-text-color-green !important;
 }
 .hor {
-  background-color: $crossword-highlight-color;
-  border-left: 1px solid $crossword-highlight-border-color !important;
-  border-right: 1px solid $crossword-highlight-border-color !important;
-  color: $crossword-highlight-text-color !important;
+  background-color: $crossword-highlight-color-blue;
+  border-left: 1px solid $crossword-highlight-border-color-blue !important;
+  border-right: 1px solid $crossword-highlight-border-color-blue !important;
+  color: $crossword-highlight-text-color-blue !important;
+}
+.ver.hor {
+  border-top: 1px solid $crossword-highlight-border-color-blue !important;
+  border-bottom: 1px solid $crossword-highlight-border-color-blue !important;
+  background-color: rgb(255, 150, 150);
 }
 .top {
-  border-top: 1px solid $crossword-highlight-border-color !important;
+  border-top: 1px solid $crossword-highlight-border-color-green !important;
 }
 .bottom {
-  border-bottom: 1px solid $crossword-highlight-border-color !important;
+  border-bottom: 1px solid $crossword-highlight-border-color-green !important;
 }
 .left {
-  border-left: 1px solid $crossword-highlight-border-color !important;
+  border-left: 1px solid $crossword-highlight-border-color-green !important;
 }
 .right {
-  border-right: 1px solid $crossword-highlight-border-color !important;
+  border-right: 1px solid $crossword-highlight-border-color-green !important;
 }
 
 .mini-square.ver {
-  background-color: $crossword-highlight-color-alt;
-  border-top: 1px solid $crossword-highlight-border-color-alt !important;
-  border-bottom: 1px solid $crossword-highlight-border-color-alt !important;
-  color: $crossword-highlight-text-color-alt !important;
+  background-color: $crossword-highlight-color-red;
+  border-top: 1px solid $crossword-highlight-border-color-red !important;
+  border-bottom: 1px solid $crossword-highlight-border-color-red !important;
+  color: $crossword-highlight-text-color-red !important;
 }
 .mini-square.hor {
-  background-color: $crossword-highlight-color-alt;
-  border-left: 1px solid $crossword-highlight-border-color-alt !important;
-  border-right: 1px solid $crossword-highlight-border-color-alt !important;
-  color: $crossword-highlight-text-color-alt !important;
+  background-color: $crossword-highlight-color-red;
+  border-left: 1px solid $crossword-highlight-border-color-red !important;
+  border-right: 1px solid $crossword-highlight-border-color-red !important;
+  color: $crossword-highlight-text-color-red !important;
 }
+
+.mini-square.ver.green {
+  background-color: $crossword-highlight-color-green;
+  border-top: 1px solid $crossword-highlight-border-color-green !important;
+  border-bottom: 1px solid $crossword-highlight-border-color-green !important;
+  color: $crossword-highlight-text-color-green !important;
+}
+.mini-square.hor.green {
+  background-color: $crossword-highlight-color-green;
+  border-left: 1px solid $crossword-highlight-border-color-green !important;
+  border-right: 1px solid $crossword-highlight-border-color-green !important;
+  color: $crossword-highlight-text-color-green !important;
+}
+
 .mini-square.top {
-  border-top: 1px solid $crossword-highlight-border-color-alt !important;
+  border-top: 1px solid $crossword-highlight-border-color-red !important;
 }
 .mini-square.bottom {
-  border-bottom: 1px solid $crossword-highlight-border-color-alt !important;
+  border-bottom: 1px solid $crossword-highlight-border-color-red !important;
 }
 .mini-square.left {
-  border-left: 1px solid $crossword-highlight-border-color-alt !important;
+  border-left: 1px solid $crossword-highlight-border-color-red !important;
 }
 .mini-square.right {
-  border-right: 1px solid $crossword-highlight-border-color-alt !important;
+  border-right: 1px solid $crossword-highlight-border-color-red !important;
 }
 
 .random:hover {
@@ -117,21 +141,24 @@ $crossword-highlight-border-color-alt: rgb(255, 125, 125);
 
 /* Phone Screen */
 
-@media (max-width: 719px) {
+@media (max-width: 849px) {
   .square {
-    width: calc(100vw/9);
-    height: calc(100vw/9);
+    width: calc(100vw/10);
+    height: calc(100vw/10);
   }
   .grid-row .square.big {
-    width: calc(100vw/9);
-    height: calc(100vw/9);
-    font-size: calc(100vw/(9*2.5));
+    width: calc(100vw/10);
+    height: calc(100vw/10);
+    font-size: calc(100vw/(10*2.5));
   }
   .mini-square {
-    font-size: calc(100vw/(9*5));
+    font-size: calc(100vw/(10*5));
   }
   .small-screen-only {
     display: block;
+  }
+  .grid-row.small-screen-only {
+    display: flex;
   }
   .large-screen-only {
     display: none;
@@ -141,48 +168,54 @@ $crossword-highlight-border-color-alt: rgb(255, 125, 125);
 
 /* Phone + Tablet Screen */
 
-@media (min-width: 720px) {
-  .square {
-    width: calc(100vw/9);
-    height: calc(100vw/9);
-  }
-  .grid-row .square.big {
-    width: calc(100vw/9);
-    height: calc(100vw/9);
-    font-size: calc(100vw/(9*2.5));
-  }
-  .mini-square {
-    font-size: calc(100vw/(9*5));
-  }
-  .small-screen-only {
-    display: block;
-  }
-  .large-screen-only {
-    display: none;
-  }
-}
+// @media (min-width: 720px) {
+//   .square {
+//     width: calc(100vw/10);
+//     height: calc(100vw/10);
+//   }
+//   .grid-row .square.big {
+//     width: calc(100vw/10);
+//     height: calc(100vw/10);
+//     font-size: calc(100vw/(10*2.5));
+//   }
+//   .mini-square {
+//     font-size: calc(100vw/(10*5));
+//   }
+//   .small-screen-only {
+//     display: block;
+//   }
+//   .small-screen-only.grid-row {
+//     display: flex;
+//   }
+//   .large-screen-only {
+//     display: none;
+//   }
+// }
 
 
 /* Laptop Screen */
 
 @media (min-width: 850px) {
   .square {
-    width: calc(100vw/16);
-    height: calc(100vw/16);
+    width: calc(100vw/13);
+    height: calc(100vw/13);
   }
   .grid-row .square.big {
-    width: calc(100vw/16);
-    height: calc(100vw/16);
-    font-size: calc(100vw/(16*2.5));
+    width: calc(100vw/13);
+    height: calc(100vw/13);
+    font-size: calc(100vw/(13*2.5));
   }
   .mini-square {
-    font-size: calc(100vw/(16*5));
+    font-size: calc(100vw/(13*5));
   }
   .small-screen-only {
     display: none;
   }
   .large-screen-only {
     display: block;
+  }
+  .grid-row.large-screen-only {
+    display: flex;
   }
 }
 
