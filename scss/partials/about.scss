@@ -3,6 +3,10 @@
 
 
 #about.section { 
+width: 100vw;
+height: 800px;
+overflow: hidden;
+
   .content{
     border-style: hidden;
   }
@@ -72,10 +76,9 @@
     margin-right: var(--mb-1);
   }
   
-  .grid{
-    display: grid;
-  }
-  
+
+  /* Footer Page */
+ 
   
   /*About Page */
 
@@ -89,24 +92,31 @@
     flex-wrap: wrap;
     display:flex;
     top: 25%;
-
   }
   
   .about__container{
     height: 100vh;
-    grid-template-rows: 1fr max-content;
+    justify-content: center;
+    justify-self: center;
+    //grid-template-rows: 1fr max-content;
   }
   
   .about__jenga{
-    position: absolute;
+    position: flex;
     display:flex;
     //background-color: white;
     justify-self: center; 
-    display:flex;
     justify-content: center;
     align-items: center;
-    z-index: var(--z-normal);
-    top: 75%;
+    z-index: 4;
+    padding-top: 300px;
+  
+  }
+
+  @keyframes jenga_shift {
+    to{
+      transform: translateY(-100px);
+    }
   }
   
   .about__content{
@@ -116,12 +126,14 @@
   
   .about__text{
     text-align: center;
+    justify-content: center;
+    align-items: center;
     color: var(--title-color);
     position: absolute;
     //transform: translateY(-30vh);
     justify-self: center;
-    z-index: var(--z-normal);
-    top: 2%;
+    //z-index: var(--z-normal);
+    padding-bottom: 900px;
   }
 
   .about__text-title{
@@ -135,7 +147,8 @@
   }
 
   .about__text-subtitle{
-    
+    color: #574141;
+    text-shadow: 1px 1px #2F1C1D;
     font-size: var(--medium-font-size);
     line-height: 1.5;
     line-break: normal;
@@ -145,6 +158,8 @@
     margin: 0px;
   }
   .about__text-text{
+    color: #967E7D;
+    text-shadow: -1px -1px #D3B8B7;
     font-size: var(--medium-font-size);
     line-height: 1.5;
     font-weight: 400;
@@ -152,19 +167,70 @@
     margin: 0px;
   }
 
-  /* Background */
-  .about__background{
-    position: absolute;
-    display:flex;
-    //background-color: white;
-    justify-self: center; 
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    z-index: var(--z-background);
+  /* Footer */
+  .footer{
+    width: 100%;
+    height: 0%;
+    background-color: #4CACBC;
+    position: fixed;
+    left: 0;
+    top: 0;
+    animation: footer_transition 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+
   }
 
+  @keyframes footer_transition{
+    to{
+      width: 100%;
+      height: 100%;
+      opacity: 1;
+    }
+  }
+  /* Background */
+
+  .background__container{
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+    top: 60%;
+    left: 0;
+    align-content: center;
+    justify-items: center;
+    background-color: #EDCDBB;
+    box-shadow: inset -2px -2px 2px #BF9270,
+    inset 0px 5px 5px #bb9273;
+    transform: skewY(-11deg);
+    animation: background_anim 8s ease-in-out infinite;
+    animation-fill-mode: forwards;
+    
+  }
+
+  @keyframes background_anim {
+
+    0%{
+        transform: skewY(-11deg) translateY(0);
+    }
+  
+  
+    50%{
+        transform: skewY(-11deg) translateY(-40px);
+    }
+
+    100%{
+      transform: skewY(-11deg) translateY(0px);
+    }
+  
+  }
+
+
   .bg_block{
+    
     position: absolute;
     top: 0;
     left: 0;
@@ -346,18 +412,7 @@
 
 }
 
-  .about__background-oval{
-    position: absolute;
-    height: 2000px;
-    width: 1450px;
-    top: 40%;
-    background-color: #EDCDBB;
-    border-radius: 80%;
-    transform: rotateZ(45deg) translateY(-10%);
-    box-shadow: inset 4px 4px 4px #e0bb9e,
-                inset 2px 2px 2px #BF9270;
-    z-index: var(--z-background);
-  }
+  
 
   /* Jenga */
   .jenga__content{
@@ -425,8 +480,8 @@
   .jenga__block:before,
   .jenga__block:after{
     //box-shadow: inset 0 0 0 .15em #CEA270;
-    box-shadow: inset -2px -2px 2px #BF9270,
-                inset 2px 2px 2px #BF9270;
+    box-shadow: inset 0 0 0 .25em hsla(0,0%,0%,.1);
+
     float: left;
     content: '';
     position: relative;
@@ -434,8 +489,8 @@
     //transition: transform 100s ease-in-out;
     background-color: #E3B7A0;
     transform-style: preserve-3d;
-    border-radius: 15%;
-    transition: transform 0.5s ease-out;
+    border-radius: 0%;
+    transition: transform 0.8s ease-out;
 
   }
 
@@ -479,6 +534,19 @@
       width: 300px;
       text-align: center;
     }
+    .about__background{
+      position: absolute;
+      //background-color: white;
+      justify-self: center; 
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      top: 200%;
+      left: 60%;
+      z-index: 0;
+    }
+  
+    
   }
 }
 
@@ -500,6 +568,9 @@
       text-align: center;
     }
 
+  
+  
+
   }
 
  }  
@@ -509,7 +580,7 @@
     --jenga-height: 142px;
     --jenga-width: 142px;
     --biggest-font-size: 3.5rem;
-    --medium-font-size: 1rem;
+    --medium-font-size: 1.15rem;
     --small-font-size: 0.95rem;
     --smaller-font-size: 0.75rem;
   
@@ -517,17 +588,67 @@
       height: 400px;
       width: 400px;
       text-align: left;
-      margin-right: 60%;
+      margin-right: 120%;
+      top: -25%;
     }
 
     .about__jenga{
-      margin-left: 50%;
-      margin-top: -5%
+      margin-left: 90%;
+      margin-top: -30%
     }
+
+    .about__jenga{
+      position: flex;
+      display:flex;
+      //background-color: white;
+      justify-self: center; 
+      justify-content: center;
+      align-items: center;
+      z-index: 4;
+      padding-top: 65vh;
+    
+    }
+
+    .jenga__block,
+  .jenga__block:before,
+  .jenga__block:after{
+    //box-shadow: inset 0 0 0 .15em #CEA270;
+    box-shadow: inset 0 0 0 .25em hsla(0,0%,0%,.1);
+
+    float: left;
+    content: '';
+    position: relative;
+    justify-self: center;
+    //transition: transform 100s ease-in-out;
+    background-color: #E3B7A0;
+    transform-style: preserve-3d;
+    border-radius: 0%;
+    transition: transform 0.8s ease-out;
+
+  }
+  .jenga__block{
+    height: 100%;
+    width: 33.3%;
+  }
+
+  .jenga__block:before{
+    height: 33.3%;
+    width: 100%;
+    transform: translate3d(0,200%, 0) rotateX(90deg);
+    transform-origin: 50% 100%;
+  }
+
+  .jenga__block:after{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform: translate3d(-100%,0,0) rotateY(-90deg);
+    transform-origin: 100% 50%;
+  }
+
+    
+  
   }
  }
-
-
-
 
 
