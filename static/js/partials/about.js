@@ -13,9 +13,9 @@
     window.endPixel = 0;
     window.animation_value = 0;
     console.log('refreshed');
-    super(id, startPx, height, halt, isFirst);  
+    super(id, startPx, height, halt, isFirst);
 
-    
+
   }
   runScrollDependentBehavior(y) {
     window.yvalue = y;
@@ -51,10 +51,10 @@
         for(let i = 0; i < blocks.length; i++){
           blocks[i].style.transform = "translateZ(1000px)";
           blocks[i].style.opacity = "0";
-          count = 0; 
+          count = 0;
         }
      }
-    
+
 }
 
 
@@ -71,11 +71,11 @@
 }*/
 
 //about section logic
-const AboutSection = document.querySelector("#about")
+const AboutSection = document.querySelector("#about");
 let triggerPixel = AboutSection.getBoundingClientRect().top + document.documentElement.scrollTop;
 
-const blocks = document.getElementsByClassName('jenga__block');
-const text = document.getElementById('about-text');
+const blocks = document.getElementsByClassName("jenga__block");
+const text = document.getElementById("about-text");
 
 let animation_value = 0;
 let count = 0;
@@ -84,39 +84,37 @@ window.addEventListener("scroll", event => {
   console.log(triggerPixel);
   //creates a global variable of the scrollValue
   window.scrollVal = document.documentElement.scrollTop;
-  console.log(scrollVal)
+  console.log(scrollVal);
 
   //if the scrollVal passes or equals to the trigger Pixel then play animation.
-  if(scrollVal >= triggerPixel-100 && animation_value == 0){
+  if (scrollVal >= triggerPixel - 100 && animation_value == 0) {
     animation_value += 1;
     //trigger logic
     var animationID;
     //start animation
-    const animationmethod = ()=>{
+    const animationmethod = () => {
       //console.log(count);
-      if(count >= blocks.length-1){
+      if (count >= blocks.length - 1) {
         clearInterval(animationID);
       }
-      if(blocks[count].classList.contains("jenga__block")){
+      if (blocks[count].classList.contains("jenga__block")) {
         let shift = blocks[count].style.y - document.getElementById("jenga-layer0").style.y;
-       // console.log(shift);
+        // console.log(shift);
         blocks[count].style.opacity = "1";
-        blocks[count].style.transform = "translateZ(-"+shift+"px)";
+        blocks[count].style.transform = "translateZ(-" + shift + "px)";
       }
-      text.style.opacity = count/20;
+      text.style.opacity = count / 20;
       ++count;
     };
-    animationID = setInterval(animationmethod,50);
+    animationID = setInterval(animationmethod, 50);
     animation_value += 1;
-  }else if(scrollVal < triggerPixel-600){
-      animation_value = 0;
-      text.style.opacity =0;
-      for(let i = 0; i < blocks.length; i++){
-        blocks[i].style.transform = "translateZ(1000px)";
-        blocks[i].style.opacity = "0";
-        count = 0; 
-      }
-   }
+  } else if (scrollVal < triggerPixel - 600) {
+    animation_value = 0;
+    text.style.opacity = 0;
+    for (let i = 0; i < blocks.length; i++) {
+      blocks[i].style.transform = "translateZ(1000px)";
+      blocks[i].style.opacity = "0";
+      count = 0;
+    }
   }
-);
-
+});
