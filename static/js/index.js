@@ -15,6 +15,7 @@ let scrollY = 0;
 // const team = new Team("team", sponsors.startPx + sponsors.height);
 // const events = new EventsSection("events", team.startPx + team.height);
 // const about = new About("about", events.startPx + events.height);
+// const footer = new Footer("footer", about.startPx + about.height);
 
 // const bodyHeight = about.startPx + about.height * 2 - 200;
 // document.body.style.height = bodyHeight + "px";
@@ -26,6 +27,7 @@ let scrollY = 0;
 // const scrollToTeam = () => { window.scrollTo(0, team.startPx + team.height) }
 // const scrollToEvents = () => { window.scrollTo(0, events.startPx + events.height) }
 // const scrollToAbout = () => { window.scrollTo(0, about.startPx + about.height) }
+// const scrollToFooter = () => { window.scrollTo(0, footer.startPx + footer.height) }
 
 const handleScroll = () => {
   scrollY = window.scrollY;
@@ -36,6 +38,7 @@ const handleScroll = () => {
   // team.run(scrollY);
   // events.run(scrollY);
   // about.run(scrollY);
+  // footer.run(scrollY);
   prevScrollY = scrollY;
 }
 
