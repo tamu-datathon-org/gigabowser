@@ -113,7 +113,7 @@ window.addEventListener("scroll", event => {
     };
     animationID = setInterval(animationmethod,50);
     animation_value += 1;
-  }else if(scrollVal < triggerPixel-600){
+  }else if((scrollVal < triggerPixel-600) && !isScrolledIntoView(AboutSection)){
       animation_value = 0;
       for(let i = 0; i < blocks.length; i++){
         blocks[i].style.transform = "translateZ(1000px)";

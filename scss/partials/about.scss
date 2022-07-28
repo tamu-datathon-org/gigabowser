@@ -669,4 +669,25 @@ overflow: hidden;
   }
  }
 
+ @media screen and(min-width:2000px){
+  #about.section{
+   .about__text{
+     padding: 0 10% 0 0;
+   }
+   .jenga__content{
+    padding-top:10vh;
+   }
+  }
+ }
+
+ @media screen and(min-width:2500px){
+  #about.section{
+  .about__text{
+    padding: 0;
+  }
+  .jenga__content{
+    padding-top:14vh;
+  }
+  }
+ }
 
