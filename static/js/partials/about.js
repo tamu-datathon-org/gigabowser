@@ -70,24 +70,30 @@
 
 }*/
 
+// https://stackoverflow.com/a/5354536
+function isScrolledIntoView(elem)
+{
+    var rect = elem.getBoundingClientRect();
+    var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+    return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+}
+
 //about section logic
 const AboutSection = document.querySelector("#about")
+const JengaBase = document.querySelector("#jenga-layer0")
 let triggerPixel = AboutSection.getBoundingClientRect().top + document.documentElement.scrollTop;
 
 const blocks = document.getElementsByClassName('jenga__block');
-const text = document.getElementById('about-text');
 
 let animation_value = 0;
 let count = 0;
 window.addEventListener("scroll", event => {
   triggerPixel = AboutSection.getBoundingClientRect().top + document.documentElement.scrollTop;
-  console.log(triggerPixel);
   //creates a global variable of the scrollValue
   window.scrollVal = document.documentElement.scrollTop;
-  console.log(scrollVal)
 
   //if the scrollVal passes or equals to the trigger Pixel then play animation.
-  if(scrollVal >= triggerPixel-100 && animation_value == 0){
+  if((scrollVal >= triggerPixel-100||isScrolledIntoView(JengaBase)) && animation_value == 0){
     animation_value += 1;
     //trigger logic
     var animationID;
@@ -99,18 +105,16 @@ window.addEventListener("scroll", event => {
       }
       if(blocks[count].classList.contains("jenga__block")){
         let shift = blocks[count].style.y - document.getElementById("jenga-layer0").style.y;
-       // console.log(shift);
+        // console.log(shift);
         blocks[count].style.opacity = "1";
         blocks[count].style.transform = "translateZ(-"+shift+"px)";
       }
-      text.style.opacity = count/20;
       ++count;
     };
     animationID = setInterval(animationmethod,50);
     animation_value += 1;
   }else if(scrollVal < triggerPixel-600){
       animation_value = 0;
-      text.style.opacity =0;
       for(let i = 0; i < blocks.length; i++){
         blocks[i].style.transform = "translateZ(1000px)";
         blocks[i].style.opacity = "0";
