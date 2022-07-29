@@ -13,18 +13,23 @@ $crossword-highlight-border-color-red: rgb(255, 125, 125);
 #splash {
   display: flex;
   overflow: hidden;
-  padding: 0%;
+  padding: 0;
   justify-content: space-between;
   background-color: white;
-  user-select: none; /* supported by Chrome and Opera */
-  -webkit-user-select: none; /* Safari */
-  -khtml-user-select: none; /* Konqueror HTML */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+  /* supported by Chrome and Opera */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
 }
 
 #splash .content {
-  padding: 0px;
+  padding: 0;
   border: none;
   width: 100%;
 }
@@ -143,16 +148,16 @@ $crossword-highlight-border-color-red: rgb(255, 125, 125);
 
 @media (max-width: 849px) {
   .square {
-    width: calc(100vw/10);
-    height: calc(100vw/10);
+    width: calc(100vw / 10);
+    height: calc(100vw / 10);
   }
   .grid-row .square.big {
-    width: calc(100vw/10);
-    height: calc(100vw/10);
-    font-size: calc(100vw/(10*2.5));
+    width: calc(100vw / 10);
+    height: calc(100vw / 10);
+    font-size: calc(100vw / (10 * 2.5));
   }
   .mini-square {
-    font-size: calc(100vw/(10*5));
+    font-size: calc(100vw / (10 * 5));
   }
   .small-screen-only {
     display: block;
@@ -164,7 +169,6 @@ $crossword-highlight-border-color-red: rgb(255, 125, 125);
     display: none;
   }
 }
-
 
 /* Phone + Tablet Screen */
 
@@ -192,21 +196,20 @@ $crossword-highlight-border-color-red: rgb(255, 125, 125);
 //   }
 // }
 
-
 /* Laptop Screen */
 
 @media (min-width: 850px) {
   .square {
-    width: calc(100vw/13);
-    height: calc(100vw/13);
+    width: calc(100vw / 13);
+    height: calc(100vw / 13);
   }
   .grid-row .square.big {
-    width: calc(100vw/13);
-    height: calc(100vw/13);
-    font-size: calc(100vw/(13*2.5));
+    width: calc(100vw / 13);
+    height: calc(100vw / 13);
+    font-size: calc(100vw / (13 * 2.5));
   }
   .mini-square {
-    font-size: calc(100vw/(13*5));
+    font-size: calc(100vw / (13 * 5));
   }
   .small-screen-only {
     display: none;
@@ -218,7 +221,6 @@ $crossword-highlight-border-color-red: rgb(255, 125, 125);
     display: flex;
   }
 }
-
 
 /* PC Screen */
 
