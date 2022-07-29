@@ -1,8 +1,14 @@
-<div id="sponsors" class="section">
+<div id="sponsors" class="section sponsor-override">
   <div class="transition">
     <img height="100" src="/static/img/transitions/triangle_lightpink.svg" alt="">
   </div>
-  <div class="content">
-    Sponsors content goes here
+  <div class="content sponsor-section">
+    <div class="sponsor-images">
+      <% for (let currentSponsor of req.currentSponsors) {  %>
+      <a href="<%= currentSponsor.url %>" target="_blank">
+        <img class="sponsor-img <%= currentSponsor.variant %>" src="<%= currentSponsor.img %>" alt="<%= currentSponsor.name %>"></img>
+      </a>
+      <% } %>
+    </div>
   </div>
 </div>
