@@ -4,7 +4,7 @@
 
 #about.section { 
 width: 100vw;
-height: 800px;
+height: 100%;
 overflow: hidden;
 
   .content{
@@ -30,10 +30,10 @@ overflow: hidden;
 
   /*Font and typography*/
   --body-font: 'Poppins', sans-serif;
-  --biggest-font-size: 2.5rem;
-  --medium-font-size: 0.813rem;
-  --small-font-size: 0.75rem;
-  --smaller-font-size: 0.625rem;
+  --biggest-font-size: 3rem;
+  --medium-font-size: 1rem;
+  --small-font-size: 0.95rem;
+  --smaller-font-size: 0.75rem;
 
 
   /*Font Weights*/
@@ -85,13 +85,6 @@ overflow: hidden;
 
   .about-content{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    flex-wrap: wrap;
-    display:flex;
-    top: 25%;
   }
   
   .about__container{
@@ -129,11 +122,9 @@ overflow: hidden;
     justify-content: center;
     align-items: center;
     color: var(--title-color);
-    position: absolute;
     //transform: translateY(-30vh);
     justify-self: center;
     //z-index: var(--z-normal);
-    padding-bottom: 900px;
   }
 
   .about__text-title{
@@ -412,6 +403,20 @@ overflow: hidden;
 
 }
 
+.jenga-location-div {
+  position:relative;
+  width:100%;
+  display: flex;
+  align-items:flex-end;
+  justify-content: center;
+  height: calc(var(--jenga-height)*4);
+}
+
+.jenga-real-location-div {
+  width:35px;
+  height:40px;
+  padding-bottom:15%;
+}
   
 
   /* Jenga */
@@ -564,12 +569,23 @@ overflow: hidden;
 
     .about__text{
       height: 300px;
-      width: 300px;
+      width: 100%;
+      padding: 0%;
       text-align: center;
     }
 
   
+    .about-content {
+      display:block;
+    }
   
+    .jenga-location-div {
+      height: calc(var(--jenga-height)*2.3);
+    }
+
+    .jenga-real-location-div{
+      padding-left:5%;
+    }
 
   }
 
@@ -586,10 +602,9 @@ overflow: hidden;
   
     .about__text{
       height: 400px;
-      width: 400px;
+      width: 800px;
       text-align: left;
-      margin-right: 120%;
-      top: -25%;
+      padding: 0% 20% 0% 0%;
     }
 
     .about__jenga{
@@ -646,9 +661,33 @@ overflow: hidden;
     transform-origin: 100% 50%;
   }
 
+  .jenga-real-location-div {
+    padding-left:30%;
+  }
     
   
   }
  }
 
+ @media screen and(min-width:2000px){
+  #about.section{
+   .about__text{
+     padding: 0 10% 0 0;
+   }
+   .jenga__content{
+    padding-top:10vh;
+   }
+  }
+ }
+
+ @media screen and(min-width:2500px){
+  #about.section{
+  .about__text{
+    padding: 0;
+  }
+  .jenga__content{
+    padding-top:14vh;
+  }
+  }
+ }
 
