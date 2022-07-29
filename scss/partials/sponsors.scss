@@ -2,6 +2,17 @@
   background-color: lightpink; // change based on section theme
 }
 
+.sponsors-title{
+  font-size: 3.5rem !important;
+  font-weight: bold;
+  background: #ff788c;
+  /* background: -webkit-linear-gradient( 135deg, #FD6E6A 10%, #FFC600 100%); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: -3px -3px #ffd2d9;
+  padding-bottom:2%;
+}
+
 .sponsor-section {
   .sponsors-title {
     color: rgb(99, 46, 210);
