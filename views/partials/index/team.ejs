@@ -6,29 +6,33 @@
     <% req.memberInfo.forEach((member) => { %>
     <div class="clue-card">
       <div class="clue-card-inner clue-card-shadow">
-        <div class="clue-card-front"
-            style="background: linear-gradient(217deg, <%- member.color %>, rgba(255,0,0,0) 70.71%),
+        <div class="clue-card-front" style="background: linear-gradient(217deg, <%- member.color %>, rgba(255,0,0,0) 70.71%),
                   linear-gradient(127deg, rgb(32, 32, 58), rgba(0,0,255,0) 70.71%),
-                  linear-gradient(336deg, <%- member.color %>, rgba(0,0,255,0) 70.71%)"
-        >
+                  linear-gradient(336deg, <%- member.color %>, rgba(0,0,255,0) 70.71%)">
           <div class="clue-card-header">
-            <img class="clue-card-image" src="/static/img/tmp/vector.png"/>
+            <img class="clue-card-image" src="/static/img/tmp/vector.png" />
           </div>
           <div class="clue-card-content">
             <div class="clue-card-name">
-              <span class="name"><%- member.name %></span>
-              <span class="position"><%- member.position %></span>
+              <span class="name">
+                <%- member.name %>
+              </span>
+              <span class="position">
+                <%- member.position %>
+              </span>
             </div>
-            <img class="clue-card-photo" src="/static/img/team/<%- member.name.split(' ')[0].toLowerCase() %>.jpg"/>
+            <img class="clue-card-photo" src="/static/img/team/<%- member.name.split(' ')[0].toLowerCase() %>.jpg" />
             <ul class="social">
               <% Object.entries(member.links).map(([icon, link]) => { %>
-              <li><a href="<%- link %>" target="_blank">
-                <% if (!icon.startsWith('fa')) { %>
-                <img src="<%- icon %>" />
-                <% } else { %>
-                <i class="fa <%- icon %>"></i>
-                <% } %>
-              </a></li>
+              <li>
+                <a href="<%- link %>" target="_blank">
+                  <% if (!icon.startsWith('fa')) { %>
+                  <img src="<%- icon %>" />
+                  <% } else { %>
+                  <i class="fa <%- icon %>"></i>
+                  <% } %>
+                </a>
+              </li>
               <% }) %>
             </ul>
           </div>
@@ -36,18 +40,25 @@
         <div class="clue-card-back">
           <div class="suspect">
             <span class="title">Suspect:</span>
-            <span><%- member.name %></span>
+            <span>
+              <%- member.name %>
+            </span>
           </div>
           <div class="weapon" style="background-color: <%- member.color %>">
             <img src="/static/img/graphics/clue/<%- member.weapon %>.png" />
           </div>
           <div>
-            <span class="subtitle">Fun Fact: </span>
-            <span><%- member.fact %></span>
+            <span class="subtitle">Fun Fact:
+            </span>
+            <span>
+              <%- member.fact %>
+            </span>
           </div>
           <div class="words">
             <% member.words.split(' ').map(word => { %>
-            <span><%- word %></span>
+            <span>
+              <%- word %>
+            </span>
             <% }) %>
           </div>
         </div>
