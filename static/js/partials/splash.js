@@ -12,3 +12,11 @@ class Splash extends Section {
 }
 
 // put interaction based code under here (button clicks, hover event, etc)
+
+allLetterChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+
+let randomSquares = document.getElementsByClassName("random");
+for (let i = 0; i < randomSquares.length; i++) {
+  let randomLetter = allLetterChars[Math.floor(Math.random() * allLetterChars.length)];
+  randomSquares[i].innerHTML = randomLetter;
+}

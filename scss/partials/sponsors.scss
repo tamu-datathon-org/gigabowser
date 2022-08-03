@@ -1,3 +1,74 @@
 #sponsors.section {
   background-color: lightpink; // change based on section theme
 }
+
+.sponsors-title{
+  font-size: 3.5rem !important;
+  font-weight: bold;
+  background: #ff788c;
+  /* background: -webkit-linear-gradient( 135deg, #FD6E6A 10%, #FFC600 100%); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: -3px -3px #ffd2d9;
+  padding-bottom:2%;
+}
+
+.sponsor-section {
+  .sponsors-title {
+    color: rgb(99, 46, 210);
+    font-weight: 700;
+  }
+
+  .sponsor-description {
+    font-size: 1.15em;
+  }
+
+  .sponsor-img {
+    padding: 2em;
+  }
+
+  .sponsor-images .xl {
+    height: 12.5rem;
+    width: 18.75rem;
+    max-height: 18.75rem;
+    object-fit: contain;
+  }
+
+  .sponsor-images {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    overflow: auto;
+  }
+
+  .sponsor-images .lg {
+    height: auto;
+    width: 18.75rem;
+    max-height: 12.5rem;
+    object-fit: contain;
+  }
+
+  @include media-breakpoint-up(sm) {
+    .sponsor-images {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .sponsor-images .xl {
+      height: 12.5rem;
+      width: 100%;
+      flex: 1;
+      object-fit: contain;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .sponsor-override{
+    padding:0px !important;
+  }
+}
