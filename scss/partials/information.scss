@@ -4,7 +4,8 @@
   // height: 1500px;
   // width: vw;
   // background-color: #DE7E5D; // change based on section theme
-  background-image: linear-gradient(to bottom right, #ec997e, #fa6622);
+  // background-image: linear-gradient(to bottom right, #ec997e, #fa6622);
+  background-color: #ec997e;
 
   h2 {
     font-weight: bold;
@@ -78,6 +79,8 @@
     height: 300px;
     margin: auto;
     left: 35px;
+    user-select: none;
+
 
     display: block;
     position: absolute;
@@ -389,7 +392,7 @@
 
     //holds address, map embed, and parking information (for overriding infoColumn)
     .mapHolder {
-      left: 10%;
+      // left: 10%;
     }
   }
 }
