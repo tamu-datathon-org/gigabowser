@@ -1,6 +1,19 @@
 #faq.section {
   background-color: lightblue; // change based on section theme
 }
+
+.faqs-title{
+  font-size: 3.5rem !important;
+  font-weight: bold;
+  background: #60bad8;
+  /* background: -webkit-linear-gradient( 135deg, #FD6E6A 10%, #FFC600 100%); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: -3px -3px #b8eeff;
+  padding-bottom:2%;
+}
+
+
 .tile {
   position: relative;
   display: inline-block;
