@@ -44,6 +44,9 @@ $crossword-highlight-border-color-red: rgb(255, 125, 125);
   height: 50%;
   display: flex;
 }
+.grid-row.single .mini-row {
+  height: 100%;
+}
 .mini-row a {
   display: flex;
   width: 50%;
@@ -96,6 +99,36 @@ $crossword-highlight-border-color-red: rgb(255, 125, 125);
   border-right: 1px solid $crossword-highlight-border-color-green !important;
 }
 
+.mini-square.title.ver {
+  background-color: $crossword-highlight-color-blue;
+  border-top: 1px solid $crossword-highlight-border-color-blue !important;
+  border-bottom: 1px solid $crossword-highlight-border-color-blue !important;
+  color: $crossword-highlight-text-color-blue !important;
+}
+.mini-square.title.hor {
+  background-color: $crossword-highlight-color-green;
+  border-left: 1px solid $crossword-highlight-border-color-green !important;
+  border-right: 1px solid $crossword-highlight-border-color-green !important;
+  color: $crossword-highlight-text-color-green !important;
+}
+.mini-square.title.ver.hor {
+  border-top: 1px solid $crossword-highlight-border-color-blue !important;
+  border-bottom: 1px solid $crossword-highlight-border-color-blue !important;
+  background-color: rgb(255, 150, 150);
+}
+.mini-square.title.top {
+  border-top: 1px solid $crossword-highlight-border-color-green !important;
+}
+.mini-square.title.bottom {
+  border-bottom: 1px solid $crossword-highlight-border-color-green !important;
+}
+.mini-square.title.left {
+  border-left: 1px solid $crossword-highlight-border-color-green !important;
+}
+.mini-square.title.right {
+  border-right: 1px solid $crossword-highlight-border-color-green !important;
+}
+
 .mini-square.ver {
   background-color: $crossword-highlight-color-red;
   border-top: 1px solid $crossword-highlight-border-color-red !important;
@@ -121,6 +154,18 @@ $crossword-highlight-border-color-red: rgb(255, 125, 125);
   border-right: 1px solid $crossword-highlight-border-color-green !important;
   color: $crossword-highlight-text-color-green !important;
 }
+.mini-square.ver.blue {
+  background-color: $crossword-highlight-color-blue;
+  border-top: 1px solid $crossword-highlight-border-color-blue !important;
+  border-bottom: 1px solid $crossword-highlight-border-color-blue !important;
+  color: $crossword-highlight-text-color-blue !important;
+}
+.mini-square.hor.blue {
+  background-color: $crossword-highlight-color-blue;
+  border-left: 1px solid $crossword-highlight-border-color-blue !important;
+  border-right: 1px solid $crossword-highlight-border-color-blue !important;
+  color: $crossword-highlight-text-color-blue !important;
+}
 
 .mini-square.top {
   border-top: 1px solid $crossword-highlight-border-color-red !important;
@@ -143,8 +188,12 @@ $crossword-highlight-border-color-red: rgb(255, 125, 125);
 
 @media (max-width: 849px) {
   .square {
-    width: calc(100vw/10);
-    height: calc(100vw/10);
+    width: calc(100vw/7);
+    height: calc(100vw/7);
+  }
+  .grid-row.single .square {
+    width: calc(100vw/7);
+    height: calc(100vw/14);
   }
   .grid-row .square.big {
     width: calc(100vw/10);
@@ -161,7 +210,7 @@ $crossword-highlight-border-color-red: rgb(255, 125, 125);
     display: flex;
   }
   .large-screen-only {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -199,6 +248,10 @@ $crossword-highlight-border-color-red: rgb(255, 125, 125);
   .square {
     width: calc(100vw/13);
     height: calc(100vw/13);
+  }
+  .grid-row.single .square {
+    width: calc(100vw/13);
+    height: calc(100vw/26);
   }
   .grid-row .square.big {
     width: calc(100vw/13);
