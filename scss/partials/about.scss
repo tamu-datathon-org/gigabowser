@@ -30,7 +30,7 @@ overflow: hidden;
 
   /*Font and typography*/
   --body-font: 'Poppins', sans-serif;
-  --biggest-font-size: 3rem;
+  --biggest-font-size: 3.5rem;
   --medium-font-size: 1rem;
   --small-font-size: 0.95rem;
   --smaller-font-size: 0.75rem;
@@ -415,7 +415,7 @@ overflow: hidden;
 .jenga-real-location-div {
   width:35px;
   height:40px;
-  padding-bottom:15%;
+  padding-bottom:23%;
 }
   
 
@@ -551,6 +551,14 @@ overflow: hidden;
       z-index: 0;
     }
   
+    .background__container {
+      top: 100%;
+    }
+
+    .jenga-real-location-div{
+      padding-bottom: 60%;
+      padding-left: 17%;
+    }
     
   }
 }
