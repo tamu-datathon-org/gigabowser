@@ -41,7 +41,6 @@
     flex-wrap: nowrap;
     margin-left: -15px;
     margin-right: -15px;
-    overflow: auto;
   }
 
   .sponsor-images .lg {
@@ -74,5 +73,9 @@
 
   .sponsors-title {
     padding: 4% 7% !important;
+  }
+
+  .sponsor-images {
+    overflow: auto;
   }
 }
