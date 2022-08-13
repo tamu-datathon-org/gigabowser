@@ -100,16 +100,16 @@ $crossword-highlight-border-color-red: rgb(255, 125, 125);
 }
 
 .mini-square.title.ver {
-  background-color: $crossword-highlight-color-blue;
-  border-top: 1px solid $crossword-highlight-border-color-blue !important;
-  border-bottom: 1px solid $crossword-highlight-border-color-blue !important;
-  color: $crossword-highlight-text-color-blue !important;
+  background-color: $crossword-highlight-color-green;
+  border-top: 1px solid $crossword-highlight-border-color-green !important;
+  border-bottom: 1px solid $crossword-highlight-border-color-green !important;
+  color: $crossword-highlight-text-color-green !important;
 }
 .mini-square.title.hor {
-  background-color: $crossword-highlight-color-green;
-  border-left: 1px solid $crossword-highlight-border-color-green !important;
-  border-right: 1px solid $crossword-highlight-border-color-green !important;
-  color: $crossword-highlight-text-color-green !important;
+  background-color: $crossword-highlight-color-blue;
+  border-left: 1px solid $crossword-highlight-border-color-blue !important;
+  border-right: 1px solid $crossword-highlight-border-color-blue !important;
+  color: $crossword-highlight-text-color-blue !important;
 }
 .mini-square.title.ver.hor {
   border-top: 1px solid $crossword-highlight-border-color-blue !important;
@@ -149,10 +149,10 @@ $crossword-highlight-border-color-red: rgb(255, 125, 125);
   color: $crossword-highlight-text-color-green !important;
 }
 .mini-square.hor.green {
-  background-color: $crossword-highlight-color-green;
-  border-left: 1px solid $crossword-highlight-border-color-green !important;
-  border-right: 1px solid $crossword-highlight-border-color-green !important;
-  color: $crossword-highlight-text-color-green !important;
+  background-color: $crossword-highlight-color-blue;
+  border-left: 1px solid $crossword-highlight-border-color-blue !important;
+  border-right: 1px solid $crossword-highlight-border-color-blue !important;
+  color: $crossword-highlight-text-color-blue !important;
 }
 .mini-square.ver.blue {
   background-color: $crossword-highlight-color-blue;
@@ -186,14 +186,14 @@ $crossword-highlight-border-color-red: rgb(255, 125, 125);
 
 /* Phone Screen */
 
-@media (max-width: 849px) {
+@media (max-width: 623px) {
   .square {
-    width: calc(100vw/7);
-    height: calc(100vw/7);
+    width: calc(100vw/6);
+    height: calc(100vw/6);
   }
   .grid-row.single .square {
-    width: calc(100vw/7);
-    height: calc(100vw/14);
+    width: calc(100vw/6);
+    height: calc(100vw/12);
   }
   .grid-row .square.big {
     width: calc(100vw/10);
@@ -201,7 +201,7 @@ $crossword-highlight-border-color-red: rgb(255, 125, 125);
     font-size: calc(100vw/(10*2.5));
   }
   .mini-square {
-    font-size: calc(100vw/(10*5));
+    font-size: calc(100vw/(10*3.15));
   }
   .small-screen-only {
     display: block;
@@ -212,39 +212,48 @@ $crossword-highlight-border-color-red: rgb(255, 125, 125);
   .large-screen-only {
     display: none !important;
   }
+  .larger-screen-only {
+    display: none !important;
+  }
 }
 
-
-/* Phone + Tablet Screen */
-
-// @media (min-width: 720px) {
-//   .square {
-//     width: calc(100vw/10);
-//     height: calc(100vw/10);
-//   }
-//   .grid-row .square.big {
-//     width: calc(100vw/10);
-//     height: calc(100vw/10);
-//     font-size: calc(100vw/(10*2.5));
-//   }
-//   .mini-square {
-//     font-size: calc(100vw/(10*5));
-//   }
-//   .small-screen-only {
-//     display: block;
-//   }
-//   .small-screen-only.grid-row {
-//     display: flex;
-//   }
-//   .large-screen-only {
-//     display: none;
-//   }
-// }
-
+@media (min-width: 624px) {
+  .square {
+    width: calc(100vw/12);
+    height: calc(100vw/12);
+  }
+  .grid-row.single .square {
+    width: calc(100vw/12);
+    height: calc(100vw/24);
+  }
+  .grid-row .square.big {
+    width: calc(100vw/12);
+    height: calc(100vw/12);
+    font-size: calc(100vw/(12*2.5));
+  }
+  .mini-square {
+    font-size: calc(100vw/(12*5));
+  }
+  .small-screen-only {
+    display: none;
+  }
+  .large-screen-only {
+    display: block;
+  }
+  .largeish-screen-only {
+    display: block;
+  }
+  .larger-screen-only {
+    display: none !important;
+  }
+  .grid-row.large-screen-only {
+    display: flex;
+  }
+}
 
 /* Laptop Screen */
 
-@media (min-width: 850px) {
+@media (min-width: 1240px) {
   .square {
     width: calc(100vw/13);
     height: calc(100vw/13);
@@ -267,6 +276,12 @@ $crossword-highlight-border-color-red: rgb(255, 125, 125);
   .large-screen-only {
     display: block;
   }
+  .largeish-screen-only {
+    display: block;
+  }
+  .larger-screen-only {
+    display: none !important;
+  }
   .grid-row.large-screen-only {
     display: flex;
   }
@@ -275,4 +290,36 @@ $crossword-highlight-border-color-red: rgb(255, 125, 125);
 
 /* PC Screen */
 
-@media (min-width: 1440px) {}
+@media (min-width: 1440px) {
+  .square {
+    width: calc(100vw/14);
+    height: calc(100vw/14);
+  }
+  .grid-row.single .square {
+    width: calc(100vw/14);
+    height: calc(100vw/28);
+  }
+  .grid-row .square.big {
+    width: calc(100vw/14);
+    height: calc(100vw/14);
+    font-size: calc(100vw/(14*2.5));
+  }
+  .mini-square {
+    font-size: calc(100vw/(14*5));
+  }
+  .small-screen-only {
+    display: none;
+  }
+  .large-screen-only {
+    display: block;
+  }
+  .largeish-screen-only {
+    display: block;
+  }
+  .larger-screen-only {
+    display: block !important;
+  }
+  .grid-row.large-screen-only {
+    display: flex;
+  }
+}
