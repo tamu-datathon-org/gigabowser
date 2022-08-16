@@ -29,6 +29,10 @@
 .question {
   cursor: pointer;
 }
+
+.question:hover  >.words > .word > .char {
+  background-color: #E4D2B4;
+}
 .scrabble {
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
