@@ -8,7 +8,7 @@
   background-color: #ec997e;
 
   h2 {
-    font-weight: bold;
+    // font-weight: bold;
     background: #f4a9a8;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -16,7 +16,7 @@
   }
 
   body {
-    font-weight: 400;
+    // font-weight: 400;
     text-align: center;
   }
 
@@ -38,6 +38,7 @@
     flex-direction: column;
     margin-top: 100px;
     padding-bottom: 100px;
+    pointer-events: none;
   }
 
   // columns that hold each individual info part
@@ -46,7 +47,6 @@
     position: relative;
     // height: 33%;
     padding: 10px;
-    pointer-events: none;
   }
 
   // images that exist in the columns
@@ -60,12 +60,11 @@
 
   .title {
     position: relative;
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 1.5em;
+    // font-weight: bold;
     color: #fff;
     // text-shadow: -3px -3px #ff00b35d;
     z-index: 1;
-    pointer-events: none;
   }
 
   span {
