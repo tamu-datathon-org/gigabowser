@@ -1,6 +1,19 @@
 #faq.section {
   background-color: lightblue; // change based on section theme
 }
+
+.faqs-title{
+  font-size: 3.5rem !important;
+  font-weight: bold;
+  background: #60bad8;
+  /* background: -webkit-linear-gradient( 135deg, #FD6E6A 10%, #FFC600 100%); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: -3px -3px #b8eeff;
+  padding-bottom:2%;
+}
+
+
 .tile {
   position: relative;
   display: inline-block;
@@ -16,6 +29,10 @@
 .question {
   cursor: pointer;
 }
+
+.question:hover  >.words > .word > .char {
+  background-color: #e0ccaa;
+}
 .scrabble {
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
@@ -27,9 +44,9 @@
 }
 .scrabble {
   padding: 0px;
-  font-family: "Cousine";
+  // font-family: "Cousine";
   text-transform: uppercase;
-  font-size: 1.2em;
+  font-size: 1.3em;
   padding-right: 20px;
   line-height: 1.2;
 }
@@ -38,7 +55,7 @@
 }
 .value {
   position: absolute;
-  font-size: 7px;
+  font-size: 8px;
   right: 0.2em;
   bottom: 0em;
 }
@@ -67,15 +84,14 @@
 }
 .answer {
   padding-bottom: 1.3em;
-  font-size: 1em;
-  font-family: sans-serif;
+  font-size: 1.15em;
   font-weight: 300;
   // background-color: rgb(233, 233, 241);
   /* border-radius: 0.2em; */
   padding: 0.5em;
   display: none;
   margin: 0.1em;
-  color: #464239;
+  // color: #464239;
   margin-bottom: 0.5em;
   border-left: 0.1em solid #a49985;
 }
