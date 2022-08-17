@@ -1,69 +1,46 @@
 <div id="information" class="section">
-  
-  <div class="transition">
-    <!-- temp transition -->
-    <img height="100" src="/static/img/transitions/triangle_lightpink.svg" alt="">
-  </div>
 
   <!-- <h2>Info</h2> -->
-
-
-  <div class = "td-container">
-    <div id = "three-cols" class = "three-cols">
-      <div class = "infoColumn">
-        <a href = "/challenges"><img alt="Challenges Logo" src="static/img/icons/kingpng.png" style = "object-fit: contain; padding: 10px;" class = "infoImg"></a>
-        <h4 class = "title">Challenges</h4>
-      </div>
-      <div class = "infoColumn">
-        <a href = "/schedule"><img alt="Events Logo" src="static/img/icons/digital_clock.png" class = "infoImg" style = "top: 20%;"></a>
-        <h4 class = "title">Schedule</h4>
-      </div>
-      <div class = "infoColumn">
-        <a href = "/discord?bustCache=123"><img alt="Discord Logo" src="static/img/icons/Discord-Logobw.svg" style = "object-fit: contain; padding: 45px; top: 15%;" class = "infoImg"></a>
-        <h4 class = "title">Discord</h4>
-      </div>
-    </div>
-    <div class = "infoColumn">
-      <h4 class = "title" style = "padding: 10px;">Address: 275 Joe Routt Blvd, College Station, TX 77843</h4>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3433.769560419384!2d-96.34373298447485!3d30.612262398478858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8646839854d18149%3A0x90311327f8c2221d!2sMemorial%20Student%20Center!5e0!3m2!1sen!2sus!4v1655924026522!5m2!1sen!2sus" width="75%" height="500vw" style="border: solid; border-color: #4B2D0B; border-width: 1em; display: block; margin: 0 auto; padding: 0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-    <div class = "infoColumn">
-      <h4 class = "title">Parking Information: TBD</h4>
-    </div>
-  </div>
-
   <div class="container">
-    <div id = "newPawn" onclick = "movePawn()" class = "newPawn">
-      <div id = "leftSide" class = "square"></div>
-      <div id = "rightSide" class = "square2"></div>
-      <div id = "topBase" class = "square3" ></div>
+    <div id="newPawn" class="newPawn">
+      <div id="pawnParts">
+        <div id="leftSide" onclick="movePawn()" class="square"></div>
+        <div id="rightSide" onclick="movePawn()" class="square2"></div>
+        <div id="topBase" onclick="movePawn()" class="square3"></div>
 
-      <div id = "leftBody" class = "rect1"></div>
-      <div id = "rightBody" class = "rect2"></div>
+        <div id="leftBody" onclick="movePawn()" class="rect1"></div>
+        <div id="rightBody" onclick="movePawn()" class="rect2"></div>
 
-      <div id = "leftHead" class = "leftHead"></div>
-      <div id = "rightHead" class = "rightHead"></div>
-      <div id = "topHead" class = "topHead"></div>
+        <div id="leftHead" onclick="movePawn()" class="leftHead"></div>
+        <div id="rightHead" onclick="movePawn()" class="rightHead"></div>
+        <div id="topHead" onclick="movePawn()" class="topHead"></div>
+      </div>
     </div>
 
-    <!-- <div id = "pawn" class = "pawn" onclick = "movePawn()" style = "cursor: pointer;">
-      <div class = "pawnBase"></div>
-    </div>   -->
+    <!-- <div id = "pawn" class = "pawn" onclick = "movePawn()" style = "cursor: pointer;"> <div class = "pawnBase"></div> </div> -->
 
     <div class="box">
       <div class="side-front">
-        <table >
+        <table>
           <thead>
             <tr>
               <th></th>
-              <th scope="col"><span class="rotate"></span></th>
-              <th scope="col"><span class="rotate"></span></th>
-              <th scope="col"><span class="rotate"></span></th>
-              <th scope="col"><span class="rotate"></span></th>
-              <th scope="col"><span class="rotate"></span></th>
-              <th scope="col"><span class="rotate"></span></th>
-              <th scope="col"><span class="rotate"></span></th>
-              <th scope="col"><span class="rotate"></span></th>
+              <th scope="col">
+                <span class="rotate"></span></th>
+              <th scope="col">
+                <span class="rotate"></span></th>
+              <th scope="col">
+                <span class="rotate"></span></th>
+              <th scope="col">
+                <span class="rotate"></span></th>
+              <th scope="col">
+                <span class="rotate"></span></th>
+              <th scope="col">
+                <span class="rotate"></span></th>
+              <th scope="col">
+                <span class="rotate"></span></th>
+              <th scope="col">
+                <span class="rotate"></span></th>
               <th></th>
             </tr>
           </thead>
@@ -78,7 +55,8 @@
               <td class="dark"></td>
               <td class="light"></td>
               <td class="dark"></td>
-              <th scope="row"><span class="rotate"></span></th>
+              <th scope="row">
+                <span class="rotate"></span></th>
             </tr>
             <tr>
               <th scope="row"></th>
@@ -90,7 +68,8 @@
               <td class="light"></td>
               <td class="dark"></td>
               <td class="light"></td>
-              <th scope="row"><span class="rotate"></span></th>
+              <th scope="row">
+                <span class="rotate"></span></th>
             </tr>
             <tr>
               <th scope="row"></th>
@@ -102,7 +81,8 @@
               <td class="dark"></td>
               <td class="light"></td>
               <td class="dark"></td>
-              <th scope="row"><span class="rotate"></span></th>
+              <th scope="row">
+                <span class="rotate"></span></th>
             </tr>
             <tr>
               <th scope="row"></th>
@@ -114,7 +94,8 @@
               <td class="light"></td>
               <td class="dark"></td>
               <td class="light"></td>
-              <th scope="row"><span class="rotate"></span></th>
+              <th scope="row">
+                <span class="rotate"></span></th>
             </tr>
             <tr>
               <th scope="row"></th>
@@ -126,7 +107,8 @@
               <td class="dark"></td>
               <td class="light"></td>
               <td class="dark"></td>
-              <th scope="row"><span class="rotate"></span></th>
+              <th scope="row">
+                <span class="rotate"></span></th>
             </tr>
             <tr>
               <th scope="row"></th>
@@ -138,7 +120,8 @@
               <td class="light"></td>
               <td class="dark"></td>
               <td class="light"></td>
-              <th scope="row"><span class="rotate"></span></th>
+              <th scope="row">
+                <span class="rotate"></span></th>
             </tr>
             <tr>
               <th scope="row"></th>
@@ -150,7 +133,8 @@
               <td class="dark"></td>
               <td class="light"></td>
               <td class="dark"></td>
-              <th scope="row"><span class="rotate"></span></th>
+              <th scope="row">
+                <span class="rotate"></span></th>
             </tr>
             <tr>
               <th scope="row"></th>
@@ -162,7 +146,8 @@
               <td class="light"></td>
               <td class="dark"></td>
               <td class="light"></td>
-              <th scope="row"><span class="rotate"></span></th>
+              <th scope="row">
+                <span class="rotate"></span></th>
             </tr>
           </tbody>
           <tfoot>
@@ -189,7 +174,25 @@
     </div>
   </div>
 
-
-
-
+  <div class="td-container">
+    <div id="three-cols" class="three-cols">
+      <!-- <div class="infoColumn">
+        <a href="/challenges"><img alt="Challenges Logo" src="static/img/icons/kingpng.png" style="object-fit: contain; padding: 10px; pointer-events: auto;" class="infoImg"></a>
+        <h4 class="title">Challenges</h4>
+      </div>
+      <div class="infoColumn">
+        <a href="/schedule"><img alt="Events Logo" src="static/img/icons/digital_clock.png" class="infoImg" style="top: 20%; pointer-events: auto;"></a>
+        <h4 class="title">Schedule</h4>
+      </div> -->
+      <div class="infoColumn">
+        <a href="/discord?bustCache=123"><img alt="Discord Logo" src="static/img/icons/dc_icon.png" style="object-fit: contain; padding: 10px; top: 0%; pointer-events: auto;" class="infoImg"></a>
+        <h4 class="title">Join our Discord!</h4>
+      </div>
+    </div>
+    <div class="infoColumn mapHolder">
+      <h4 class="title" style="padding: 10px;">Address: <a target="_blank" style="color:inherit;" href="https://goo.gl/maps/UpfrqrecthUw7xVDA">275 Joe Routt Blvd, College Station, TX 77843</a></h4>
+      <!-- <h4 class="title" style="padding: 10px;">Parking Information: TBD</h4> -->
+      <iframe id="mapHolderiFrame" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJSYHRVJiDRoYRHSLC-CcTMZA&key=AIzaSyB9QWb-4r72y3qvCFMXOq8G9k6Lg0JrAuI" height="500vw" style="border: solid; border-color: #4B2D0B; border-width: 1em; display: block; margin: 0 auto; padding: 0; pointer-events: auto;" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </div>
 </div>
