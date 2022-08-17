@@ -1,9 +1,3 @@
-
-@font-face {
-  font-family: 'Clue Font';
-  src: url("/static/fonts/FuturaExtraBold.otf");
-}
-
 .flipped {
   transform: rotateY(180deg);
 }
@@ -11,16 +5,16 @@
 .team-title{
     font-size: 3.5rem !important;
     font-weight: bold;
-    background: #4ad6d6;
+    background: #3bba90;
     /* background: -webkit-linear-gradient( 135deg, #FD6E6A 10%, #FFC600 100%); */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: -3px -3px #8cffff;
+    text-shadow: -3px -3px #b9f5e2;
     padding-bottom:2%;
 }
 
 #team.section {
-  background-color: lightcyan; // change based on section theme
+  background-color: #88e1c3db; // change based on section theme
 
   $clue-bg-color: white;
   $clue-card-border-color: black;
@@ -34,8 +28,6 @@
   $clue-card-height: 300px;
   $clue-card-border-width: 5px;
   $clue-card-shadow-depth: 18px;
-
-  $clue-font: 'Clue Font', serif;
 
   .team-content {
     display: flex;
@@ -87,7 +79,7 @@
             transition: all 1s;
             object-fit: cover;
             border-radius: $clue-card-border-radius;
-            bottom: 20%;
+            bottom: 24%;
             left: 0;
             position: relative;
             z-index: 190;
@@ -120,7 +112,7 @@
             flex-direction: column;
             .name {
               font-size: larger;
-              font-family: $clue-font;
+              font-weight: 500;
             }
             .position {
               font-size: small;
@@ -207,13 +199,7 @@
         align-items: center;
 
         .title {
-          font-family: $clue-font;
           font-size: large;
-        }
-
-        .subtitle {
-          font-family: $clue-font;
-          font-size: small;
         }
 
         .suspect {

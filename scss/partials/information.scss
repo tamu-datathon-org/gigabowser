@@ -8,7 +8,7 @@
   background-color: #ec997e;
 
   h2 {
-    font-weight: bold;
+    // font-weight: bold;
     background: #f4a9a8;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -16,13 +16,12 @@
   }
 
   body {
-    font-family: "Work Sans", sans-serif;
-    font-weight: 400;
+    // font-weight: 400;
     text-align: center;
   }
 
   .td-container {
-    height: 1600px;
+    height: 950px;
     margin: auto;
     // max-width: unquote("max(70rem, 83.3333333%)") !important;
     width: 100%;
@@ -32,13 +31,14 @@
 
   // container that holds all the info
   .three-cols {
-    height: 700px;
+    // height: 700px;
     width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-top: 100px;
-    padding-bottom: 100px;
+    // margin-top: 100px;
+    // padding-bottom: 100px;
+    pointer-events: none;
   }
 
   // columns that hold each individual info part
@@ -47,26 +47,24 @@
     position: relative;
     // height: 33%;
     padding: 10px;
-    pointer-events: none;
   }
 
   // images that exist in the columns
   .infoImg {
     position: relative;
-    width: 200px;
-    height: 200px;
-    image-rendering: crisp-edges;
+    width: 125px;
+    height: 125px;
+    // image-rendering: crisp-edges;
     // border-style:dotted;
   }
 
   .title {
     position: relative;
-    font-size: 30px;
-    font-weight: bold;
-    color: #fff;
+    font-size: 1.5em;
+    font-weight: 400;
+    // color: #fff;
     // text-shadow: -3px -3px #ff00b35d;
     z-index: 1;
-    pointer-events: none;
   }
 
   span {
@@ -366,18 +364,38 @@
     }
   }
 
+  #mapHolderiFrame {
+    width: 95%;
+  }
+
+  .infoImg {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .infoImg:hover, .infoImg:focus, .infoImg:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
   @media screen and (min-width: 1000px) {
     .td-container {
-      height: 1000px;
+      height: 890px;
     }
     .three-cols {
-      height: 25%;
+      height: 23%;
       width: 100%;
       display: flex;
       justify-content: space-evenly;
       margin-top: 20px;
       flex-direction: row;
-      margin-bottom: 30px;
+      // margin-bottom: 30px;
     }
     .container {
       // top: 100%;
@@ -385,13 +403,13 @@
       opacity: 50%;
       transform: scale(5, 5);
       left: -5%;
-      top: 60%;
+      top: 56%;
       z-index: 0;
     }
 
     //holds address, map embed, and parking information (for overriding infoColumn)
-    .mapHolder {
-      // left: 10%;
+    #mapHolderiFrame {
+      width: 69%;
     }
   }
 }

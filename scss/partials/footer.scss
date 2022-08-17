@@ -33,9 +33,11 @@
     display: flex;
     align-self: center;
     justify-content: center;
-    top: 10%;
+    top: 0%;
     right: 50%;
     transform: translate(50%,0);
+    height: 140px;
+    padding: 1.4em;
   }
 
   .TextBox{
@@ -48,7 +50,7 @@
     font-size: 1rem;
     font-weight: 600;
     color: #B25068;
-    text-shadow: 2px 2px 2px #774360;
+    // text-shadow: 2px 2px 2px #774360;
      z-index: 1;
   }
 
@@ -328,7 +330,7 @@
       font-size: 1.2rem;
       font-weight: 600;
       color: #B25068;
-      text-shadow: 2px 2px 2px #774360;
+      // text-shadow: 2px 2px 2px #774360;
        z-index: 1;
     }
 
