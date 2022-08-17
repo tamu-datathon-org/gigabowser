@@ -10,14 +10,14 @@
                   linear-gradient(336deg, <%- member.color %>, rgba(0,0,255,0) 70.71%)"
         >
           <div class="clue-card-header">
-            <img class="clue-card-image" src="/static/img/team/<%- member.name.split(' ')[0].toLowerCase() %>_cartoon.png"/>
+            <img class="clue-card-image" src="/static/img/team/<%- member.name.split(' ')[0].toLowerCase() %>_cartoon.webp"/>
           </div>
           <div class="clue-card-content">
             <div class="clue-card-name">
               <span class="name"><%- member.name %></span>
               <span class="position"><%- member.position %></span>
             </div>
-            <img class="clue-card-photo" src="/static/img/team/<%- member.name.split(' ')[0].toLowerCase() %>.png"/>
+            <img class="clue-card-photo" src="/static/img/team/<%- member.name.split(' ')[0].toLowerCase() %>.webp"/>
             <ul class="social">
               <% Object.entries(member.links).map(([icon, link]) => { %>
               <li><a href="<%- link %>" target="_blank">
