@@ -10,14 +10,14 @@
                   linear-gradient(336deg, <%- member.color %>, rgba(0,0,255,0) 70.71%)"
         >
           <div class="clue-card-header">
-            <img class="clue-card-image" src="/static/img/tmp/vector.png"/>
+            <img class="clue-card-image" src="/static/img/team/<%- member.name.split(' ')[0].toLowerCase() %>_cartoon.png"/>
           </div>
           <div class="clue-card-content">
             <div class="clue-card-name">
               <span class="name"><%- member.name %></span>
               <span class="position"><%- member.position %></span>
             </div>
-            <img class="clue-card-photo" src="/static/img/team/<%- member.name.split(' ')[0].toLowerCase() %>.jpg"/>
+            <img class="clue-card-photo" src="/static/img/team/<%- member.name.split(' ')[0].toLowerCase() %>.png"/>
             <ul class="social">
               <% Object.entries(member.links).map(([icon, link]) => { %>
               <li><a href="<%- link %>" target="_blank">
@@ -41,7 +41,7 @@
           </div>
           <div>
             <span class="subtitle">Fun Fact: </span>
-            <span><%- member.fact %></span>
+            <span style="font-size: small;"><%- member.fact %></span>
           </div>
           <div class="words">
             <% member.words.split(' ').map(word => { %>

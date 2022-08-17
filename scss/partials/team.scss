@@ -79,7 +79,7 @@
             transition: all 1s;
             object-fit: cover;
             border-radius: $clue-card-border-radius;
-            bottom: 20%;
+            bottom: 24%;
             left: 0;
             position: relative;
             z-index: 190;
@@ -200,10 +200,6 @@
 
         .title {
           font-size: large;
-        }
-
-        .subtitle {
-          font-size: small;
         }
 
         .suspect {
