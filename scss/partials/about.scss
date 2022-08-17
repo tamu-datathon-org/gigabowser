@@ -415,7 +415,7 @@ overflow: hidden;
 .jenga-real-location-div {
   width:35px;
   height:40px;
-  padding-bottom:23%;
+  padding-bottom:27%;
 }
   
 
@@ -598,6 +598,14 @@ overflow: hidden;
   }
 
  }  
+
+ @media screen and(min-width:600px) {
+  #about.section{
+    .jenga-real-location-div {
+      padding-bottom:17%;
+    }
+  }
+ }
 
  @media screen and(min-width:968px){
    #about.section{

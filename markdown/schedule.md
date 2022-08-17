@@ -1,9 +1,17 @@
 ---
 title: Schedule
 path: /schedule
-description: Schedule for TAMU Datathon 2020
+description: Schedule for TAMU Datathon 2022
 ---
 <center>
+
+# 🥁
+# Coming soon
+On this page, you can expect to find information on all the Events, Workshops, and Career Fairs that will be taking place at TAMU Datathon 2022. 
+
+</center>
+
+<!-- <center>
 <h1 class="mb-5 mt-n5"><b>Event Schedule</b></h1>
 <p>Times are in the Central Timezone</p>
 </center>
@@ -147,4 +155,4 @@ b {
       </div>
     </div>
   </div>
-</div>
+</div> -->
