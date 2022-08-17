@@ -2,7 +2,7 @@
   background-color: lightpink; // change based on section theme
 }
 
-.sponsors-title{
+.sponsors-title {
   font-size: 3.5rem !important;
   font-weight: bold;
   background: #ff788c;
@@ -10,7 +10,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: -3px -3px #ffd2d9;
-  padding-bottom:2%;
+  padding-bottom: 2%;
 }
 
 .sponsor-section {
@@ -67,8 +67,8 @@
   }
 }
 @media only screen and (max-width: 600px) {
-  .sponsor-override{
-    padding:0px !important;
+  .sponsor-override {
+    padding: 0 !important;
   }
 
   .sponsors-title {

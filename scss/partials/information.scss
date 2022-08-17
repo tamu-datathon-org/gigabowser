@@ -377,7 +377,9 @@
     -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s;
   }
-  .infoImg:hover, .infoImg:focus, .infoImg:active {
+  .infoImg:active,
+  .infoImg:focus,
+  .infoImg:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
     -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);

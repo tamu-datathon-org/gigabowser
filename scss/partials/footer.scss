@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 
 #footer.section {
   width: 100vw;
@@ -6,24 +6,23 @@
   overflow: hidden;
 
   //background: linear-gradient(to bottom, #020111 60%,#20202c 100%);
-  background-color: #4C3A51;
-  --body-font: 'Poppins', sans-serif;
+  background-color: #4c3a51;
+  --body-font: "Poppins", sans-serif;
 
-  body{
+  body {
     margin: 0;
     font-family: var(--body-font);
   }
 
-  .block1{
+  .block1 {
     position: absolute;
     top: 10%;
     width: 200%;
     height: 100%;
-    background-color:#85506A;
-    box-shadow: 5px 5px 0px #BF6971,
-    -5px -5px 0px #BF6971;
+    background-color: #85506a;
+    box-shadow: 5px 5px 0 #bf6971, -5px -5px 0 #bf6971;
     right: 50%;
-    transform: translate(50%,0) skewY(-11deg) rotate(-11deg);
+    transform: translate(50%, 0) skewY(-11deg) rotate(-11deg);
     z-index: 0;
   }
 
@@ -33,42 +32,41 @@
     display: flex;
     align-self: center;
     justify-content: center;
-    top: 0%;
+    top: 0;
     right: 50%;
-    transform: translate(50%,0);
+    transform: translate(50%, 0);
     height: 140px;
   }
 
-  .TextBox{
+  .TextBox {
     color: white;
     text-align: center;
     position: absolute;
     top: 35%;
     right: 50%;
-    transform: translate(50%,0);
+    transform: translate(50%, 0);
     font-size: 1rem;
     font-weight: 600;
-    color: #B25068;
+    color: #b25068;
     // text-shadow: 2px 2px 2px #774360;
-     z-index: 1;
+    z-index: 1;
   }
 
-  #datathonlink{
-    color: #E7AB79;
+  #datathonlink {
+    color: #e7ab79;
   }
 
-  #MLH{
-    color:#FDEDE9;
+  #MLH {
+    color: #fdede9;
   }
 
-
-  .content{
+  .content {
     z-index: 1;
     border-style: hidden;
     display: flex;
   }
 
-  .background{
+  .background {
     display: flex;
     align-self: center;
     width: 100%;
@@ -77,8 +75,8 @@
     //background-color: greenyellow;
   }
 
-  .cards{
-     z-index: 1;
+  .cards {
+    z-index: 1;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -88,12 +86,12 @@
     height: 100px;
     position: absolute;
     align-self: center;
-    top:75%;
+    top: 75%;
     right: 50%;
-    transform: translate(50%,0);
+    transform: translate(50%, 0);
   }
 
-  .cards>.card{
+  .cards > .card {
     height: 50px;
     width: 35px;
     background-color: transparent;
@@ -101,7 +99,7 @@
     margin: 5px;
   }
 
-  .card-inner{
+  .card-inner {
     position: relative;
     width: 100%;
     height: 100%;
@@ -109,169 +107,168 @@
     transition: transform 0.8s;
     transform-style: preserve-3d;
     //transform: rotateY(180deg);
-
   }
 
-  .card-front, .card-back{
+  .card-back,
+  .card-front {
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
+    -webkit-backface-visibility: hidden;
+    /* Safari */
     backface-visibility: hidden;
   }
 
-  .card-front{
+  .card-front {
     border-radius: 10%;
     border-style: solid;
-    border-color: #FFF4F1;
-    border-width:  3px;
-    box-shadow: 0px 5px rgba(0,0,0,0.2);
+    border-color: #fff4f1;
+    border-width: 3px;
+    box-shadow: 0 5px rgba(0, 0, 0, 0.2);
   }
 
-  #instagram{
-    background-color: #C35355;
+  #instagram {
+    background-color: #c35355;
   }
 
-  #facebook{
-    background-color: #008CD0;
+  #facebook {
+    background-color: #008cd0;
   }
 
-  #twitter{
-    background-color: #F7E382;
+  #twitter {
+    background-color: #f7e382;
   }
 
-  #linkedin{
-    background-color: #008E54;
+  #linkedin {
+    background-color: #008e54;
   }
 
-  #github{
-    background-color: #1D1D35;
+  #github {
+    background-color: #1d1d35;
   }
 
-  #medium{
-    background-color: #1D1D35;
+  #medium {
+    background-color: #1d1d35;
   }
 
-  .card-back{
-    background-color: #3B3B3B;
+  .card-back {
+    background-color: #3b3b3b;
     transform: rotateY(180deg);
     border-radius: 10%;
     border-style: solid;
-    border-color: #FFF4F1;
-    border-width:  3px;
-    box-shadow: 0px 5px rgba(0,0,0,0.2);
+    border-color: #fff4f1;
+    border-width: 3px;
+    box-shadow: 0 5px rgba(0, 0, 0, 0.2);
   }
 
-  .card-oval{
+  .card-oval {
     width: 65%;
     height: 65%;
     border-radius: 50%;
-    background-color: #FFF4F1;
-    position: absolute; 
+    background-color: #fff4f1;
+    position: absolute;
     align-self: center;
     top: 20%;
-    left: 20%; 
-    transform: rotateZ(45deg);  
+    left: 20%;
+    transform: rotateZ(45deg);
   }
 
-  #backoval{
-    background-color: #D53D3D;
+  #backoval {
+    background-color: #d53d3d;
   }
 
-
-  .card-text{
+  .card-text {
     width: 100px;
     height: 100px;
     text-align: center;
-    color: #FFD700;
+    color: #ffd700;
     font-weight: bold;
     font-size: 10px;
     transform: rotateZ(-85deg) translateX(33px) translateY(-1px);
     text-shadow: 5px 5px 20px black;
-  } 
+  }
 
-  .card:hover .card-inner{
+  .card:hover .card-inner {
     animation: card_rotate 0.8s ease-in-out;
   }
 
   @keyframes card_rotate {
-    to{
+    to {
       transform: rotateY(360deg);
     }
   }
 
-  .num{
+  .num {
     position: absolute;
     text-align: center;
     font-weight: bold;
     font-size: 10px;
-    color: #FFF4F1;
+    color: #fff4f1;
   }
 
-  #num1{
-    top:-5%;
+  #num1 {
+    top: -5%;
     left: 5%;
   }
 
-  #num2{
-    left:75%;
-    top: 70%
+  #num2 {
+    left: 75%;
+    top: 70%;
   }
 
-  .instagram{
+  .instagram {
     position: absolute;
-    color: #D53D3D;
+    color: #d53d3d;
     font-weight: 1500px;
     transform: rotateZ(-45deg);
-    left:5%;
+    left: 5%;
     top: 20%;
   }
 
-  .facebook{
+  .facebook {
     position: absolute;
-    color: #007DD4;
+    color: #007dd4;
     font-weight: 1500px;
     transform: rotateZ(-45deg);
-    left:5%;
+    left: 5%;
     top: 20%;
   }
 
-  .twitter{
+  .twitter {
     position: absolute;
-    color: #ECDF49;
+    color: #ecdf49;
     font-weight: 1500px;
     transform: rotateZ(-45deg);
-    left:5%;
+    left: 5%;
     top: 20%;
   }
 
-  .linkedin{
+  .linkedin {
     position: absolute;
-    color: #3BD024;
+    color: #3bd024;
     font-weight: 1500px;
     transform: rotateZ(-45deg);
-    left:5%;
+    left: 5%;
     top: 20%;
   }
 
-  .github{
-    position: absolute;
-    color: #272727;
-    font-weight: 1500px;
-    transform: rotateZ(-45deg);
-    left:5%;
-    top: 20%;
-  }
-
-  .medium{
+  .github {
     position: absolute;
     color: #272727;
     font-weight: 1500px;
     transform: rotateZ(-45deg);
-    left:5%;
+    left: 5%;
     top: 20%;
   }
 
+  .medium {
+    position: absolute;
+    color: #272727;
+    font-weight: 1500px;
+    transform: rotateZ(-45deg);
+    left: 5%;
+    top: 20%;
+  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -280,7 +277,7 @@
     height: 200px;
     overflow: hidden;
 
-    .cards{
+    .cards {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -292,7 +289,7 @@
       align-self: center;
       top: 35%;
       right: 40%;
-      transform: translate(50%,0);
+      transform: translate(50%, 0);
     }
 
     .footer-logo {
@@ -303,35 +300,33 @@
       justify-content: center;
       top: 20%;
       right: 90%;
-      transform: translate(50%,0);
+      transform: translate(50%, 0);
     }
 
-    .block1{
+    .block1 {
       position: absolute;
       top: 10%;
       width: 200%;
       height: 200%;
-      background-color:#85506A;
-      box-shadow: 5px 5px 0px #BF6971,
-      -5px -5px 0px #BF6971;
+      background-color: #85506a;
+      box-shadow: 5px 5px 0 #bf6971, -5px -5px 0 #bf6971;
       right: 50%;
-      transform: translate(50%,0) skewY(-11deg) rotate(-11deg);
+      transform: translate(50%, 0) skewY(-11deg) rotate(-11deg);
       z-index: 0;
     }
 
-    .TextBox{
+    .TextBox {
       color: white;
       text-align: left;
       position: absolute;
       top: 20%;
       right: 70%;
-      transform: translate(50%,0);
+      transform: translate(50%, 0);
       font-size: 1.2rem;
       font-weight: 600;
-      color: #B25068;
+      color: #b25068;
       // text-shadow: 2px 2px 2px #774360;
-       z-index: 1;
+      z-index: 1;
     }
-
   }
 }

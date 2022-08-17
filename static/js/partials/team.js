@@ -14,10 +14,10 @@ class Team extends Section {
 
 function cardFlip(e, card) {
   if (e.target.tagName !== "A") {
-    card.querySelector('.clue-card-inner').classList.toggle('flipped');
+    card.querySelector(".clue-card-inner").classList.toggle("flipped");
   }
 }
 
-document.getElementById("team-content").querySelectorAll('.clue-card').forEach(card => {
-  card.onclick = (e) => this.cardFlip(e, card);
+document.getElementById("team-content").querySelectorAll(".clue-card").forEach(card => {
+  card.onclick = e => this.cardFlip(e, card);
 });
