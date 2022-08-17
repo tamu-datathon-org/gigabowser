@@ -1,7 +1,4 @@
 /*Google Fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
-
-
 #about.section { 
 width: 100vw;
 height: 100%;
@@ -29,7 +26,6 @@ overflow: hidden;
   --about-page-background: #FFEDDB;
 
   /*Font and typography*/
-  --body-font: 'Poppins', sans-serif;
   --biggest-font-size: 3.5rem;
   --medium-font-size: 1rem;
   --small-font-size: 0.95rem;
@@ -60,7 +56,6 @@ overflow: hidden;
   
   body{
     margin: 0;
-    font-family: var(--body-font);
     background-color: var(--body-color);
     color: var(--text-color);
   }
