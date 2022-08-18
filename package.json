@@ -34,6 +34,7 @@
     "node-fetch": "^2.6.1",
     "node-sass": "^7.0.1",
     "showdown": "^1.9.1",
+    "splitting": "^1.0.6",
     "three": "^0.129.0"
   },
   "devDependencies": {

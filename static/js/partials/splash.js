@@ -37,7 +37,7 @@ function hoverByClass(classname,colorover){
 		};
 	}
 }
-hoverByClass("challenges-hover","#ff7d7d");
-hoverByClass("schedule-hover","#ff7d7d");
-// hoverByClass("events-hover","#ff7d7d");
-hoverByClass("apply-hover","#ff7d7d");
+hoverByClass("challenges-hover","#f1d02e");
+hoverByClass("schedule-hover","#f1d02e");
+// hoverByClass("events-hover","#f1d02e");
+hoverByClass("apply-hover","#f1d02e");
