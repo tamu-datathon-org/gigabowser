@@ -255,5 +255,83 @@
       border-radius: $clue-card-border-radius;
       pointer-events: none;
     }
+
+    @media screen and (min-width: 414px) and (max-width: 554px) {
+      .clue-card-content {
+        width: 148px !important;
+        height: 222px !important;
+      }
+      .clue-card {
+        width: 148px !important;
+        height: 222px !important;
+      }
+      .clue-card-border {
+        width: 148px !important;
+        height: 222px !important;
+      }
+      .team-content {
+        padding: 0px;
+      }
+      .words {
+        display: none !important;
+      }
+      .title {
+        font-size: 1rem !important;
+      }
+      .memberName {
+        font-size: 0.9rem !important;
+      }
+      .subtitle {
+        font-size: 1rem !important;
+      }
+      .memberFact {
+        font-size: 0.5rem !important;
+        line-height: 18px;
+        display: block;
+      }
+      .name {
+        font-size: 1rem !important;
+      }
+    }
+
+    @media screen and (min-width: 370px) and (max-width: 413px) {
+      .clue-card-content {
+        width: 125px !important;
+        height: 188px !important;
+      }
+      .clue-card {
+        width: 125px;
+        height: 188px !important;
+      }
+      .clue-card-border {
+        width: 125px;
+        height: 188px !important;
+      }
+      .team-content {
+        padding: 0px;
+      }
+      .words {
+        display: none !important;
+      }
+      .title {
+        font-size: 1rem !important;
+      }
+      .memberName {
+        font-size: 0.9rem !important;
+      }
+      .subtitle {
+        font-size: 1rem !important;
+      }
+      .memberFact {
+        font-size: 0.5rem !important;
+        line-height: 18px;
+        display: block;
+      }
+      .name {
+        font-size: 1rem !important;
+      }
+    }
+
   }
+
 }
