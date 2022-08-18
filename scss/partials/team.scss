@@ -193,7 +193,7 @@
         background-color: white;
         transform: rotateY(180deg);
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-direction: column;
         padding: 5px;
         align-items: center;
@@ -276,21 +276,27 @@
         display: none !important;
       }
       .title {
-        font-size: 1rem !important;
+        font-size: 1.1rem !important;
       }
       .memberName {
-        font-size: 0.9rem !important;
+        font-size: 1rem !important;
       }
       .subtitle {
         font-size: 1rem !important;
       }
       .memberFact {
-        font-size: 0.5rem !important;
-        line-height: 18px;
+        font-size: 0.8rem !important;
+        line-height: 13px;
         display: block;
       }
       .name {
         font-size: 1rem !important;
+      }
+      .position {
+        font-size: 0.8rem !important;
+      }
+      .suspect {
+        margin: 0px !important;
       }
     }
 
@@ -320,15 +326,21 @@
         font-size: 0.9rem !important;
       }
       .subtitle {
-        font-size: 1rem !important;
+        font-size: 0.9rem !important;
       }
       .memberFact {
-        font-size: 0.5rem !important;
-        line-height: 18px;
+        font-size: 0.6rem !important;
+        line-height: 10px;
         display: block;
       }
       .name {
-        font-size: 1rem !important;
+        font-size: 0.8rem !important;
+      }
+      .position {
+        font-size: 0.6rem !important;
+      }
+      .suspect {
+        margin: 0px !important;
       }
     }
 
