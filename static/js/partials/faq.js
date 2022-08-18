@@ -30,7 +30,7 @@ const values = [
   { letter: "N", value: 1 },
   { letter: "O", value: 1 },
   { letter: "P", value: 3 },
-  { letter: "Q", value: 10 },
+  { letter: "Q", value: 9 },
   { letter: "R", value: 1 },
   { letter: "S", value: 1 },
   { letter: "T", value: 1 },
@@ -39,7 +39,7 @@ const values = [
   { letter: "W", value: 4 },
   { letter: "X", value: 8 },
   { letter: "Y", value: 4 },
-  { letter: "Z", value: 10 },
+  { letter: "Z", value: 9 },
 ];
 const target = document.querySelectorAll(".scrabble");
 
