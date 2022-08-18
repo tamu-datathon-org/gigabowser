@@ -167,10 +167,10 @@ main {
 @import "index.scss";
 
 /* Remove box shadow from tippy tooltips */
-.tippy-box[data-theme~="light"] {
-  box-shadow: 0 0.5rem 1rem rgba(#000, 0.05) !important;
-  padding: 0.25rem 0.5rem;
-}
+// .tippy-box[data-theme~="light"] {
+//   box-shadow: 0 0.5rem 1rem rgba(#000, 0.05) !important;
+//   padding: 0.25rem 0.5rem;
+// }
 
 // adjust modal z-index to always be above tooltip
 .modal {
