@@ -1,14 +1,14 @@
-$crossword-highlight-color-green: #7ffdd3;
+$crossword-highlight-color-green: #96fbea;
 $crossword-highlight-text-color-green: #000;
-$crossword-highlight-border-color-green: #00da91;
+$crossword-highlight-border-color-green: #07e2bd;
 
-$crossword-highlight-color-blue: #7fd3fd;
+$crossword-highlight-color-blue: #89dafa;
 $crossword-highlight-text-color-blue: #000;
-$crossword-highlight-border-color-blue: #24b6ff;
+$crossword-highlight-border-color-blue: #21c1ff;
 
-$crossword-highlight-color-red: rgb(255, 150, 150);
+$crossword-highlight-color-red: #fbea96;
 $crossword-highlight-text-color-red: #000;
-$crossword-highlight-border-color-red: rgb(255, 125, 125);
+$crossword-highlight-border-color-red: #f5db5c;
 
 #splash {
   display: flex;
@@ -71,117 +71,60 @@ $crossword-highlight-border-color-red: rgb(255, 125, 125);
 
 .ver {
   background-color: $crossword-highlight-color-green;
-  border-top: 1px solid $crossword-highlight-border-color-green !important;
-  border-bottom: 1px solid $crossword-highlight-border-color-green !important;
+  border: 1px solid $crossword-highlight-border-color-green !important;
   color: $crossword-highlight-text-color-green !important;
 }
 .hor {
   background-color: $crossword-highlight-color-blue;
-  border-left: 1px solid $crossword-highlight-border-color-blue !important;
-  border-right: 1px solid $crossword-highlight-border-color-blue !important;
+  border: 1px solid $crossword-highlight-border-color-blue !important;
   color: $crossword-highlight-text-color-blue !important;
-}
-.ver.hor {
-  border-top: 1px solid $crossword-highlight-border-color-blue !important;
-  border-bottom: 1px solid $crossword-highlight-border-color-blue !important;
-  background-color: rgb(255, 150, 150);
-}
-.top {
-  border-top: 1px solid $crossword-highlight-border-color-green !important;
-}
-.bottom {
-  border-bottom: 1px solid $crossword-highlight-border-color-green !important;
-}
-.left {
-  border-left: 1px solid $crossword-highlight-border-color-green !important;
-}
-.right {
-  border-right: 1px solid $crossword-highlight-border-color-green !important;
 }
 
 .mini-square.title.ver {
   background-color: $crossword-highlight-color-green;
-  border-top: 1px solid $crossword-highlight-border-color-green !important;
-  border-bottom: 1px solid $crossword-highlight-border-color-green !important;
+  border: 1px solid $crossword-highlight-border-color-green !important;
   color: $crossword-highlight-text-color-green !important;
 }
 .mini-square.title.hor {
   background-color: $crossword-highlight-color-blue;
-  border-left: 1px solid $crossword-highlight-border-color-blue !important;
-  border-right: 1px solid $crossword-highlight-border-color-blue !important;
+  border: 1px solid $crossword-highlight-border-color-blue !important;
   color: $crossword-highlight-text-color-blue !important;
-}
-.mini-square.title.ver.hor {
-  border-top: 1px solid $crossword-highlight-border-color-blue !important;
-  border-bottom: 1px solid $crossword-highlight-border-color-blue !important;
-  background-color: rgb(255, 150, 150);
-}
-.mini-square.title.top {
-  border-top: 1px solid $crossword-highlight-border-color-green !important;
-}
-.mini-square.title.bottom {
-  border-bottom: 1px solid $crossword-highlight-border-color-green !important;
-}
-.mini-square.title.left {
-  border-left: 1px solid $crossword-highlight-border-color-green !important;
-}
-.mini-square.title.right {
-  border-right: 1px solid $crossword-highlight-border-color-green !important;
 }
 
 .mini-square.ver {
   background-color: $crossword-highlight-color-red;
-  border-top: 1px solid $crossword-highlight-border-color-red !important;
-  border-bottom: 1px solid $crossword-highlight-border-color-red !important;
+  border: 1px solid $crossword-highlight-border-color-red !important;
   color: $crossword-highlight-text-color-red !important;
 }
 .mini-square.hor {
   background-color: $crossword-highlight-color-red;
-  border-left: 1px solid $crossword-highlight-border-color-red !important;
-  border-right: 1px solid $crossword-highlight-border-color-red !important;
+  border: 1px solid $crossword-highlight-border-color-red !important;
   color: $crossword-highlight-text-color-red !important;
 }
 
 .mini-square.ver.green {
   background-color: $crossword-highlight-color-green;
-  border-top: 1px solid $crossword-highlight-border-color-green !important;
-  border-bottom: 1px solid $crossword-highlight-border-color-green !important;
+  border: 1px solid $crossword-highlight-border-color-green !important;
   color: $crossword-highlight-text-color-green !important;
 }
 .mini-square.hor.green {
   background-color: $crossword-highlight-color-blue;
-  border-left: 1px solid $crossword-highlight-border-color-blue !important;
-  border-right: 1px solid $crossword-highlight-border-color-blue !important;
+  border: 1px solid $crossword-highlight-border-color-blue !important;
   color: $crossword-highlight-text-color-blue !important;
 }
 .mini-square.ver.blue {
   background-color: $crossword-highlight-color-blue;
-  border-top: 1px solid $crossword-highlight-border-color-blue !important;
-  border-bottom: 1px solid $crossword-highlight-border-color-blue !important;
+  border: 1px solid $crossword-highlight-border-color-blue !important;
   color: $crossword-highlight-text-color-blue !important;
 }
 .mini-square.hor.blue {
   background-color: $crossword-highlight-color-blue;
-  border-left: 1px solid $crossword-highlight-border-color-blue !important;
-  border-right: 1px solid $crossword-highlight-border-color-blue !important;
+  border: 1px solid $crossword-highlight-border-color-blue !important;
   color: $crossword-highlight-text-color-blue !important;
 }
 
-.mini-square.top {
-  border-top: 1px solid $crossword-highlight-border-color-red !important;
-}
-.mini-square.bottom {
-  border-bottom: 1px solid $crossword-highlight-border-color-red !important;
-}
-.mini-square.left {
-  border-left: 1px solid $crossword-highlight-border-color-red !important;
-}
-.mini-square.right {
-  border-right: 1px solid $crossword-highlight-border-color-red !important;
-}
-
 .random:hover {
-  background-color: rgb(255, 255, 150);
+  background-color: #fbea96bd;
 }
 
 /* Phone Screen */

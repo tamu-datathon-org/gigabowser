@@ -2,6 +2,7 @@
   width: 100vw;
   height: 350px;
   overflow: hidden;
+  padding: 0px;
 
   //background: linear-gradient(to bottom, #020111 60%,#20202c 100%);
   background-color: #4C3A51;
@@ -304,8 +305,8 @@
       height: 100px;
       position: absolute;
       align-self: center;
-      top: 35%;
-      right: 40%;
+      top: 25%;
+      left: 30%;
       transform: translate(50%,0);
     }
 
@@ -315,7 +316,7 @@
       display: flex;
       align-self: center;
       justify-content: center;
-      top: 20%;
+      top: 14%;
       right: 90%;
       transform: translate(50%,0);
     }
@@ -336,15 +337,15 @@
     .TextBox{
       color: white;
       text-align: left;
-      position: absolute;
-      top: 20%;
-      right: 70%;
-      transform: translate(50%,0);
       font-size: 1.2rem;
       font-weight: 600;
       color: #B25068;
       // text-shadow: 2px 2px 2px #774360;
        z-index: 1;
+       width: 375px;
+       transform: none;
+       top: 14%;
+       left: 15%;
     }
 
   }
