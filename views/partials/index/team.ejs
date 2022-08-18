@@ -34,14 +34,14 @@
         <div class="clue-card-back">
           <div class="suspect">
             <span class="title">Suspect:</span>
-            <span><%- member.name %></span>
+            <span class="memberName"><%- member.name %></span>
           </div>
           <div class="weapon" style="background-color: <%- member.color %>">
             <img src="/static/img/graphics/clue/<%- member.weapon %>.webp" />
           </div>
           <div>
             <span class="subtitle">Fun Fact: </span>
-            <span style="font-size: small;"><%- member.fact %></span>
+            <span class="memberFact"><%- member.fact %></span>
           </div>
           <div class="words">
             <% member.words.split(' ').map(word => { %>

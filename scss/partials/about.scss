@@ -529,31 +529,64 @@ overflow: hidden;
 
 @media screen and (max-width: 440px){
   #about.section{
-    .about__text{
-      height: 300px;
-      width: 300px;
+    
+
+    .about__text {
+      position:relative;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      line-height: 1.5;
+      line-break: normal;
+      line-clamp: 2;
+      //width: 200px;
+      padding-top: 40%;
+      margin-bottom: 100px;
       text-align: center;
+      align-self: center;
+      z-index: 4;
+      //transform: translate(-35%,0);
     }
-    .about__background{
+
+
+    .about__text-subtitle {
+      height: 200px;
+      width: 200px
+
+    }
+
+    .about__text-text {
+      height: 200px;
+      width: 200px
+
+    }
+
+    .content{
+      z-index: 4;
+    }
+
+    .about-content {
+      display: block;
+    }
+
+    .background__container{
+      z-index: 0;
+    }
+
+    .about__background {
       position: absolute;
       //background-color: white;
-      justify-self: center; 
-      display:flex;
+      justify-self: center;
+      display: flex;
       justify-content: center;
       align-items: center;
       top: 200%;
       left: 60%;
       z-index: 0;
     }
-  
-    .background__container {
-      top: 100%;
-    }
 
-    .jenga-real-location-div{
-      padding-bottom: 60%;
-      padding-left: 17%;
-    }
     
   }
 }

@@ -193,7 +193,7 @@
         background-color: white;
         transform: rotateY(180deg);
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-direction: column;
         padding: 5px;
         align-items: center;
@@ -255,5 +255,95 @@
       border-radius: $clue-card-border-radius;
       pointer-events: none;
     }
+
+    @media screen and (min-width: 414px) and (max-width: 554px) {
+      .clue-card-content {
+        width: 148px !important;
+        height: 222px !important;
+      }
+      .clue-card {
+        width: 148px !important;
+        height: 222px !important;
+      }
+      .clue-card-border {
+        width: 148px !important;
+        height: 222px !important;
+      }
+      .team-content {
+        padding: 0px;
+      }
+      .words {
+        display: none !important;
+      }
+      .title {
+        font-size: 1.1rem !important;
+      }
+      .memberName {
+        font-size: 1rem !important;
+      }
+      .subtitle {
+        font-size: 1rem !important;
+      }
+      .memberFact {
+        font-size: 0.8rem !important;
+        line-height: 13px;
+        display: block;
+      }
+      .name {
+        font-size: 1rem !important;
+      }
+      .position {
+        font-size: 0.8rem !important;
+      }
+      .suspect {
+        margin: 0px !important;
+      }
+    }
+
+    @media screen and (min-width: 370px) and (max-width: 413px) {
+      .clue-card-content {
+        width: 125px !important;
+        height: 188px !important;
+      }
+      .clue-card {
+        width: 125px;
+        height: 188px !important;
+      }
+      .clue-card-border {
+        width: 125px;
+        height: 188px !important;
+      }
+      .team-content {
+        padding: 0px;
+      }
+      .words {
+        display: none !important;
+      }
+      .title {
+        font-size: 1rem !important;
+      }
+      .memberName {
+        font-size: 0.9rem !important;
+      }
+      .subtitle {
+        font-size: 0.9rem !important;
+      }
+      .memberFact {
+        font-size: 0.6rem !important;
+        line-height: 10px;
+        display: block;
+      }
+      .name {
+        font-size: 0.8rem !important;
+      }
+      .position {
+        font-size: 0.6rem !important;
+      }
+      .suspect {
+        margin: 0px !important;
+      }
+    }
+
   }
+
 }
