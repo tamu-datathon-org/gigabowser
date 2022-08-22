@@ -149,7 +149,7 @@ overflow: hidden;
     font-size: var(--medium-font-size);
     line-height: 1.5;
     font-weight: 400;
-    padding: 5px;
+    padding-top: 5px;
     margin: 0px;
   }
 
@@ -542,8 +542,7 @@ overflow: hidden;
       line-break: normal;
       line-clamp: 2;
       //width: 200px;
-      padding-top: 40%;
-      margin-bottom: 100px;
+      padding-top: 10%;
       text-align: center;
       align-self: center;
       z-index: 4;
@@ -553,13 +552,13 @@ overflow: hidden;
 
     .about__text-subtitle {
       height: 200px;
-      width: 200px
+      width: 330px
 
     }
 
     .about__text-text {
       height: 200px;
-      width: 200px
+      width: 330px
 
     }
 
@@ -640,7 +639,7 @@ overflow: hidden;
     --jenga-height: 142px;
     --jenga-width: 142px;
     --biggest-font-size: 3.5rem;
-    --medium-font-size: 1.15rem;
+    --medium-font-size: 1.2rem;
     --small-font-size: 0.95rem;
     --smaller-font-size: 0.75rem;
   

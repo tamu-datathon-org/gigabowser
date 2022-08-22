@@ -41,3 +41,5 @@ hoverByClass("challenges-hover","#f5db5c");
 hoverByClass("schedule-hover","#f5db5c");
 // hoverByClass("events-hover","#f5db5c");
 hoverByClass("apply-hover","#f5db5c");
+hoverByClass("faq-hover","#f5db5c");
+hoverByClass("sponsors-hover","#f5db5c");
