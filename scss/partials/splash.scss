@@ -130,6 +130,9 @@ $crossword-highlight-border-color-red: #f5db5c;
 /* Phone Screen */
 
 @media (max-width: 623px) {
+  #mlh-trust-badge {
+    right: 30px !important;
+  }
   .square {
     width: calc(100vw/6);
     height: calc(100vw/6);
