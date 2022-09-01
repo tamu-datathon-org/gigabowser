@@ -1,11 +1,11 @@
 {
     "rewrites": [
         { "source": "/challenges(.*)", "destination": "https://challenges-ochre.vercel.app/challenges$1" },
-        { "source": "/projects(.*)", "destination": "https://tamu-datathon-org.github.io/expo$1" },
+        { "source": "/projects(.*)", "destination": "https://tamu-datathon-org.github.io/expo$1" }
     ],
     "redirects": [
         { "source": "/join", "destination": "https://bit.ly/JoinTDTeam", "permanent": false },
         { "source": "/discord", "destination": "https://tamudatathon.com/guild", "permanent": false },
-        { "source": "/guild", "destination": "https://tamudatathon.com/guild", "permanent": false },
+        { "source": "/guild", "destination": "https://tamudatathon.com/guild", "permanent": false }
     ]
 }
