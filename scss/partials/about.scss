@@ -47,7 +47,8 @@ overflow: hidden;
   --z-background: 1;
  
   background-color: var(--about-page-background); // change based on section theme
-  
+  border-top: 9px solid #ffb973;
+
     *{
     box-sizing: border-box;
     padding: 0;
