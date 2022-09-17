@@ -29,6 +29,7 @@
 
   .sponsor-img {
     padding: 2em;
+    margin: 10px;
   }
 
   .sponsor-img {
@@ -43,8 +44,8 @@
     transition-property: transform;
   }
   .sponsor-img:hover, .sponsor-img:focus, .sponsor-img:active {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
   }
 
   .sponsor-images .xl {
