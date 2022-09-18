@@ -8,7 +8,6 @@ $splash-light-purple: #7c408a;
   top: 0;
 
   .navbar-nav {
-    font-family: "Space Grotesk", monospace !important;
     font-size: 1.25em !important;
     z-index: 1000;
   }
@@ -16,14 +15,15 @@ $splash-light-purple: #7c408a;
   .nav-link {
     padding: 1rem 1rem !important;
     transition: color 0.25s ease;
+    color: #404040 !important;
   }
   .nav-link:hover {
-    color: #58ffb4 !important;
-    box-shadow: 0 0.125rem white;
+    color: #8e6a5d !important;
+    box-shadow: 0 0.125rem #8e6a5d;
     transition: box-shadow 0.5s ease-out;
   }
   .nav-link:focus {
-    color: #58ffb4 !important;
+    color: #8e6a5d !important;
   }
 }
 
