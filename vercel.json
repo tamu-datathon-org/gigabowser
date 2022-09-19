@@ -1,7 +1,8 @@
 {
     "rewrites": [
         { "source": "/challenges(.*)", "destination": "https://challenges-ochre.vercel.app/challenges$1" },
-        { "source": "/projects(.*)", "destination": "https://tamu-datathon-org.github.io/expo$1" }
+        { "source": "/projects(.*)", "destination": "https://tamu-datathon-org.github.io/expo$1" },
+        { "source": "/(.*)", "destination": "/$1" }
     ],
     "redirects": [
         { "source": "/join", "destination": "https://bit.ly/JoinTDTeam", "permanent": false },
