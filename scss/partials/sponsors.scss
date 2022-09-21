@@ -73,6 +73,11 @@
     object-fit: contain;
   }
 
+  .partners-title {
+    font-size: 2em;
+    font-weight: 500;
+  }
+
   @media (min-width: 576px) {
     .sponsor-images {
       display: flex;

@@ -11,5 +11,15 @@
       </a>
       <% } %>
     </div>
+    <div class="partners-title">
+      Our Partners:
+    </div>
+    <div class="sponsor-images">
+      <% for (let currentPartner of req.currentPartners) {  %>
+      <a href="<%= currentPartner.url %>" target="_blank">
+        <img class="sponsor-img <%= currentPartner.variant %>" src="<%= currentPartner.img %>" alt="<%= currentPartner.name %>"></img>
+      </a>
+      <% } %>
+    </div>
   </div>
 </div>
