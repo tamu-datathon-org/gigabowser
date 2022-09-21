@@ -1,5 +1,6 @@
 #sponsors.section {
   background-color: rgb(244,185,193); // change based on section theme
+  border-top: 9px solid #ff8d9c;
 }
 
 .sponsor-us {
@@ -29,6 +30,7 @@
 
   .sponsor-img {
     padding: 2em;
+    margin: 10px;
   }
 
   .sponsor-img {
@@ -43,8 +45,8 @@
     transition-property: transform;
   }
   .sponsor-img:hover, .sponsor-img:focus, .sponsor-img:active {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
   }
 
   .sponsor-images .xl {
@@ -69,6 +71,11 @@
     width: 18.75rem;
     max-height: 12.5rem;
     object-fit: contain;
+  }
+
+  .partners-title {
+    font-size: 2em;
+    font-weight: 500;
   }
 
   @media (min-width: 576px) {

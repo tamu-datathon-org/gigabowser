@@ -13,33 +13,38 @@ class Splash extends Section {
 
 // put interaction based code under here (button clicks, hover event, etc)
 
-allLetterChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+function getTimeRemaining() {
+  const endtime = new Date("Oct 8, 2022 10:00:00");
+  const total = Date.parse(endtime) - Date.parse(new Date());
+  const seconds = Math.floor((total / 1000) % 60);
+  const minutes = Math.floor((total / 1000 / 60) % 60);
+  const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
+  const days = Math.floor(total / (1000 * 60 * 60 * 24));
 
-let randomSquares = document.getElementsByClassName("random");
-for (let i = 0; i < randomSquares.length; i++) {
-  let randomLetter = allLetterChars[Math.floor(Math.random() * allLetterChars.length)];
-  randomSquares[i].innerHTML = randomLetter;
+  return {
+    total,
+    days,
+    hours,
+    minutes,
+    seconds
+  };
 }
 
-function hoverByClass(classname,colorover){
-	var elms=document.getElementsByClassName(classname);
-  var original_color = elms[0].style.backgroundColor;
-	for(var i=0;i<elms.length;i++){
-		elms[i].onmouseover = function(){
-			for(var k=0;k<elms.length;k++){
-				elms[k].style.backgroundColor=colorover;
-			}
-		};
-		elms[i].onmouseout = function(){
-			for(var k=0;k<elms.length;k++){
-				elms[k].style.backgroundColor=original_color;
-			}
-		};
-	}
+function initializeClock(id, endtime) {
+  const clock = document.getElementById(id);
+
+  function updateClock() {
+    const t = getTimeRemaining();
+
+    clock.innerHTML = t.days + ":" + ("0" + t.hours).slice(-2) + ":" + ("0" + t.minutes).slice(-2) + ":" + ("0" + t.seconds).slice(-2);
+
+    if (t.total <= 0) {
+      clearInterval(timeinterval);
+    }
+  }
+
+  updateClock();
+  const timeinterval = setInterval(updateClock, 1000);
 }
-hoverByClass("challenges-hover","#f5db5c");
-hoverByClass("schedule-hover","#f5db5c");
-// hoverByClass("events-hover","#f5db5c");
-hoverByClass("apply-hover","#f5db5c");
-hoverByClass("faq-hover","#f5db5c");
-hoverByClass("sponsors-hover","#f5db5c");
+
+initializeClock("clockdiv");

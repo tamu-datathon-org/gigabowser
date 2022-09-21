@@ -5,7 +5,7 @@
   // width: vw;
   // background-color: #DE7E5D; // change based on section theme
   // background-image: linear-gradient(to bottom right, #ec997e, #fa6622);
-  background-color: #FFC785;
+  background-color: #FFDBAA;
 
   h2 {
     // font-weight: bold;
@@ -21,7 +21,7 @@
   }
 
   .td-container {
-    height: 950px;
+    height: 730px;
     margin: auto;
     // max-width: unquote("max(70rem, 83.3333333%)") !important;
     width: 100%;
@@ -46,7 +46,8 @@
     text-align: center;
     position: relative;
     // height: 33%;
-    padding: 10px;
+    padding: 0px 10px;
+    // font-family: "Work Sans";
   }
 
   // images that exist in the columns
@@ -385,8 +386,11 @@
   }
 
   @media screen and (min-width: 1000px) {
+    .infoColumn {
+      padding: 50px 10px;
+    }
     .td-container {
-      height: 890px;
+      height: 700px;
     }
     .three-cols {
       height: 23%;

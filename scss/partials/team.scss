@@ -15,9 +15,9 @@
 
 #team.section {
   background-color: #dfbbed; // change based on section theme
+  border-top: 9px solid #da7dff;
 
   $clue-bg-color: white;
-  $clue-card-border-color: black;
   $clue-card-bg-color: rgb(11, 11, 53);
   $clue-card-bg-color-2: rgb(32, 32, 58);
   $clue-card-bg-color-3: rgb(40, 58, 109);
@@ -99,15 +99,15 @@
           .clue-card-name {
             z-index: 200;
             width: 110%;
-            height: 20%;
+            height: 16%;
+            line-height: 1.3;
             left: calc(calc(0.1 * #{$clue-card-width}) / -2);
-            bottom: 10%;
+            bottom: 11%;
             position: absolute;
             display: flex;
             justify-content: center;
             align-items: center;
             background-color: $clue-card-name-color;
-            transform: rotateZ(350deg);
             transition: all 0.5s ease-in-out; // transition timing
             flex-direction: column;
             .name {
@@ -122,11 +122,11 @@
 
           .clue-card-photo {
             z-index: 195;
-            position: absolute;
+            //position: absolute;
             height: 80%;
             width: 100%;
             left: 0;
-            bottom: -250px;
+            //bottom: -250px;
             transition: all 0.5s ease-in-out;
             object-fit: cover;
             border-radius: $clue-card-border-radius;
@@ -134,19 +134,13 @@
         }
 
         .social {
-          width: 15%;
           padding: 0;
-          margin: 0;
-          background-color: black;
-          position: absolute;
-          bottom: -$clue-card-height;
-          right: 0;
-          transition: all 0.6s ease-in-out;
+          margin: 30px 0 0 0;
+          position: relative;
           display: flex;
-          flex-direction: column;
-          justify-content: space-around;
+          flex-direction: row;
+          justify-content: center;
           z-index: 300;
-          border-top-left-radius: $clue-card-border-radius;
           overflow: hidden;
 
           * {
@@ -154,7 +148,7 @@
           }
 
           i {
-            color: white;
+            color: black;
           }
 
           li {
@@ -165,26 +159,8 @@
               justify-content: center;
               align-items: center;
               pointer-events: auto;
+              text-decoration: none !important;
             }
-            &:hover {
-              background-color: rgb(49, 49, 49);
-            }
-          }
-        }
-
-        &:hover {
-          .clue-card-image {
-            transition-timing-function: cubic-bezier(0,1,0,1);
-            opacity: 0;
-          }
-          .clue-card-name {
-            transform: translateY(calc(#{$clue-card-height} * -0.68)) rotateZ(0deg);
-          }
-          .clue-card-photo {
-            bottom: 0;
-          }
-          .social {
-            bottom: 0;
           }
         }
       }
@@ -240,20 +216,38 @@
       }
     }
 
-    .clue-card-shadow {
-      -webkit-box-shadow: 0px 0px $clue-card-shadow-depth 0px rgba(0, 0, 0, 0.5);
-      -moz-box-shadow:    0px 0px $clue-card-shadow-depth 0px rgba(0, 0, 0, 0.5);
-      box-shadow:         0px 0px $clue-card-shadow-depth 0px rgba(0, 0, 0, 0.5);
+    .clue-card:hover {
+      -webkit-transform: rotate3d(0, -1, 0, 10deg);
+              transform: rotate3d(0, -1, 0, 10deg);
+      -webkit-transition: -webkit-transform 0.2s ease;
+              transition: -webkit-transform 0.2s ease;
+      transition: transform 0.2s ease;
+      transition: transform 0.2s ease, -webkit-transform 0.2s ease;
     }
 
-    .clue-card-border {
-      position: relative;
-      width: $clue-card-width;
-      height: $clue-card-height;
-      z-index: 50;
-      border: $clue-card-border-width solid $clue-card-border-color;
-      border-radius: $clue-card-border-radius;
-      pointer-events: none;
+    .clue-card-shadow {
+      -webkit-box-shadow:         0px 0px $clue-card-shadow-depth 0px rgba(0, 0, 0, 0.5);
+              box-shadow:         0px 0px $clue-card-shadow-depth 0px rgba(0, 0, 0, 0.5);
+    }
+
+    .clue-card-shadow::after {
+      content: '';
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      opacity: 0;
+      -webkit-box-shadow: -3px 0px 10px 0px rgba(0, 0, 0, 0.33);
+              box-shadow: -3px 0px 10px 0px rgba(0, 0, 0, 0.33);
+      -webkit-transition: opacity 0.2s ease;
+              transition: opacity 0.2s ease;
+      border-radius:6px;
+    }
+
+    .clue-card-shadow:hover::after {
+      position: absolute;
+      opacity: 1;
     }
 
     @media screen and (min-width: 414px) and (max-width: 554px) {
@@ -298,6 +292,12 @@
       .suspect {
         margin: 0px !important;
       }
+      .social {
+        display: none !important;
+      }
+      .clue-card-name {
+        bottom: 7% !important;
+      }
     }
 
     @media screen and (min-width: 370px) and (max-width: 413px) {
@@ -341,6 +341,12 @@
       }
       .suspect {
         margin: 0px !important;
+      }
+      .social {
+        display: none !important;
+      }
+      .clue-card-name {
+        bottom: 7% !important;
       }
     }
 
