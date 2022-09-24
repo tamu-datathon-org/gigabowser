@@ -1,0 +1,58 @@
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+<style>
+    body {
+        background-color: #FFDBAA;
+    }
+    .livestream-timer {
+        width:100%;
+    }
+    .livestream-timer-time {
+      position: absolute;
+      font-size: 13.5vw;
+      font-family: 'Courier Prime', monospace;
+      transform: rotateX(0deg) rotateY(-35deg) rotateZ(3deg) translateX(-1%) translateY(152%);
+      color: #404040;
+    }
+</style>
+<div>
+    <div class="livestream-timer-time" id="clockdiv"></div>
+    <img class="livestream-timer" src="../static/img/backgrounds/timer.svg">
+</div>
+<script>
+    function getTimeRemaining() {
+      const endtime = new Date("Oct 8, 2022 10:00:00");
+      const total = Date.parse(endtime) - Date.parse(new Date());
+      const seconds = Math.floor((total / 1000) % 60);
+      const minutes = Math.floor((total / 1000 / 60) % 60);
+      const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
+      const days = Math.floor(total / (1000 * 60 * 60 * 24));
+      return {
+        total,
+        days,
+        hours,
+        minutes,
+        seconds
+      };
+    }
+    
+    function initializeClock(id) {
+      const clock = document.getElementById(id);
+    
+      function updateClock() {
+        const t = getTimeRemaining();
+    
+        clock.innerHTML = t.days + ":" + ("0" + t.hours).slice(-2) + ":" + ("0" + t.minutes).slice(-2) + ":" + ("0" + t.seconds).slice(-2);
+    
+        if (t.total <= 0) {
+          clearInterval(timeinterval);
+        }
+      }
+    
+      updateClock();
+      const timeinterval = setInterval(updateClock, 1000);
+    }
+    
+    initializeClock("clockdiv");
+    </script>
