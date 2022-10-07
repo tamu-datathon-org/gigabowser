@@ -36,7 +36,7 @@ function initializeClock(id, endtime) {
   function updateClock() {
     const t = getTimeRemaining();
 
-    clock.innerHTML = t.days + ":" + ("0" + t.hours).slice(-2) + ":" + ("0" + t.minutes).slice(-2) + ":" + ("0" + t.seconds).slice(-2);
+    clock.innerHTML = ("0" + t.days).slice(-2) + ":" + ("0" + t.hours).slice(-2) + ":" + ("0" + t.minutes).slice(-2) + ":" + ("0" + t.seconds).slice(-2);
 
     if (t.total <= 0) {
       clearInterval(timeinterval);
