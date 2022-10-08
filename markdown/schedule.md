@@ -52,8 +52,8 @@ b {
         </div>
         <div class="d-flex flex-row pb-3" style = "margin-bottom: 10px">
           <div class="left px-3"><img src="/static/img/graphics/pawn_pink.svg" style="width:100%;"></img></div>
-          <div class="mid px-3 d-none d-md-block">10:00 AM</div>
-          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">10:00 AM</small><a href="/events/activities/opening_ceremony2022"><b>Opening Ceremony</b></a></br><small class="text-muted d-block">MSC 2300</small></div>
+          <div class="mid px-3 d-none d-md-block">10:15 AM</div>
+          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">10:15 AM</small><a href="/events/activities/opening_ceremony2022"><b>Opening Ceremony</b></a></br><small class="text-muted d-block">MSC 2300</small></div>
           <div class="mx-3"></div>
         </div>
         <div class="d-flex flex-row pb-3" style = "margin-bottom: 10px" style = "margin-bottom: 10px">
