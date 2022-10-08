@@ -101,7 +101,7 @@ b {
         <div class="d-flex flex-row pb-3" style = "margin-bottom: 10px">
           <div class="left px-3"><img src="/static/img/graphics/pawn_blue.svg" style="width:100%;"></img></div>
           <div class="mid px-3 d-none d-md-block">8:00 PM</div>
-          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">8:00 PM</small><b>Snyk MLH Event</b><br/><small class="text-muted d-block"></small></a></div>
+          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">8:00 PM</small><b>Snyk Cybersecurity Challenge</b><br/><small class="text-muted d-block">MSC 2300</small></a></div>
           <div class="mx-3"></div>
         </div>
         <div class="d-flex flex-row pb-3" style = "margin-bottom: 10px;">
