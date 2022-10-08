@@ -53,7 +53,7 @@ b {
         <div class="d-flex flex-row pb-3" style = "margin-bottom: 10px">
           <div class="left px-3"><img src="/static/img/graphics/pawn_pink.svg" style="width:100%;"></img></div>
           <div class="mid px-3 d-none d-md-block">10:00 AM</div>
-          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">10:00 AM</small><b>Opening Ceremony</b></br><small class="text-muted d-block">MSC 2300</small></div>
+          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">10:00 AM</small><a href="/events/activities/opening_ceremony2022"><b>Opening Ceremony</b></a></br><small class="text-muted d-block">MSC 2300</small></div>
           <div class="mx-3"></div>
         </div>
         <div class="d-flex flex-row pb-3" style = "margin-bottom: 10px" style = "margin-bottom: 10px">
@@ -65,31 +65,31 @@ b {
         <div class="d-flex flex-row pb-3" style = "margin-bottom: 10px">
           <div class="left px-3"><img src="/static/img/graphics/pawn_green.svg" style="width:100%;"></img></div>
           <div class="mid px-3 d-none d-md-block">1:00 PM</div>
-          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">1:00 PM</small><b>GM Workshop</b></br><small class="text-muted d-block">MSC 2400</small></br><b>BH Beginner Workshop</b></br><small class="text-muted d-block">MSC 2406</small></div>  
+          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">1:00 PM</small><a href="/events/activities/gm_workshop2022"><b>Data Science at GM</b></a></br><small class="text-muted d-block">MSC 2400</small></br><a href="events/activities/bh_beginer2022"><b>Basics of Data Science</b></a></br><small class="text-muted d-block">MSC 2406</small></div>  
           <div class="mx-3"></div>
         </div>
         <div class="d-flex flex-row pb-3" style = "margin-bottom: 10px">
           <div class="left px-3"><img src="/static/img/graphics/pawn_green.svg" style="width:100%;"></img></div>
           <div class="mid px-3 d-none d-md-block">2:00 PM</div>
-          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">2:00 PM</small><b>Data Analytics Workshop</b></br><small class="text-muted d-block">MSC 2400</small></br><b>BH Second Workshop</b><small class="text-muted d-block">MSC 2406</small></div>
+          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">2:00 PM</small><a href="/events/activities/data_analytics2022"><b>Intro to Pandas & More</b></a></br><small class="text-muted d-block">MSC 2400</small></br><a href="events/activities/bh_second2022"><b>Real Time Data Ingestion</b></a><small class="text-muted d-block">MSC 2406</small></div>
           <div class="mx-3"></div>
         </div>
         <div class="d-flex flex-row pb-3" style = "margin-bottom: 10px">
           <div class="left px-3"><img src="/static/img/graphics/pawn_green.svg" style="width:100%;"></img></div>
           <div class="mid px-3 d-none d-md-block">3:00 PM</div>
-          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">3:00 PM</small><b>CBRE Workshop</b></br><small class="text-muted d-block">MSC 2400</small></br><b>Splunk Workshop</b></br><small class="text-muted d-block">MSC 2406</small></div>
+          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">3:00 PM</small><a href="events/activities/cbre_workshop2022"><b>Coefficients and Biases</b></a></br><small class="text-muted d-block">MSC 2400</small></br><a href="events/activities/splunk_workshop2022"><b>Splunk Workshop</b></a></br><small class="text-muted d-block">MSC 2406</small></div>
           <div class="mx-3"></div>
         </div>
         <div class="d-flex flex-row pb-3" style = "margin-bottom: 10px">
           <div class="left px-3"><img src="/static/img/graphics/pawn_green.svg" style="width:100%;"></img></div>
           <div class="mid px-3 d-none d-md-block">4:00 PM</div>
-          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">4:00 PM</small><b>Josiah Workshop</b></br><small class="text-muted d-block">MSC 2400</small></br><b>Celonis Workshop</b></br><small class="text-muted d-block">MSC 2406</small></div>
+          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">4:00 PM</small><a href="events/activities/streamlit_workshop2022"><b>Data Wrangling</b></a></br><small class="text-muted d-block">MSC 2400</small></br><a href="events/activities/celonis_workshop2022"><b>Celonis Workshop</b></a></br><small class="text-muted d-block">MSC 2406</small></div>
           <div class="mx-3"></div>
         </div>
         <div class="d-flex flex-row pb-3" style = "margin-bottom: 10px">
           <div class="left px-3"><img src="/static/img/graphics/pawn_blue.svg" style="width:100%;"></img></div>
           <div class="mid px-3 d-none d-md-block">5:00 PM</div>
-          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">5:00 PM</small><b>Smash Tournament</b></br><small class="text-muted d-block">MSC 2406</small></a></div>
+          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">5:00 PM</small><a href="https://www.start.gg/tournament/datathon-smash-tourney/"><b>Smash Tournament</b></a></br><small class="text-muted d-block">MSC 2406</small></a></div>
           <div class="mx-3"></div>
         </div>
         <div class="d-flex flex-row pb-3" style = "margin-bottom: 10px">
@@ -158,7 +158,7 @@ b {
         <div class="d-flex flex-row pb-3" style = "margin-bottom: 10px">
           <div class="left px-3"><img src="/static/img/graphics/pawn_pink.svg" style="width:100%;"></img></div>
           <div class="mid px-3 d-none d-md-block">3:30 PM</div>
-          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">3:30 PM</small><b>Closing Ceremony</b></br><small class="text-muted d-block"></small></div>
+          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">3:30 PM</small><a href="/events/activities/closing_ceremony2022"><b>Closing Ceremony</b></a></br><small class="text-muted d-block"></small></div>
           <div class="mx-3"></div>
         </div>
       </div>
