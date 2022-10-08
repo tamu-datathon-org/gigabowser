@@ -77,7 +77,7 @@ b {
         <div class="d-flex flex-row pb-3" style = "margin-bottom: 10px">
           <div class="left px-3"><img src="/static/img/graphics/pawn_green.svg" style="width:100%;"></img></div>
           <div class="mid px-3 d-none d-md-block">3:00 PM</div>
-          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">3:00 PM</small><a href="events/activities/cbre_workshop2022"><b>Coefficients and Biases</b></a></br><small class="text-muted d-block">MSC 2400</small></br><a href="events/activities/splunk_workshop2022"><b>Splunk Workshop</b></a></br><small class="text-muted d-block">MSC 2406</small></div>
+          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">3:00 PM</small><a href="events/activities/cbre_workshop2022"><b>Coefficients and Biases</b></a></br><small class="text-muted d-block">MSC 2400</small></div>
           <div class="mx-3"></div>
         </div>
         <div class="d-flex flex-row pb-3" style = "margin-bottom: 10px">
