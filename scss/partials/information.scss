@@ -21,7 +21,7 @@
   }
 
   .td-container {
-    height: 730px;
+    height: 750px;
     margin: auto;
     // max-width: unquote("max(70rem, 83.3333333%)") !important;
     width: 100%;
@@ -414,6 +414,18 @@
     //holds address, map embed, and parking information (for overriding infoColumn)
     #mapHolderiFrame {
       width: 69%;
+    }
+  }
+
+  @media screen and (max-width: 370px) {
+    .td-container {
+      height: 780px;
+    }
+  }
+
+  @media screen and (max-width: 289px) {
+    .td-container {
+      height: 820px;
     }
   }
 }
