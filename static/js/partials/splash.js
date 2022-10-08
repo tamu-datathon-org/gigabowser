@@ -14,7 +14,7 @@ class Splash extends Section {
 // put interaction based code under here (button clicks, hover event, etc)
 
 function getTimeRemaining() {
-  const endtime = new Date("Oct 8, 2022 10:00:00");
+  const endtime = new Date("Oct 8, 2022 10:15:00");
   const total = Date.parse(endtime) - Date.parse(new Date());
   const seconds = Math.floor((total / 1000) % 60);
   const minutes = Math.floor((total / 1000 / 60) % 60);
