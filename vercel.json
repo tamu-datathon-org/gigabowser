@@ -1,6 +1,6 @@
 {
     "rewrites": [
-        { "source": "/challenges(.*)", "destination": "https://challenges-ochre.vercel.app/challenges$1" },
+        { "source": "/challenges(.*)", "destination": "https://2021-challenges-ochre.vercel.app/challenges$1" },
         { "source": "/projects(.*)", "destination": "https://tamu-datathon-org.github.io/expo$1" },
         { "source": "/(.*)", "destination": "/$1" }
     ],
