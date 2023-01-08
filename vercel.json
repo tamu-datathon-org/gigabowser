@@ -1,5 +1,6 @@
 {
     "rewrites" : [
-        { "source": "/challenges(.*)", "destination": "https://challenges-ochre.vercel.app/challenges$1" }
+        { "source": "/challenges(.*)", "destination": "https://2022-challenges-ochre.vercel.app/challenges$1" },
+        { "source": "/events(.*)", "destination": "https://portal-ivory.vercel.app/events$1" }
     ]
 }
