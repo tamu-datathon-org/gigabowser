@@ -1,5 +1,6 @@
 {
     "rewrites" : [
-        { "source": "/challenges(.*)", "destination": "https://challenges-ochre.vercel.app/challenges$1" }
+        { "source": "/challenges(.*)", "destination": "https://challenges-ochre.vercel.app/challenges$1" },
+        { "source": "/events(.*)", "destination": "https://tamudatathon.com/events/2022"}
     ]
 }
