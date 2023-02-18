@@ -1,25 +1,4 @@
-<div id="sponsors" class="section sponsor-override">
+<div id="sponsors" class="section">
   <div class="sponsors-title section-title">SPONSORS</div>
-  <div class="content sponsor-section">
-    <div class="sponsor-us">
-      Interested in sponsoring? Email us at <a style="color:inherit;" href="mailto:connect@tamudatathon.com">connect@tamudatathon.com</a>.
-    </div>
-    <div class="sponsor-images">
-      <% for (let currentSponsor of req.currentSponsors) {  %>
-      <a href="<%= currentSponsor.url %>" target="_blank">
-        <img class="sponsor-img <%= currentSponsor.variant %>" src="<%= currentSponsor.img %>" alt="<%= currentSponsor.name %>"></img>
-      </a>
-      <% } %>
-    </div>
-    <div class="partners-title">
-      Our Partners:
-    </div>
-    <div class="sponsor-images">
-      <% for (let currentPartner of req.currentPartners) {  %>
-      <a href="<%= currentPartner.url %>" target="_blank">
-        <img class="sponsor-img <%= currentPartner.variant %>" src="<%= currentPartner.img %>" alt="<%= currentPartner.name %>"></img>
-      </a>
-      <% } %>
-    </div>
-  </div>
+
 </div>
