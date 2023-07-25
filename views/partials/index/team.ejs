@@ -1,4 +1,30 @@
 <div id="team" class="section">
   <div class="team-title section-title">TEAM</div>
   
+  <div id="team-content" class="content team-content">
+    <% req.memberInfo.forEach((member) => { %>
+    <div class="clue card">
+     
+
+        <div class="square">
+          <div class="square"></div>
+          <div class="rhombus"></div>
+          <div class="inner-rhombus"></div>
+        </div>
+
+        <div class="rectangle">
+          <div class="clue-card-name">
+            <div class="name"><%- member.name %></div>
+            <div class="position"><%- member.position %></div>
+            
+          </div>
+        </div>
+
+      
+      
+      </div>
+      <% }) %>
+
+  </div>
+
 </div>
