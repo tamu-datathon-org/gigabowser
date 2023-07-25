@@ -1,3 +1,28 @@
+$transition-time: 0.5s;
+
 #footer.section {
   background-color: #2d363b;
+  color: whitesmoke
+}
+
+
+#footer.fold-corner {
+  &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      border-style: solid;
+      border-width: .5rem;
+      border-color: #dfbbed #dfbbed #2a2e32 #2a2e32;
+      transition: all $transition-time;
+  }
+  &:hover::after {
+      border-width: 3rem;
+  }
+}
+
+
+#footer.td-logo {
+  width: 100%;
 }
