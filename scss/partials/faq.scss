@@ -50,6 +50,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  // box-shadow: 0px 4px 32px 2px rgba(0, 0, 0, 0.25);
 }
 
 .faqs-btn {
@@ -78,6 +79,7 @@
   border-radius: 4px;
   border-top: 0;
   transform: skewY(1.2deg) translateY(-50%);
+  margin-right: 0.1rem;
 }
 
 .faqs-text {

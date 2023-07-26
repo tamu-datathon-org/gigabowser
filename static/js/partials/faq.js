@@ -4,6 +4,7 @@ window.addEventListener('scroll', function() {
 
 // put other stuff here like button interactions etc.
 // !some answers will probably change
+// todo: change colors to match theme & better contrast, make faqs smaller, add graphic on sheet
 const content = [
   {
     "question": "What is TAMU Datathon?",
@@ -89,6 +90,7 @@ const openCard = (i) => {
   answers[i].style.gridTemplateRows = "1fr"
   answers[i].style.width = '100%';
   answers[i].style.transform = "skewY(0deg) translateY(-4px)"
+  answers[i].style.marginRight = "0"
   btns[i].style.transform = "rotate(180deg)"
   setTimeout(() => {
     texts[i].style.visibility = "visible"
@@ -104,6 +106,7 @@ const closeCard = (i) => {
     answers[i].style.gridTemplateRows = "0fr"
     answers[i].style.width = '95%';
     answers[i].style.transform = 'skewY(1.2deg) translateY(-50%)';
+    answers[i].style.marginRight = '0.1rem';
   }, 100)
 }
 
