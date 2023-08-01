@@ -1,10 +1,42 @@
 $transition-time: 0.5s;
+// * {
+//   box-sizing: border-box;
+// }
+.section {
+  background-color: #0091A7;
+  color: whitesmoke;
 
-#footer.section {
-  background-color: #2d363b;
-  color: whitesmoke
+  
 }
-
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column {
+  display:block;
+  float:left;
+  padding:20px;
+}
+.td-logo-div {
+  width: 30%;
+}
+.social-links {
+  width: 30%;
+}
+.text-content {
+  width: 40%;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+#footer.fold-corner::after {
+  content:"";
+  display:table;
+  clear:both;
+}
 
 #footer.fold-corner {
   &::after {
@@ -14,7 +46,7 @@ $transition-time: 0.5s;
       top: 0;
       border-style: solid;
       border-width: .5rem;
-      border-color: #dfbbed #dfbbed #2a2e32 #2a2e32;
+      border-color: white white #6cddfe #6cddfe;
       transition: all $transition-time;
   }
   &:hover::after {
@@ -23,6 +55,11 @@ $transition-time: 0.5s;
 }
 
 
-#footer.td-logo {
-  width: 100%;
+
+
+.td-logo {
+  // width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
