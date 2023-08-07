@@ -2,15 +2,15 @@
   transform: rotateY(180deg);
 }
 
-.team-title{
-    font-size: 3.5rem !important;
-    font-weight: bold;
-    background: #cc6af2;
-    /* background: -webkit-linear-gradient( 135deg, #FD6E6A 10%, #FFC600 100%); */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: -3px -3px #f0cffc;
-    padding-bottom:2%;
+.team-title {
+  font-size: 3.5rem !important;
+  font-weight: bold;
+  background: #cc6af2;
+  /* background: -webkit-linear-gradient( 135deg, #FD6E6A 10%, #FFC600 100%); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: -3px -3px #f0cffc;
+  padding-bottom: 2%;
 }
 
 #team.section {
@@ -32,17 +32,16 @@
   .team-content {
     display: flex;
     flex-direction: row;
-   
-   
+
     flex-wrap: wrap;
-    
+
     .clue-card {
       width: $clue-card-width;
       height: $clue-card-height;
       background-color: transparent;
       cursor: pointer;
-      margin: 50px 50px;
-     
+      margin: 50px;
+
       // border-radius: $clue-card-border-radius;
 
       // .clue-card-inner {
@@ -54,7 +53,8 @@
       //   border-radius: $clue-card-border-radius;
       // }
 
-      .clue-card-front, .clue-card-back {
+      .clue-card-back,
+      .clue-card-front {
         position: absolute;
         width: 100%;
         height: 100%;
@@ -65,13 +65,12 @@
       }
 
       .clue-card-front {
-
         .clue-card-header {
           width: 100%;
           height: 100%;
           position: absolute;
-          top: 0px;
-          left: 0px;
+          top: 0;
+          left: 0;
 
           .clue-card-image {
             height: 100%;
@@ -84,7 +83,7 @@
             position: relative;
             z-index: 190;
             opacity: 1;
-            transition: all 3.0s;
+            transition: all 3s;
             pointer-events: none;
           }
         }
@@ -113,7 +112,6 @@
             .name {
               font-size: larger;
               font-weight: 500;
-              
             }
             .position {
               font-size: small;
@@ -136,7 +134,7 @@
 
         .social {
           padding: 0;
-          margin: 30px 0 0 0;
+          margin: 30px 0 0;
           position: relative;
           display: flex;
           flex-direction: row;
@@ -183,7 +181,7 @@
           display: flex;
           justify-content: center;
           flex-direction: column;
-          margin: 15px 0px 0px 0px;
+          margin: 15px 0 0;
         }
 
         .weapon {
@@ -219,31 +217,31 @@
 
     .clue-card:hover {
       -webkit-transform: rotate3d(0, -1, 0, 10deg);
-              transform: rotate3d(0, -1, 0, 10deg);
+      transform: rotate3d(0, -1, 0, 10deg);
       -webkit-transition: -webkit-transform 0.2s ease;
-              transition: -webkit-transform 0.2s ease;
+      transition: -webkit-transform 0.2s ease;
       transition: transform 0.2s ease;
       transition: transform 0.2s ease, -webkit-transform 0.2s ease;
     }
 
     .clue-card-shadow {
-      -webkit-box-shadow:         0px 0px $clue-card-shadow-depth 0px rgba(0, 0, 0, 0.5);
-              box-shadow:         0px 0px $clue-card-shadow-depth 0px rgba(0, 0, 0, 0.5);
+      -webkit-box-shadow: 0 0 $clue-card-shadow-depth 0 rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0 $clue-card-shadow-depth 0 rgba(0, 0, 0, 0.5);
     }
 
     .clue-card-shadow::after {
-      content: '';
+      content: "";
       position: absolute;
-      top: 0px;
-      left: 0px;
-      right: 0px;
-      bottom: 0px;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
       opacity: 0;
-      -webkit-box-shadow: -3px 0px 10px 0px rgba(0, 0, 0, 0.33);
-              box-shadow: -3px 0px 10px 0px rgba(0, 0, 0, 0.33);
+      -webkit-box-shadow: -3px 0 10px 0 rgba(0, 0, 0, 0.33);
+      box-shadow: -3px 0 10px 0 rgba(0, 0, 0, 0.33);
       -webkit-transition: opacity 0.2s ease;
-              transition: opacity 0.2s ease;
-      border-radius:6px;
+      transition: opacity 0.2s ease;
+      border-radius: 6px;
     }
 
     .clue-card-shadow:hover::after {
@@ -265,7 +263,7 @@
         height: 222px !important;
       }
       .team-content {
-        padding: 0px;
+        padding: 0;
       }
       .words {
         display: none !important;
@@ -291,7 +289,7 @@
         font-size: 0.8rem !important;
       }
       .suspect {
-        margin: 0px !important;
+        margin: 0 !important;
       }
       .social {
         display: none !important;
@@ -315,7 +313,7 @@
         height: 188px !important;
       }
       .team-content {
-        padding: 0px;
+        padding: 0;
       }
       .words {
         display: none !important;
@@ -341,7 +339,7 @@
         font-size: 0.6rem !important;
       }
       .suspect {
-        margin: 0px !important;
+        margin: 0 !important;
       }
       .social {
         display: none !important;
@@ -350,36 +348,28 @@
         bottom: 7% !important;
       }
     }
-
   }
-
 }
 
-
-.container {
-  
- 
-}
-
+.container {}
 
 .rectangle {
   width: 200px;
   height: 100px;
   position: relative;
- 
+
   background-color: #2b49f3;
-  z-index: 5  ;
+  z-index: 5;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-
 
 .square {
   width: 200px;
   height: 200px;
   position: relative;
- 
+
   background-color: #2b49f3;
-  z-index: 5  ;
+  z-index: 5;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -394,9 +384,8 @@
   z-index: 4;
   background-color: rgb(0, 162, 255);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  border: .1px solid rgb(100, 96, 96);
+  border: 0.1px solid rgb(100, 96, 96);
 }
-
 
 .inner-rhombus {
   background-color: white;
@@ -411,5 +400,4 @@
   width: 70%;
   height: 70%;
   z-index: 6;
-  
 }
