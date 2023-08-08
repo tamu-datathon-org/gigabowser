@@ -2,9 +2,12 @@ window.addEventListener('scroll', function() {
   const scrollPosition = window.scrollY;
 });
 
-// put other stuff here like button interactions etc.
-// !some answers will probably change
-// todo: change colors to match theme & better contrast, make faqs smaller, add graphic on sheet
+// todo: make faqs-smaller
+// todo: add graphics on sheet
+// todo: add onhover effect
+// todo: change icon & icon animation
+// todo: change a & qs to updated version
+// todo: change colors to match theme & ensure contrast levels
 const content = [
   {
     "question": "What is TAMU Datathon?",
