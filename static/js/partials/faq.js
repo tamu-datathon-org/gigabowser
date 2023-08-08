@@ -2,7 +2,6 @@ window.addEventListener('scroll', function() {
   const scrollPosition = window.scrollY;
 });
 
-// todo: add onhover effect
 // todo: change icon & icon animation
 // todo: change a & qs to updated version
 // todo: change colors to match theme & ensure contrast levels
@@ -71,7 +70,7 @@ content.map(({question, answer, color}) => {
           <path d="M32 64C14.3 64 0 49.7 0 32S14.3 0 32 0l96 0c53 0 96 43 96 96l0 306.7 73.4-73.4c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3l-128 128c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 402.7 160 96c0-17.7-14.3-32-32-32L32 64z"/>
         </svg>
       </div>
-      <div class="faqs-sheet" style="background:${color}">
+      <div class="faqs-sheet faqs-sheet-passive" style="background:${color}">
         <div class="faqs-text">
           <div class="faqs-sheet-graphic">
             <div class="faqs-cut-marker"></div>
@@ -99,10 +98,8 @@ let active = false;
 let active_num = -1;
 
 const openCard = (i) => {
-  answers[i].style.gridTemplateRows = "1fr"
-  answers[i].style.width = '100%';
-  answers[i].style.transform = "skewY(0deg) translateY(-4px)"
-  answers[i].style.marginRight = "0"
+  answers[i].classList.remove("faqs-sheet-passive")
+  answers[i].classList.add("faqs-sheet-active")
   btns[i].style.transform = "rotate(180deg)"
   setTimeout(() => {
     texts[i].style.visibility = "visible"
@@ -115,10 +112,8 @@ const closeCard = (i) => {
     texts[i].style.visibility = "hidden"
     btns[i].style.transform = "rotate(0deg)"
   setTimeout(() => {
-    answers[i].style.gridTemplateRows = "0fr"
-    answers[i].style.width = '95%';
-    answers[i].style.transform = 'skewY(1.2deg) translateY(-50%)';
-    answers[i].style.marginRight = '0.1rem';
+    answers[i].classList.remove("faqs-sheet-active")
+    answers[i].classList.add("faqs-sheet-passive")
   }, 100)
 }
 
