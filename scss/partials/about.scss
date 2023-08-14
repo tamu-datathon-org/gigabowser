@@ -1,15 +1,15 @@
 /*Google Fonts*/
-#about.section { 
-  background-color: #FFEDD8; // change based on section theme
+#about.section {
+  background-color: #ffedd8; // change based on section theme
   border-top: 9px solid #ffb973;
 }
 
-.about__text-title{
+.about__text-title {
   font-size: 3.5rem;
   font-weight: bold;
-  background: #F4A9A8;
+  background: #f4a9a8;
   /*background: -webkit-linear-gradient( 135deg, #FD6E6A 10%, #FFC600 100%);*/
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: -3px -3px #FBC6A4;
+  text-shadow: -3px -3px #fbc6a4;
 }
