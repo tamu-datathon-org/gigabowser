@@ -1,14 +1,68 @@
 #sponsors.section {
-  background-color: rgb(244,185,193); // change based on section theme
-  border-top: 9px solid #ff8d9c;
+  background-color: #ffffff; // Set a white background
 }
 
-.sponsors-title{
+.sponsors-title {
   font-size: 3.5rem !important;
-  font-weight: bold;
-  background: #ff788c;
-  /* background: -webkit-linear-gradient( 135deg, #FD6E6A 10%, #FFC600 100%); */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: -3px -3px #ffd2d9;
+  font-weight: bold; //push
+  text-align: center; // Center the title
+  margin-bottom: 20px; // Add margin below the title
+}
+
+.sponsor-us {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.sponsor-section {
+  .sponsor-img {
+    padding: 2em;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+
+  .sponsor-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: -15px;
+
+    .xl,
+    .lg {
+      height: auto;
+      width: 18.75rem;
+      max-height: 18.75rem;
+      object-fit: contain;
+    }
+
+    .lg {
+      max-height: 12.5rem;
+    }
+  }
+
+  .partners-title {
+    font-size: 2em;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 576px) {
+  .sponsor-section {
+    .sponsor-images {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  }
 }
