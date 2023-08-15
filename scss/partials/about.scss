@@ -1,15 +1,51 @@
 /*Google Fonts*/
+.container  {
+  min-height:350px;
+  max-height: 350px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.bird {
+  position: relative;
+  left: 50px;
+}
+
+.background-wave {
+  width: 100%;
+  position: relative;
+  border: 1px solid red;
+}
+
 #about.section { 
-  background-color: #FFEDD8; // change based on section theme
+  // background-color: #FFEDD8; // change based on section theme
+  // background-color: white; // change based on section theme
+  background-image: url('../../static/img/wave.svg');
+  background-position: bottom;
+  background-repeat: no-repeat;
   border-top: 9px solid #ffb973;
+  border: 1px solid red;
+  position: relative;
 }
 
 .about__text-title{
   font-size: 3.5rem;
   font-weight: bold;
-  background: #F4A9A8;
-  /*background: -webkit-linear-gradient( 135deg, #FD6E6A 10%, #FFC600 100%);*/
+  background: rgb(85, 2, 85);
+  // background: -webkit-linear-gradient( 135deg, #FD6E6A 10%, #FFC600 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: -3px -3px #FBC6A4;
+  text-shadow: -3px -3px purple;
+}
+
+.about_text-subtitle {
+  // color: rgb(85, 2, 85);
+  font-size: 2.5rem;
+}
+
+.about__text-content {
+  // color: rgb(85, 2, 85);
+  font-size: 1.5rem;
 }
