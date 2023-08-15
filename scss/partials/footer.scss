@@ -1,17 +1,24 @@
+// figure out coloring for transition between sections
+// change font to work-sans?
+// centering for logos 
+// 
 $transition-time: 0.5s;
-// * {
-//   box-sizing: border-box;
-// }
-
 
 .social-logo {
-  width: 15%;
-  height: 30%;
+  width: 30px;
+  margin: auto;
+  display: block;
+  // height: 30%;
 }
-
-.section {
-  background-color: whitesmoke;
+#social-link {
+  display: block;
+  margin: auto;
+}
+#footer.section {
+  background-color: white;
   color: black;
+  font-family: 'Work Sans';
+  padding: 2% 7%;
 
   
 }
@@ -21,9 +28,11 @@ $transition-time: 0.5s;
   clear: both;
 }
 .column {
-  display:block;
+  display:flex;
   float:left;
   padding:20px;
+  justify-content: center;
+  align-items: center;
 }
 .td-logo-div {
   width: 20%;
@@ -32,11 +41,15 @@ $transition-time: 0.5s;
   width: 40%;
 }
 .text-content {
+  text-align: left;
   width: 40%;
 }
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
+  }
+  .text-content {
+    text-align: center;
   }
 }
 #footer.fold-corner::after {
@@ -53,7 +66,7 @@ $transition-time: 0.5s;
       top: 0;
       border-style: solid;
       border-width: .5rem;
-      border-color: white white black black;
+      border-color: #dfbbed #dfbbed whitesmoke whitesmoke;
       transition: all $transition-time;
   }
   &:hover::after {
@@ -66,7 +79,6 @@ $transition-time: 0.5s;
 
 .td-logo {
   // width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   display: block;
 }
