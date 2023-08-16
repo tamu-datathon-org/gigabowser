@@ -6,7 +6,7 @@
   align-items: center;
 }
 
-.faqs-title{
+.faqs-title {
   font-size: 3.5rem !important;
   font-weight: bold;
 }
@@ -46,9 +46,9 @@
   min-height: 5rem;
   border-radius: 4px;
   z-index: 2;
-  padding: 1.2rem 0.5rem 0.5rem 0.5rem;
+  padding: 1.2rem 0.5rem 0.5rem;
   font-weight: 600;
-  font-family: 'Work Sans';
+  font-family: "Work Sans";
   font-size: 1.5rem;
   position: relative;
   display: flex;
@@ -64,7 +64,7 @@
   width: 100%;
   height: 100%;
   margin-left: 1rem;
-  transition: transform 0.4s ease-in-out
+  transition: transform 0.4s ease-in-out;
 }
 
 .faqs-ruler::before {
@@ -72,7 +72,7 @@
   background: url("../../static/img/graphics/Blank\ Ruler.svg") no-repeat;
   width: 100%;
   height: 1.1rem;
-  position: absolute; 
+  position: absolute;
   top: -0.8px;
   left: 0;
 }
@@ -89,7 +89,7 @@
 }
 
 .faqs-sheet-passive {
-  grid-template-rows: 0fr;
+  grid-template-rows: 0;
   width: 95%;
   transform: skewY(1.2deg) translateY(-50%);
   margin-right: 0.1rem;
