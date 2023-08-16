@@ -5,7 +5,8 @@
 $transition-time: 0.5s;
 
 .social-logo {
-  width: 30px;
+  width: 45px;
+  height: 30px;
   margin: auto;
   display: block;
   // height: 30%;
@@ -15,10 +16,10 @@ $transition-time: 0.5s;
   margin: auto;
 }
 #footer.section {
-  background-color: white;
+  background-color: #EAFBFF;
   color: black;
   font-family: 'Work Sans';
-  padding: 2% 7%;
+  padding: 2% 3%;
 
   
 }
@@ -66,7 +67,7 @@ $transition-time: 0.5s;
       top: 0;
       border-style: solid;
       border-width: .5rem;
-      border-color: #dfbbed #dfbbed whitesmoke whitesmoke;
+      border-color: #dfbbed #dfbbed #c8d9dd #c8d9dd;
       transition: all $transition-time;
   }
   &:hover::after {
