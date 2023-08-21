@@ -11,6 +11,12 @@ $transition-time: 0.5s;
   display: block;
   // height: 30%;
 }
+.vercel-logo {
+  margin: auto;
+  display: block;
+  // height: 30%;
+}
+
 #social-link {
   display: block;
   margin: auto;
@@ -42,15 +48,12 @@ $transition-time: 0.5s;
   width: 40%;
 }
 .text-content {
-  text-align: left;
+  text-align: center;
   width: 40%;
 }
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
-  }
-  .text-content {
-    text-align: center;
   }
 }
 #footer.fold-corner::after {
