@@ -5,17 +5,13 @@
 .team-title{
     font-size: 3.5rem !important;
     font-weight: bold;
-    background: #cc6af2;
-    /* background: -webkit-linear-gradient( 135deg, #FD6E6A 10%, #FFC600 100%); */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: -3px -3px #f0cffc;
+    text-align: center;
     padding-bottom:2%;
 }
 
 #team.section {
-  background-color: #dfbbed; // change based on section theme
-  border-top: 9px solid #da7dff;
+  // background-color: #ffffff; // change based on section theme
+ 
 
   $clue-bg-color: white;
   $clue-card-bg-color: rgb(11, 11, 53);
@@ -29,19 +25,59 @@
   $clue-card-border-width: 5px;
   $clue-card-shadow-depth: 18px;
 
+
+  .social {
+    padding: 0;
+    margin: 30px 0 0 0;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    z-index: 300;
+    overflow: hidden;
+    
+    * {
+      pointer-events: none;
+    }
+
+    i {
+      color: black;
+    }
+
+    li {
+      list-style: none;
+      padding: 6px;
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        pointer-events: auto;
+        text-decoration: none !important;
+      }
+    }
+  }
+
   .team-content {
     display: flex;
     flex-direction: row;
-   
+    justify-content: center;
    
     flex-wrap: wrap;
     
+
+
+    .card {
+      margin: 45px;
+      background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(140,156,245,1) 35%, rgba(0,162,255,1) 100%);
+    }
+
     .clue-card {
       width: $clue-card-width;
       height: $clue-card-height;
       background-color: transparent;
       cursor: pointer;
-      margin: 50px 50px;
+      margin: 20px;
      
       // border-radius: $clue-card-border-radius;
 
@@ -110,9 +146,10 @@
             align-items: center;
             background-color: $clue-card-name-color;
             transition: all 0.5s ease-in-out; // transition timing
+            text-align: center;
             .name {
               font-size: larger;
-              font-weight: 500;
+              font-weight: bold;
               
             }
             .position {
@@ -131,39 +168,11 @@
             transition: all 0.5s ease-in-out;
             object-fit: cover;
             border-radius: $clue-card-border-radius;
+            
           }
         }
 
-        .social {
-          padding: 0;
-          margin: 30px 0 0 0;
-          position: relative;
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          z-index: 300;
-          overflow: hidden;
-
-          * {
-            pointer-events: none;
-          }
-
-          i {
-            color: black;
-          }
-
-          li {
-            list-style: none;
-            padding: 6px;
-            a {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              pointer-events: auto;
-              text-decoration: none !important;
-            }
-          }
-        }
+        
       }
 
       .clue-card-back {
@@ -336,6 +345,7 @@
       }
       .name {
         font-size: 0.8rem !important;
+
       }
       .position {
         font-size: 0.6rem !important;
@@ -364,12 +374,15 @@
 
 .rectangle {
   width: 200px;
-  height: 100px;
+  height: 75px;
+  
   position: relative;
  
-  background-color: #2b49f3;
-  z-index: 5  ;
+  background-color: rgba($color: #d8dbf3, $alpha: 1);
+  z-index: 6;
+  overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-top: 20px #8c9cf5;
 }
 
 
@@ -377,8 +390,18 @@
   width: 200px;
   height: 200px;
   position: relative;
- 
-  background-color: #2b49f3;
+  
+  background-color: rgba($color: #8c9cf5, $alpha: 1);
+  z-index: 5  ;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.square2 {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  
+  // background-color: rgba($color: #2b49f3, $alpha: 0.25);
   z-index: 5  ;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -391,7 +414,7 @@
   left: 0;
   transform: rotate(45deg);
   transform-origin: center;
-  z-index: 4;
+  z-index: -1;
   background-color: rgb(0, 162, 255);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   border: .1px solid rgb(100, 96, 96);
@@ -399,17 +422,30 @@
 
 
 .inner-rhombus {
+  
   background-color: white;
   width: 100%;
   height: 100%;
   position: absolute;
-  top: 25px;
-  left: 25px;
+  top: 30px;
+  left: 30px;
   transform: rotate(45deg);
   transform-origin: center;
   border: 2px solid rgb(0, 0, 0);
   width: 70%;
   height: 70%;
   z-index: 6;
-  
+  overflow: hidden;
+}
+
+.photo {
+    width: 260px;
+    height: 220px;
+    transform: rotate(-45deg);
+   
+    background-size: cover;
+    top: -20px;
+    left: -70px;
+    position: relative;
+    
 }
