@@ -15,17 +15,17 @@ const content = [
   },
   {
     "question": "When is the event?",
-    "answer": "October 8-9th, 2022. We will publish a complete schedule soon, but for now, know that we will begin at 9 am on Saturday and end at 5 pm on Sunday.",
+    "answer": "The details are coming soon! Check back soon! We will publish a complete schedule soon, but for now, know that we will begin at 9 am on Saturday and end at 5 pm on Sunday.",
     "color": "#C4FFBA"
   },
   {
     "question": "Where is the event?",
-    "answer": "Datathon will be hybrid (both in-person and virtual)! If you are coming in person, the event will be hosted at the Texas A&M Memorial Student Center.",
+    "answer": "The details are coming soon! Check back soon!",
     "color": "#FFDBBA"
   },
   {
     "question": "How do I sign up?",
-    "answer": "Registration will begin on August 31st, 2022, and end in late September. Admission decisions will be released soon after the registration ends.",
+    "answer": "Registration will begin soon! Admission decisions will be released soon after the registration ends.",
     "color": "#BAE6FF"
   },
   {
