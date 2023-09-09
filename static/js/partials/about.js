@@ -1,8 +1,3 @@
-window.addEventListener('scroll', function() {
-  const scrollPosition = window.scrollY;
-  console.log(scrollPosition);
-});
-
 window.onload = function () {
 	var duration = 2000;
   var bird = Snap.select("#bird");
