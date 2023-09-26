@@ -5,7 +5,7 @@ path: /legal/talent_liability_terms
 
 # TAMU Datathon Talent/Liability Terms
 
-By registering for TAMU Datathon 2021, You do hereby authorize TAMU Datathon, TAMU Datathon Sponsors, MLH, and those acting pursuant to its authority to:
+By registering for TAMU Datathon 2023, You do hereby authorize TAMU Datathon, TAMU Datathon Sponsors, MLH, and those acting pursuant to its authority to:
 
 * Record your participation and appearance on videotape, audiotape, film, photograph or any other medium.
 
