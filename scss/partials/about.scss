@@ -25,6 +25,9 @@
   background-position: bottom;
   background-repeat: no-repeat;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about__text-title{
