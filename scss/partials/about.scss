@@ -33,11 +33,11 @@
 .about__text-title{
   font-size: 3.5rem;
   font-weight: bold;
-  background: rgb(85, 2, 85);
+//   background: rgb(85, 2, 85);
   // background: -webkit-linear-gradient( 135deg, #FD6E6A 10%, #FFC600 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: -3px -3px purple;
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+//   text-shadow: -3px -3px purple;
 }
 
 .about_text-subtitle {
@@ -48,4 +48,5 @@
 .about__text-content {
   // color: rgb(85, 2, 85);
   font-size: 1.5rem;
+  text-align: center;
 }
