@@ -45,7 +45,6 @@
 .splash-text {
   position: absolute;
   top: 20%;
-  left: 9%;
   color: #404040;
 }
 
@@ -95,7 +94,7 @@
 
 .splashSprite {
   // position: absolute;
-  background-image: url("../img/graphics/splash/bear.JPG");
+  background-image: url("../img/graphics/splash/bear.png");
   // object-fit: fill;
   background-size: contain !important;
   background-repeat: no-repeat;
@@ -128,13 +127,18 @@
   animation: moveImage 10s linear infinite;
 }
 
+
+
 @media (max-width: 750px) {
   .topDiv {
     flex-direction: column;
+    height: 140vh;
+    left: 9px;  
   }
   .leftHalf {
     height: 100%;
     width: 100%;
+    display: flex;
   }
   .splash-text-title {
     font-weight: bold;
@@ -165,6 +169,29 @@
   }
 }
 
+@media (max-width: 540px) {
+  .topDiv {
+    height: 150vh;
+  }
+}
+
+@media (max-width: 415px) {
+  .topDiv {
+    height: 110vh;
+  }
+}
+
+@media (max-width: 376px) {
+  .topDiv {
+    height: 150vh;
+  }
+}
+
+@media (max-width: 360px) {
+  .topDiv {
+    height: 120vh;
+  }
+}
 
 // .splashSprite:hover {
 //   animation: rotate-sprite 1s infinite steps(2); /* Adjust animation duration and steps as needed */
