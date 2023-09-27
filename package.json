@@ -6,12 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run dev",
-    "dev": "node-sass scss/custom.scss static/css/style.css && run-p dev:server dev:sass",
+    "dev": "sass scss/custom.scss static/css/style.css && run-p dev:server dev:sass",
     "dev:server": "node lib/server.js",
-    "dev:sass": "node-sass -w scss/custom.scss static/css/style.css",
+    "dev:sass": "sass -w scss/custom.scss static/css/style.css",
     "build": "npm run build:static && npm run build:sass",
     "build:static": "node lib/render_to_static.js",
-    "build:sass": "node-sass scss/custom.scss public/static/css/style.css --output-style compressed",
+    "build:sass": "sass scss/custom.scss public/static/css/style.css --output-style compressed",
     "clean": "rm -rf public"
   },
   "repository": {
@@ -32,7 +32,7 @@
     "front-matter": "^3.1.0",
     "ncp": "^2.0.0",
     "node-fetch": "^2.6.1",
-    "node-sass": "^7.0.1",
+    "sass": "^1.68.0",
     "showdown": "^1.9.1",
     "splitting": "^1.0.6",
     "three": "^0.129.0"
