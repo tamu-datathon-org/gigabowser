@@ -5,7 +5,6 @@ window.addEventListener('scroll', function() {
 // todo: change icon & icon animation
 // todo: change a & qs to updated version
 // todo: change colors to match theme & ensure contrast levels
-// todo: add intersection observer to show animation
 // todo: fix transition stanky leg visual bug
 const content = [
   {
@@ -15,7 +14,7 @@ const content = [
   },
   {
     "question": "When is the event?",
-    "answer": "October 8-9th, 2022. We will publish a complete schedule soon, but for now, know that we will begin at 9 am on Saturday and end at 5 pm on Sunday.",
+    "answer": "October 28-29th, 2023. We will publish a complete schedule soon, but for now, know that we will begin at 9 am on Saturday and end at 5 pm on Sunday.",
     "color": "#C4FFBA"
   },
   {
@@ -96,6 +95,21 @@ const texts = document.querySelectorAll(".faqs-text")
 const btns = document.querySelectorAll(".faqs-btn")
 let active = false;
 let active_num = -1;
+
+const handleIntersection = (entries) => {
+    entries.map((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("faqs-show")
+        } else {
+            entry.target.classList.remove("faqs-show")
+        }
+    })
+}
+
+const observer = new IntersectionObserver(handleIntersection)
+for (let i = 0; i < answers.length; i++) {
+    observer.observe(answers[i])
+}
 
 const openCard = (i) => {
   answers[i].classList.remove("faqs-sheet-passive")
