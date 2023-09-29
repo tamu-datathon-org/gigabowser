@@ -2,10 +2,6 @@ window.addEventListener('scroll', function() {
   const scrollPosition = window.scrollY;
 });
 
-// todo: change icon & icon animation
-// todo: change a & qs to updated version
-// todo: change colors to match theme & ensure contrast levels
-// todo: fix transition stanky leg visual bug
 const content = [
   {
     "question": "What is TAMU Datathon?",
@@ -19,12 +15,12 @@ const content = [
   },
   {
     "question": "Where is the event?",
-    "answer": "Datathon will be hybrid (both in-person and virtual)! If you are coming in person, the event will be hosted at the Texas A&M Memorial Student Center.",
+    "answer": "Will be hosted at the Legends Event Center (2533 Midtown Pk Blvd, Bryan, TX 77801).",
     "color": "#FFDBBA"
   },
   {
     "question": "How do I sign up?",
-    "answer": "Registration will begin on August 31st, 2022, and end in late September. Admission decisions will be released soon after the registration ends.",
+    "answer": "Registration is currently open! Admission decisions will be released soon after the registration ends.",
     "color": "#BAE6FF"
   },
   {
@@ -44,7 +40,7 @@ const content = [
   },
   {
     "question": "What should I bring?",
-    "answer": "Since the event will last overnight, it is a good idea to bring a pillow and a sleeping bag if you are planning on staying at the venue.",
+    "answer": "Since the event will last overnight, it is a good idea to bring a pillow and a sleeping bag if you are planning on staying at the venue. Please remember to bring your laptop and charger.",
     "color": "#FFECBA"
   },
   {
