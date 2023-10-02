@@ -32,7 +32,7 @@
     "front-matter": "^3.1.0",
     "ncp": "^2.0.0",
     "node-fetch": "^2.6.1",
-    "node-sass": "^7.0.1",
+    "node-sass": "^9.0.0",
     "showdown": "^1.9.1",
     "splitting": "^1.0.6",
     "three": "^0.129.0"
