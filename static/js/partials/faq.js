@@ -2,11 +2,6 @@ window.addEventListener('scroll', function() {
   const scrollPosition = window.scrollY;
 });
 
-// todo: change icon & icon animation
-// todo: change a & qs to updated version
-// todo: change colors to match theme & ensure contrast levels
-// todo: add intersection observer to show animation
-// todo: fix transition stanky leg visual bug
 const content = [
   {
     "question": "What is TAMU Datathon?",
@@ -15,17 +10,17 @@ const content = [
   },
   {
     "question": "When is the event?",
-    "answer": "The details are coming soon! Check back soon! We will publish a complete schedule soon, but for now, know that we will begin at 9 am on Saturday and end at 5 pm on Sunday.",
+    "answer": "October 28-29th, 2023. We will publish a complete schedule soon, but for now, know that we will begin at 9 am on Saturday and end at 5 pm on Sunday.",
     "color": "#C4FFBA"
   },
   {
     "question": "Where is the event?",
-    "answer": "The details are coming soon! Check back soon!",
+    "answer": "Will be hosted at the Legends Event Center (2533 Midtown Pk Blvd, Bryan, TX 77801).",
     "color": "#FFDBBA"
   },
   {
     "question": "How do I sign up?",
-    "answer": "Registration will begin soon! Admission decisions will be released soon after the registration ends.",
+    "answer": "Registration is currently open! Admission decisions will be released soon after the registration ends.",
     "color": "#BAE6FF"
   },
   {
@@ -45,7 +40,7 @@ const content = [
   },
   {
     "question": "What should I bring?",
-    "answer": "Since the event will last overnight, it is a good idea to bring a pillow and a sleeping bag if you are planning on staying at the venue.",
+    "answer": "Since the event will last overnight, it is a good idea to bring a pillow and a sleeping bag if you are planning on staying at the venue. Please remember to bring your laptop and charger.",
     "color": "#FFECBA"
   },
   {
@@ -96,6 +91,21 @@ const texts = document.querySelectorAll(".faqs-text")
 const btns = document.querySelectorAll(".faqs-btn")
 let active = false;
 let active_num = -1;
+
+const handleIntersection = (entries) => {
+    entries.map((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("faqs-show")
+        } else {
+            entry.target.classList.remove("faqs-show")
+        }
+    })
+}
+
+const observer = new IntersectionObserver(handleIntersection)
+for (let i = 0; i < answers.length; i++) {
+    observer.observe(answers[i])
+}
 
 const openCard = (i) => {
   answers[i].classList.remove("faqs-sheet-passive")
