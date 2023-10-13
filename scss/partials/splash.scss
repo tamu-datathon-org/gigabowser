@@ -62,10 +62,9 @@
   font-weight: 500;
   font-size: 2vw;
   font-family: 'Work Sans';
-  margin-top: 40px;
+  margin-top: 60px;
   color: #40d6ff;
   // text-shadow: 1px 1px 20px #27d3d3;
-  margin-bottom: 30px;
 }
 
 .splash-button {
@@ -128,6 +127,18 @@
 }
 
 
+#splash-registration-deadline {
+  font-size: 2vw;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  color: #40d6ff;
+  margin-bottom: 40px;
+}
+
+.splash-registration-deadline-date {
+  color: #ED6F37;
+}
+
 
 @media (max-width: 750px) {
   .topDiv {
@@ -149,13 +160,17 @@
   }
   .splash-text-subtitle {
     font-weight: 500;
-    font-size: 9vw;
+    font-size: 8vw;
     font-family: 'Work Sans';
     // margin-top: 40px;  
     color: #40d6ff;
     // text-shadow: 1px 1px 20px #27d3d3;
-    margin-bottom: 30px;
   }  
+  #splash-registration-deadline {
+    font-size: 8vw;
+    display: flex;
+    flex-direction: column;
+  }
   .rightHalf {
     height: 100%;
     width: 100%;
