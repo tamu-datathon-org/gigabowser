@@ -33,3 +33,16 @@
 // imageContainer.addEventListener('click', function() {
 //   reverseAnimation = !reverseAnimation; // Toggle the animation direction on click
 // });
+
+const registrationDeadlineRef = document.getElementById('splash-registration-deadline')
+
+const currentDate = new Date();
+const [ day, month, year ] = [currentDate.getDate(), currentDate.getMonth()+1, currentDate.getFullYear()]
+
+if (day <= 18 && month === 10 && year === 2023) {
+    registrationDeadlineRef.innerHTML = `Registration Deadline: 
+    <span class="splash-registration-deadline-date">Oct. 18 2023</span>`
+} else {
+    registrationDeadlineRef.innerHTML = `Registration Closed`
+}
+
