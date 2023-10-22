@@ -3,6 +3,7 @@ title: Schedule
 path: /schedule
 description: Schedule for TAMU Datathon 2022
 ---
+
 <center>
 <h1 class="mb-5 mt-n5"><b>Event Schedule</b></h1>
 <p>Times are in the Central Timezone</p>
@@ -36,7 +37,7 @@ b {
 }
 </style>
 
-<div class="mx-n3">
+<div style="width: 100%;">
   <div class="container">
     <div class="d-flex flex-row content-container">
       <div style="font-size: 1.5rem">
@@ -45,118 +46,129 @@ b {
         </div>
         <div></div>
         <div class="d-flex flex-row pt-3 pb-3" style = "margin-bottom: 10px;">
-          <div class="left px-3"><img src="/static/img/graphics/pawn_pink.svg" style="width:100%; align-items: flex-start;"></img></div>
-          <div class="mid px-3 d-none d-md-block">9:00 PM</div>
-          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">9:00 AM</small><b>Check-in + Career Fair</b></br><small class="text-muted d-block">MSC 2300</small></div>
+          <div class="left px-3"><img src="/static/img/graphics/origami-crane-green.png" style="width:150%; align-items: flex-start;"></img></div>
+          <div class="mid px-3 d-none d-md-block">9:00 AM</div>
+          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">9:00 AM</small><b>Check-in & Career Fair</b></br><small class="text-muted d-block"></small></div>
           <div class="mx-3"></div>
         </div>
-        <div class="d-flex flex-row pb-3" style = "margin-bottom: 10px">
-          <div class="left px-3"><img src="/static/img/graphics/pawn_pink.svg" style="width:100%;"></img></div>
-          <div class="mid px-3 d-none d-md-block">10:15 AM</div>
-          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">10:15 AM</small><a href="/events/activities/opening_ceremony2022"><b>Opening Ceremony</b></a></br><small class="text-muted d-block">MSC 2300</small></div>
+        <div class="d-flex flex-row pt-3 pb-3" style = "margin-bottom: 10px;">
+          <div class="left px-3"><img src="/static/img/graphics/origami-crane-green.png" style="width:150%; align-items: flex-start;"></img></div>
+          <div class="mid px-3 d-none d-md-block">10:00 AM</div>
+          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">10:00 AM</small><a href="/events/activities/opening_ceremony2022"><b>Opening Ceremony</b></a></br><small class="text-muted d-block"></small></div>
           <div class="mx-3"></div>
         </div>
         <div class="d-flex flex-row pb-3" style = "margin-bottom: 10px" style = "margin-bottom: 10px">
-          <div class="left px-3"><img src="/static/img/graphics/pawn_yellow.svg" style="width:100%;"></img></div>
+          <div class="left px-3"><img src="/static/img/graphics/origami-crane-orange.png" style="width:150%;"></img></div>
           <div class="mid px-3 d-none d-md-block">12:00 PM</div>
-          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">12:00 PM</small><b>Lunch</b></br><small class="text-muted d-block">MSC 2400</small></div>
+          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">12:00 PM</small><b>Lunch</b></br><small class="text-muted d-block">Chick-Fil-A</small></div>
           <div class="mx-3"></div>
         </div>
         <div class="d-flex flex-row pb-3" style = "margin-bottom: 10px">
-          <div class="left px-3"><img src="/static/img/graphics/pawn_green.svg" style="width:100%;"></img></div>
+          <div class="left px-3"><img src="/static/img/graphics/origami-crane-turquoise.png" style="width:150%;"></img></div>
           <div class="mid px-3 d-none d-md-block">1:00 PM</div>
-          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">1:00 PM</small><a href="/events/activities/gm_workshop2022"><b>Data Science at GM</b></a></br><small class="text-muted d-block">MSC 2400</small></br><a href="events/activities/bh_beginner2022"><b>Basics of Data Science</b></a></br><small class="text-muted d-block">MSC 2406</small></div>  
+          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">1:00 PM</small><a href="/events/activities/gm_workshop2022"><b>Explainable AI</b></a></br><small class="text-muted d-block">Workshop</small></div>  
           <div class="mx-3"></div>
         </div>
         <div class="d-flex flex-row pb-3" style = "margin-bottom: 10px">
-          <div class="left px-3"><img src="/static/img/graphics/pawn_green.svg" style="width:100%;"></img></div>
+          <div class="left px-3"><img src="/static/img/graphics/origami-crane-turquoise.png" style="width:150%;"></img></div>
           <div class="mid px-3 d-none d-md-block">2:00 PM</div>
-          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">2:00 PM</small><a href="/events/activities/data_analytics2022"><b>Intro to Pandas & More</b></a></br><small class="text-muted d-block">MSC 2400</small></br><a href="events/activities/bh_second2022"><b>Real Time Data Ingestion</b></a><small class="text-muted d-block">MSC 2406</small></div>
+          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">2:00 PM</small><a href="/events/activities/data_analytics2022"><b>TAMIDS: Computer Vision</b></a></br><small class="text-muted d-block">Workshop</small></div>
+          <div class="mx-3"></div>
+        </div>
+                <div class="d-flex flex-row pb-3" style = "margin-bottom: 10px">
+          <div class="left px-3"><img src="/static/img/graphics/origami-crane-turquoise.png" style="width:150%;"></img></div>
+          <div class="mid px-3 d-none d-md-block">2:30 PM</div>
+          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">2:30 PM</small><a href="/events/activities/data_analytics2022"><b>TAMIDS: On-going Projects</b></a></br><small class="text-muted d-block">Workshop</small></div>
           <div class="mx-3"></div>
         </div>
         <div class="d-flex flex-row pb-3" style = "margin-bottom: 10px">
-          <div class="left px-3"><img src="/static/img/graphics/pawn_green.svg" style="width:100%;"></img></div>
+          <div class="left px-3"><img src="/static/img/graphics/origami-crane-turquoise.png" style="width:150%;"></img></div>
           <div class="mid px-3 d-none d-md-block">3:00 PM</div>
-          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">3:00 PM</small><a href="events/activities/cbre_workshop2022"><b>Coefficients and Biases</b></a></br><small class="text-muted d-block">MSC 2400</small></div>
+          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">3:00 PM</small><a href="events/activities/cbre_workshop2022"><b>General Motors</b></a></br><small class="text-muted d-block">Workshop</small></div>
           <div class="mx-3"></div>
         </div>
         <div class="d-flex flex-row pb-3" style = "margin-bottom: 10px">
-          <div class="left px-3"><img src="/static/img/graphics/pawn_green.svg" style="width:100%;"></img></div>
+          <div class="left px-3"><img src="/static/img/graphics/origami-crane-turquoise.png" style="width:150%;"></img></div>
           <div class="mid px-3 d-none d-md-block">4:00 PM</div>
-          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">4:00 PM</small><a href="events/activities/streamlit_workshop2022"><b>Data Wrangling</b></a></br><small class="text-muted d-block">MSC 2400</small></div>
+          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">4:00 PM</small><a href="events/activities/streamlit_workshop2022"><b>Webscraping</b></a></br><small class="text-muted d-block">Workshop</small><br/><small class="text-muted d-block d-md-none">4:00 PM</small><a href="events/activities/streamlit_workshop2022"><b>Natural Language Processing</b></a></br><small class="text-muted d-block">Workshop</small></div>
           <div class="mx-3"></div>
         </div>
         <div class="d-flex flex-row pb-3" style = "margin-bottom: 10px">
-          <div class="left px-3"><img src="/static/img/graphics/pawn_blue.svg" style="width:100%;"></img></div>
+          <div class="left px-3"><img src="/static/img/graphics/origami-crane-blue.png" style="width:150%;"></img></div>
           <div class="mid px-3 d-none d-md-block">5:00 PM</div>
-          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">5:00 PM</small><a href="https://www.start.gg/tournament/datathon-smash-tourney/"><b>Smash Tournament</b></a></br><small class="text-muted d-block">MSC 2406</small></a></div>
+          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">5:00 PM</small><a href="https://www.start.gg/tournament/datathon-smash-tourney/"><b>Speed Dating</b></a></br><small class="text-muted d-block"></small></a></div>
           <div class="mx-3"></div>
         </div>
         <div class="d-flex flex-row pb-3" style = "margin-bottom: 10px">
-          <div class="left px-3"><img src="/static/img/graphics/pawn_yellow.svg" style="width:100%;"></img></div>
-          <div class="mid px-3 d-none d-md-block">7:30 PM</div>
-          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">7:30 PM</small><b>Dinner</b><br/><small class="text-muted d-block">MSC 2400</small></div>
+          <div class="left px-3"><img src="/static/img/graphics/origami-crane-blue.png" style="width:150%;"></img></div>
+          <div class="mid px-3 d-none d-md-block">6:00 PM</div>
+          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">6:00 PM</small><a href="https://www.start.gg/tournament/datathon-smash-tourney/"><b>Art Social</b></a></br><small class="text-muted d-block"></small></a></div>
           <div class="mx-3"></div>
         </div>
         <div class="d-flex flex-row pb-3" style = "margin-bottom: 10px">
-          <div class="left px-3"><img src="/static/img/graphics/pawn_blue.svg" style="width:100%;"></img></div>
+          <div class="left px-3"><img src="/static/img/graphics/origami-crane-orange.png" style="width:150%;"></img></div>
+          <div class="mid px-3 d-none d-md-block">7:00 PM</div>
+          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">7:00 PM</small><b>Dinner</b><br/><small class="text-muted d-block">Fuegos</small></div>
+          <div class="mx-3"></div>
+        </div>
+        <div class="d-flex flex-row pb-3" style = "margin-bottom: 10px">
+          <div class="left px-3"><img src="/static/img/graphics/origami-crane-blue.png" style="width:150%;"></img></div>
           <div class="mid px-3 d-none d-md-block">8:00 PM</div>
-          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">8:00 PM</small><b>Snyk Cybersecurity Challenge</b><br/><small class="text-muted d-block">MSC 2300</small></a></div>
+          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">8:00 PM</small><b>MLH Slideshow Karaoke</b><br/><small class="text-muted d-block"></small></div>
           <div class="mx-3"></div>
         </div>
-        <div class="d-flex flex-row pb-3" style = "margin-bottom: 10px;">
-          <div class="left px-3"><img src="/static/img/graphics/pawn_blue.svg" style="width:100%;"></img></div>
+        <div class="d-flex flex-row pb-3" style = "margin-bottom: 10px">
+          <div class="left px-3"><img src="/static/img/graphics/origami-crane-blue.png" style="width:150%;"></img></div>
           <div class="mid px-3 d-none d-md-block">9:00 PM</div>
-          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">9:00 PM</small><b>Zumba Class</b><br/><small class="text-muted d-block">MSC 2406</small></div>
+          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">9:00 PM</small><b>Smash Tournament</b><br/><small class="text-muted d-block"></small></a></div>
+          <div class="mx-3"></div>
+        </div>
+        <div class="d-flex flex-row pb-3" style = "margin-bottom: 10px">
+          <div class="left px-3"><img src="/static/img/graphics/origami-crane-blue.png" style="width:150%;"></img></div>
+          <div class="mid px-3 d-none d-md-block">11:00 PM</div>
+          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">11:00 PM</small><b>Scavenger Hunt</b><br/><small class="text-muted d-block"></small></a></div>
           <div class="mx-3"></div>
         </div>
         <div class="text-center text-warning d-block d-md-none d-md-block" style="font-size: 1.5rem;">
           <b>SUNDAY</b>
         </div>
         <div class="d-flex flex-row pt-3 pb-3" style = "margin-bottom: 10px;">
-          <div class="left px-3"><img src="/static/img/graphics/pawn_blue.svg" style="width:100%;"></img></div>
+          <div class="left px-3"><img src="/static/img/graphics/origami-crane-blue.png" style="width:150%;"></img></div>
           <div class="mid px-3 d-none d-md-block">12:00 AM</div>
-          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">12:00 AM</small><b>Boba + Talent Show</b></br><small class="text-muted d-block">MSC 2300</small></div>
+          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">12:00 AM</small><b>Talent Show</b></br><small class="text-muted d-block"></small></div>
           <div class="mx-3"></div>
         </div>
         <div class="d-flex flex-row pb-3" style = "margin-bottom: 10px">
-          <div class="left px-3"><img src="/static/img/graphics/pawn_yellow.svg" style="width:100%;"></img></div>
+          <div class="left px-3"><img src="/static/img/graphics/origami-crane-orange.png" style="width:150%;"></img></div>
           <div class="mid px-3 d-none d-md-block">8:00 AM</div>
-          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">8:00 AM</small><b>Breakfast</b><br/><small class="text-muted d-block">MSC 2400</small></div>
-          <div class="mx-3"></div>
-        </div>
-        <div class="d-flex flex-row pb-3" style = "margin-bottom: 10px">
-          <div class="left px-3"><img src="/static/img/graphics/pawn_pink.svg" style="width:100%;"></img></div>
-          <div class="mid px-3 d-none d-md-block">11:00 AM</div>
-          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">11:00 AM</small><b>Puzzle Solver Submission Deadline</b><br/></div>
+          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">8:00 AM</small><b>Breakfast</b><br/><small class="text-muted d-block">Krispy Kreme</small></div>
           <div class="mx-3"></div>
         </div>
         <div class="d-flex flex-row pt-3 pb-3" style = "margin-bottom: 10px;">
-          <div class="left px-3"><img src="/static/img/graphics/pawn_blue.svg" style="width:100%;"></img></div>
-          <div class="mid px-3 d-none d-md-block">11:15 AM</div>
-          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">11:15 AM</small><b>Slideshow Karaoke</b></br><small class="text-muted d-block">MSC 2300</small></div>
+          <div class="left px-3"><img src="/static/img/graphics/origami-crane-green.png" style="width:150%; align-items: flex-start;"></img></div>
+          <div class="mid px-3 d-none d-md-block">11:00 AM</div>
+          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">11:00 AM</small><b>Submission Deadline</b><br/></div>
           <div class="mx-3"></div>
         </div>
         <div class="d-flex flex-row pb-3" style = "margin-bottom: 10px">
-          <div class="left px-3"><img src="/static/img/graphics/pawn_yellow.svg" style="width:100%;"></img></div>
+          <div class="left px-3"><img src="/static/img/graphics/origami-crane-orange.png" style="width:150%;"></img></div>
           <div class="mid px-3 d-none d-md-block">12:00 PM</div>
-          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">12:00 PM</small><b>Lunch</b></br><small class="text-muted d-block">MSC 2400</small></div>
+          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">12:00 PM</small><b>Lunch</b></br><small class="text-muted d-block">Piada</small></div>
           <div class="mx-3"></div>
         </div>
-        <div class="d-flex flex-row pb-3" style = "margin-bottom: 10px">
-          <div class="left px-3"><img src="/static/img/graphics/pawn_pink.svg" style="width:100%;"></img></div>
+        <div class="d-flex flex-row pt-3 pb-3" style = "margin-bottom: 10px;">
+          <div class="left px-3"><img src="/static/img/graphics/origami-crane-green.png" style="width:150%; align-items: flex-start;"></img></div>
           <div class="mid px-3 d-none d-md-block">1:00 PM</div>
-          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">1:00 PM</small><b>Judging Begins</b></br><small class="text-muted d-block"></small></br><b>Submission Deadline</b></div>
-          <div class="mx-3"></div>
+          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">1:00 PM</small><b>Judging Begins</b></br><small class="text-muted d-block"></small></div>
         </div>
-        <div class="d-flex flex-row pb-3" style = "margin-bottom: 10px">
-          <div class="left px-3"><img src="/static/img/graphics/pawn_pink.svg" style="width:100%;"></img></div>
+        <div class="d-flex flex-row pt-3 pb-3" style = "margin-bottom: 10px;">
+          <div class="left px-3"><img src="/static/img/graphics/origami-crane-green.png" style="width:150%; align-items: flex-start;"></img></div>
           <div class="mid px-3 d-none d-md-block">3:00 PM</div>
           <div class="named-text mx-3"><small class="text-muted d-block d-md-none">3:00 PM</small><b>Judging Ends</b></br><small class="text-muted d-block"></small></div>
           <div class="mx-3"></div>
         </div>
-        <div class="d-flex flex-row pb-3" style = "margin-bottom: 10px">
-          <div class="left px-3"><img src="/static/img/graphics/pawn_pink.svg" style="width:100%;"></img></div>
+        <div class="d-flex flex-row pt-3 pb-3" style = "margin-bottom: 10px;">
+          <div class="left px-3"><img src="/static/img/graphics/origami-crane-green.png" style="width:150%; align-items: flex-start;"></img></div>
           <div class="mid px-3 d-none d-md-block">3:30 PM</div>
           <div class="named-text mx-3"><small class="text-muted d-block d-md-none">3:30 PM</small><a href="/events/activities/closing_ceremony2022"><b>Closing Ceremony</b></a></br><small class="text-muted d-block"></small></div>
           <div class="mx-3"></div>
