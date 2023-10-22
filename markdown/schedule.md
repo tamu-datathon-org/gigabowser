@@ -54,7 +54,7 @@ b {
         <div class="d-flex flex-row pt-3 pb-3" style = "margin-bottom: 10px;">
           <div class="left px-3"><img src="/static/img/graphics/origami-crane-green.png" style="width:150%; align-items: flex-start;"></img></div>
           <div class="mid px-3 d-none d-md-block">10:00 AM</div>
-          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">10:00 AM</small><a href="/events/activities/opening_ceremony2022"><b>Opening Ceremony</b></a></br><small class="text-muted d-block"></small></div>
+          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">10:00 AM</small><b>Opening Ceremony</b></br><small class="text-muted d-block"></small></div>
           <div class="mx-3"></div>
         </div>
         <div class="d-flex flex-row pb-3" style = "margin-bottom: 10px" style = "margin-bottom: 10px">
@@ -78,7 +78,7 @@ b {
                 <div class="d-flex flex-row pb-3" style = "margin-bottom: 10px">
           <div class="left px-3"><img src="/static/img/graphics/origami-crane-turquoise.png" style="width:150%;"></img></div>
           <div class="mid px-3 d-none d-md-block">2:30 PM</div>
-          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">2:30 PM</small><a href="/events/activities/data_analytics2022"><b>TAMIDS: On-going Projects</b></a></br><small class="text-muted d-block">Workshop</small></div>
+          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">2:30 PM</small><a href="/events/activities/data_analytics2022"><b>TAMIDS: On-Going Projects</b></a></br><small class="text-muted d-block">Workshop</small></div>
           <div class="mx-3"></div>
         </div>
         <div class="d-flex flex-row pb-3" style = "margin-bottom: 10px">
@@ -90,7 +90,7 @@ b {
         <div class="d-flex flex-row pb-3" style = "margin-bottom: 10px">
           <div class="left px-3"><img src="/static/img/graphics/origami-crane-turquoise.png" style="width:150%;"></img></div>
           <div class="mid px-3 d-none d-md-block">4:00 PM</div>
-          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">4:00 PM</small><a href="events/activities/streamlit_workshop2022"><b>Webscraping</b></a></br><small class="text-muted d-block">Workshop</small><br/><small class="text-muted d-block d-md-none">4:00 PM</small><a href="events/activities/streamlit_workshop2022"><b>Natural Language Processing</b></a></br><small class="text-muted d-block">Workshop</small></div>
+          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">4:00 PM</small><a href="events/activities/streamlit_workshop2022"><b>Web Scraping</b></a></br><small class="text-muted d-block">Workshop</small><br/><small class="text-muted d-block d-md-none">4:00 PM</small><a href="events/activities/streamlit_workshop2022"><b>Natural Language Processing</b></a></br><small class="text-muted d-block">Workshop</small></div>
           <div class="mx-3"></div>
         </div>
         <div class="d-flex flex-row pb-3" style = "margin-bottom: 10px">
@@ -170,7 +170,7 @@ b {
         <div class="d-flex flex-row pt-3 pb-3" style = "margin-bottom: 10px;">
           <div class="left px-3"><img src="/static/img/graphics/origami-crane-green.png" style="width:150%; align-items: flex-start;"></img></div>
           <div class="mid px-3 d-none d-md-block">3:30 PM</div>
-          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">3:30 PM</small><a href="/events/activities/closing_ceremony2022"><b>Closing Ceremony</b></a></br><small class="text-muted d-block"></small></div>
+          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">3:30 PM</small><b>Closing Ceremony</b></br><small class="text-muted d-block"></small></div>
           <div class="mx-3"></div>
         </div>
       </div>
