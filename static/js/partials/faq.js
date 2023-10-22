@@ -10,7 +10,7 @@ const content = [
   },
   {
     "question": "When is the event?",
-    "answer": "October 28-29th, 2023. We will publish a complete schedule soon, but for now, know that we will begin at 9 am on Saturday and end at 5 pm on Sunday.",
+    "answer": "October 28-29th, 2023. A complete schedule is available at tamudatathon.com/schedule. The event will begin at 9 am on Saturday and end at 5 pm on Sunday.",
     "color": "#C4FFBA"
   },
   {
@@ -83,7 +83,9 @@ content.map(({question, answer, color}) => {
   `
 })
 
-document.querySelector(".faqs-container").innerHTML = contentElement;
+if (document.querySelector(".faqs-container") !== null) {
+  document.querySelector(".faqs-container").innerHTML = contentElement;
+}
 
 const tracker = document.querySelectorAll(".faqs-item");
 const answers = document.querySelectorAll(".faqs-sheet");
