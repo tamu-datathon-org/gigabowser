@@ -135,7 +135,7 @@ b {
         <div class="d-flex flex-row pt-3 pb-3" style = "margin-bottom: 10px;">
           <div class="left px-3"><img src="/static/img/graphics/origami-crane-blue.png" style="width:150%;"></img></div>
           <div class="mid px-3 d-none d-md-block">12:00 AM</div>
-          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">12:00 AM</small><b>Talent Show</b></br><small class="text-muted d-block"></small></div>
+          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">12:00 AM</small><b>Talent Show & Karaoke</b></br><small class="text-muted d-block"></small></div>
           <div class="mx-3"></div>
         </div>
         <div class="d-flex flex-row pb-3" style = "margin-bottom: 10px">
