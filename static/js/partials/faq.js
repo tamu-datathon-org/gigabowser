@@ -14,8 +14,8 @@ const content = [
     "color": "#C4FFBA"
   },
   {
-    "question": "Where is the event?",
-    "answer": "Will be hosted at the Legends Event Center (2533 Midtown Pk Blvd, Bryan, TX 77801).",
+    "question": "Where is the event & how will I get there?",
+    "answer": "Will be hosted at the Legends Event Center (2533 Midtown Pk Blvd, Bryan, TX 77801). There is a carpool channel in our Discord if you need a ride or want to offer a ride. PARKING IS FREE!",
     "color": "#FFDBBA"
   },
   {
@@ -25,7 +25,7 @@ const content = [
   },
   {
     "question": "How much does it cost?",
-    "answer": "It is FREE! All you need is a laptop! We will even throw in tons of swag, food, Wi-Fi, workspaces, and caffeine during your stay.",
+    "answer": "It is FREE! All you need is a laptop! We will even throw in tons of swag, food, Wi-Fi, workspaces, and caffeine during your stay. ALSO PARKING IS FREE!",
     "color": "#D1A7E5"
   },
   {
@@ -52,7 +52,7 @@ const content = [
     "question": "I have another question?",
     "answer": "Send us an email at connect@tamudatathon.com.",
     "color": "#C4FFBA"
-  }
+  },
 ]
 
 let contentElement = ""
