@@ -84,13 +84,19 @@ b {
         <div class="d-flex flex-row pb-3" style = "margin-bottom: 10px">
           <div class="left px-3"><img src="/static/img/graphics/origami-crane-turquoise.png" style="width:150%;"></img></div>
           <div class="mid px-3 d-none d-md-block">3:00 PM</div>
-          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">3:00 PM</small><a href="events/activities/cbre_workshop2022"><b>General Motors</b></a></br><small class="text-muted d-block">Workshop</small></div>
+          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">3:00 PM</small><a href="events/activities/streamlit_workshop2022"><b>Web Scraping</b></a></br><small class="text-muted d-block">Workshop</small></div>
           <div class="mx-3"></div>
         </div>
         <div class="d-flex flex-row pb-3" style = "margin-bottom: 10px">
           <div class="left px-3"><img src="/static/img/graphics/origami-crane-turquoise.png" style="width:150%;"></img></div>
           <div class="mid px-3 d-none d-md-block">4:00 PM</div>
-          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">4:00 PM</small><a href="events/activities/streamlit_workshop2022"><b>Web Scraping</b></a></br><small class="text-muted d-block">Workshop</small><br/><small class="text-muted d-block d-md-none">4:00 PM</small><a href="events/activities/streamlit_workshop2022"><b>Natural Language Processing</b></a></br><small class="text-muted d-block">Workshop</small></div>
+          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">4:00 PM</small><a href="events/activities/streamlit_workshop2022"><b>Natural Language Processing</b></a></br><small class="text-muted d-block">Workshop</small></div>
+          <div class="mx-3"></div>
+        </div>
+        <div class="d-flex flex-row pb-3" style = "margin-bottom: 10px">
+          <div class="left px-3"><img src="/static/img/graphics/origami-crane-turquoise.png" style="width:150%;"></img></div>
+          <div class="mid px-3 d-none d-md-block">4:30 PM</div>
+          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">4:30 PM</small><a href="events/activities/cbre_workshop2022"><b>Roblox</b></a></br><small class="text-muted d-block">Workshop</small></div>
           <div class="mx-3"></div>
         </div>
         <div class="d-flex flex-row pb-3" style = "margin-bottom: 10px">
