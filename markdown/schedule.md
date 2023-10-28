@@ -102,13 +102,13 @@ b {
         <div class="d-flex flex-row pb-3" style = "margin-bottom: 10px">
           <div class="left px-3"><img src="/static/img/graphics/origami-crane-blue.png" style="width:150%;"></img></div>
           <div class="mid px-3 d-none d-md-block">5:00 PM</div>
-          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">5:00 PM</small><a href="https://www.start.gg/tournament/datathon-smash-tourney/"><b>Speed Dating</b></a></br><small class="text-muted d-block"></small></a></div>
+          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">5:00 PM</small><b>Speed Dating</b></a></br><small class="text-muted d-block"></small></a></div>
           <div class="mx-3"></div>
         </div>
         <div class="d-flex flex-row pb-3" style = "margin-bottom: 10px">
           <div class="left px-3"><img src="/static/img/graphics/origami-crane-blue.png" style="width:150%;"></img></div>
           <div class="mid px-3 d-none d-md-block">6:00 PM</div>
-          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">6:00 PM</small><a href="https://www.start.gg/tournament/datathon-smash-tourney/"><b>Art Social</b></a></br><small class="text-muted d-block"></small></a></div>
+          <div class="named-text mx-3"><small class="text-muted d-block d-md-none">6:00 PM</small><b>Art Social</b></a></br><small class="text-muted d-block"></small></a></div>
           <div class="mx-3"></div>
         </div>
         <div class="d-flex flex-row pb-3" style = "margin-bottom: 10px">
