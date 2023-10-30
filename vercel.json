@@ -1,5 +1,5 @@
 {
     "rewrites": [
-        { "source": "/challenges(.*)", "destination": "https://google.com$1" }
+        { "source": "/challenges(.*)", "destination": "https://2023-challenges-ochre.vercel.app/challenges$1" },
     ]
 }
