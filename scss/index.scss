@@ -12,6 +12,7 @@
 
 * {
   box-sizing: border-box;
+  background-color: darkgray;
 }
 
 body {
@@ -23,7 +24,9 @@ body {
   width: 100%;
   position: relative;
 }
-
+.screen{
+  background-color: white;
+}
 .transition {
   display: none;
   position: absolute;
@@ -45,4 +48,5 @@ body {
 .content {
   // border: 1px solid black;
   padding: 10px;
+  
 }
