@@ -30,7 +30,7 @@ $splash-light-purple: #7c408a;
 @include media-breakpoint-down(md) {
   .navbar-nav {
     padding: 1em !important;
-    background: rgba(#fff, 0.9);
+    background: gray;
     backdrop-filter: blur(4px);
     color: #000;
     border-radius: 8px;
