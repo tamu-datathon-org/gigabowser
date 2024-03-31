@@ -1,21 +1,24 @@
 <div id="team" class="section">
-  <img src="static/img/headers/Team_Header.svg" alt="Team">
-  
-   
-<!--   
-  <div id="team-content" class="content team-content">
+  <img src="static/img/headers/Team_Header.svg" alt="Team" />
+
+  <!-- <div id="team-content" class="content team-content">
     <% req.memberInfo.forEach((member) => { %>
+      
+          
+        
     <div class="clue card">
      
       
       <div class="square">
         
         <div class="square"></div>
-        <div class="rhombus">
-          
-          
-        </div>
         
+        <% if(member.position == "Logistics"){ %>
+          <div class="rhombus" style = "background-color: red"></div>
+        <% } else {%>
+          <div class="rhombus"></div>
+        <%}%>
+
         
         <div class="inner-rhombus">
            <img class="photo" src="/static/img/team/<%- member.name.split(' ')[0].toLowerCase() %>.webp"/>
@@ -23,7 +26,7 @@
 
 
             </div>
-          </div>
+        </div>
         </div>
         
         <div class="rectangle">
@@ -52,4 +55,41 @@
 
   </div> -->
 
+  <div id="team-content" class="content team-content">
+    <% req.memberInfo.forEach((member) =>{%>
+    <%if(member.position.includes("Logistics")){ %>
+    <div class="card" style="background-color: #ff7b25">
+      <div class="clue-card-image-container">
+        <img class="clue-card-image" src="/static/img/team/<%=(member.name.split(' ')[0]+'_'+member.name.split(' ')[1]).toLowerCase() %>.webp" />
+      </div>
+      <%(member.position)%>
+    </div>
+    <% } else if(member.position.includes("Design")){%>
+    <div class="card" style="background-color: #B9F8F0">
+      <div class="clue-card-image-container">
+        <img class="clue-card-image" src="/static/img/team/<%=(member.name.split(' ')[0]+'_'+member.name.split(' ')[1]).toLowerCase() %>.webp" />
+      </div>
+    </div>
+    <% } else if(member.position.includes("Dev")){%>
+    <div class="card" style="background-color: #C7EA90">
+      <div class="clue-card-image-container">
+        <img class="clue-card-image" src="/static/img/team/<%=(member.name.split(' ')[0]+'_'+member.name.split(' ')[1]).toLowerCase() %>.webp" />
+      </div>
+    </div>
+    <% } else if(member.position.includes("Challenges")){%>
+    <div class="card" style="background-color: #3340C6">
+      <div class="clue-card-image-container">
+        <img class="clue-card-image" src="/static/img/team/<%=(member.name.split(' ')[0]+'_'+member.name.split(' ')[1]).toLowerCase() %>.webp" />
+      </div>
+    </div>
+    <% } else{ %>
+    <div class="card">
+      <div class="clue-card-image-container">
+        <img class="clue-card-image" src="/static/img/team/<%=(member.name.split(' ')[0]+'_'+member.name.split(' ')[1]).toLowerCase() %>.webp" />
+      </div>
+    </div>
+    <%}%>
+    <% }) %>
+
+  </div>
 </div>
