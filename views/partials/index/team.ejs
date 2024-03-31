@@ -57,36 +57,53 @@
 
   <div id="team-content" class="content team-content">
     <% req.memberInfo.forEach((member) =>{%>
-    <%if(member.position.includes("Logistics")){ %>
+    <% if(member.position.includes("President")){%>
+    <div class="card" style="background-color: #F1FE86;">
+      <div class="clue-card-image-container">
+        <img class="clue-card-image" src="/static/img/team/<%=(member.name.split(' ')[0]+'_'+member.name.split(' ')[1]).toLowerCase() %>.webp" />
+      </div>
+      <div class="name transparent" style="font-weight: bold; margin-top: 20px;"><%- member.name %></div>
+      <div class="position transparent"><%- member.position %></div>
+    </div>
+    <%}else if(member.position.includes("Logistics")){ %>
     <div class="card" style="background-color: #ff7b25">
       <div class="clue-card-image-container">
         <img class="clue-card-image" src="/static/img/team/<%=(member.name.split(' ')[0]+'_'+member.name.split(' ')[1]).toLowerCase() %>.webp" />
       </div>
-      <%(member.position)%>
+      <div class="name transparent" style="font-weight: bold; margin-top: 20px;"><%- member.name %></div>
+      <div class="position transparent"><%- member.position %></div>
     </div>
     <% } else if(member.position.includes("Design")){%>
     <div class="card" style="background-color: #B9F8F0">
       <div class="clue-card-image-container">
         <img class="clue-card-image" src="/static/img/team/<%=(member.name.split(' ')[0]+'_'+member.name.split(' ')[1]).toLowerCase() %>.webp" />
       </div>
+      <div class="name transparent" style="font-weight: bold; margin-top: 20px;"><%- member.name %></div>
+      <div class="position transparent"><%- member.position %></div>
     </div>
     <% } else if(member.position.includes("Dev")){%>
     <div class="card" style="background-color: #C7EA90">
       <div class="clue-card-image-container">
         <img class="clue-card-image" src="/static/img/team/<%=(member.name.split(' ')[0]+'_'+member.name.split(' ')[1]).toLowerCase() %>.webp" />
       </div>
+      <div class="name transparent" style="font-weight: bold; margin-top: 20px;"><%- member.name %></div>
+      <div class="position transparent"><%- member.position %></div>
     </div>
     <% } else if(member.position.includes("Challenges")){%>
     <div class="card" style="background-color: #3340C6">
       <div class="clue-card-image-container">
         <img class="clue-card-image" src="/static/img/team/<%=(member.name.split(' ')[0]+'_'+member.name.split(' ')[1]).toLowerCase() %>.webp" />
       </div>
+      <div class="name transparent" style="font-weight: bold; margin-top: 20px;"><%- member.name %></div>
+      <div class="position transparent"><%- member.position %></div>
     </div>
     <% } else{ %>
-    <div class="card">
+    <div class="card" style="background-color: black;">
       <div class="clue-card-image-container">
         <img class="clue-card-image" src="/static/img/team/<%=(member.name.split(' ')[0]+'_'+member.name.split(' ')[1]).toLowerCase() %>.webp" />
       </div>
+      <div class="name transparent" style="font-weight: bold; margin-top: 20px;"><%- member.name %></div>
+      <div class="position transparent"><%- member.position %></div>
     </div>
     <%}%>
     <% }) %>
