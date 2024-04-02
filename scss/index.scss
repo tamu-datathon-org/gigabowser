@@ -12,23 +12,22 @@
 
 * {
   box-sizing: border-box;
-  background-color: white;
 }
 
 body {
   margin: 0;
 }
-
 .section {
   padding: 4% 7%;
   width: 100%;
   position: relative;
 }
-
-.screen {
+#screen {
+  background-color: rgb(227, 227, 227);
+}
+#footer{
   background-color: white;
 }
-
 .transition {
   display: none;
   position: absolute;
