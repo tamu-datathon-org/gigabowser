@@ -438,30 +438,42 @@
 // HEREREREERRE____________________________________
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
+.header {
+  display: flex;
+  z-index: 2;
+
+}
 
 .textContainer {
-  margin-top: -10em;
-  height: 400px;
-  width: auto;
+  display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: -5em;
+  max-height: 300px;
+  height: 100%;
+  width: auto;
+  z-index: bottom;
 }
 
 svg {
-  align-items: center;
-  justify-content: center;
-  display: block;
-  font: 7em 'Montserrat';
+  // align-items: center;
+  // justify-content: center;
+  display: flex;
+  font: 5em 'Montserrat';
   width: auto;
-  height: auto;
-  margin: 0 auto;
+  max-height: 300px;
+  height: 100%;
+  // margin: 0 auto;
+  z-index: bottom;
+  background-color: transparent;
+
 }
 
 .text-copy {
   fill: none;
   stroke: white;
   stroke-dasharray: 30% 10%;
-  stroke-width: 5px;
+  stroke-width: 3px;
   stroke-dashoffset: 0%;
   animation: stroke-offset 20s infinite linear;
 }
