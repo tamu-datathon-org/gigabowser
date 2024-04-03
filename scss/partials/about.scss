@@ -1,3 +1,16 @@
+@font-face {
+  font-family: "PrimeformProDemo Bold";
+  src: url("/static/fonts/PrimeformProDemo-Bold.otf");
+}
+@font-face {
+  font-family: "PrimeformProDemo Medium";
+  src: url("/static/fonts/PrimeformProDemo-Medium.otf");
+}
+@font-face {
+  font-family: "PrimeformProDemo Regular";
+  src: url("/static/fonts/PrimeformProDemo-Regular.otf");
+}
+
 /*Google Fonts*/
 .birdContainer  {
   min-height:350px;
@@ -28,6 +41,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: Min(2.4rem, 2vh) !important;
+  padding-bottom: 0 !important;
 }
 
 .about__text-title{
@@ -42,12 +57,15 @@
 
 .about_text-subtitle {
   // color: rgb(85, 2, 85);
-  font-size: 2.5rem;
+  font-size: Min(2rem, 4vw);
   text-align: center;
+  font-family: "PrimeformProDemo Bold";
+  margin-bottom: Min(1.2rem, 1vh);
 }
 
 .about__text-content {
   // color: rgb(85, 2, 85);
-  font-size: 1.5rem;
+  font-size: Min(1rem, 2vw);
   text-align: center;
+  font-family: "PrimeformProDemo Medium";
 }
