@@ -21,8 +21,8 @@
   // display: flex;
   // justify-content: center;
   overflow: hidden;
-  background-color: white;
   // height: 100vh;
+  //min-padding-top: 1vh;
 }
 
 .leftHalf {
@@ -40,6 +40,8 @@
   display: flex;
   width: 100%;
   height: 100vh;
+  align-items: center;
+  margin-left: 2.5vw;
 }
 
 .splash-text {

@@ -8,7 +8,7 @@
 @import "./partials/team.scss";
 @import "./partials/about.scss";
 @import "./partials/footer.scss";
-@import "./partials/map.scss";
+@import "partials/when_and_where";
 
 * {
   box-sizing: border-box;
@@ -17,13 +17,17 @@
 body {
   margin: 0;
 }
-
 .section {
   padding: 4% 7%;
   width: 100%;
   position: relative;
 }
-
+#screen {
+  background-color:white;
+}
+#footer{
+  background-color: white;
+}
 .transition {
   display: none;
   position: absolute;
@@ -36,8 +40,9 @@ body {
   align-items: center;
   background-color: transparent;
 }
+
 .transition img {
-  display:none;
+  display: none;
   // -webkit-filter: drop-shadow(0px -15px 10px rgba(0, 0, 0, 0.15));
   // filter: drop-shadow(0px -15px 10px rgba(0, 0, 0, 0.15));
 }
@@ -45,4 +50,5 @@ body {
 .content {
   // border: 1px solid black;
   padding: 10px;
+
 }

@@ -1,55 +1,136 @@
-<div id="team" class="section">
-  <div class="team-title section-title">TEAM</div>
-  
-   
+<!--<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">-->
+<!--<div id="team" class="section" data-aos="fade-down" data-aos-duration="1000">-->
+<!--  <div class="headers">-->
+<!--    <img src="static/img/headers/Team_Header.svg" alt="Team" />-->
+<!--  </div>-->
 
-  <div id="team-content" class="content team-content">
-    <% req.memberInfo.forEach((member) => { %>
-    <div class="clue card">
-     
-      
-      <div class="square">
-        
-        <div class="square"></div>
-        <div class="rhombus">
-          
-          
-        </div>
-        
-        
-        <div class="inner-rhombus">
-            <!-- <img class="photo" src="/static/img/team/<%- member.name.split(' ')[0].toLowerCase() %>.webp"/> -->
-            <div class="photo" style="background-image: url(/static/img/team/<%- member.name.split(' ')[0] + '_' + member.name.split(' ')[1] %>.webp)">
+<!--  &lt;!&ndash; Executive code &ndash;&gt;-->
+<!--  <div class="textContainer">-->
+<!--    <svg viewBox="0 0 960 300">-->
+<!--      <symbol id="s-text">-->
+<!--        <text text-anchor="middle" x="50%" y="80%">Executive</text>-->
+<!--      </symbol>-->
+
+<!--      <g class="g-ants">-->
+<!--        <use xlink:href="#s-text" class="text-copy" style="stroke:#FFBF00"></use>-->
+<!--        <use xlink:href="#s-text" class="text-copy" style="stroke:#8B8000"></use>-->
+<!--      </g>-->
+<!--    </svg>-->
+<!--  </div>-->
+<!--  <div id="team-content" class="content team-content">-->
+<!--    <% req.memberInfo.forEach((member) =>{%> <% if(member.position.includes("President")){%> <div class="card" style="background-color: #F1FE86;">-->
+<!--      <div class="clue-card-image-container">-->
+<!--        <img class="clue-card-image" src="/static/img/team/<%=(member.name.split(' ')[0]+'_'+member.name.split(' ')[1]).toLowerCase() %>.webp" />-->
+<!--      </div>-->
+<!--      <div class="name transparent" style="font-weight: bold; margin-top: 20px;"><%- member.name %></div>-->
+<!--      <div class="position transparent"><%- member.position %></div>-->
+<!--    </div>-->
+<!--    <% }%>-->
+<!--    <%}) %>-->
+<!--  </div>-->
+
+<!--  &lt;!&ndash; Design code &ndash;&gt;-->
+<!--  <div class="textContainer">-->
+<!--    <svg viewBox="0 0 960 300">-->
+<!--      <symbol id="s-text2">-->
+<!--        <text text-anchor="middle" x="50%" y="80%">Design</text>-->
+<!--      </symbol>-->
+
+<!--      <g class="g-ants">-->
+<!--        <use xlink:href="#s-text2" class="text-copy" style="stroke:#6495ED"></use>-->
+<!--        <use xlink:href="#s-text2" class="text-copy" style="stroke:#00008B"></use>-->
+<!--      </g>-->
+<!--    </svg>-->
+<!--  </div>-->
+
+<!--  <div id="team-content" class="content team-content">-->
+<!--    <% req.memberInfo.forEach((member) =>{%> <% if(member.position.includes("Design")){%> <div class="card" style="background-color: #B9F8F0;">-->
+<!--      <div class="clue-card-image-container">-->
+<!--        <img class="clue-card-image" src="/static/img/team/<%=(member.name.split(' ')[0]+'_'+member.name.split(' ')[1]).toLowerCase() %>.webp" />-->
+<!--      </div>-->
+<!--      <div class="name transparent" style="font-weight: bold; margin-top: 20px;"><%- member.name %></div>-->
+<!--      <div class="position transparent"><%- member.position %></div>-->
+<!--    </div>-->
+<!--    <% }%>-->
+<!--    <%}) %>-->
+<!--  </div>-->
+<!--  &lt;!&ndash; Logistics code &ndash;&gt;-->
+<!--  <div class="textContainer">-->
+<!--    <svg viewBox="0 0 960 300">-->
+<!--      <symbol id="s-text3">-->
+<!--        <text text-anchor="middle" x="50%" y="80%">Logistics</text>-->
+<!--      </symbol>-->
+
+<!--      <g class="g-ants">-->
+<!--        <use xlink:href="#s-text3" class="text-copy" style="stroke:#FF7B25"></use>-->
+<!--        <use xlink:href="#s-text3" class="text-copy" style="stroke:#BD5A00"></use>-->
+<!--      </g>-->
+<!--    </svg>-->
+<!--  </div>-->
+
+<!--  <div id="team-content" class="content team-content">-->
+<!--    <% req.memberInfo.forEach((member) =>{%> <% if(member.position.includes("Logistics")){%> <div class="card" style="background-color: #ff7b25;">-->
+<!--      <div class="clue-card-image-container">-->
+<!--        <img class="clue-card-image" src="/static/img/team/<%=(member.name.split(' ')[0]+'_'+member.name.split(' ')[1]).toLowerCase() %>.webp" />-->
+<!--      </div>-->
+<!--      <div class="name transparent" style="font-weight: bold; margin-top: 20px;"><%- member.name %></div>-->
+<!--      <div class="position transparent"><%- member.position %></div>-->
+<!--    </div>-->
+<!--    <% }%>-->
+<!--    <%}) %>-->
+<!--  </div>-->
 
 
-            </div>
-          </div>
-        </div>
-        
-        <div class="rectangle">
-          <div class="clue-card-name" style="text-align: center;">
-            <div class="name" style="font-weight: bold; margin-top: 20px;"><%- member.name %></div>
-            <div class="position" ><%- member.position %></div>
-            
-          </div>
-          
-        </div>
+<!--  &lt;!&ndash; Dev code &ndash;&gt;-->
+<!--  <div class="textContainer">-->
+<!--    <svg viewBox="0 0 960 300">-->
+<!--      <symbol id="s-text4">-->
+<!--        <text text-anchor="middle" x="50%" y="80%">Developers</text>-->
+<!--      </symbol>-->
 
-        
-        <ul class="social">
-          <% Object.entries(member.links).map(([icon, link]) => { %>
-          <li><a href="<%- link %>" target="_blank">
-            <% if (!icon.startsWith('fa')) { %>
-            <img src="<%- icon %>" />
-            <% } else { %>
-            <i class="fa <%- icon %>"></i>
-            <% } %>
-          </a></li>
-          <% }) %>
-        </ul>
-      </div>
-      <% }) %>
+<!--      <g class="g-ants">-->
+<!--        <use xlink:href="#s-text4" class="text-copy" style="stroke:#C9E881"></use>-->
+<!--        <use xlink:href="#s-text4" class="text-copy" style="stroke:#A49C41"></use>-->
+<!--      </g>-->
+<!--    </svg>-->
+<!--  </div>-->
 
-  </div>
+<!--  <div id="team-content" class="content team-content">-->
+<!--    <% req.memberInfo.forEach((member) =>{%> <% if(member.position.includes("Dev")){%> <div class="card" style="background-color: #C7EA90;">-->
+<!--      <div class="clue-card-image-container">-->
+<!--        <img class="clue-card-image" src="/static/img/team/<%=(member.name.split(' ')[0]+'_'+member.name.split(' ')[1]).toLowerCase() %>.webp" />-->
+<!--      </div>-->
+<!--      <div class="name transparent" style="font-weight: bold; margin-top: 20px;"><%- member.name %></div>-->
+<!--      <div class="position transparent"><%- member.position %></div>-->
+<!--    </div>-->
+<!--    <% }%>-->
+<!--    <%}) %>-->
+<!--  </div>-->
 
-</div>
+
+<!--  &lt;!&ndash; Dev code &ndash;&gt;-->
+<!--  <div class="textContainer">-->
+<!--    <svg viewBox="0 0 960 300">-->
+<!--      <symbol id="s-text5">-->
+<!--        <text text-anchor="middle" x="50%" y="80%">Challenges</text>-->
+<!--      </symbol>-->
+
+<!--      <g class="g-ants">-->
+<!--        <use xlink:href="#s-text5" class="text-copy" style="stroke:#303AB2"></use>-->
+<!--        <use xlink:href="#s-text5" class="text-copy" style="stroke:#6050A8"></use>-->
+<!--      </g>-->
+<!--    </svg>-->
+<!--  </div>-->
+
+<!--  <div id="team-content" class="content team-content">-->
+<!--    <% req.memberInfo.forEach((member) =>{%> <% if(member.position.includes("Challenges")){%> <div class="card" style="background-color: #3340C6;">-->
+<!--      <div class="clue-card-image-container">-->
+<!--        <img class="clue-card-image" src="/static/img/team/<%=(member.name.split(' ')[0]+'_'+member.name.split(' ')[1]).toLowerCase() %>.webp" />-->
+<!--      </div>-->
+<!--      <div class="name transparent" style="font-weight: bold; margin-top: 20px;"><%- member.name %></div>-->
+<!--      <div class="position transparent"><%- member.position %></div>-->
+<!--    </div>-->
+<!--    <% }%>-->
+<!--    <%}) %>-->
+<!--  </div>-->
+<!--</div>-->
