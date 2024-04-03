@@ -28,7 +28,7 @@
   //border: 1px solid #000;
   //border-radius: 5px;
   width: 25vw;
-  //text-align: center;
+  text-align: center;
   align-content: center;
   justify-content: center;
 }
@@ -39,6 +39,13 @@
   justify-content: center;
 }
 
+.apply-link {
+  margin-top: 20px;
+  padding-top: 10px;
+  text-align: center;
+  color: #3e3ac5;
+}
+
 #when_and_where.section.when_and_where__list-item ul {
   //width: 25vw;
   //height: auto;
@@ -46,7 +53,7 @@
 }
 
 #when_and_where.section img {
-  //max-width: 100%;
+  max-width: 100%;
   //height: auto;
   //border-radius: 5px;
   //border: 1px solid #000;
