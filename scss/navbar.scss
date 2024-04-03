@@ -18,19 +18,19 @@ $splash-light-purple: #7c408a;
     color: #404040 !important;
   }
   .nav-link:hover {
-    color: #8e6a5d !important;
-    box-shadow: 0 0.125rem #8e6a5d;
+    color: #3340c6 !important;
+    box-shadow: 0 0.125rem #3340c6;
     transition: box-shadow 0.5s ease-out;
   }
   .nav-link:focus {
-    color: #8e6a5d !important;
+    color: #3340c6 !important;
   }
 }
 
 @include media-breakpoint-down(md) {
   .navbar-nav {
     padding: 1em !important;
-    background: gray;
+    background: rgba(#fff, 0.9);
     backdrop-filter: blur(4px);
     color: #000;
     border-radius: 8px;
