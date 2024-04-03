@@ -18,9 +18,12 @@
 }
 
 #splash.section {
-  // display: flex;
+  display: flex;
   // justify-content: center;
   overflow: hidden;
+  margin-top: 3.6rem;
+  height: fit-content;
+  position: relative;
   // height: 100vh;
   //min-padding-top: 1vh;
 }
@@ -39,9 +42,11 @@
 .topDiv {
   display: flex;
   width: 100%;
-  height: 100vh;
-  align-items: center;
-  margin-left: 2.5vw;
+  justify-content: center;
+}
+
+.splash-img {
+  object-fit: contain;
 }
 
 .splash-text {
@@ -143,11 +148,11 @@
 
 
 @media (max-width: 750px) {
-  .topDiv {
-    flex-direction: column;
-    height: 140vh;
-    left: 9px;  
-  }
+  // .topDiv {
+  //   flex-direction: column;
+  //   height: 140vh;
+  //   left: 9px;  
+  // }
   .leftHalf {
     height: 100%;
     width: 100%;
@@ -187,27 +192,27 @@
 }
 
 @media (max-width: 540px) {
-  .topDiv {
-    height: 150vh;
-  }
+  // .topDiv {
+  //   height: 150vh;
+  // }
 }
 
 @media (max-width: 415px) {
-  .topDiv {
-    height: 110vh;
-  }
+  // .topDiv {
+  //   height: 110vh;
+  // }
 }
 
 @media (max-width: 376px) {
-  .topDiv {
-    height: 150vh;
-  }
+  // .topDiv {
+  //   height: 150vh;
+  // }
 }
 
 @media (max-width: 360px) {
-  .topDiv {
-    height: 120vh;
-  }
+  // .topDiv {
+  //   height: 120vh;
+  // }
 }
 
 // .splashSprite:hover {
@@ -218,3 +223,24 @@
 //   0% { background-image: url('../img/graphics/splash/frame1.png'); } /* Front frame */
 //   100% { background-image: url('../img/graphics/splash/frameBehind.png'); } /* Front frame */
 // }
+
+.splash-btn-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+  bottom: 24%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.apply-btn, .discord-btn {
+  width: 16vw;
+}
+
+.splash-fun {
+  position: absolute;
+  bottom: 2%;
+  right: 6%;
+  width: 20vw;
+}
