@@ -23,6 +23,7 @@
   overflow: hidden;
   margin-top: 3.6rem;
   height: fit-content;
+  position: relative;
   // height: 100vh;
   //min-padding-top: 1vh;
 }
@@ -222,3 +223,24 @@
 //   0% { background-image: url('../img/graphics/splash/frame1.png'); } /* Front frame */
 //   100% { background-image: url('../img/graphics/splash/frameBehind.png'); } /* Front frame */
 // }
+
+.splash-btn-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+  bottom: 24%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.apply-btn, .discord-btn {
+  width: 16vw;
+}
+
+.splash-fun {
+  position: absolute;
+  bottom: 2%;
+  right: 6%;
+  width: 20vw;
+}
