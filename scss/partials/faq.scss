@@ -20,14 +20,8 @@
   padding-top: Min(2.4rem, 2vh) !important;
 }
 
-.faqs-title{
-  font-size: 3.5rem !important;
-  font-weight: bold;
-}
-
 .faqs-container {
   margin-top: 2rem;
-  max-width: 1280px;
   width: 100%;
   display: grid;
   justify-items: center;
@@ -40,8 +34,13 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .faqs-ruler {
+    padding: 0.4rem 0.1rem 0.1rem 0.1rem;
+  }
+}
+
 .faqs-item {
-  max-width: 576px;
   width: 100%;
   cursor: pointer;
   display: flex;
@@ -57,13 +56,13 @@
   border: 4px solid black;
   background: white;
   width: 100%;
-  min-height: 5rem;
+  min-height: Min(4vw, 5rem);
   border-radius: 4px;
   z-index: 2;
   padding: 1.2rem 0.5rem 0.5rem 0.5rem;
   font-weight: 600;
   font-family: 'PrimeformProDemo Bold';
-  font-size: 1.5rem;
+  font-size: Max(1.5vw, 0.8rem);
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -83,7 +82,7 @@
 
 .faqs-ruler::before {
   content: "";
-  background: url("../../static/img/graphics/Blank\ Ruler.svg") no-repeat;
+  background: url("../../static/img/graphics/Blank\ Ruler.svg") repeat;
   width: 100%;
   height: 1.1rem;
   position: absolute; 
@@ -126,6 +125,7 @@
   opacity: 0;
   display: flex;
   flex-direction: column;
+  font-size: Max(0.8vw, 0.6rem);
   font-family: "PrimeformProDemo Medium";
 }
 
@@ -143,8 +143,8 @@
 }
 
 .faqs-scissor-icon {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: Max(1.5vw, 1rem);
+  height: Max(1.5vw, 1rem);
   transform: rotate(180deg);
   padding-right: 0.25rem;
 }
