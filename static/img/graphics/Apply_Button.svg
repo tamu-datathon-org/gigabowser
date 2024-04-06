@@ -1,1 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="Layer_2_00000029748597359552946310000013614769355318267817_" x="0" y="0" version="1.1" viewBox="0 0 224.2 78.6"><style>.st1{enable-background:new}.st2{fill:#231f20}</style><g id="Layer_4"><path d="M2.7 2.7V20L1 72.6h216.1l-8-69.9s-110.5 3.9-131 0-75.4 0-75.4 0z" style="fill:#f1fe86;stroke:#000;stroke-width:2;stroke-miterlimit:10"/><g class="st1"><path d="M50.1 24.9h5.3l11.7 27.3h-6.4l-2.2-5.5H46.4l-2.2 5.5h-5.7zm6.5 17.2-4.2-10.4-4.2 10.4z" class="st2"/></g><g class="st1"><path d="M69.8 24.9h13.9c5.6 0 10.2 4.3 10.2 9.5 0 5.3-4.6 9.5-10.2 9.5h-8v8.3h-5.9zM88 34.4c0-2.5-1.9-4.6-4.3-4.6h-8V39h8c2.3 0 4.3-2.1 4.3-4.6M96.7 24.9h13.9c5.6 0 10.2 4.3 10.2 9.5 0 5.3-4.6 9.5-10.2 9.5h-8v8.3h-5.9zm18.2 9.5c0-2.5-1.9-4.6-4.3-4.6h-8V39h8c2.3 0 4.3-2.1 4.3-4.6" class="st2"/></g><g class="st1"><path d="M124.4 24.9h5.9v22.4h14.3v4.9h-20.2z" class="st2"/></g><g class="st1"><path d="M151.7 41.7 141 24.9h6.4l7.4 12.1 7.4-12.1h6.1l-10.7 16.8v10.5h-5.9z" class="st2"/></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 28.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_2_00000029748597359552946310000013614769355318267817_"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 224.2 78.6"
+	 style="enable-background:new 0 0 224.2 78.6;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#F1FE86;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+	.st1{enable-background:new    ;}
+	.st2{fill:#231F20;}
+</style>
+<g id="Layer_4">
+	<path class="st0" d="M2.7,2.7V20L1,72.6h66.7h44h62.2h43.2l-8-69.9c0,0-110.5,3.9-131,0S2.7,2.7,2.7,2.7z"/>
+	<g class="st1">
+		<path class="st2" d="M50.1,24.9h5.3l11.7,27.3h-6.4l-2.2-5.5H46.4l-2.2,5.5h-5.7L50.1,24.9z M56.6,42.1l-4.2-10.4l-4.2,10.4H56.6z
+			"/>
+	</g>
+	<g class="st1">
+		<path class="st2" d="M69.8,24.9h13.9c5.6,0,10.2,4.3,10.2,9.5c0,5.3-4.6,9.5-10.2,9.5h-8v8.3h-5.9V24.9z M88,34.4
+			c0-2.5-1.9-4.6-4.3-4.6h-8V39h8C86,39,88,36.9,88,34.4z"/>
+		<path class="st2" d="M96.7,24.9h13.9c5.6,0,10.2,4.3,10.2,9.5c0,5.3-4.6,9.5-10.2,9.5h-8v8.3h-5.9V24.9z M114.9,34.4
+			c0-2.5-1.9-4.6-4.3-4.6h-8V39h8C112.9,39,114.9,36.9,114.9,34.4z"/>
+	</g>
+	<g class="st1">
+		<path class="st2" d="M124.4,24.9h5.9v22.4h14.3v4.9h-20.2V24.9z"/>
+	</g>
+	<g class="st1">
+		<path class="st2" d="M151.7,41.7l-10.7-16.8h6.4l7.4,12.1l7.4-12.1h6.1l-10.7,16.8v10.5h-5.9V41.7z"/>
+	</g>
+</g>
+</svg>
