@@ -5,53 +5,53 @@ window.addEventListener('scroll', function() {
 const content = [
   {
     "question": "What is TAMU Datathon Lite?",
-    "answer": "TAMU Datathon Lite is a smaller and more beginner friendly version of our main event typically held in the Fall. It's going to be a one day event, but it will have everything datathon normally has including: free food, swag, workshops, and prizes!",
-    "color": "#98cbfc"
+    "answer": "TD Lite is a smaller, more beginner friendly version of our main event. It's a one-day event, but it will have everything Datathon normally has including free food, swag, workshops, and prizes!",
+    "color": "#98ccfe"
   },
   {
     "question": "When is the event?",
-    "answer": "April 20th, 2024. A complete schedule will be available as the event approaches. The event will begin at 9 am and end at 6pm on Saturday.",
-    "color": "#a5f9ec"
+    "answer": "It's on Saturday, April 20th, 2024 between 9 AM and 6 PM. A complete schedule will be available soon!",
+    "color": "#b6f9ec"
   },
   {
     "question": "Where is the event?",
-    "answer": "Event will be hosted at ILCB. Once you enter the building there will be organizers there to guide you to the main room! If you have any questions regarding transportation or parking, please reach out to one of the organizers on Discord.",
-    "color": "#f4fe91"
+    "answer": "The event takes place at the ILCB. Once you enter the building, organizers will be there to guide you to the main room! If you have any questions regarding transportation or parking, please reach out to us on Discord.",
+    "color": "#f2fc96"
   },
   {
     "question": "How do I sign up?",
-    "answer": "Registration is currently open! Head over to tamudatathon.com/apply to get started! Admission decisions will be released soon after the registration ends.",
-    "color": "#d8a63b"
+    "answer": "Head over to tamudatathon.com/apply to get started! Admission decisions will be released shortly after registration closes.",
+    "color": "#f87d2e"
   },
   {
     "question": "How much does it cost?",
-    "answer": "It is completely FREE! All you need is a laptop! We will even throw in tons of swag, food, Wi-Fi, workspaces, etc. during your stay.",
-    "color": "#b5e76f"
+    "answer": "It is completely free! All you need is a laptop and a charger. We will even provide swag, food, Wi-Fi, workspaces, and more during the event.",
+    "color": "#bbe575"
   },
   {
     "question": "Who can attend?",
-    "answer": "TAMU Datathon is open to any enrolled undergraduate or graduate student at least 18 years of age and anyone who has graduated within one year of the event. We welcome students from all across the world and from all majors!",
-    "color": "#98cbfc"
+    "answer": "TD Lite is open to any student currently enrolled at Texas A&M who is at least 18 years of age and any Aggie who has graduated within one year of the event. We welcome students from all majors!",
+    "color": "#98ccfe"
   },
   {
     "question": "How much do I need to know?",
-    "answer": "If you are new to data science, TAMU Datathon Lite is the perfect time and place to learn. We will provide introductory workshops and mentors to guide you along your journey to complete our data science challenges. We are committed to helping you build something you can be proud of!",
-    "color": "#a5f9ec"
+    "answer": "If you are new to data science, TD Lite is the perfect time and place to learn. We will provide introductory workshops and mentors to guide you throughout the competition. We are committed to helping you build something you can be proud of!",
+    "color": "#b6f9ec"
   },
   {
     "question": "What should I bring?",
-    "answer": "All you need is a laptop (don't forget your charger!) to get started at TD Lite. You may bring other items such as a pillow or a debugging duck if you wish to. Also make sure to check the weather in case you might need an umbrella :D.",
-    "color": "#f4fe91"
+    "answer": "All you need is a laptop and a charger to get started at TD Lite! You may bring other items such as a pillow or a debugging duck if you wish to. Also make sure to check the weather in case you might need an umbrella :D.",
+    "color": "#f2fc96"
   },
   {
     "question": "How do teams work?",
-    "answer": "Teams can have up to 4 people. We encourage working with a team, it's more fun! You do not need to form a team before attending the event. There will be plenty of time to find a team after opening ceremonies.",
-    "color": "#d8a63b"
+    "answer": "Teams can have up to 4 people. We encourage working with a team, it's more fun! If you don't have a team, don't worry! There will be plenty of time to form one at the event.",
+    "color": "#f87d2e"
   },
   {
     "question": "I have another question?",
-    "answer": "Send us an email at connect@tamudatathon.com.",
-    "color": "#b5e76f"
+    "answer": "Send us an email at connect@tamudatathon.com or reach out to us on Discord!",
+    "color": "#bbe575"
   },
 ]
 
