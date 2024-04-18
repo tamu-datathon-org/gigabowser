@@ -1,11 +1,11 @@
 ---
 title: Schedule
 path: /schedule
-description: Schedule for MINI TAMU DATATHON
+description: Schedule for TD Lite
 ---
 
 <center>
-<h1 class="mb-5 mt-n5"><b>Mini Datathon Schedule</b></h1>
+<h1 class="mb-5 mt-n5"><b>TD Lite Schedule</b></h1>
 <p>Times are in the Central Timezone</p>
 </center>
 
@@ -128,5 +128,5 @@ b {
   </div>
 </div>
 <center>
-<p>Current Mini-D Schedule!</p>
+<p>Current TD Lite Schedule!</p>
 </center>
